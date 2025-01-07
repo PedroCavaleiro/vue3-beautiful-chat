@@ -327,7 +327,7 @@ The object should have the following structure:
 }
 ```
 
-The object takes the css margin configuration. If you wish to keep one of the settings as default you can omit from the object, for example
+The object takes the css margin configuration. If you wish to only change one of the settings, you can omit from the object, for example
 ```javascript
 // Keeps the default margin for the sender and recipient but sets a top and bottom margin of 25px for the system messages
 {
