@@ -6256,6 +6256,10 @@ const f2 = /* @__PURE__ */ M(u2, [["render", D2], ["__scopeId", "data-v-785aecbb
     disableUserListToggle: {
       type: Boolean,
       default: !1
+    },
+    acceptedFileTypes: {
+      type: Array,
+      default: () => ["*/*"]
     }
   },
   computed: {
@@ -6322,6 +6326,7 @@ function r2(D, u, f, e, F, t) {
       "always-scroll-to-bottom": f.alwaysScrollToBottom,
       "message-styling": f.messageStyling,
       messageMargin: f.messageMargin,
+      acceptedFileTypes: f.acceptedFileTypes,
       onClose: f.close,
       onScrollToTop: u[1] || (u[1] = (a) => D.$emit("scrollToTop")),
       onOnType: u[2] || (u[2] = (a) => D.$emit("onType", a)),
@@ -6357,10 +6362,10 @@ function r2(D, u, f, e, F, t) {
         }, void 0, !0)
       ]),
       _: 3
-    }, 8, ["message-list", "on-user-input-submit", "participants", "title", "is-open", "show-emoji", "show-emoji-in-text", "show-file", "show-confirmation-deletion", "confirmation-deletion-message", "show-header", "placeholder", "show-typing-indicator", "colors", "always-scroll-to-bottom", "message-styling", "messageMargin", "onClose"])
+    }, 8, ["message-list", "on-user-input-submit", "participants", "title", "is-open", "show-emoji", "show-emoji-in-text", "show-file", "show-confirmation-deletion", "confirmation-deletion-message", "show-header", "placeholder", "show-typing-indicator", "colors", "always-scroll-to-bottom", "message-styling", "messageMargin", "acceptedFileTypes", "onClose"])
   ]);
 }
-const i2 = /* @__PURE__ */ M(F2, [["render", r2], ["__scopeId", "data-v-67e1ae28"]]);
+const i2 = /* @__PURE__ */ M(F2, [["render", r2], ["__scopeId", "data-v-df5de4aa"]]);
 var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], Ru = "start", Df = "end", o2 = "clippingParents", Qf = "viewport", Wu = "popper", s2 = "reference", bf = /* @__PURE__ */ tD.reduce(function(D, u) {
   return D.concat([u + "-" + Ru, u + "-" + Df]);
 }, []), yD = /* @__PURE__ */ [].concat(tD, [AD]).reduce(function(D, u) {
