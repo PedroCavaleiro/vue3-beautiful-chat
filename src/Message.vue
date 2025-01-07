@@ -2,7 +2,7 @@
   <div
       :id="message.id" class="sc-message"
       :style="{
-        margin: marginStyle()
+        margin: marginStyle
       }"
   >
     <div

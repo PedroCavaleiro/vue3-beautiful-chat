@@ -1835,7 +1835,7 @@ function G3(D, u, f, e, F, t) {
     id: f.message.id,
     class: "sc-message",
     style: j({
-      margin: t.marginStyle()
+      margin: t.marginStyle
     })
   }, [
     y("div", {
