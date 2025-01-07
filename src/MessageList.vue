@@ -5,6 +5,7 @@
     :style="{backgroundColor: colors.messageList.bg}"
     @scroll="handleScroll"
   >
+    <TransitionGroup tag="div">
     <Message
       v-for="(message, idx) in messages"
       :key="message.id ? message.id : idx"
@@ -47,6 +48,7 @@
       :show-confirmation-deletion="showConfirmationDeletion"
       :confirmation-deletion-message="confirmationDeletionMessage"
     />
+    </TransitionGroup>
   </div>
 </template>
 
@@ -163,5 +165,17 @@ export default {
   overflow-y: auto;
   background-size: 100%;
   padding: 40px 0px;
+}
+
+.v-enter-from {
+  opacity: 0;
+}
+
+.v-enter-to {
+  opacity: 1;
+}
+
+.v-enter-active {
+  transition: all 0.2s;
 }
 </style>
