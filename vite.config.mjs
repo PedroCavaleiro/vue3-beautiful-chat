@@ -21,6 +21,7 @@ export default defineConfig({
         {
           assetFileNames: 'vue-beatiful-chat.css',
           format: 'umd',
+          exports: 'default',
           name: 'VueBeatifulChat',
           globals: {
             vue: 'Vue'
