@@ -1,5 +1,5 @@
 <template>
-  <div ref="domNode" tabIndex="0" class="sc-emoji-picker" @blur="onBlur">
+  <div ref="domNode" tabIndex="0" class="sc-emoji-picker" :style="{ background: colors.emojiPicker.bg ?? 'white'  }" @blur="onBlur">
     <div class="sc-emoji-picker--content">
       <div v-for="category in emojiData" :key="category.name" class="sc-emoji-picker--category">
         <div class="sc-emoji-picker--category-title">{{ category.name }}</div>
@@ -28,6 +28,10 @@ export default {
     },
     onEmojiPicked: {
       type: Function,
+      required: true
+    },
+    colors: {
+      type: Object,
       required: true
     }
   },

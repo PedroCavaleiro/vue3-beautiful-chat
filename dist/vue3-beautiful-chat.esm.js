@@ -1,4 +1,4 @@
-import { reactive as A1, openBlock as b, createElementBlock as m, normalizeStyle as L, createCommentVNode as R, renderSlot as O, createTextVNode as Nu, toDisplayString as K, createElementVNode as y, resolveComponent as T, createVNode as N, withCtx as $, resolveDirective as y1, normalizeClass as DD, withDirectives as Rf, createBlock as V, Fragment as Ru, renderList as Qu, vShow as w1, withModifiers as Gu, pushScopeId as k1, popScopeId as x1, nextTick as S1, withScopeId as T1, withKeys as O1, mergeProps as qf, createApp as $1, h as j1 } from "vue";
+import { reactive as A1, openBlock as b, createElementBlock as m, normalizeStyle as L, createCommentVNode as R, renderSlot as O, createTextVNode as Nu, toDisplayString as K, createElementVNode as y, resolveComponent as T, createVNode as N, withCtx as j, resolveDirective as y1, normalizeClass as DD, withDirectives as Rf, createBlock as V, Fragment as Ru, renderList as Qu, vShow as w1, withModifiers as Gu, pushScopeId as k1, popScopeId as x1, nextTick as S1, withScopeId as T1, withKeys as O1, mergeProps as qf, createApp as j1, h as $1 } from "vue";
 const Du = {
   state: A1({
     editMessage: null
@@ -177,7 +177,7 @@ function wu(D, u) {
 function Iu(D) {
   throw new Error("Unhandled case for value: '".concat(D, "'"));
 }
-var zu = /[A-Za-z]/, Z = /[\d]/, du = /\s/, $D = /['"]/, F0 = /[\x00-\x1F\x7F]/, n0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, a0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, d0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, r0 = n0 + a0 + d0, i0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Uf = r0 + i0, Su = new RegExp("[".concat(Uf, "]")), Vf = (
+var zu = /[A-Za-z]/, Z = /[\d]/, du = /\s/, jD = /['"]/, F0 = /[\x00-\x1F\x7F]/, n0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, a0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, d0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, r0 = n0 + a0 + d0, i0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Uf = r0 + i0, Su = new RegExp("[".concat(Uf, "]")), Vf = (
   /** @class */
   function() {
     function D(u) {
@@ -387,7 +387,7 @@ function rf(D) {
 function _u(D) {
   return Su.test(D);
 }
-function jD(D) {
+function $D(D) {
   return D === "_" || _u(D);
 }
 function of(D) {
@@ -446,17 +446,17 @@ var x0 = /^(https?:\/\/)?(www\.)?/i, S0 = /^\/\//, T0 = (
       return f.replace(/&amp;/g, "&");
     }, u.prototype.getAnchorText = function() {
       var f = this.getMatchedText();
-      return this.protocolRelativeMatch && (f = j0(f)), this.stripPrefix.scheme && (f = O0(f)), this.stripPrefix.www && (f = $0(f)), this.stripTrailingSlash && (f = P0(f)), this.decodePercentEncoding && (f = I0(f)), f;
+      return this.protocolRelativeMatch && (f = $0(f)), this.stripPrefix.scheme && (f = O0(f)), this.stripPrefix.www && (f = j0(f)), this.stripTrailingSlash && (f = P0(f)), this.decodePercentEncoding && (f = I0(f)), f;
     }, u;
   }(eD)
 );
 function O0(D) {
   return D.replace(p0, "");
 }
-function $0(D) {
+function j0(D) {
   return D.replace(x0, "$1");
 }
-function j0(D) {
+function $0(D) {
   return D.replace(S0, "");
 }
 function P0(D) {
@@ -756,7 +756,7 @@ function t3(D, u) {
             TD(E, o);
             break;
           case 33:
-            $u(E, o);
+            ju(E, o);
             break;
           case 34:
             oD(E, o);
@@ -886,7 +886,7 @@ function t3(D, u) {
     _u(s) ? i.state = 5 : P(d, i);
   }
   function H(i, s) {
-    s === "." ? i.state = 7 : s === "-" ? i.state = 6 : s === ":" ? i.state = 8 : PD(s) ? i.state = 10 : jD(s) || q(i);
+    s === "." ? i.state = 7 : s === "-" ? i.state = 6 : s === ":" ? i.state = 8 : PD(s) ? i.state = 10 : $D(s) || q(i);
   }
   function I(i, s) {
     s === "-" || (s === "." ? q(i) : _u(s) ? i.state = 5 : q(i));
@@ -940,10 +940,10 @@ function t3(D, u) {
     _u(s) ? i.state = 25 : P(d, i);
   }
   function Mu(i, s) {
-    s === "." ? i.state = 27 : s === "-" ? i.state = 26 : jD(s) || q(i);
+    s === "." ? i.state = 27 : s === "-" ? i.state = 26 : $D(s) || q(i);
   }
   function mu(i, s) {
-    s === "-" || s === "." ? q(i) : jD(s) ? i.state = 25 : q(i);
+    s === "-" || s === "." ? q(i) : $D(s) ? i.state = 25 : q(i);
   }
   function Hu(i, s) {
     s === "." || s === "-" ? q(i) : _u(s) ? (i.state = 25, i.acceptStateReached = !0) : q(i);
@@ -966,7 +966,7 @@ function t3(D, u) {
   function TD(i, s) {
     Z.test(s) ? i.state = 33 : P(d, i), w(s);
   }
-  function $u(i, s) {
+  function ju(i, s) {
     Z.test(s) ? i.state = 34 : P(d, i);
   }
   function oD(i, s) {
@@ -996,31 +996,31 @@ function t3(D, u) {
   }
   function q(i) {
     if (P(d, i), !!i.acceptStateReached) {
-      var s = i.startIdx, j = D.slice(i.startIdx, c);
-      if (j = n3(j), i.type === "url") {
+      var s = i.startIdx, $ = D.slice(i.startIdx, c);
+      if ($ = n3($), i.type === "url") {
         var _1 = D.charAt(i.startIdx - 1);
         if (_1 === "@")
           return;
         var Uu = i.matchType;
         if (Uu === "scheme") {
-          var OD = Gf.exec(j);
-          if (OD && (s = s + OD.index, j = j.slice(OD.index)), !v0(j))
+          var OD = Gf.exec($);
+          if (OD && (s = s + OD.index, $ = $.slice(OD.index)), !v0($))
             return;
         } else if (Uu === "tld") {
-          if (!A0(j))
+          if (!A0($))
             return;
         } else if (Uu === "ipV4") {
-          if (!k0(j))
+          if (!k0($))
             return;
         } else
           Iu(Uu);
         r.push(new T0({
           tagBuilder: f,
-          matchedText: j,
+          matchedText: $,
           offset: s,
           urlMatchType: Uu,
-          url: j,
-          protocolRelativeMatch: j.slice(0, 2) === "//",
+          url: $,
+          protocolRelativeMatch: $.slice(0, 2) === "//",
           // TODO: Do these settings need to be passed to the match,
           // or should we handle them here in UrlMatcher?
           stripPrefix: e,
@@ -1028,38 +1028,38 @@ function t3(D, u) {
           decodePercentEncoding: t
         }));
       } else if (i.type === "email")
-        q0(j) && r.push(new L0({
+        q0($) && r.push(new L0({
           tagBuilder: f,
-          matchedText: j,
+          matchedText: $,
           offset: s,
-          email: j.replace(z0, "")
+          email: $.replace(z0, "")
         }));
       else if (i.type === "hashtag")
-        M0(j) && r.push(new U0({
+        M0($) && r.push(new U0({
           tagBuilder: f,
-          matchedText: j,
+          matchedText: $,
           offset: s,
           serviceName: n,
-          hashtag: j.slice(1)
+          hashtag: $.slice(1)
         }));
       else if (i.type === "mention")
-        G0(j, a) && r.push(new Y0({
+        G0($, a) && r.push(new Y0({
           tagBuilder: f,
-          matchedText: j,
+          matchedText: $,
           offset: s,
           serviceName: a,
-          mention: j.slice(1)
+          mention: $.slice(1)
           // strip off the '@' character at the beginning
         }));
       else if (i.type === "phone") {
-        if (j = j.replace(/ +$/g, ""), f3(j)) {
-          var v1 = j.replace(/[^0-9,;#]/g, "");
+        if ($ = $.replace(/ +$/g, ""), f3($)) {
+          var v1 = $.replace(/[^0-9,;#]/g, "");
           r.push(new e3({
             tagBuilder: f,
-            matchedText: j,
+            matchedText: $,
             offset: s,
             number: v1,
-            plusSign: j.charAt(0) === "+"
+            plusSign: $.charAt(0) === "+"
           }));
         }
       } else
@@ -1244,13 +1244,13 @@ function s3(D, u) {
     l === ">" ? W() : zu.test(l) ? d = 3 : W();
   }
   function _(l) {
-    du.test(l) || (l === "/" ? d = 12 : l === ">" ? J() : l === "<" ? Y() : l === "=" || $D.test(l) || F0.test(l) ? W() : d = 5);
+    du.test(l) || (l === "/" ? d = 12 : l === ">" ? J() : l === "<" ? Y() : l === "=" || jD.test(l) || F0.test(l) ? W() : d = 5);
   }
   function v(l) {
-    du.test(l) ? d = 6 : l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? J() : l === "<" ? Y() : $D.test(l) && W();
+    du.test(l) ? d = 6 : l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? J() : l === "<" ? Y() : jD.test(l) && W();
   }
   function p(l) {
-    du.test(l) || (l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? J() : l === "<" ? Y() : $D.test(l) ? W() : d = 5);
+    du.test(l) || (l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? J() : l === "<" ? Y() : jD.test(l) ? W() : d = 5);
   }
   function g(l) {
     du.test(l) || (l === '"' ? d = 8 : l === "'" ? d = 9 : /[>=`]/.test(l) ? W() : l === "<" ? Y() : d = 10);
@@ -1601,7 +1601,7 @@ function y3(D, u, f, e, F, t) {
           width: "10",
           "icon-name": "edit"
         }, {
-          default: $(() => [
+          default: j(() => [
             N(n)
           ]),
           _: 1
@@ -1621,7 +1621,7 @@ function y3(D, u, f, e, F, t) {
             width: "10",
             "icon-name": "remove"
           }, {
-            default: $(() => [
+            default: j(() => [
               N(r)
             ]),
             _: 1
@@ -1653,7 +1653,7 @@ function y3(D, u, f, e, F, t) {
           width: "10",
           "icon-name": "edited"
         }, {
-          default: $(() => [
+          default: j(() => [
             N(n)
           ]),
           _: 1
@@ -1708,7 +1708,7 @@ function O3(D, u, f, e, F, t) {
     ], 4)
   ], 4);
 }
-const $3 = /* @__PURE__ */ M(k3, [["render", O3], ["__scopeId", "data-v-a59a1bf3"]]), j3 = {
+const j3 = /* @__PURE__ */ M(k3, [["render", O3], ["__scopeId", "data-v-a59a1bf3"]]), $3 = {
   props: {
     data: {
       type: Object,
@@ -1719,7 +1719,7 @@ const $3 = /* @__PURE__ */ M(k3, [["render", O3], ["__scopeId", "data-v-a59a1bf3
 function I3(D, u, f, e, F, t) {
   return b(), m("div", P3, K(f.data.emoji), 1);
 }
-const z3 = /* @__PURE__ */ M(j3, [["render", I3], ["__scopeId", "data-v-ae11d5de"]]), N3 = {
+const z3 = /* @__PURE__ */ M($3, [["render", I3], ["__scopeId", "data-v-ae11d5de"]]), N3 = {
   props: {
     messageColors: {
       type: Object,
@@ -1767,7 +1767,7 @@ function M3(D, u, f, e, F, t) {
 const H3 = /* @__PURE__ */ M(L3, [["render", M3], ["__scopeId", "data-v-c0484e01"]]), Yf = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='-4749.48%20-5020%2035.036%2035.036'%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M0-399.479H17.555v17.555H0Z'%20transform='translate(0%20399.479)'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20transform='translate(-4886%20-5075)'%3e%3ccircle%20class='b'%20cx='17.518'%20cy='17.518'%20r='17.518'%20transform='translate(136.52%2055)'/%3e%3cg%20transform='translate(145.13%2064)'%3e%3cg%20class='c'%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='d'%20d='M-381.924-190.962a8.778,8.778,0,0,0-8.778-8.778,8.778,8.778,0,0,0-8.778,8.778,8.745,8.745,0,0,0,2.26,5.879v1.442c0,.8.492,1.457,1.1,1.457h5.83a.843.843,0,0,0,.183-.02,8.778,8.778,0,0,0,8.184-8.757'%20transform='translate(399.479%20199.74)'/%3e%3c/g%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='e'%20d='M-68.763-194.079a9.292,9.292,0,0,1,6.38-8.888c-.252-.022-.506-.033-.763-.033a8.774,8.774,0,0,0-8.778,8.778A9.508,9.508,0,0,0-69.7-188.3c.005,0,0,.009,0,.01-.311.352-1.924,2.849.021,2.849h2.25c-1.23-.022,1.263-2.107.269-3.494a8.225,8.225,0,0,1-1.6-5.141'%20transform='translate(71.924%20203)'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", U3 = {
   components: {
     TextMessage: w3,
-    FileMessage: $3,
+    FileMessage: j3,
     EmojiMessage: z3,
     TypingMessage: q3,
     SystemMessage: H3
@@ -1869,7 +1869,7 @@ function G3(D, u, f, e, F, t) {
         "confirmation-deletion-message": f.confirmationDeletionMessage,
         onRemove: u[0] || (u[0] = (o) => D.$emit("remove"))
       }, {
-        default: $((o) => [
+        default: j((o) => [
           O(D.$slots, "text-message-body", {
             message: o.message,
             messageText: o.messageText,
@@ -1877,7 +1877,7 @@ function G3(D, u, f, e, F, t) {
             me: o.me
           })
         ]),
-        "text-message-toolbox": $((o) => [
+        "text-message-toolbox": j((o) => [
           O(D.$slots, "text-message-toolbox", {
             message: o.message,
             me: o.me
@@ -1899,7 +1899,7 @@ function G3(D, u, f, e, F, t) {
         data: f.message.data,
         "message-colors": t.messageColors
       }, {
-        default: $(() => [
+        default: j(() => [
           O(D.$slots, "system-message-body", {
             message: f.message.data
           })
@@ -2013,13 +2013,13 @@ function Q3(D, u, f, e, F, t) {
       messageMargin: f.messageMargin,
       onRemove: (C) => D.$emit("remove", a)
     }, {
-      "user-avatar": $((C) => [
+      "user-avatar": j((C) => [
         O(D.$slots, "user-avatar", {
           user: C.user,
           message: C.message
         }, void 0, !0)
       ]),
-      "text-message-body": $((C) => [
+      "text-message-body": j((C) => [
         O(D.$slots, "text-message-body", {
           message: C.message,
           messageText: C.messageText,
@@ -2027,12 +2027,12 @@ function Q3(D, u, f, e, F, t) {
           me: C.me
         }, void 0, !0)
       ]),
-      "system-message-body": $((C) => [
+      "system-message-body": j((C) => [
         O(D.$slots, "system-message-body", {
           message: C.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": $((C) => [
+      "text-message-toolbox": j((C) => [
         O(D.$slots, "text-message-toolbox", {
           message: C.message,
           me: C.me
@@ -5309,6 +5309,10 @@ const ue = /* @__PURE__ */ uf(Z3), De = [
     onEmojiPicked: {
       type: Function,
       required: !0
+    },
+    colors: {
+      type: Object,
+      required: !0
     }
   },
   data() {
@@ -5334,6 +5338,7 @@ function ne(D, u, f, e, F, t) {
     ref: "domNode",
     tabIndex: "0",
     class: "sc-emoji-picker",
+    style: L({ background: f.colors.emojiPicker.bg ?? "white" }),
     onBlur: u[0] || (u[0] = (...n) => f.onBlur && f.onBlur(...n))
   }, [
     y("div", ee, [
@@ -5349,9 +5354,9 @@ function ne(D, u, f, e, F, t) {
         }, K(a), 9, Fe))), 128))
       ]))), 128))
     ])
-  ], 544);
+  ], 36);
 }
-const ae = /* @__PURE__ */ M(fe, [["render", ne], ["__scopeId", "data-v-237f8c4c"]]), de = {
+const ae = /* @__PURE__ */ M(fe, [["render", ne], ["__scopeId", "data-v-841cd2d4"]]), de = {
   components: {
     EmojiPicker: ae
   },
@@ -5362,6 +5367,10 @@ const ae = /* @__PURE__ */ M(fe, [["render", ne], ["__scopeId", "data-v-237f8c4c
     },
     color: {
       type: String,
+      required: !0
+    },
+    colors: {
+      type: Object,
       required: !0
     }
   },
@@ -5385,8 +5394,9 @@ function oe(D, u, f, e, F, t) {
     F.isActive ? (b(), V(n, {
       key: 0,
       "on-emoji-picked": f.onEmojiPicked,
-      "on-blur": t._handlePickerBlur
-    }, null, 8, ["on-emoji-picked", "on-blur"])) : R("", !0),
+      "on-blur": t._handlePickerBlur,
+      colors: f.colors
+    }, null, 8, ["on-emoji-picked", "on-blur", "colors"])) : R("", !0),
     y("button", {
       class: "sc-user-input--emoji-icon-wrapper",
       onClick: u[0] || (u[0] = Gu((...a) => t._openPicker && t._openPicker(...a), ["prevent"])),
@@ -5434,7 +5444,7 @@ function oe(D, u, f, e, F, t) {
     ])
   ]);
 }
-const se = /* @__PURE__ */ M(de, [["render", oe], ["__scopeId", "data-v-67e6e85b"]]), Ce = {
+const se = /* @__PURE__ */ M(de, [["render", oe], ["__scopeId", "data-v-967f979e"]]), Ce = {
   props: {
     onChange: {
       type: Function,
@@ -5510,7 +5520,7 @@ function ge(D, u, f, e, F, t) {
       height: "20",
       "icon-name": f.tooltip
     }, {
-      default: $(() => [
+      default: j(() => [
         O(D.$slots, "default", {}, void 0, !0)
       ]),
       _: 3
@@ -5552,11 +5562,11 @@ const Ae = /* @__PURE__ */ M(he, [["render", ve]]), ye = "data:image/svg+xml,%3c
 function Se(D, u) {
   return b(), m("path", xe);
 }
-const Te = /* @__PURE__ */ M(ke, [["render", Se]]), Oe = {}, $e = { d: "M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z" };
-function je(D, u) {
-  return b(), m("path", $e);
+const Te = /* @__PURE__ */ M(ke, [["render", Se]]), Oe = {}, je = { d: "M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z" };
+function $e(D, u) {
+  return b(), m("path", je);
 }
-const Pe = /* @__PURE__ */ M(Oe, [["render", je]]), Ie = {
+const Pe = /* @__PURE__ */ M(Oe, [["render", $e]]), Ie = {
   components: {
     EmojiIcon: se,
     FileIcons: Be,
@@ -5797,8 +5807,9 @@ function We(D, u, f, e, F, t) {
         f.showEmoji && !t.isEditing ? (b(), m("div", Me, [
           N(a, {
             "on-emoji-picked": t._handleEmojiPicked,
-            color: f.colors.userInput.text
-          }, null, 8, ["on-emoji-picked", "color"])
+            color: f.colors.userInput.text,
+            colors: f.colors
+          }, null, 8, ["on-emoji-picked", "color", "colors"])
         ])) : R("", !0),
         f.showFile && !t.isEditing ? (b(), m("div", He, [
           N(r, {
@@ -5812,7 +5823,7 @@ function We(D, u, f, e, F, t) {
             tooltip: "cancel",
             onClick: Gu(t._editFinish, ["prevent"])
           }, {
-            default: $(() => [
+            default: j(() => [
               N(C)
             ]),
             _: 1
@@ -5825,7 +5836,7 @@ function We(D, u, f, e, F, t) {
             tooltip: "Edit",
             onClick: Gu(t._editText, ["prevent"])
           }, {
-            default: $(() => [
+            default: j(() => [
               N(c)
             ]),
             _: 1
@@ -5835,7 +5846,7 @@ function We(D, u, f, e, F, t) {
             tooltip: "Send",
             onClick: Gu(t._submitText, ["prevent"])
           }, {
-            default: $(() => [
+            default: j(() => [
               N(o)
             ]),
             _: 1
@@ -6000,7 +6011,7 @@ function D2(D, u, f, e, F, t) {
       onClose: u[0] || (u[0] = (d) => D.$emit("close")),
       onUserList: t.handleUserListToggle
     }, {
-      default: $(() => [
+      default: j(() => [
         O(D.$slots, "header", {}, void 0, !0)
       ]),
       _: 3
@@ -6024,13 +6035,13 @@ function D2(D, u, f, e, F, t) {
       onScrollToTop: u[1] || (u[1] = (d) => D.$emit("scrollToTop")),
       onRemove: u[2] || (u[2] = (d) => D.$emit("remove", d))
     }, {
-      "user-avatar": $((d) => [
+      "user-avatar": j((d) => [
         O(D.$slots, "user-avatar", {
           user: d.user,
           message: d.message
         }, void 0, !0)
       ]),
-      "text-message-body": $((d) => [
+      "text-message-body": j((d) => [
         O(D.$slots, "text-message-body", {
           message: d.message,
           messageText: d.messageText,
@@ -6038,12 +6049,12 @@ function D2(D, u, f, e, F, t) {
           me: d.me
         }, void 0, !0)
       ]),
-      "system-message-body": $((d) => [
+      "system-message-body": j((d) => [
         O(D.$slots, "system-message-body", {
           message: d.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": $((d) => [
+      "text-message-toolbox": j((d) => [
         O(D.$slots, "text-message-toolbox", {
           message: d.message,
           me: d.me
@@ -6290,16 +6301,16 @@ function r2(D, u, f, e, F, t) {
       onEdit: u[3] || (u[3] = (a) => D.$emit("edit", a)),
       onRemove: u[4] || (u[4] = (a) => D.$emit("remove", a))
     }, {
-      header: $(() => [
+      header: j(() => [
         O(D.$slots, "header", {}, void 0, !0)
       ]),
-      "user-avatar": $((a) => [
+      "user-avatar": j((a) => [
         O(D.$slots, "user-avatar", {
           user: a.user,
           message: a.message
         }, void 0, !0)
       ]),
-      "text-message-body": $((a) => [
+      "text-message-body": j((a) => [
         O(D.$slots, "text-message-body", {
           message: a.message,
           messageText: a.messageText,
@@ -6307,12 +6318,12 @@ function r2(D, u, f, e, F, t) {
           me: a.me
         }, void 0, !0)
       ]),
-      "system-message-body": $((a) => [
+      "system-message-body": j((a) => [
         O(D.$slots, "system-message-body", {
           message: a.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": $((a) => [
+      "text-message-toolbox": j((a) => [
         O(D.$slots, "text-message-toolbox", {
           message: a.message,
           me: a.me
@@ -6565,7 +6576,7 @@ function mf(D) {
   }
   return Object.assign({}, x, (u = {}, u[_] = h ? E + "px" : "", u[w] = A ? o + "px" : "", u.transform = "", u));
 }
-function $2(D) {
+function j2(D) {
   var u = D.state, f = D.options, e = f.gpuAcceleration, F = e === void 0 ? !0 : e, t = f.adaptive, n = t === void 0 ? !0 : t, a = f.roundOffsets, r = a === void 0 ? !0 : a;
   if (process.env.NODE_ENV !== "production") {
     var C = Cu(u.elements.popper).transitionProperty || "";
@@ -6597,11 +6608,11 @@ function $2(D) {
     "data-popper-placement": u.placement
   });
 }
-const j2 = {
+const $2 = {
   name: "computeStyles",
   enabled: !0,
   phase: "beforeWrite",
-  fn: $2,
+  fn: j2,
   data: {}
 };
 var BD = {
@@ -6980,8 +6991,8 @@ function f8(D) {
         k[p] = iD, I[p] = iD - nu;
       }
       if (a) {
-        var SD = p === "x" ? eu : tu, TD = p === "x" ? ou : su, $u = k[g], oD = $u + h[SD], sD = $u - h[TD], CD = mD(B ? Ju(oD, dD) : oD, $u, B ? vu(sD, rD) : sD);
-        k[g] = CD, I[g] = CD - $u;
+        var SD = p === "x" ? eu : tu, TD = p === "x" ? ou : su, ju = k[g], oD = ju + h[SD], sD = ju - h[TD], CD = mD(B ? Ju(oD, dD) : oD, ju, B ? vu(sD, rD) : sD);
+        k[g] = CD, I[g] = CD - ju;
       }
     }
     u.modifiersData[e] = I;
@@ -7258,7 +7269,7 @@ function l8(D) {
     return B;
   };
 }
-var B8 = [I2, u8, j2, v2, J2, G2, e8, S2, Y2], b8 = /* @__PURE__ */ l8({
+var B8 = [I2, u8, $2, v2, J2, G2, e8, S2, Y2], b8 = /* @__PURE__ */ l8({
   defaultModifiers: B8
 });
 function p8() {
@@ -7595,7 +7606,7 @@ function x8(D, u) {
   var f = D.indexOf(u);
   f !== -1 && D.splice(f, 1);
 }
-var Pu = [], ju = null, YD = function() {
+var Pu = [], $u = null, YD = function() {
 };
 typeof window < "u" && (YD = window.Element);
 var d1 = function() {
@@ -7891,15 +7902,15 @@ var d1 = function() {
       },
       $_scheduleShow: function() {
         var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1;
-        if (this.$_hideInProgress = !1, clearTimeout(this.$_scheduleTimer), ju && this.instantMove && ju.instantMove) {
-          ju.$_applyHide(!0), this.$_applyShow(!0);
+        if (this.$_hideInProgress = !1, clearTimeout(this.$_scheduleTimer), $u && this.instantMove && $u.instantMove) {
+          $u.$_applyHide(!0), this.$_applyShow(!0);
           return;
         }
         u ? this.$_applyShow() : this.$_scheduleTimer = setTimeout(this.$_applyShow.bind(this), this.$_computeDelay("show"));
       },
       $_scheduleHide: function() {
         var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1;
-        this.$_hideInProgress = !0, clearTimeout(this.$_scheduleTimer), this.isShown && (ju = this), u ? this.$_applyHide() : this.$_scheduleTimer = setTimeout(this.$_applyHide.bind(this), this.$_computeDelay("hide"));
+        this.$_hideInProgress = !0, clearTimeout(this.$_scheduleTimer), this.isShown && ($u = this), u ? this.$_applyHide() : this.$_scheduleTimer = setTimeout(this.$_applyHide.bind(this), this.$_computeDelay("hide"));
       },
       $_computeDelay: function(u) {
         var f = this.delay;
@@ -7924,7 +7935,7 @@ var d1 = function() {
             if (f)
               for (var e, F = 0; F < Pu.length; F++)
                 e = Pu[F], e.showGroup !== f && (e.hide(), e.$emit("close-group"));
-            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield $f(), u.classes.showFrom = !1, u.classes.showTo = !0;
+            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield jf(), u.classes.showFrom = !1, u.classes.showTo = !0;
           }
         })();
       },
@@ -7933,14 +7944,14 @@ var d1 = function() {
         return xu(function* () {
           var e = u.length > 0 && u[0] !== void 0 ? u[0] : !1;
           if (clearTimeout(f.$_scheduleTimer), !!f.isShown) {
-            f.skipTransition = e, x8(Pu, f), ju === f && (ju = null), f.isShown = !1, f.popperInstance && (yield f.$_refreshPopperOptions()), f.$_applyAttrsToTarget({
+            f.skipTransition = e, x8(Pu, f), $u === f && ($u = null), f.isShown = !1, f.popperInstance && (yield f.$_refreshPopperOptions()), f.$_applyAttrsToTarget({
               "aria-describedby": void 0,
               "data-popper-shown": void 0
             }), clearTimeout(f.$_disposeTimer);
             var F = z(f.theme, "disposeTimeout");
             F !== null && (f.$_disposeTimer = setTimeout(function() {
               f.$_popperNode && (f.$_detachPopperNode(), f.isMounted = !1);
-            }, F)), f.$emit("apply-hide"), f.classes.showFrom = !1, f.classes.showTo = !1, f.classes.hideFrom = !0, f.classes.hideTo = !1, yield $f(), f.classes.hideFrom = !1, f.classes.hideTo = !0;
+            }, F)), f.$emit("apply-hide"), f.classes.showFrom = !1, f.classes.showTo = !1, f.classes.hideFrom = !0, f.classes.hideTo = !1, yield jf(), f.classes.hideFrom = !1, f.classes.hideTo = !0;
           }
         })();
       },
@@ -8052,7 +8063,7 @@ function r1(D) {
   }, e = 0; e < Pu.length; e++)
     f(e);
 }
-function $f() {
+function jf() {
   return new Promise(function(D) {
     return requestAnimationFrame(D);
   });
@@ -8082,10 +8093,10 @@ var i1 = {
   emits: ["hide", "resize"]
 }, O8 = {
   class: "v-popper__wrapper"
-}, $8 = {
+}, j8 = {
   ref: "inner",
   class: "v-popper__inner"
-}, j8 = {
+}, $8 = {
   ref: "arrow",
   class: "v-popper__arrow-container"
 }, P8 = /* @__PURE__ */ N(
@@ -8121,7 +8132,7 @@ function I8(D, u, f, e, F, t) {
     },
     [N("div", O8, [N(
       "div",
-      $8,
+      j8,
       [f.mounted ? (b(), V(
         Ru,
         {
@@ -8140,7 +8151,7 @@ function I8(D, u, f, e, F, t) {
       /* NEED_PATCH */
     ), N(
       "div",
-      j8,
+      $8,
       [P8],
       512
       /* NEED_PATCH */
@@ -8217,7 +8228,7 @@ function z8(D, u, f, e, F, t) {
       }
     }),
     {
-      default: $(function(r) {
+      default: j(function(r) {
         var C = r.popperId, d = r.isShown, c = r.shouldMountContent, o = r.skipTransition, B = r.autoHide, E = r.hide, A = r.handleResize, h = r.onResize, w = r.classes;
         return [N(
           "div",
@@ -8243,7 +8254,7 @@ function z8(D, u, f, e, F, t) {
               onResize: h
             },
             {
-              default: $(function() {
+              default: j(function() {
                 return [O(D.$slots, "popper", {
                   shown: d
                 })];
@@ -8385,7 +8396,7 @@ function N8(D, u, f, e, F, t) {
       onApplyHide: t.onHide
     }),
     {
-      default: $(function(r) {
+      default: j(function(r) {
         var C = r.popperId, d = r.isShown, c = r.shouldMountContent, o = r.skipTransition, B = r.autoHide, E = r.hide, A = r.handleResize, h = r.onResize, w = r.classes;
         return [N(
           n,
@@ -8406,7 +8417,7 @@ function N8(D, u, f, e, F, t) {
             onResize: h
           },
           {
-            default: $(function() {
+            default: j(function() {
               return [f.html ? (b(), V(
                 "div",
                 {
@@ -8474,7 +8485,7 @@ function C1(D, u, f) {
   }, e;
 }
 function q8(D, u, f) {
-  var e = C1(D, u, f), F = D.$_popper = $1({
+  var e = C1(D, u, f), F = D.$_popper = j1({
     name: "VTooltipDirective",
     data: function() {
       return {
@@ -8482,7 +8493,7 @@ function q8(D, u, f) {
       };
     },
     render: function() {
-      return j1(af, iu(iu({}, this.options), {}, {
+      return $1(af, iu(iu({}, this.options), {}, {
         ref: "tooltip"
       }));
     }
@@ -8492,7 +8503,7 @@ function q8(D, u, f) {
 function c1(D) {
   D.$_popper && (D.$_popper.unmount(), delete D.$_popper, delete D.$_popperOldShown), D.classList && D.classList.remove(s1);
 }
-function jf(D, u) {
+function $f(D, u) {
   var f = u.value, e = u.modifiers, F = C1(D, f, e);
   if (!F.content || z(F.theme || "tooltip", "disabled"))
     c1(D);
@@ -8502,8 +8513,8 @@ function jf(D, u) {
   }
 }
 var L8 = {
-  beforeMount: jf,
-  updated: jf,
+  beforeMount: $f,
+  updated: $f,
   beforeUnmount: function(u) {
     c1(u);
   }
