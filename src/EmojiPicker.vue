@@ -90,6 +90,7 @@ export default {
   right: 55px;
   transform: rotate(45deg);
   border-radius: 2px;
+  z-index: -1;
 }
 
 .sc-emoji-picker--content {
