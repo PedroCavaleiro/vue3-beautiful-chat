@@ -18,7 +18,7 @@ export default defineConfig({
       external: ['vue'],
       output: [
         {
-          assetFileNames: 'assets/[name].[hash][extname]',
+          assetFileNames: '[name].[hash][extname]',
           format: 'umd',
           name: 'VueBeatifulChat',
           globals: {
@@ -26,7 +26,7 @@ export default defineConfig({
           }
         },
         {
-          assetFileNames: 'assets/[name].[hash][extname]',
+          assetFileNames: '[name].[hash][extname]',
           format: 'esm',
           globals: {
             vue: 'Vue'
