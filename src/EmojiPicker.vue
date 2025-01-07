@@ -2,7 +2,10 @@
   <div ref="domNode" tabIndex="0" class="sc-emoji-picker" :style="{ background: colors.emojiPicker.bg ?? 'white'  }" @blur="onBlur">
     <div class="sc-emoji-picker--content">
       <div v-for="category in emojiData" :key="category.name" class="sc-emoji-picker--category">
-        <div class="sc-emoji-picker--category-title">{{ category.name }}</div>
+        <div
+            class="sc-emoji-picker--category-title"
+            :style="{ color: colors.emojiPicker.text ?? '#b8c3ca' }"
+        >{{ category.name }}</div>
         <span
           v-for="emoji in category.emojis"
           :key="emoji"
@@ -99,7 +102,6 @@ export default {
   max-height: 195px;
   margin-top: 7px;
   box-sizing: border-box;
-  z-index: 99;
 }
 
 .sc-emoji-picker--category {
@@ -110,7 +112,6 @@ export default {
 
 .sc-emoji-picker--category-title {
   min-width: 100%;
-  color: #b8c3ca;
   font-weight: 200;
   font-size: 13px;
   margin: 5px;
@@ -126,6 +127,7 @@ export default {
   vertical-align: middle;
   font-size: 28px;
   transition: transform 60ms ease-out;
+  z-index: 1;
 }
 
 .sc-emoji-picker--emoji:hover {
