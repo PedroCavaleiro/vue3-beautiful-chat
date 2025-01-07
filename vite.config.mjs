@@ -1,9 +1,9 @@
-import dynamicImportVars from '@rollup/plugin-dynamic-import-vars'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import path from 'path';
+import dynamicImportVars from '@rollup/plugin-dynamic-import-vars';
 
-const path = require('path')
-
-module.exports = {
+export default defineConfig({
   outDir: 'dist',
   plugins: [
     vue()
@@ -18,13 +18,15 @@ module.exports = {
       external: ['vue'],
       output: [
         {
-          assetFileNames: 'vue-beatiful-chat.css',
+          assetFileNames: 'assets/[name].[hash][extname]',
           format: 'umd',
+          name: 'VueBeatifulChat',
           globals: {
             vue: 'Vue'
           }
         },
         {
+          assetFileNames: 'assets/[name].[hash][extname]',
           format: 'esm',
           globals: {
             vue: 'Vue'
@@ -33,4 +35,5 @@ module.exports = {
       ]
     }
   }
-}
+});
+

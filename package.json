@@ -1,11 +1,12 @@
 {
   "name": "vue3-beautiful-chat",
-  "version": "3.3.3-250107.1705",
+  "version": "3.3.3-250107.1719",
   "description": "A simple and beautiful Vue 3 chat component backend agnostic.",
   "main": "index.js",
   "repository": "https://github.com/Sitronik/vue3-beautiful-chat.git",
   "author": "Sitronik <sitronik92@mail.ru>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "vue-cli-service serve ./demo/src/main.js",
     "build:prod": "vite build",
