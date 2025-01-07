@@ -99,7 +99,7 @@ export default {
   max-height: 195px;
   margin-top: 7px;
   box-sizing: border-box;
-  z-index: 1;
+  z-index: 99;
 }
 
 .sc-emoji-picker--category {
