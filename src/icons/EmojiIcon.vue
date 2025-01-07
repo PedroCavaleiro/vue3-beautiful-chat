@@ -1,7 +1,11 @@
 <template>
   <div class="sc-user-input--picker-wrapper">
     <EmojiPicker v-if="isActive" :on-emoji-picked="onEmojiPicked" :on-blur="_handlePickerBlur" />
-    <button class="sc-user-input--emoji-icon-wrapper" @click.prevent="_openPicker">
+    <button
+        class="sc-user-input--emoji-icon-wrapper"
+        @click.prevent="_openPicker"
+        :style="{marginTop: '4px', marginLeft: '-4px'}"
+    >
       <svg
         id="Layer_2"
         class="sc-user-input--emoji-icon"
@@ -14,7 +18,7 @@
         height="37.393px"
         viewBox="0 0 37.393 37.393"
         enableBackground="new 0 0 37.393 37.393"
-        :style="{fill: color}"
+        :color="color"
       >
         <g>
           <path

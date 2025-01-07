@@ -1,6 +1,11 @@
 <template>
   <div style="position: relative">
-    <button class="sc-user-input--file-icon-wrapper" type="button" @click="_handleClick">
+    <button
+        class="sc-user-input--file-icon-wrapper"
+        type="button"
+        @click="_handleClick"
+        :style="{marginTop: '8px'}"
+    >
       <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +16,7 @@
           height="24px"
           viewBox="0 0 37.393 37.393"
           enableBackground="new 0 0 37.393 37.393"
-          :style="{fill: color, marginTop: '8px'}"
+          :color="color"
       >
         <path
             :style="{fill: color}"
