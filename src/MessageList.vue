@@ -5,7 +5,6 @@
     :style="{backgroundColor: colors.messageList.bg}"
     @scroll="handleScroll"
   >
-    <TransitionGroup tag="div">
     <Message
       v-for="(message, idx) in messages"
       :key="message.id ? message.id : idx"
@@ -48,7 +47,6 @@
       :show-confirmation-deletion="showConfirmationDeletion"
       :confirmation-deletion-message="confirmationDeletionMessage"
     />
-    </TransitionGroup>
   </div>
 </template>
 
