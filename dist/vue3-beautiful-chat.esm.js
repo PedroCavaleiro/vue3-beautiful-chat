@@ -5362,7 +5362,7 @@ function ne(D, u, f, e, F, t) {
     ])
   ], 36);
 }
-const ae = /* @__PURE__ */ M(fe, [["render", ne], ["__scopeId", "data-v-8aba4e39"]]), de = {
+const ae = /* @__PURE__ */ M(fe, [["render", ne], ["__scopeId", "data-v-11bb4075"]]), de = {
   components: {
     EmojiPicker: ae
   },

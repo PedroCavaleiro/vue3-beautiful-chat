@@ -90,7 +90,6 @@ export default {
   right: 55px;
   transform: rotate(45deg);
   border-radius: 2px;
-  z-index: -1;
 }
 
 .sc-emoji-picker--content {
@@ -100,6 +99,7 @@ export default {
   max-height: 195px;
   margin-top: 7px;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .sc-emoji-picker--category {
