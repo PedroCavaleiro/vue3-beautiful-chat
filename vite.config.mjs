@@ -11,7 +11,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.js'),
-      name: 'VueBeatifulChat'
+      name: 'VueBeatifulChat',
+      fileName: (format) => `vue3-beautiful-chat.${format === 'umd' ? 'umd.js' : 'esm.js'}`
     },
     rollupOptions: {
       plugins: [dynamicImportVars()],
