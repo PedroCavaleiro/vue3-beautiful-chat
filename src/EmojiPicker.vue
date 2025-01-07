@@ -48,7 +48,16 @@ export default {
       elem.style.transition = 'opacity 350ms'
       elem.style.opacity = 1
     })
-    this.$refs.domNode.focus()
+    this.$refs.domNode.focus();
+
+    const style = document.createElement('style')
+    style.innerHTML = `
+      .sc-emoji-picker:after {
+        background: ${this.colors.emojiPicker.bg ?? 'white'};
+      }
+    `
+    document.head.appendChild(style)
+
     this.emojiConvertor.init_env()
   },
   methods: {
@@ -68,7 +77,6 @@ export default {
   width: 330px;
   max-height: 215px;
   box-shadow: 0px 7px 40px 2px rgba(148, 149, 150, 0.3);
-  background: white;
   border-radius: 10px;
   outline: none;
 }
@@ -77,7 +85,6 @@ export default {
   content: '';
   width: 14px;
   height: 14px;
-  background: white;
   position: absolute;
   bottom: -6px;
   right: 55px;

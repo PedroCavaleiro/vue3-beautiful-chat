@@ -5325,7 +5325,13 @@ const ue = /* @__PURE__ */ uf(Z3), De = [
     const D = this.$refs.domNode;
     D.style.opacity = 0, window.requestAnimationFrame(() => {
       D.style.transition = "opacity 350ms", D.style.opacity = 1;
-    }), this.$refs.domNode.focus(), this.emojiConvertor.init_env();
+    }), this.$refs.domNode.focus();
+    const u = document.createElement("style");
+    u.innerHTML = `
+      .sc-emoji-picker:after {
+        background: ${this.colors.emojiPicker.bg ?? "white"};
+      }
+    `, document.head.appendChild(u), this.emojiConvertor.init_env();
   },
   methods: {
     emojiClicked(D) {
@@ -5356,7 +5362,7 @@ function ne(D, u, f, e, F, t) {
     ])
   ], 36);
 }
-const ae = /* @__PURE__ */ M(fe, [["render", ne], ["__scopeId", "data-v-841cd2d4"]]), de = {
+const ae = /* @__PURE__ */ M(fe, [["render", ne], ["__scopeId", "data-v-724ccc7d"]]), de = {
   components: {
     EmojiPicker: ae
   },
