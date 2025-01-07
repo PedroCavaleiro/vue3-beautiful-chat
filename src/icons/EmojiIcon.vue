@@ -14,6 +14,7 @@
         height="37.393px"
         viewBox="0 0 37.393 37.393"
         enableBackground="new 0 0 37.393 37.393"
+        :style="{fill: color}"
       >
         <g>
           <path
