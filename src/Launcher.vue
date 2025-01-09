@@ -71,7 +71,7 @@
 import store from './store/'
 import ChatWindow from './ChatWindow.vue'
 
-import CloseIcon from './assets/close-icon.png'
+import CloseIcon from './assets/close.svg'
 import OpenIcon from './assets/logo-no-bg.svg'
 
 export default {
@@ -89,6 +89,10 @@ export default {
           },
           close: {
             img: CloseIcon,
+            name: 'default'
+          },
+          minimize: {
+            img: null,
             name: 'default'
           }
         }

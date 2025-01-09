@@ -1,6 +1,6 @@
 import { reactive as A1, openBlock as p, createElementBlock as m, normalizeStyle as I, createCommentVNode as z, renderSlot as O, createTextVNode as Nu, toDisplayString as Q, createElementVNode as b, resolveComponent as T, createVNode as L, withCtx as j, resolveDirective as y1, normalizeClass as DD, withDirectives as qf, createBlock as V, Fragment as qu, renderList as Ku, vShow as w1, withModifiers as Gu, pushScopeId as k1, popScopeId as x1, nextTick as S1, withScopeId as T1, withKeys as O1, mergeProps as Lf, createApp as j1, h as $1 } from "vue";
 const Du = {
-  state: A1({
+  state: y1({
     editMessage: null
   }),
   setState(D, u) {
@@ -448,12 +448,12 @@ function Vu(D) {
   return zu.test(D);
 }
 function rf(D) {
-  return zu.test(D) || Z.test(D) || D === "+" || D === "-" || D === ".";
+  return zu.test(D) || J.test(D) || D === "+" || D === "-" || D === ".";
 }
 function _u(D) {
   return Su.test(D);
 }
-function $D(D) {
+function jD(D) {
   return D === "_" || _u(D);
 }
 function of(D) {
@@ -777,7 +777,7 @@ function f3(D, u) {
             X(E, o);
             break;
           case 19:
-            J(E, o);
+            Q(E, o);
             break;
           case 20:
             lu(E, o);
@@ -822,7 +822,7 @@ function f3(D, u) {
             TD(E, o);
             break;
           case 33:
-            ju(E, o);
+            $u(E, o);
             break;
           case 34:
             oD(E, o);
@@ -837,16 +837,16 @@ function f3(D, u) {
             SD(E, o);
             break;
           case 38:
-            b1(E, o);
-            break;
-          case 39:
             g1(E, o);
             break;
-          case 40:
+          case 39:
             m1(E, o);
             break;
-          case 41:
+          case 40:
             h1(E, o);
+            break;
+          case 41:
+            _1(E, o);
             break;
           default:
             Iu(E.state);
@@ -899,7 +899,7 @@ function f3(D, u) {
         /* State.PhoneNumberOpenParen */
       ));
     else {
-      if (Z.test(i) && (d.push(qD(
+      if (J.test(i) && (d.push(qD(
         c,
         38
         /* State.PhoneNumberDigit */
@@ -1027,22 +1027,22 @@ function f3(D, u) {
     Cf(s) || (Su.test(s) ? P(d, i) : R(i));
   }
   function SD(i, s) {
-    Z.test(s) ? i.state = 38 : (P(d, i), w(s));
+    J.test(s) ? i.state = 38 : (P(d, i), w(s));
   }
   function TD(i, s) {
-    Z.test(s) ? i.state = 33 : P(d, i), w(s);
+    J.test(s) ? i.state = 33 : P(d, i), w(s);
   }
-  function ju(i, s) {
-    Z.test(s) ? i.state = 34 : P(d, i);
+  function $u(i, s) {
+    J.test(s) ? i.state = 34 : P(d, i);
   }
   function oD(i, s) {
-    Z.test(s) ? i.state = 35 : P(d, i);
+    J.test(s) ? i.state = 35 : P(d, i);
   }
   function sD(i, s) {
     s === ")" ? i.state = 36 : P(d, i);
   }
   function CD(i, s) {
-    Z.test(s) ? i.state = 38 : cf(s) ? i.state = 39 : P(d, i);
+    J.test(s) ? i.state = 38 : cf(s) ? i.state = 39 : P(d, i);
   }
   function b1(i, s) {
     i.acceptStateReached = !0, zD(s) ? i.state = 40 : s === "#" ? i.state = 41 : Z.test(s) || (s === "(" ? i.state = 32 : cf(s) ? i.state = 39 : (R(i), Vu(s) && d.push(cD(
@@ -1082,11 +1082,11 @@ function f3(D, u) {
           Iu(Uu);
         r.push(new x0({
           tagBuilder: f,
-          matchedText: $,
+          matchedText: j,
           offset: s,
           urlMatchType: Uu,
-          url: $,
-          protocolRelativeMatch: $.slice(0, 2) === "//",
+          url: j,
+          protocolRelativeMatch: j.slice(0, 2) === "//",
           // TODO: Do these settings need to be passed to the match,
           // or should we handle them here in UrlMatcher?
           stripPrefix: e,
@@ -1096,25 +1096,25 @@ function f3(D, u) {
       } else if (i.type === "email")
         N0($) && r.push(new q0({
           tagBuilder: f,
-          matchedText: $,
+          matchedText: j,
           offset: s,
           email: $.replace(P0, "")
         }));
       else if (i.type === "hashtag")
         L0($) && r.push(new M0({
           tagBuilder: f,
-          matchedText: $,
+          matchedText: j,
           offset: s,
           serviceName: n,
-          hashtag: $.slice(1)
+          hashtag: j.slice(1)
         }));
       else if (i.type === "mention")
         V0($, a) && r.push(new G0({
           tagBuilder: f,
-          matchedText: $,
+          matchedText: j,
           offset: s,
           serviceName: a,
-          mention: $.slice(1)
+          mention: j.slice(1)
           // strip off the '@' character at the beginning
         }));
       else if (i.type === "phone") {
@@ -1122,10 +1122,10 @@ function f3(D, u) {
           var v1 = $.replace(/[^0-9,;#]/g, "");
           r.push(new D3({
             tagBuilder: f,
-            matchedText: $,
+            matchedText: j,
             offset: s,
-            number: v1,
-            plusSign: $.charAt(0) === "+"
+            number: A1,
+            plusSign: j.charAt(0) === "+"
           }));
         }
       } else
@@ -1352,10 +1352,10 @@ function i3(D, u) {
     l === "-" ? d = 18 : d = 16;
   }
   function Eu(l) {
-    l === ">" ? J() : l === "!" ? d = 19 : l === "-" || (d = 16);
+    l === ">" ? Q() : l === "!" ? d = 19 : l === "-" || (d = 16);
   }
   function au(l) {
-    l === "-" ? d = 17 : l === ">" ? J() : d = 16;
+    l === "-" ? d = 17 : l === ">" ? Q() : d = 16;
   }
   function yu(l) {
     l === ">" ? J() : l === "<" && X();
@@ -1366,7 +1366,7 @@ function i3(D, u) {
   function X() {
     d = 1, o = new pu({ idx: r });
   }
-  function J() {
+  function Q() {
     var l = D.slice(c, o.idx);
     l && F(l, c), o.type === "comment" ? t(o.idx) : o.type === "doctype" ? n(o.idx) : (o.isOpening && f(o.name, o.idx), o.isClosing && e(o.name, o.idx)), W(), c = r + 1;
   }
@@ -1935,7 +1935,7 @@ function V3(D, u, f, e, F, t) {
         "confirmation-deletion-message": f.confirmationDeletionMessage,
         onRemove: u[0] || (u[0] = (o) => D.$emit("remove"))
       }, {
-        default: j((o) => [
+        default: $((o) => [
           O(D.$slots, "text-message-body", {
             message: o.message,
             messageText: o.messageText,
@@ -1943,7 +1943,7 @@ function V3(D, u, f, e, F, t) {
             me: o.me
           })
         ]),
-        "text-message-toolbox": j((o) => [
+        "text-message-toolbox": $((o) => [
           O(D.$slots, "text-message-toolbox", {
             message: o.message,
             me: o.me
@@ -1965,7 +1965,7 @@ function V3(D, u, f, e, F, t) {
         data: f.message.data,
         "message-colors": t.messageColors
       }, {
-        default: j(() => [
+        default: $(() => [
           O(D.$slots, "system-message-body", {
             message: f.message.data
           })
@@ -2079,13 +2079,13 @@ function Y3(D, u, f, e, F, t) {
       messageMargin: f.messageMargin,
       onRemove: (C) => D.$emit("remove", a)
     }, {
-      "user-avatar": j((C) => [
+      "user-avatar": $((C) => [
         O(D.$slots, "user-avatar", {
           user: C.user,
           message: C.message
         }, void 0, !0)
       ]),
-      "text-message-body": j((C) => [
+      "text-message-body": $((C) => [
         O(D.$slots, "text-message-body", {
           message: C.message,
           messageText: C.messageText,
@@ -2093,12 +2093,12 @@ function Y3(D, u, f, e, F, t) {
           me: C.me
         }, void 0, !0)
       ]),
-      "system-message-body": j((C) => [
+      "system-message-body": $((C) => [
         O(D.$slots, "system-message-body", {
           message: C.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": j((C) => [
+      "text-message-toolbox": $((C) => [
         O(D.$slots, "text-message-toolbox", {
           message: C.message,
           me: C.me
@@ -2114,7 +2114,7 @@ function Y3(D, u, f, e, F, t) {
       "show-confirmation-deletion": f.showConfirmationDeletion,
       "confirmation-deletion-message": f.confirmationDeletionMessage
     }, null, 8, ["message", "user", "colors", "message-styling", "show-confirmation-deletion", "confirmation-deletion-message"]), [
-      [w1, f.showTypingIndicator !== ""]
+      [k1, f.showTypingIndicator !== ""]
     ])
   ], 36);
 }
@@ -5601,7 +5601,7 @@ function pe(D, u, f, e, F, t) {
       height: "20",
       "icon-name": f.tooltip
     }, {
-      default: j(() => [
+      default: $(() => [
         O(D.$slots, "default", {}, void 0, !0)
       ]),
       _: 3
@@ -6104,7 +6104,7 @@ function Ze(D, u, f, e, F, t) {
       onMinimize: u[1] || (u[1] = (d) => D.$emit("minimize")),
       onUserList: t.handleUserListToggle
     }, {
-      default: j(() => [
+      default: $(() => [
         O(D.$slots, "header", {}, void 0, !0)
       ]),
       _: 3
@@ -6128,13 +6128,13 @@ function Ze(D, u, f, e, F, t) {
       onScrollToTop: u[2] || (u[2] = (d) => D.$emit("scrollToTop")),
       onRemove: u[3] || (u[3] = (d) => D.$emit("remove", d))
     }, {
-      "user-avatar": j((d) => [
+      "user-avatar": $((d) => [
         O(D.$slots, "user-avatar", {
           user: d.user,
           message: d.message
         }, void 0, !0)
       ]),
-      "text-message-body": j((d) => [
+      "text-message-body": $((d) => [
         O(D.$slots, "text-message-body", {
           message: d.message,
           messageText: d.messageText,
@@ -6142,12 +6142,12 @@ function Ze(D, u, f, e, F, t) {
           me: d.me
         }, void 0, !0)
       ]),
-      "system-message-body": j((d) => [
+      "system-message-body": $((d) => [
         O(D.$slots, "system-message-body", {
           message: d.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": j((d) => [
+      "text-message-toolbox": $((d) => [
         O(D.$slots, "text-message-toolbox", {
           message: d.message,
           me: d.me
@@ -6185,6 +6185,10 @@ const u2 = /* @__PURE__ */ M(Je, [["render", Ze], ["__scopeId", "data-v-9301130a
           },
           close: {
             img: D2,
+            name: "default"
+          },
+          minimize: {
+            img: null,
             name: "default"
           }
         };
@@ -6411,16 +6415,16 @@ function a2(D, u, f, e, F, t) {
       onEdit: u[3] || (u[3] = (a) => D.$emit("edit", a)),
       onRemove: u[4] || (u[4] = (a) => D.$emit("remove", a))
     }, {
-      header: j(() => [
+      header: $(() => [
         O(D.$slots, "header", {}, void 0, !0)
       ]),
-      "user-avatar": j((a) => [
+      "user-avatar": $((a) => [
         O(D.$slots, "user-avatar", {
           user: a.user,
           message: a.message
         }, void 0, !0)
       ]),
-      "text-message-body": j((a) => [
+      "text-message-body": $((a) => [
         O(D.$slots, "text-message-body", {
           message: a.message,
           messageText: a.messageText,
@@ -6428,12 +6432,12 @@ function a2(D, u, f, e, F, t) {
           me: a.me
         }, void 0, !0)
       ]),
-      "system-message-body": j((a) => [
+      "system-message-body": $((a) => [
         O(D.$slots, "system-message-body", {
           message: a.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": j((a) => [
+      "text-message-toolbox": $((a) => [
         O(D.$slots, "text-message-toolbox", {
           message: a.message,
           me: a.me
@@ -6607,11 +6611,11 @@ function FD(D) {
 function ef(D) {
   return ["top", "bottom"].indexOf(D) >= 0 ? "x" : "y";
 }
-var vu = Math.max, Ju = Math.min, lD = Math.round;
+var vu = Math.max, Qu = Math.min, lD = Math.round;
 function mD(D, u, f) {
-  return vu(D, Ju(u, f));
+  return vu(D, Qu(u, f));
 }
-function Zf() {
+function u1() {
   return {
     top: 0,
     right: 0,
@@ -6619,10 +6623,10 @@ function Zf() {
     left: 0
   };
 }
-function u1(D) {
-  return Object.assign({}, Zf(), D);
+function D1(D) {
+  return Object.assign({}, u1(), D);
 }
-function D1(D, u) {
+function f1(D, u) {
   return u.reduce(function(f, e) {
     return f[e] = D, f;
   }, {});
@@ -6630,7 +6634,7 @@ function D1(D, u) {
 var A2 = function(u, f) {
   return u = typeof u == "function" ? u(Object.assign({}, f.rects, {
     placement: f.placement
-  })) : u, u1(typeof u != "number" ? u : D1(u, tD));
+  })) : u, D1(typeof u != "number" ? u : f1(u, tD));
 };
 function y2(D) {
   var u, f = D.state, e = D.name, F = D.options, t = f.elements.arrow, n = f.modifiersData.popperOffsets, a = ru(f.placement), r = ef(a), C = [tu, su].indexOf(a) >= 0, d = C ? "height" : "width";
@@ -6799,13 +6803,13 @@ function nf(D) {
   var u = Cu(D), f = u.overflow, e = u.overflowX, F = u.overflowY;
   return /auto|scroll|overlay|hidden/.test(f + F + e);
 }
-function f1(D) {
-  return ["html", "body", "#document"].indexOf(bu(D)) >= 0 ? D.ownerDocument.body : Fu(D) && nf(D) ? D : f1(wD(D));
+function e1(D) {
+  return ["html", "body", "#document"].indexOf(bu(D)) >= 0 ? D.ownerDocument.body : Fu(D) && nf(D) ? D : e1(wD(D));
 }
 function Yu(D, u) {
   var f;
   u === void 0 && (u = []);
-  var e = f1(D), F = e === ((f = D.ownerDocument) == null ? void 0 : f.body), t = cu(e), n = F ? [t].concat(t.visualViewport || [], nf(e) ? e : []) : e, a = u.concat(n);
+  var e = e1(D), F = e === ((f = D.ownerDocument) == null ? void 0 : f.body), t = cu(e), n = F ? [t].concat(t.visualViewport || [], nf(e) ? e : []) : e, a = u.concat(n);
   return F ? a : (
     // $FlowFixMe[incompatible-call]: isBody tells us target will be an HTMLElement here
     a.concat(Yu(wD(n)))
@@ -6835,15 +6839,15 @@ function L2(D) {
 function R2(D, u, f) {
   var e = u === "clippingParents" ? L2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], n = F.reduce(function(a, r) {
     var C = _f(D, r);
-    return a.top = vu(C.top, a.top), a.right = Ju(C.right, a.right), a.bottom = Ju(C.bottom, a.bottom), a.left = vu(C.left, a.left), a;
+    return a.top = vu(C.top, a.top), a.right = Qu(C.right, a.right), a.bottom = Qu(C.bottom, a.bottom), a.left = vu(C.left, a.left), a;
   }, _f(D, t));
   return n.width = n.right - n.left, n.height = n.bottom - n.top, n.x = n.left, n.y = n.top, n;
 }
-function Zu(D) {
+function Ju(D) {
   return D.split("-")[1];
 }
-function e1(D) {
-  var u = D.reference, f = D.element, e = D.placement, F = e ? ru(e) : null, t = e ? Zu(e) : null, n = u.x + u.width / 2 - f.width / 2, a = u.y + u.height / 2 - f.height / 2, r;
+function t1(D) {
+  var u = D.reference, f = D.element, e = D.placement, F = e ? ru(e) : null, t = e ? Ju(e) : null, n = u.x + u.width / 2 - f.width / 2, a = u.y + u.height / 2 - f.height / 2, r;
   switch (F) {
     case eu:
       r = {
@@ -6913,8 +6917,8 @@ function uD(D, u) {
 }
 function M2(D, u) {
   u === void 0 && (u = {});
-  var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, n = f.padding, a = f.flipVariations, r = f.allowedAutoPlacements, C = r === void 0 ? yD : r, d = Zu(e), c = d ? a ? bf : bf.filter(function(E) {
-    return Zu(E) === d;
+  var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, n = f.padding, a = f.flipVariations, r = f.allowedAutoPlacements, C = r === void 0 ? yD : r, d = Ju(e), c = d ? a ? bf : bf.filter(function(E) {
+    return Ju(E) === d;
   }) : tD, o = c.filter(function(E) {
     return C.indexOf(E) >= 0;
   });
@@ -7061,7 +7065,7 @@ const K2 = {
 };
 function Q2(D) {
   var u = D.state, f = D.name;
-  u.modifiersData[f] = e1({
+  u.modifiersData[f] = t1({
     reference: u.rects.reference,
     element: u.rects.popper,
     strategy: "absolute",
@@ -7418,7 +7422,7 @@ var kD = {
     "notify"
   ],
   mounted() {
-    WD(), S1(() => {
+    WD(), T1(() => {
       this._w = this.$el.offsetWidth, this._h = this.$el.offsetHeight, this.emitOnMount && this.emitSize();
     });
     const D = document.createElement("object");
@@ -7526,7 +7530,7 @@ function h8(D) {
 function _8(D) {
   if (typeof Symbol < "u" && Symbol.iterator in Object(D)) return Array.from(D);
 }
-function F1(D, u) {
+function n1(D, u) {
   if (D) {
     if (typeof D == "string") return GD(D, u);
     var f = Object.prototype.toString.call(D).slice(8, -1);
@@ -7546,7 +7550,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 function YD(D, u) {
   var f;
   if (typeof Symbol > "u" || D[Symbol.iterator] == null) {
-    if (Array.isArray(D) || (f = F1(D)) || u) {
+    if (Array.isArray(D) || (f = n1(D)) || u) {
       f && (D = f);
       var e = 0, F = function() {
       };
@@ -7590,7 +7594,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
   };
 }
-function n1(D, u) {
+function a1(D, u) {
   for (var f in u)
     Object.prototype.hasOwnProperty.call(u, f) && (Xu(u[f]) === "object" && D[f] ? n1(D[f], u[f]) : D[f] = u[f]);
 }
@@ -7624,7 +7628,7 @@ var Tu = {
       triggers: ["hover", "focus", "touch"],
       // Close tooltip on click on tooltip target
       hideTriggers: function(u) {
-        return [].concat(t1(u), ["click"]);
+        return [].concat(F1(u), ["click"]);
       },
       // Delay (ms)
       delay: {
@@ -7690,8 +7694,8 @@ if (typeof window < "u") {
   } catch {
   }
 }
-var a1 = !1;
-typeof window < "u" && typeof navigator < "u" && (a1 = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream);
+var d1 = !1;
+typeof window < "u" && typeof navigator < "u" && (d1 = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream);
 function pD(D, u, f) {
   var e = D.find(function(F) {
     return F.name === u;
@@ -8012,15 +8016,15 @@ var d1 = function() {
       },
       $_scheduleShow: function() {
         var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1;
-        if (this.$_hideInProgress = !1, clearTimeout(this.$_scheduleTimer), $u && this.instantMove && $u.instantMove) {
-          $u.$_applyHide(!0), this.$_applyShow(!0);
+        if (this.$_hideInProgress = !1, clearTimeout(this.$_scheduleTimer), ju && this.instantMove && ju.instantMove) {
+          ju.$_applyHide(!0), this.$_applyShow(!0);
           return;
         }
         u ? this.$_applyShow() : this.$_scheduleTimer = setTimeout(this.$_applyShow.bind(this), this.$_computeDelay("show"));
       },
       $_scheduleHide: function() {
         var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1;
-        this.$_hideInProgress = !0, clearTimeout(this.$_scheduleTimer), this.isShown && ($u = this), u ? this.$_applyHide() : this.$_scheduleTimer = setTimeout(this.$_applyHide.bind(this), this.$_computeDelay("hide"));
+        this.$_hideInProgress = !0, clearTimeout(this.$_scheduleTimer), this.isShown && (ju = this), u ? this.$_applyHide() : this.$_scheduleTimer = setTimeout(this.$_applyHide.bind(this), this.$_computeDelay("hide"));
       },
       $_computeDelay: function(u) {
         var f = this.delay;
@@ -8045,7 +8049,7 @@ var d1 = function() {
             if (f)
               for (var e, F = 0; F < Pu.length; F++)
                 e = Pu[F], e.showGroup !== f && (e.hide(), e.$emit("close-group"));
-            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield jf(), u.classes.showFrom = !1, u.classes.showTo = !0;
+            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield $f(), u.classes.showFrom = !1, u.classes.showTo = !0;
           }
         })();
       },
@@ -8061,7 +8065,7 @@ var d1 = function() {
             var F = q(f.theme, "disposeTimeout");
             F !== null && (f.$_disposeTimer = setTimeout(function() {
               f.$_popperNode && (f.$_detachPopperNode(), f.isMounted = !1);
-            }, F)), f.$emit("apply-hide"), f.classes.showFrom = !1, f.classes.showTo = !1, f.classes.hideFrom = !0, f.classes.hideTo = !1, yield jf(), f.classes.hideFrom = !1, f.classes.hideTo = !0;
+            }, F)), f.$emit("apply-hide"), f.classes.showFrom = !1, f.classes.showTo = !1, f.classes.hideFrom = !0, f.classes.hideTo = !1, yield $f(), f.classes.hideFrom = !1, f.classes.hideTo = !0;
           }
         })();
       },
@@ -8164,7 +8168,7 @@ function k8(D) {
 function x8(D) {
   r1(D, !0);
 }
-function r1(D) {
+function i1(D) {
   for (var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1, f = function(t) {
     var n = Pu[t], a = n.popperNode(), r = a.contains(D.target);
     requestAnimationFrame(function() {
@@ -8173,12 +8177,12 @@ function r1(D) {
   }, e = 0; e < Pu.length; e++)
     f(e);
 }
-function jf() {
+function $f() {
   return new Promise(function(D) {
     return requestAnimationFrame(D);
   });
 }
-var i1 = {
+var o1 = {
   computed: {
     themeClass: function() {
       return A8(this.theme);
@@ -8189,7 +8193,7 @@ var i1 = {
   components: {
     ResizeObserver: kD
   },
-  mixins: [i1],
+  mixins: [o1],
   props: {
     popperId: String,
     theme: String,
@@ -8236,7 +8240,7 @@ function $8(D, u, f, e, F, t) {
       }]],
       "aria-hidden": f.shown ? "false" : "true",
       tabindex: f.autoHide ? 0 : void 0,
-      onKeyup: u[2] || (u[2] = O1(function(a) {
+      onKeyup: u[2] || (u[2] = $1(function(a) {
         return f.autoHide && D.$emit("hide");
       }, ["esc"]))
     },
@@ -8272,7 +8276,7 @@ function $8(D, u, f, e, F, t) {
 }
 xD.render = $8;
 xD.__file = "src/components/PopperContent.vue";
-var o1 = {
+var s1 = {
   methods: {
     show: function() {
       var u;
@@ -8294,10 +8298,10 @@ var o1 = {
 }, nD = {
   name: "VPopperWrapper",
   components: {
-    Popper: d1(),
+    Popper: r1(),
     PopperContent: xD
   },
-  mixins: [o1, i1],
+  mixins: [s1, o1],
   inheritAttrs: !1,
   props: {
     theme: {
@@ -8313,7 +8317,7 @@ var o1 = {
   },
   methods: {
     getTargetNodes: function() {
-      var u = t1(this.$refs.reference.children);
+      var u = F1(this.$refs.reference.children);
       return u.slice(0, u.length - 1).filter(Boolean);
     }
   }
@@ -8364,7 +8368,7 @@ function P8(D, u, f, e, F, t) {
               onResize: _
             },
             {
-              default: j(function() {
+              default: $(function() {
                 return [O(D.$slots, "popper", {
                   shown: d
                 })];
@@ -8402,14 +8406,14 @@ var JD = iu(iu({}, nD), {}, {
   name: "VTooltip",
   vPopperTheme: "tooltip"
 });
-JD.__file = "src/components/Tooltip.vue";
+QD.__file = "src/components/Tooltip.vue";
 var af = {
   name: "VTooltipDirective",
   components: {
-    Popper: d1(),
+    Popper: r1(),
     PopperContent: xD
   },
-  mixins: [o1],
+  mixins: [s1],
   inheritAttrs: !1,
   props: {
     theme: {
@@ -8527,7 +8531,7 @@ function I8(D, u, f, e, F, t) {
             onResize: _
           },
           {
-            default: j(function() {
+            default: $(function() {
               return [f.html ? (p(), V(
                 "div",
                 {
@@ -8603,15 +8607,15 @@ function N8(D, u, f) {
       };
     },
     render: function() {
-      return $1(af, iu(iu({}, this.options), {}, {
+      return P1(af, iu(iu({}, this.options), {}, {
         ref: "tooltip"
       }));
     }
   }), t = document.createElement("div");
-  return document.body.appendChild(t), F.mount(t), D.classList && D.classList.add(s1), F;
+  return document.body.appendChild(t), F.mount(t), D.classList && D.classList.add(C1), F;
 }
-function c1(D) {
-  D.$_popper && (D.$_popper.unmount(), delete D.$_popper, delete D.$_popperOldShown), D.classList && D.classList.remove(s1);
+function E1(D) {
+  D.$_popper && (D.$_popper.unmount(), delete D.$_popper, delete D.$_popperOldShown), D.classList && D.classList.remove(C1);
 }
 function $f(D, u) {
   var f = u.value, e = u.modifiers, F = C1(D, f, e);
@@ -8626,37 +8630,37 @@ var q8 = {
   beforeMount: $f,
   updated: $f,
   beforeUnmount: function(u) {
-    c1(u);
+    E1(u);
   }
 };
 function Pf(D) {
-  D.addEventListener("click", E1), D.addEventListener("touchstart", l1, vD ? {
+  D.addEventListener("click", l1), D.addEventListener("touchstart", B1, vD ? {
     passive: !0
   } : !1);
 }
 function If(D) {
-  D.removeEventListener("click", E1), D.removeEventListener("touchstart", l1), D.removeEventListener("touchend", B1), D.removeEventListener("touchcancel", p1);
+  D.removeEventListener("click", l1), D.removeEventListener("touchstart", B1), D.removeEventListener("touchend", p1), D.removeEventListener("touchcancel", b1);
 }
-function E1(D) {
+function l1(D) {
   var u = D.currentTarget;
   D.closePopover = !u.$_vclosepopover_touch, D.closeAllPopover = u.$_closePopoverModifiers && !!u.$_closePopoverModifiers.all;
 }
-function l1(D) {
+function B1(D) {
   if (D.changedTouches.length === 1) {
     var u = D.currentTarget;
     u.$_vclosepopover_touch = !0;
     var f = D.changedTouches[0];
-    u.$_vclosepopover_touchPoint = f, u.addEventListener("touchend", B1), u.addEventListener("touchcancel", p1);
+    u.$_vclosepopover_touchPoint = f, u.addEventListener("touchend", p1), u.addEventListener("touchcancel", b1);
   }
 }
-function B1(D) {
+function p1(D) {
   var u = D.currentTarget;
   if (u.$_vclosepopover_touch = !1, D.changedTouches.length === 1) {
     var f = D.changedTouches[0], e = u.$_vclosepopover_touchPoint;
     D.closePopover = Math.abs(f.screenY - e.screenY) < 20 && Math.abs(f.screenX - e.screenX) < 20, D.closeAllPopover = u.$_closePopoverModifiers && !!u.$_closePopoverModifiers.all;
   }
 }
-function p1(D) {
+function b1(D) {
   var u = D.currentTarget;
   u.$_vclosepopover_touch = !1;
 }
@@ -8673,14 +8677,14 @@ var L8 = {
     If(u);
   }
 };
-function ZD(D) {
+function JD(D) {
   var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
   ZD.installed || (ZD.installed = !0, n1(Tu, u), D.directive("tooltip", q8), D.directive("close-popper", L8), D.component("v-tooltip", JD), D.component("VTooltip", JD), D.component("v-dropdown", KD), D.component("VDropdown", KD), D.component("v-menu", QD), D.component("VMenu", QD));
 }
 var R8 = {
   // eslint-disable-next-line no-undef
   version: "4.0.0-alpha.1",
-  install: ZD,
+  install: JD,
   options: Tu
 }, bD = { exports: {} }, zf;
 function M8() {
