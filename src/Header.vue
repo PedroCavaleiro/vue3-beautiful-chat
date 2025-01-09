@@ -37,7 +37,7 @@ export default {
             name: 'default'
           },
           minimize: {
-            img: CloseIcon,
+            img: MinimizeIcon,
             name: 'default'
           }
         }

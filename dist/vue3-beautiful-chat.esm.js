@@ -1,4 +1,4 @@
-import { reactive as y1, openBlock as p, createElementBlock as g, normalizeStyle as R, createCommentVNode as I, renderSlot as O, createTextVNode as Nu, toDisplayString as K, createElementVNode as y, resolveComponent as T, createVNode as q, withCtx as j, resolveDirective as w1, normalizeClass as DD, withDirectives as Rf, createBlock as V, Fragment as qu, renderList as Qu, vShow as k1, withModifiers as Gu, pushScopeId as x1, popScopeId as S1, nextTick as T1, withScopeId as O1, withKeys as j1, mergeProps as Lf, createApp as $1, h as P1 } from "vue";
+import { reactive as y1, openBlock as p, createElementBlock as g, normalizeStyle as R, createCommentVNode as I, renderSlot as O, createTextVNode as Nu, toDisplayString as K, createElementVNode as y, resolveComponent as T, createVNode as q, withCtx as j, resolveDirective as w1, normalizeClass as DD, withDirectives as qf, createBlock as V, Fragment as qu, renderList as Qu, vShow as k1, withModifiers as Gu, pushScopeId as x1, popScopeId as S1, nextTick as T1, withScopeId as O1, withKeys as j1, mergeProps as Rf, createApp as $1, h as P1 } from "vue";
 const Du = {
   state: y1({
     editMessage: null
@@ -7,7 +7,7 @@ const Du = {
     this.state[D] = u;
   }
 };
-function Mf(D) {
+function Lf(D) {
   const u = {};
   return D.forEach((f) => {
     u[f] = function() {
@@ -15,7 +15,7 @@ function Mf(D) {
     };
   }), u;
 }
-const df = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURUxpcf///////////////////////////////////////////////////////3EAnbYAAAAOdFJOUwADZ66SoQjEhnS7/gsNGQL7+wAAAKtJREFUKM+F01sOhCAQRNESFV/I/pc70Og0YJfyJbmHhBAbGGYHstw8IPV4EOGOmERYIhGpxyUAJxHSz/xlC+1FxE64qB1yj1ZID7oXsel+63ovnj2JXUXue+hvrcLugL+EdG+9XBG8X+Kl34J3YM1g/egvIvdx5EK691RIz78YEXdnQrst6m6JqemXmNo+D/WJNAyVePZWWL0WdlfB+l+UAQQReaAc65DB/wGsZgzLN0IQWAAAAABJRU5ErkJggg==", I1 = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3crect%20x='0'%20y='20'%20width='47.971'%20height='7.971'%20rx='5'%20ry='5'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", M = (D, u) => {
+const I1 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURUxpcf///////////////////////////////////////////////////////3EAnbYAAAAOdFJOUwADZ66SoQjEhnS7/gsNGQL7+wAAAKtJREFUKM+F01sOhCAQRNESFV/I/pc70Og0YJfyJbmHhBAbGGYHstw8IPV4EOGOmERYIhGpxyUAJxHSz/xlC+1FxE64qB1yj1ZID7oXsel+63ovnj2JXUXue+hvrcLugL+EdG+9XBG8X+Kl34J3YM1g/egvIvdx5EK691RIz78YEXdnQrst6m6JqemXmNo+D/WJNAyVePZWWL0WdlfB+l+UAQQReaAc65DB/wGsZgzLN0IQWAAAAABJRU5ErkJggg==", Mf = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3crect%20x='0'%20y='20'%20width='47.971'%20height='7.971'%20rx='5'%20ry='5'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", M = (D, u) => {
   const f = D.__vccOpts || D;
   for (const [e, F] of u)
     f[e] = F;
@@ -27,11 +27,11 @@ const df = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AA
       default: function() {
         return {
           close: {
-            img: df,
+            img: I1,
             name: "default"
           },
           minimize: {
-            img: df,
+            img: Mf,
             name: "default"
           }
         };
@@ -52,7 +52,7 @@ const df = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AA
     };
   },
   computed: {
-    ...Mf(["disableUserListToggle", "titleImageUrl", "showCloseButton", "showMinimizeButton"])
+    ...Lf(["disableUserListToggle", "titleImageUrl", "showCloseButton", "showMinimizeButton"])
   },
   methods: {
     toggleUserList() {
@@ -109,7 +109,7 @@ function M1(D, u, f, e, F, t) {
     ])) : I("", !0)
   ], 4);
 }
-const H1 = /* @__PURE__ */ M(z1, [["render", M1], ["__scopeId", "data-v-efade3b2"]]), U1 = {
+const H1 = /* @__PURE__ */ M(z1, [["render", M1], ["__scopeId", "data-v-a70f49f5"]]), U1 = {
   props: {
     iconName: {
       type: String,
@@ -155,13 +155,13 @@ const J1 = /* @__PURE__ */ M(Y1, [["render", K1]]), Z1 = {}, u0 = { d: "M15.898,
 function D0(D, u) {
   return p(), g("path", u0);
 }
-const Uf = /* @__PURE__ */ M(Z1, [["render", D0]]), rf = (D) => D.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const Uf = /* @__PURE__ */ M(Z1, [["render", D0]]), df = (D) => D.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 function f0(D, ...u) {
   if (typeof D == "string")
-    return rf(D);
+    return df(D);
   let f = D[0];
   for (const [e, F] of u.entries())
-    f = f + rf(String(F)) + D[e + 1];
+    f = f + df(String(F)) + D[e + 1];
   return f;
 }
 var e0 = "4.1.0";
@@ -395,7 +395,7 @@ var eD = (
 function Vu(D) {
   return zu.test(D);
 }
-function of(D) {
+function rf(D) {
   return zu.test(D) || Z.test(D) || D === "+" || D === "-" || D === ".";
 }
 function _u(D) {
@@ -404,7 +404,7 @@ function _u(D) {
 function $D(D) {
   return D === "_" || _u(D);
 }
-function sf(D) {
+function of(D) {
   return Su.test(D) || g0.test(D) || Gf.test(D);
 }
 function PD(D) {
@@ -514,7 +514,7 @@ var H0 = (
     }, u;
   }(eD)
 );
-function Cf(D) {
+function sf(D) {
   return D === "_" || Su.test(D);
 }
 function U0(D) {
@@ -575,7 +575,7 @@ var V0 = [
   // https://support.google.com/youtube/answer/11585688?hl=en&co=GENIE.Platform%3DAndroid#tns
   youtube: /^@[-.·\w]{3,30}$/
 }, X0 = /[-\w.]/;
-function cf(D) {
+function Cf(D) {
   return X0.test(D);
 }
 function Y0(D, u) {
@@ -625,7 +625,7 @@ var Q0 = [
     }, u;
   }(eD)
 ), J0 = /[-. ]/, Z0 = /[-. ()]/, u3 = /[,;]/, D3 = /(?:(?:(?:(\+)?\d{1,3}[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4})|(?:(\+)(?:9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)[-. ]?(?:\d[-. ]?){6,12}\d+))([,;]+[0-9]+#?)*/, f3 = /(0([1-9]-?[1-9]\d{3}|[1-9]{2}-?\d{3}|[1-9]{2}\d{1}-?\d{2}|[1-9]{2}\d{2}-?\d{1})-?\d{4}|0[789]0-?\d{4}-?\d{4}|050-?\d{4}-?\d{4})/, e3 = new RegExp("^".concat(D3.source, "|").concat(f3.source, "$"));
-function Ef(D) {
+function cf(D) {
   return J0.test(D);
 }
 function zD(D) {
@@ -871,14 +871,14 @@ function n3(D, u) {
     }
   }
   function _(i, s) {
-    s === ":" ? i.state = 2 : s === "-" ? i.state = 1 : of(s) || P(d, i);
+    s === ":" ? i.state = 2 : s === "-" ? i.state = 1 : rf(s) || P(d, i);
   }
   function v(i, s) {
     s === "-" || (s === "/" ? (P(d, i), d.push(ND(
       c,
       11
       /* State.ProtocolRelativeSlash1 */
-    ))) : of(s) ? i.state = 0 : P(d, i));
+    ))) : rf(s) ? i.state = 0 : P(d, i));
   }
   function b(i, s) {
     s === "/" ? i.state = 3 : s === "." ? P(d, i) : _u(s) ? (i.state = 5, Vu(s) && d.push(cD(
@@ -888,7 +888,7 @@ function n3(D, u) {
     ))) : P(d, i);
   }
   function m(i, s) {
-    s === "/" ? i.state = 4 : sf(s) ? (i.state = 10, i.acceptStateReached = !0) : L(i);
+    s === "/" ? i.state = 4 : of(s) ? (i.state = 10, i.acceptStateReached = !0) : L(i);
   }
   function k(i, s) {
     s === "/" ? i.state = 10 : _u(s) ? (i.state = 5, i.acceptStateReached = !0) : P(d, i);
@@ -921,7 +921,7 @@ function n3(D, u) {
     Z.test(s) || (PD(s) ? i.state = 10 : L(i));
   }
   function Eu(i, s) {
-    sf(s) || L(i);
+    of(s) || L(i);
   }
   function au(i, s) {
     s.toLowerCase() === "a" ? i.state = 16 : Q(i, s);
@@ -963,16 +963,16 @@ function n3(D, u) {
     s === "." || s === "-" ? L(i) : _u(s) ? (i.state = 25, i.acceptStateReached = !0) : L(i);
   }
   function aD(i, s) {
-    Cf(s) ? (i.state = 29, i.acceptStateReached = !0) : P(d, i);
+    sf(s) ? (i.state = 29, i.acceptStateReached = !0) : P(d, i);
   }
   function dD(i, s) {
-    Cf(s) || L(i);
+    sf(s) || L(i);
   }
   function rD(i, s) {
-    cf(s) ? (i.state = 31, i.acceptStateReached = !0) : P(d, i);
+    Cf(s) ? (i.state = 31, i.acceptStateReached = !0) : P(d, i);
   }
   function iD(i, s) {
-    cf(s) || (Su.test(s) ? P(d, i) : L(i));
+    Cf(s) || (Su.test(s) ? P(d, i) : L(i));
   }
   function SD(i, s) {
     Z.test(s) ? i.state = 38 : (P(d, i), w(s));
@@ -990,10 +990,10 @@ function n3(D, u) {
     s === ")" ? i.state = 36 : P(d, i);
   }
   function CD(i, s) {
-    Z.test(s) ? i.state = 38 : Ef(s) ? i.state = 39 : P(d, i);
+    Z.test(s) ? i.state = 38 : cf(s) ? i.state = 39 : P(d, i);
   }
   function g1(i, s) {
-    i.acceptStateReached = !0, zD(s) ? i.state = 40 : s === "#" ? i.state = 41 : Z.test(s) || (s === "(" ? i.state = 32 : Ef(s) ? i.state = 39 : (L(i), Vu(s) && d.push(cD(
+    i.acceptStateReached = !0, zD(s) ? i.state = 40 : s === "#" ? i.state = 41 : Z.test(s) || (s === "(" ? i.state = 32 : cf(s) ? i.state = 39 : (L(i), Vu(s) && d.push(cD(
       c,
       0
       /* State.SchemeChar */
@@ -1081,7 +1081,7 @@ function n3(D, u) {
     }
   }
 }
-var a3 = /[\(\{\[]/, lf = /[\)\}\]]/, Bf = {
+var a3 = /[\(\{\[]/, Ef = /[\)\}\]]/, lf = {
   ")": "(",
   "}": "{",
   "]": "["
@@ -1093,11 +1093,11 @@ function d3(D) {
     "[": 0
   }, f = 0; f < D.length; f++) {
     var e = D.charAt(f);
-    a3.test(e) ? u[e]++ : lf.test(e) && u[Bf[e]]--;
+    a3.test(e) ? u[e]++ : Ef.test(e) && u[lf[e]]--;
   }
   for (var F = D.length - 1, t; F >= 0; )
-    if (t = D.charAt(F), lf.test(t)) {
-      var n = Bf[t];
+    if (t = D.charAt(F), Ef.test(t)) {
+      var n = lf[t];
       if (u[n] < 0)
         u[n]++, F--;
       else
@@ -1491,10 +1491,10 @@ var b3 = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
 function uf(D) {
   return D && D.__esModule && Object.prototype.hasOwnProperty.call(D, "default") ? D.default : D;
 }
-var RD, pf;
+var RD, Bf;
 function g3() {
-  if (pf) return RD;
-  pf = 1;
+  if (Bf) return RD;
+  Bf = 1;
   const D = {
     bold: { delimiter: "*", tag: "strong" },
     italic: { delimiter: "/", tag: "em" },
@@ -1574,7 +1574,7 @@ const h3 = /* @__PURE__ */ uf(m3), _3 = {
     isEditing() {
       return (Du.state.editMessage && Du.state.editMessage.id) === this.message.id;
     },
-    ...Mf(["showDeletion", "showEdition"])
+    ...Lf(["showDeletion", "showEdition"])
   },
   methods: {
     edit() {
@@ -1863,7 +1863,7 @@ function Y3(D, u, f, e, F, t) {
         message: f.message,
         user: f.user
       }, () => [
-        f.message.type !== "system" && t.authorName && t.authorName !== "me" ? Rf((p(), g("div", {
+        f.message.type !== "system" && t.authorName && t.authorName !== "me" ? qf((p(), g("div", {
           key: 0,
           title: t.authorName,
           class: "sc-message--avatar",
@@ -2054,7 +2054,7 @@ function J3(D, u, f, e, F, t) {
       ]),
       _: 2
     }, 1032, ["message", "user", "colors", "message-styling", "show-confirmation-deletion", "confirmation-deletion-message", "messageMargin", "onRemove"]))), 128)),
-    Rf(q(n, {
+    qf(q(n, {
       message: { author: f.showTypingIndicator, type: "typing" },
       user: t.profile(f.showTypingIndicator),
       colors: f.colors,
@@ -2067,9 +2067,9 @@ function J3(D, u, f, e, F, t) {
   ], 36);
 }
 const Z3 = /* @__PURE__ */ M(K3, [["render", J3], ["__scopeId", "data-v-505f0c8f"]]);
-var ED = { exports: {} }, bf;
+var ED = { exports: {} }, pf;
 function ue() {
-  return bf || (bf = 1, function(D, u) {
+  return pf || (pf = 1, function(D, u) {
     (function() {
       var f = this, e = f.EmojiConvertor, F = function() {
         var t = this;
@@ -6136,7 +6136,7 @@ const t2 = /* @__PURE__ */ M(f2, [["render", e2], ["__scopeId", "data-v-9301130a
             name: "default"
           },
           minimize: {
-            img: I1,
+            img: Mf,
             name: "default"
           }
         };
@@ -6396,7 +6396,7 @@ function o2(D, u, f, e, F, t) {
   ]);
 }
 const s2 = /* @__PURE__ */ M(a2, [["render", o2], ["__scopeId", "data-v-c81294e4"]]);
-var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], Ru = "start", Df = "end", C2 = "clippingParents", Kf = "viewport", Wu = "popper", c2 = "reference", gf = /* @__PURE__ */ tD.reduce(function(D, u) {
+var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], Ru = "start", Df = "end", C2 = "clippingParents", Kf = "viewport", Wu = "popper", c2 = "reference", bf = /* @__PURE__ */ tD.reduce(function(D, u) {
   return D.concat([u + "-" + Ru, u + "-" + Df]);
 }, []), yD = /* @__PURE__ */ [].concat(tD, [AD]).reduce(function(D, u) {
   return D.concat([u, u + "-" + Ru, u + "-" + Df]);
@@ -6532,7 +6532,7 @@ function wD(D) {
     Au(D)
   );
 }
-function mf(D) {
+function gf(D) {
   return !Fu(D) || // https://github.com/popperjs/popper-core/issues/837
   Cu(D).position === "fixed" ? null : D.offsetParent;
 }
@@ -6552,8 +6552,8 @@ function k2(D) {
   return null;
 }
 function FD(D) {
-  for (var u = cu(D), f = mf(D); f && w2(f) && Cu(f).position === "static"; )
-    f = mf(f);
+  for (var u = cu(D), f = gf(D); f && w2(f) && Cu(f).position === "static"; )
+    f = gf(f);
   return f && (bu(f) === "html" || bu(f) === "body" && Cu(f).position === "static") ? u : f || k2(D) || u;
 }
 function ef(D) {
@@ -6623,7 +6623,7 @@ function $2(D) {
     y: lD(lD(f * F) / F) || 0
   };
 }
-function hf(D) {
+function mf(D) {
   var u, f = D.popper, e = D.popperRect, F = D.placement, t = D.offsets, n = D.position, a = D.gpuAcceleration, r = D.adaptive, C = D.roundOffsets, d = C === !0 ? $2(t) : typeof C == "function" ? C(t) : t, c = d.x, o = c === void 0 ? 0 : c, B = d.y, E = B === void 0 ? 0 : B, A = t.hasOwnProperty("x"), h = t.hasOwnProperty("y"), w = tu, _ = eu, v = window;
   if (r) {
     var b = FD(f), m = "clientHeight", k = "clientWidth";
@@ -6656,12 +6656,12 @@ function P2(D) {
     popperRect: u.rects.popper,
     gpuAcceleration: F
   };
-  u.modifiersData.popperOffsets != null && (u.styles.popper = Object.assign({}, u.styles.popper, hf(Object.assign({}, d, {
+  u.modifiersData.popperOffsets != null && (u.styles.popper = Object.assign({}, u.styles.popper, mf(Object.assign({}, d, {
     offsets: u.modifiersData.popperOffsets,
     position: u.options.strategy,
     adaptive: n,
     roundOffsets: r
-  })))), u.modifiersData.arrow != null && (u.styles.arrow = Object.assign({}, u.styles.arrow, hf(Object.assign({}, d, {
+  })))), u.modifiersData.arrow != null && (u.styles.arrow = Object.assign({}, u.styles.arrow, mf(Object.assign({}, d, {
     offsets: u.modifiersData.arrow,
     position: "absolute",
     adaptive: !1,
@@ -6714,7 +6714,7 @@ var R2 = {
   start: "end",
   end: "start"
 };
-function _f(D) {
+function hf(D) {
   return D.replace(/start|end/g, function(u) {
     return R2[u];
   });
@@ -6775,7 +6775,7 @@ function H2(D) {
   var u = Lu(D);
   return u.top = u.top + D.clientTop, u.left = u.left + D.clientLeft, u.bottom = u.top + D.clientHeight, u.right = u.left + D.clientWidth, u.width = D.clientWidth, u.height = D.clientHeight, u.x = u.left, u.y = u.top, u;
 }
-function vf(D, u) {
+function _f(D, u) {
   return u === Kf ? VD(L2(D)) : Fu(u) ? H2(u) : VD(M2(Au(D)));
 }
 function U2(D) {
@@ -6786,9 +6786,9 @@ function U2(D) {
 }
 function V2(D, u, f) {
   var e = u === "clippingParents" ? U2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], n = F.reduce(function(a, r) {
-    var C = vf(D, r);
+    var C = _f(D, r);
     return a.top = vu(C.top, a.top), a.right = Ju(C.right, a.right), a.bottom = Ju(C.bottom, a.bottom), a.left = vu(C.left, a.left), a;
-  }, vf(D, t));
+  }, _f(D, t));
   return n.width = n.right - n.left, n.height = n.bottom - n.top, n.x = n.left, n.y = n.top, n;
 }
 function Zu(D) {
@@ -6865,7 +6865,7 @@ function uD(D, u) {
 }
 function W2(D, u) {
   u === void 0 && (u = {});
-  var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, n = f.padding, a = f.flipVariations, r = f.allowedAutoPlacements, C = r === void 0 ? yD : r, d = Zu(e), c = d ? a ? gf : gf.filter(function(E) {
+  var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, n = f.padding, a = f.flipVariations, r = f.allowedAutoPlacements, C = r === void 0 ? yD : r, d = Zu(e), c = d ? a ? bf : bf.filter(function(E) {
     return Zu(E) === d;
   }) : tD, o = c.filter(function(E) {
     return C.indexOf(E) >= 0;
@@ -6887,7 +6887,7 @@ function G2(D) {
   if (ru(D) === AD)
     return [];
   var u = hD(D);
-  return [_f(D), u, _f(u)];
+  return [hf(D), u, hf(u)];
 }
 function X2(D) {
   var u = D.state, f = D.options, e = D.name;
@@ -6947,7 +6947,7 @@ const Y2 = {
     _skip: !1
   }
 };
-function Af(D, u, f) {
+function vf(D, u, f) {
   return f === void 0 && (f = {
     x: 0,
     y: 0
@@ -6958,7 +6958,7 @@ function Af(D, u, f) {
     left: D.left - u.width - f.x
   };
 }
-function yf(D) {
+function Af(D) {
   return [eu, su, ou, tu].some(function(u) {
     return D[u] >= 0;
   });
@@ -6968,7 +6968,7 @@ function Q2(D) {
     elementContext: "reference"
   }), a = uD(u, {
     altBoundary: !0
-  }), r = Af(n, e), C = Af(a, F, t), d = yf(r), c = yf(C);
+  }), r = vf(n, e), C = vf(a, F, t), d = Af(r), c = Af(C);
   u.modifiersData[f] = {
     referenceClippingOffsets: r,
     popperEscapeOffsets: C,
@@ -7198,12 +7198,12 @@ function l8(D) {
     return u[f];
   });
 }
-var wf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", B8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", kf = {
+var yf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", B8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", wf = {
   placement: "bottom",
   modifiers: [],
   strategy: "absolute"
 };
-function xf() {
+function kf() {
   for (var D = arguments.length, u = new Array(D), f = 0; f < D; f++)
     u[f] = arguments[f];
   return !u.some(function(e) {
@@ -7212,13 +7212,13 @@ function xf() {
 }
 function p8(D) {
   D === void 0 && (D = {});
-  var u = D, f = u.defaultModifiers, e = f === void 0 ? [] : f, F = u.defaultOptions, t = F === void 0 ? kf : F;
+  var u = D, f = u.defaultModifiers, e = f === void 0 ? [] : f, F = u.defaultOptions, t = F === void 0 ? wf : F;
   return function(a, r, C) {
     C === void 0 && (C = t);
     var d = {
       placement: "bottom",
       orderedModifiers: [],
-      options: Object.assign({}, kf, t),
+      options: Object.assign({}, wf, t),
       modifiersData: {},
       elements: {
         reference: a,
@@ -7263,8 +7263,8 @@ function p8(D) {
       forceUpdate: function() {
         if (!o) {
           var w = d.elements, _ = w.reference, v = w.popper;
-          if (!xf(_, v)) {
-            process.env.NODE_ENV !== "production" && console.error(wf);
+          if (!kf(_, v)) {
+            process.env.NODE_ENV !== "production" && console.error(yf);
             return;
           }
           d.rects = {
@@ -7303,8 +7303,8 @@ function p8(D) {
         A(), o = !0;
       }
     };
-    if (!xf(a, r))
-      return process.env.NODE_ENV !== "production" && console.error(wf), B;
+    if (!kf(a, r))
+      return process.env.NODE_ENV !== "production" && console.error(yf), B;
     B.setOptions(C).then(function(h) {
       !o && C.onFirstUpdate && C.onFirstUpdate(h);
     });
@@ -7416,7 +7416,7 @@ function Yu(D) {
     return u && typeof Symbol == "function" && u.constructor === Symbol && u !== Symbol.prototype ? "symbol" : typeof u;
   }, Yu(D);
 }
-function Sf(D, u, f, e, F, t, n) {
+function xf(D, u, f, e, F, t, n) {
   try {
     var a = D[t](n), r = a.value;
   } catch (C) {
@@ -7431,10 +7431,10 @@ function xu(D) {
     return new Promise(function(e, F) {
       var t = D.apply(u, f);
       function n(r) {
-        Sf(t, e, F, n, a, "next", r);
+        xf(t, e, F, n, a, "next", r);
       }
       function a(r) {
-        Sf(t, e, F, n, a, "throw", r);
+        xf(t, e, F, n, a, "throw", r);
       }
       n(void 0);
     });
@@ -7448,7 +7448,7 @@ function A8(D, u, f) {
     writable: !0
   }) : D[u] = f, D;
 }
-function Tf(D, u) {
+function Sf(D, u) {
   var f = Object.keys(D);
   if (Object.getOwnPropertySymbols) {
     var e = Object.getOwnPropertySymbols(D);
@@ -7461,9 +7461,9 @@ function Tf(D, u) {
 function iu(D) {
   for (var u = 1; u < arguments.length; u++) {
     var f = arguments[u] != null ? arguments[u] : {};
-    u % 2 ? Tf(Object(f), !0).forEach(function(e) {
+    u % 2 ? Sf(Object(f), !0).forEach(function(e) {
       A8(D, e, f[e]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(D, Object.getOwnPropertyDescriptors(f)) : Tf(Object(f)).forEach(function(e) {
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(D, Object.getOwnPropertyDescriptors(f)) : Sf(Object(f)).forEach(function(e) {
       Object.defineProperty(D, e, Object.getOwnPropertyDescriptor(f, e));
     });
   }
@@ -7653,12 +7653,12 @@ function pD(D, u, f) {
     options: {}
   }, D.push(e)), Object.assign(e.options, f);
 }
-var Of = {
+var Tf = {
   hover: "mouseenter",
   focus: "focus",
   click: "click",
   touch: "touchstart"
-}, jf = {
+}, Of = {
   hover: "mouseleave",
   focus: "blur",
   click: "click",
@@ -7997,7 +7997,7 @@ var r1 = function() {
             if (f)
               for (var e, F = 0; F < Pu.length; F++)
                 e = Pu[F], e.showGroup !== f && (e.hide(), e.$emit("close-group"));
-            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield $f(), u.classes.showFrom = !1, u.classes.showTo = !0;
+            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield jf(), u.classes.showFrom = !1, u.classes.showTo = !0;
           }
         })();
       },
@@ -8013,7 +8013,7 @@ var r1 = function() {
             var F = N(f.theme, "disposeTimeout");
             F !== null && (f.$_disposeTimer = setTimeout(function() {
               f.$_popperNode && (f.$_detachPopperNode(), f.isMounted = !1);
-            }, F)), f.$emit("apply-hide"), f.classes.showFrom = !1, f.classes.showTo = !1, f.classes.hideFrom = !0, f.classes.hideTo = !1, yield $f(), f.classes.hideFrom = !1, f.classes.hideTo = !0;
+            }, F)), f.$emit("apply-hide"), f.classes.showFrom = !1, f.classes.showTo = !1, f.classes.hideFrom = !0, f.classes.hideTo = !1, yield jf(), f.classes.hideFrom = !1, f.classes.hideTo = !0;
           }
         })();
       },
@@ -8044,13 +8044,13 @@ var r1 = function() {
             event: n
           }));
         };
-        f(this.$_targetNodes, Of, this.triggers, this.showTriggers, e), f([this.$_popperNode], Of, this.popperTriggers, this.popperShowTriggers, e);
+        f(this.$_targetNodes, Tf, this.triggers, this.showTriggers, e), f([this.$_popperNode], Tf, this.popperTriggers, this.popperShowTriggers, e);
         var F = function(n) {
           n.usedByTooltip || u.hide({
             event: n
           });
         };
-        f(this.$_targetNodes, jf, this.triggers, this.hideTriggers, F), f([this.$_popperNode], jf, this.popperTriggers, this.popperHideTriggers, F);
+        f(this.$_targetNodes, Of, this.triggers, this.hideTriggers, F), f([this.$_popperNode], Of, this.popperTriggers, this.popperHideTriggers, F);
       },
       $_removeEventListeners: function() {
         this.$_events.forEach(function(u) {
@@ -8125,7 +8125,7 @@ function i1(D) {
   }, e = 0; e < Pu.length; e++)
     f(e);
 }
-function $f() {
+function jf() {
   return new Promise(function(D) {
     return requestAnimationFrame(D);
   });
@@ -8274,7 +8274,7 @@ function q8(D, u, f, e, F, t) {
   var n = T("PopperContent"), a = T("Popper");
   return p(), V(
     a,
-    Lf({
+    Rf({
       ref: "popper"
     }, D.$attrs, {
       theme: t.finalTheme,
@@ -8444,7 +8444,7 @@ function R8(D, u, f, e, F, t) {
   var n = T("PopperContent"), a = T("Popper");
   return p(), V(
     a,
-    Lf({
+    Rf({
       ref: "popper"
     }, D.$attrs, {
       theme: f.theme,
@@ -8565,7 +8565,7 @@ function M8(D, u, f) {
 function E1(D) {
   D.$_popper && (D.$_popper.unmount(), delete D.$_popper, delete D.$_popperOldShown), D.classList && D.classList.remove(C1);
 }
-function Pf(D, u) {
+function $f(D, u) {
   var f = u.value, e = u.modifiers, F = c1(D, f, e);
   if (!F.content || N(F.theme || "tooltip", "disabled"))
     E1(D);
@@ -8575,18 +8575,18 @@ function Pf(D, u) {
   }
 }
 var H8 = {
-  beforeMount: Pf,
-  updated: Pf,
+  beforeMount: $f,
+  updated: $f,
   beforeUnmount: function(u) {
     E1(u);
   }
 };
-function If(D) {
+function Pf(D) {
   D.addEventListener("click", l1), D.addEventListener("touchstart", B1, vD ? {
     passive: !0
   } : !1);
 }
-function zf(D) {
+function If(D) {
   D.removeEventListener("click", l1), D.removeEventListener("touchstart", B1), D.removeEventListener("touchend", p1), D.removeEventListener("touchcancel", b1);
 }
 function l1(D) {
@@ -8615,14 +8615,14 @@ function b1(D) {
 var U8 = {
   beforeMount: function(u, f) {
     var e = f.value, F = f.modifiers;
-    u.$_closePopoverModifiers = F, (typeof e > "u" || e) && If(u);
+    u.$_closePopoverModifiers = F, (typeof e > "u" || e) && Pf(u);
   },
   updated: function(u, f) {
     var e = f.value, F = f.oldValue, t = f.modifiers;
-    u.$_closePopoverModifiers = t, e !== F && (typeof e > "u" || e ? If(u) : zf(u));
+    u.$_closePopoverModifiers = t, e !== F && (typeof e > "u" || e ? Pf(u) : If(u));
   },
   beforeUnmount: function(u) {
-    zf(u);
+    If(u);
   }
 };
 function ZD(D) {
@@ -8634,10 +8634,10 @@ var V8 = {
   version: "4.0.0-alpha.1",
   install: ZD,
   options: Tu
-}, bD = { exports: {} }, Nf;
+}, bD = { exports: {} }, zf;
 function W8() {
-  if (Nf) return bD.exports;
-  Nf = 1;
+  if (zf) return bD.exports;
+  zf = 1;
   function D() {
   }
   return D.prototype = {
@@ -8670,10 +8670,10 @@ function W8() {
     }
   }, bD.exports = D, bD.exports.TinyEmitter = D, bD.exports;
 }
-var MD, qf;
+var MD, Nf;
 function G8() {
-  if (qf) return MD;
-  qf = 1;
+  if (Nf) return MD;
+  Nf = 1;
   var D = W8();
   return MD = new D(), MD;
 }
