@@ -136,6 +136,13 @@ export default {
   box-sizing: border-box;
 }
 
+.sc-header--minimize-button img {
+  width: 100%;
+  height: 100%;
+  padding: 13px;
+  box-sizing: border-box;
+}
+
 @media (max-width: 450px) {
   .sc-header {
     border-radius: 0px;
