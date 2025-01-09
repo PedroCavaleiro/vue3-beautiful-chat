@@ -33,6 +33,7 @@
       :messageMargin="messageMargin"
       :acceptedFileTypes="acceptedFileTypes"
       @close="close"
+      @minimize="minimize"
       @scrollToTop="$emit('scrollToTop')"
       @onType="$emit('onType', $event)"
       @edit="$emit('edit', $event)"
@@ -132,6 +133,10 @@ export default {
       type: Function,
       required: true
     },
+    minimize: {
+      type: Function,
+      required: false
+    },
     showFile: {
       type: Boolean,
       default: false
@@ -143,6 +148,11 @@ export default {
     showCloseButton: {
       type: Boolean,
       default: true
+    },
+    showMinimizeButton: {
+      type: Boolean,
+      required: false,
+      default : false
     },
     showHeader: {
       type: Boolean,

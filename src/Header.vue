@@ -12,6 +12,9 @@
       </slot>
     </div>
 
+    <div v-if="showMinimizeButton" class="sc-header--close-button" @click="$emit('minimize')">
+      <img :src="icons.close.img" :alt="icons.close.name" />
+    </div>
     <div v-if="showCloseButton" class="sc-header--close-button" @click="$emit('close')">
       <img :src="icons.close.img" :alt="icons.close.name" />
     </div>
@@ -50,7 +53,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['disableUserListToggle', 'titleImageUrl', 'showCloseButton'])
+    ...mapState(['disableUserListToggle', 'titleImageUrl', 'showCloseButton', 'showMinimizeButton'])
   },
   methods: {
     toggleUserList() {
