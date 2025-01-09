@@ -13,7 +13,8 @@
     </div>
 
     <div v-if="showMinimizeButton" class="sc-header--minimize-button" @click="$emit('minimize')">
-      <img class="sc-header--minimize-button-img" :src="icons.minimize.img" :alt="icons.minimize.name" />
+      <img v-if="icons.minimize" :src="icons.minimize.img" :alt="icons.minimize.name" />
+      <div v-else v-html="minimizeIcon"></div>
     </div>
     <div v-if="showCloseButton" class="sc-header--close-button" @click="$emit('close')">
       <img :src="icons.close.img" :alt="icons.close.name" />
@@ -33,11 +34,11 @@ export default {
       default: function () {
         return {
           close: {
-            img: CloseIcon,
+            img: null,
             name: 'default'
           },
           minimize: {
-            img: MinimizeIcon,
+            img: null,
             name: 'default'
           }
         }
@@ -54,6 +55,7 @@ export default {
   },
   data() {
     return {
+      minimizeIcon: MinimizeIcon,
       inUserList: false
     }
   },
@@ -141,10 +143,6 @@ export default {
   height: 100%;
   padding: 13px;
   box-sizing: border-box;
-}
-
-.sc-header--minimize-button-img rect {
-  fill: #fff;
 }
 
 @media (max-width: 450px) {
