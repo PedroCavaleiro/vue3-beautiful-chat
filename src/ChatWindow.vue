@@ -4,6 +4,7 @@
       v-if="showHeader"
       :title="title"
       :colors="colors"
+      :showMinimizeButton="showMinimizeButton"
       @close="$emit('close')"
       @minimize="$emit('minimize')"
       @userList="handleUserListToggle"
