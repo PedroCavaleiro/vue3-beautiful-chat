@@ -109,7 +109,7 @@ function R1(D, u, f, e, F, t) {
             x: "0",
             y: "20",
             width: "47.971",
-            height: "7.971",
+            height: "6.5",
             rx: "3",
             ry: "3"
           })
@@ -171,7 +171,7 @@ function R1(D, u, f, e, F, t) {
     ])) : z("", !0)
   ], 4);
 }
-const M1 = /* @__PURE__ */ M(I1, [["render", R1], ["__scopeId", "data-v-6e22fe6b"]]), H1 = {
+const M1 = /* @__PURE__ */ M(I1, [["render", R1], ["__scopeId", "data-v-f38905a5"]]), H1 = {
   props: {
     iconName: {
       type: String,
