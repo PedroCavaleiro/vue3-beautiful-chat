@@ -14,7 +14,7 @@
 
     <div v-if="showMinimizeButton" class="sc-header--minimize-button" @click="$emit('minimize')">
       <img v-if="icons.minimize.img" :src="icons.minimize.img" :alt="icons.minimize.name" />
-      <div v-else v-html="minimizeIcon"></div>
+      <template v-else v-html="minimizeIcon"></template>
     </div>
     <div v-if="showCloseButton" class="sc-header--close-button" @click="$emit('close')">
       <img :src="icons.close.img" :alt="icons.close.name" />
