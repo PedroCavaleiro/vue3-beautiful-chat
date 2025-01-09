@@ -15,12 +15,12 @@ function Mf(D) {
     };
   }), u;
 }
-const df = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURUxpcf///////////////////////////////////////////////////////3EAnbYAAAAOdFJOUwADZ66SoQjEhnS7/gsNGQL7+wAAAKtJREFUKM+F01sOhCAQRNESFV/I/pc70Og0YJfyJbmHhBAbGGYHstw8IPV4EOGOmERYIhGpxyUAJxHSz/xlC+1FxE64qB1yj1ZID7oXsel+63ovnj2JXUXue+hvrcLugL+EdG+9XBG8X+Kl34J3YM1g/egvIvdx5EK691RIz78YEXdnQrst6m6JqemXmNo+D/WJNAyVePZWWL0WdlfB+l+UAQQReaAc65DB/wGsZgzLN0IQWAAAAABJRU5ErkJggg==", M = (D, u) => {
+const df = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURUxpcf///////////////////////////////////////////////////////3EAnbYAAAAOdFJOUwADZ66SoQjEhnS7/gsNGQL7+wAAAKtJREFUKM+F01sOhCAQRNESFV/I/pc70Og0YJfyJbmHhBAbGGYHstw8IPV4EOGOmERYIhGpxyUAJxHSz/xlC+1FxE64qB1yj1ZID7oXsel+63ovnj2JXUXue+hvrcLugL+EdG+9XBG8X+Kl34J3YM1g/egvIvdx5EK691RIz78YEXdnQrst6m6JqemXmNo+D/WJNAyVePZWWL0WdlfB+l+UAQQReaAc65DB/wGsZgzLN0IQWAAAAABJRU5ErkJggg==", I1 = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3crect%20x='0'%20y='20'%20width='47.971'%20height='7.971'%20rx='5'%20ry='5'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", M = (D, u) => {
   const f = D.__vccOpts || D;
   for (const [e, F] of u)
     f[e] = F;
   return f;
-}, I1 = {
+}, z1 = {
   props: {
     icons: {
       type: Object,
@@ -59,11 +59,11 @@ const df = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AA
       this.inUserList = !this.inUserList, this.$emit("userList", this.inUserList);
     }
   }
-}, z1 = ["src"], N1 = {
+}, N1 = ["src"], q1 = {
   key: 2,
   class: "sc-header--title"
-}, q1 = ["src", "alt"], R1 = ["src", "alt"];
-function L1(D, u, f, e, F, t) {
+}, R1 = ["src", "alt"], L1 = ["src", "alt"];
+function M1(D, u, f, e, F, t) {
   return p(), g("div", {
     class: "sc-header",
     style: R({ background: f.colors.header.bg, color: f.colors.header.text })
@@ -73,8 +73,8 @@ function L1(D, u, f, e, F, t) {
       class: "sc-header--img",
       src: D.titleImageUrl,
       alt: ""
-    }, null, 8, z1)) : I("", !0),
-    D.disableUserListToggle ? (p(), g("div", N1, [
+    }, null, 8, N1)) : I("", !0),
+    D.disableUserListToggle ? (p(), g("div", q1, [
       O(D.$slots, "default", {}, () => [
         Nu(K(f.title), 1)
       ], !0)
@@ -95,7 +95,7 @@ function L1(D, u, f, e, F, t) {
       y("img", {
         src: f.icons.minimize.img,
         alt: f.icons.minimize.name
-      }, null, 8, q1)
+      }, null, 8, R1)
     ])) : I("", !0),
     D.showCloseButton ? (p(), g("div", {
       key: 4,
@@ -105,11 +105,11 @@ function L1(D, u, f, e, F, t) {
       y("img", {
         src: f.icons.close.img,
         alt: f.icons.close.name
-      }, null, 8, R1)
+      }, null, 8, L1)
     ])) : I("", !0)
   ], 4);
 }
-const M1 = /* @__PURE__ */ M(I1, [["render", L1], ["__scopeId", "data-v-650bf902"]]), H1 = {
+const H1 = /* @__PURE__ */ M(z1, [["render", M1], ["__scopeId", "data-v-efade3b2"]]), U1 = {
   props: {
     iconName: {
       type: String,
@@ -128,8 +128,8 @@ const M1 = /* @__PURE__ */ M(I1, [["render", L1], ["__scopeId", "data-v-650bf902
       default: "currentColor"
     }
   }
-}, U1 = ["width", "height", "aria-labelledby"], V1 = ["id"], W1 = ["fill"];
-function G1(D, u, f, e, F, t) {
+}, V1 = ["width", "height", "aria-labelledby"], W1 = ["id"], G1 = ["fill"];
+function X1(D, u, f, e, F, t) {
   return p(), g("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: f.width,
@@ -141,22 +141,22 @@ function G1(D, u, f, e, F, t) {
     y("title", {
       id: f.iconName,
       lang: "en"
-    }, K(f.iconName), 9, V1),
+    }, K(f.iconName), 9, W1),
     y("g", { fill: f.iconColor }, [
       O(D.$slots, "default", {}, void 0, !0)
-    ], 8, W1)
-  ], 8, U1);
+    ], 8, G1)
+  ], 8, V1);
 }
-const Hf = /* @__PURE__ */ M(H1, [["render", G1], ["__scopeId", "data-v-1fd45a6c"]]), X1 = {}, Y1 = { d: "M19.404,6.65l-5.998-5.996c-0.292-0.292-0.765-0.292-1.056,0l-2.22,2.22l-8.311,8.313l-0.003,0.001v0.003l-0.161,0.161c-0.114,0.112-0.187,0.258-0.21,0.417l-1.059,7.051c-0.035,0.233,0.044,0.47,0.21,0.639c0.143,0.14,0.333,0.219,0.528,0.219c0.038,0,0.073-0.003,0.111-0.009l7.054-1.055c0.158-0.025,0.306-0.098,0.417-0.211l8.478-8.476l2.22-2.22C19.695,7.414,19.695,6.941,19.404,6.65z M8.341,16.656l-0.989-0.99l7.258-7.258l0.989,0.99L8.341,16.656z M2.332,15.919l0.411-2.748l4.143,4.143l-2.748,0.41L2.332,15.919z M13.554,7.351L6.296,14.61l-0.849-0.848l7.259-7.258l0.423,0.424L13.554,7.351zM10.658,4.457l0.992,0.99l-7.259,7.258L3.4,11.715L10.658,4.457z M16.656,8.342l-1.517-1.517V6.823h-0.003l-0.951-0.951l-2.471-2.471l1.164-1.164l4.942,4.94L16.656,8.342z" };
-function Q1(D, u) {
-  return p(), g("path", Y1);
+const Hf = /* @__PURE__ */ M(U1, [["render", X1], ["__scopeId", "data-v-1fd45a6c"]]), Y1 = {}, Q1 = { d: "M19.404,6.65l-5.998-5.996c-0.292-0.292-0.765-0.292-1.056,0l-2.22,2.22l-8.311,8.313l-0.003,0.001v0.003l-0.161,0.161c-0.114,0.112-0.187,0.258-0.21,0.417l-1.059,7.051c-0.035,0.233,0.044,0.47,0.21,0.639c0.143,0.14,0.333,0.219,0.528,0.219c0.038,0,0.073-0.003,0.111-0.009l7.054-1.055c0.158-0.025,0.306-0.098,0.417-0.211l8.478-8.476l2.22-2.22C19.695,7.414,19.695,6.941,19.404,6.65z M8.341,16.656l-0.989-0.99l7.258-7.258l0.989,0.99L8.341,16.656z M2.332,15.919l0.411-2.748l4.143,4.143l-2.748,0.41L2.332,15.919z M13.554,7.351L6.296,14.61l-0.849-0.848l7.259-7.258l0.423,0.424L13.554,7.351zM10.658,4.457l0.992,0.99l-7.259,7.258L3.4,11.715L10.658,4.457z M16.656,8.342l-1.517-1.517V6.823h-0.003l-0.951-0.951l-2.471-2.471l1.164-1.164l4.942,4.94L16.656,8.342z" };
+function K1(D, u) {
+  return p(), g("path", Q1);
 }
-const K1 = /* @__PURE__ */ M(X1, [["render", Q1]]), J1 = {}, Z1 = { d: "M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z" };
-function u0(D, u) {
-  return p(), g("path", Z1);
+const J1 = /* @__PURE__ */ M(Y1, [["render", K1]]), Z1 = {}, u0 = { d: "M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z" };
+function D0(D, u) {
+  return p(), g("path", u0);
 }
-const Uf = /* @__PURE__ */ M(J1, [["render", u0]]), rf = (D) => D.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-function D0(D, ...u) {
+const Uf = /* @__PURE__ */ M(Z1, [["render", D0]]), rf = (D) => D.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+function f0(D, ...u) {
   if (typeof D == "string")
     return rf(D);
   let f = D[0];
@@ -164,19 +164,19 @@ function D0(D, ...u) {
     f = f + rf(String(F)) + D[e + 1];
   return f;
 }
-var f0 = "4.1.0";
-function e0(D) {
+var e0 = "4.1.0";
+function t0(D) {
   return D === void 0;
 }
 function fu(D) {
   return typeof D == "boolean";
 }
-function t0(D, u) {
+function F0(D, u) {
   for (var f in u)
-    u.hasOwnProperty(f) && e0(D[f]) && (D[f] = u[f]);
+    u.hasOwnProperty(f) && t0(D[f]) && (D[f] = u[f]);
   return D;
 }
-function F0(D, u, f) {
+function n0(D, u, f) {
   var e;
   return D.length > u && (f == null ? (f = "&hellip;", e = 3) : e = f.length, D = D.substring(0, u - e) + f), D;
 }
@@ -191,7 +191,7 @@ function wu(D, u) {
 function Iu(D) {
   throw new Error("Unhandled case for value: '".concat(D, "'"));
 }
-var zu = /[A-Za-z]/, Z = /[\d]/, du = /\s/, jD = /['"]/, n0 = /[\x00-\x1F\x7F]/, a0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, d0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, r0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, i0 = a0 + d0 + r0, o0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Vf = i0 + o0, Su = new RegExp("[".concat(Vf, "]")), Wf = (
+var zu = /[A-Za-z]/, Z = /[\d]/, du = /\s/, jD = /['"]/, a0 = /[\x00-\x1F\x7F]/, d0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, r0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, i0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, o0 = d0 + r0 + i0, s0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Vf = o0 + s0, Su = new RegExp("[".concat(Vf, "]")), Wf = (
   /** @class */
   function() {
     function D(u) {
@@ -247,7 +247,7 @@ var zu = /[A-Za-z]/, Z = /[\d]/, du = /\s/, jD = /['"]/, n0 = /[\x00-\x1F\x7F]/,
     }, D;
   }()
 );
-function s0(D, u, f) {
+function C0(D, u, f) {
   var e, F;
   f == null ? (f = "&hellip;", F = 3, e = 8) : (F = f.length, e = f.length);
   var t = function(_) {
@@ -301,7 +301,7 @@ function s0(D, u, f) {
   var w = "";
   return r > 0 && (w = c.substr(-1 * Math.floor(r / 2))), (c.substr(0, Math.ceil(r / 2)) + f + w).substr(0, r + e);
 }
-function C0(D, u, f) {
+function c0(D, u, f) {
   if (D.length <= u)
     return D;
   var e, F;
@@ -309,10 +309,10 @@ function C0(D, u, f) {
   var t = u - F, n = "";
   return t > 0 && (n = D.substr(-1 * Math.floor(t / 2))), (D.substr(0, Math.ceil(t / 2)) + f + n).substr(0, t + e);
 }
-function c0(D, u, f) {
-  return F0(D, u, f);
+function E0(D, u, f) {
+  return n0(D, u, f);
 }
-var E0 = (
+var l0 = (
   /** @class */
   function() {
     function D(u) {
@@ -345,7 +345,7 @@ var E0 = (
       if (!f || !f.length)
         return u;
       var e = f.length, F = f.location;
-      return F === "smart" ? s0(u, e) : F === "middle" ? C0(u, e) : c0(u, e);
+      return F === "smart" ? C0(u, e) : F === "middle" ? c0(u, e) : E0(u, e);
     }, D;
   }()
 ), HD = function(D, u) {
@@ -391,7 +391,7 @@ var eD = (
       return this.tagBuilder.build(this);
     }, D;
   }()
-), l0 = "(?:xn--vermgensberatung-pwb|xn--vermgensberater-ctb|xn--clchc0ea0b2g2a9gcd|xn--w4r85el8fhu5dnra|travelersinsurance|vermögensberatung|xn--5su34j936bgsg|xn--bck1b9a5dre4c|xn--mgbah1a3hjkrd|xn--mgbai9azgqp6j|xn--mgberp4a5d4ar|xn--xkc2dl3a5ee0h|vermögensberater|xn--fzys8d69uvgm|xn--mgba7c0bbn0a|xn--mgbcpq6gpa1a|xn--xkc2al3hye2a|americanexpress|kerryproperties|sandvikcoromant|xn--i1b6b1a6a2e|xn--kcrx77d1x4a|xn--lgbbat1ad8j|xn--mgba3a4f16a|xn--mgbc0a9azcg|xn--nqv7fs00ema|americanfamily|kerrylogistics|weatherchannel|xn--54b7fta0cc|xn--6qq986b3xl|xn--80aqecdr1a|xn--b4w605ferd|xn--fiq228c5hs|xn--h2breg3eve|xn--jlq480n2rg|xn--mgba3a3ejt|xn--mgbaam7a8h|xn--mgbayh7gpa|xn--mgbbh1a71e|xn--mgbca7dzdo|xn--mgbi4ecexp|xn--mgbx4cd0ab|xn--rvc1e0am3e|international|lifeinsurance|wolterskluwer|xn--cckwcxetd|xn--eckvdtc9d|xn--fpcrj9c3d|xn--fzc2c9e2c|xn--h2brj9c8c|xn--tiq49xqyj|xn--yfro4i67o|xn--ygbi2ammx|construction|lplfinancial|scholarships|versicherung|xn--3e0b707e|xn--45br5cyl|xn--4dbrk0ce|xn--80adxhks|xn--80asehdb|xn--8y0a063a|xn--gckr3f0f|xn--mgb9awbf|xn--mgbab2bd|xn--mgbgu82a|xn--mgbpl2fh|xn--mgbt3dhd|xn--mk1bu44c|xn--ngbc5azd|xn--ngbe9e0a|xn--ogbpf8fl|xn--qcka1pmc|accountants|barclaycard|blackfriday|blockbuster|bridgestone|calvinklein|contractors|creditunion|engineering|enterprises|investments|kerryhotels|lamborghini|motorcycles|olayangroup|photography|playstation|productions|progressive|redumbrella|williamhill|xn--11b4c3d|xn--1ck2e1b|xn--1qqw23a|xn--2scrj9c|xn--3bst00m|xn--3ds443g|xn--3hcrj9c|xn--42c2d9a|xn--45brj9c|xn--55qw42g|xn--6frz82g|xn--80ao21a|xn--9krt00a|xn--cck2b3b|xn--czr694b|xn--d1acj3b|xn--efvy88h|xn--fct429k|xn--fjq720a|xn--flw351e|xn--g2xx48c|xn--gecrj9c|xn--gk3at1e|xn--h2brj9c|xn--hxt814e|xn--imr513n|xn--j6w193g|xn--jvr189m|xn--kprw13d|xn--kpry57d|xn--mgbbh1a|xn--mgbtx2b|xn--mix891f|xn--nyqy26a|xn--otu796d|xn--pgbs0dh|xn--q9jyb4c|xn--rhqv96g|xn--rovu88b|xn--s9brj9c|xn--ses554g|xn--t60b56a|xn--vuq861b|xn--w4rs40l|xn--xhq521b|xn--zfr164b|சிங்கப்பூர்|accountant|apartments|associates|basketball|bnpparibas|boehringer|capitalone|consulting|creditcard|cuisinella|eurovision|extraspace|foundation|healthcare|immobilien|industries|management|mitsubishi|nextdirect|properties|protection|prudential|realestate|republican|restaurant|schaeffler|tatamotors|technology|university|vlaanderen|xn--30rr7y|xn--3pxu8k|xn--45q11c|xn--4gbrim|xn--55qx5d|xn--5tzm5g|xn--80aswg|xn--90a3ac|xn--9dbq2a|xn--9et52u|xn--c2br7g|xn--cg4bki|xn--czrs0t|xn--czru2d|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--io0a7i|xn--kput3i|xn--mxtq1m|xn--o3cw4h|xn--pssy2u|xn--q7ce6a|xn--unup4y|xn--wgbh1c|xn--wgbl6a|xn--y9a3aq|accenture|allfinanz|amsterdam|analytics|aquarelle|barcelona|bloomberg|christmas|community|directory|education|equipment|fairwinds|financial|firestone|fresenius|furniture|goldpoint|hisamitsu|homedepot|homegoods|homesense|institute|insurance|kuokgroup|lancaster|landrover|lifestyle|marketing|marshalls|melbourne|microsoft|panasonic|pramerica|richardli|shangrila|solutions|statebank|statefarm|stockholm|travelers|vacations|xn--90ais|xn--c1avg|xn--d1alf|xn--e1a4c|xn--fhbei|xn--j1aef|xn--j1amh|xn--l1acc|xn--ngbrx|xn--nqv7f|xn--p1acf|xn--qxa6a|xn--tckwe|xn--vhquv|yodobashi|موريتانيا|abudhabi|airforce|allstate|attorney|barclays|barefoot|bargains|baseball|boutique|bradesco|broadway|brussels|builders|business|capetown|catering|catholic|cipriani|cleaning|clinique|clothing|commbank|computer|delivery|deloitte|democrat|diamonds|discount|discover|download|engineer|ericsson|exchange|feedback|fidelity|firmdale|football|frontier|goodyear|grainger|graphics|hdfcbank|helsinki|holdings|hospital|infiniti|ipiranga|istanbul|jpmorgan|lighting|lundbeck|marriott|mckinsey|memorial|merckmsd|mortgage|observer|partners|pharmacy|pictures|plumbing|property|redstone|reliance|saarland|samsclub|security|services|shopping|softbank|software|stcgroup|supplies|training|vanguard|ventures|verisign|woodside|xn--90ae|xn--node|xn--p1ai|xn--qxam|yokohama|السعودية|abogado|academy|agakhan|alibaba|android|athleta|auction|audible|auspost|banamex|bauhaus|bentley|bestbuy|booking|brother|capital|caravan|careers|channel|charity|chintai|citadel|clubmed|college|cologne|company|compare|contact|cooking|corsica|country|coupons|courses|cricket|cruises|dentist|digital|domains|exposed|express|farmers|fashion|ferrari|ferrero|finance|fishing|fitness|flights|florist|flowers|forsale|frogans|fujitsu|gallery|genting|godaddy|grocery|guitars|hamburg|hangout|hitachi|holiday|hosting|hotmail|hyundai|ismaili|jewelry|juniper|kitchen|komatsu|lacaixa|lanxess|lasalle|latrobe|leclerc|limited|lincoln|markets|monster|netbank|netflix|network|neustar|okinawa|organic|origins|philips|pioneer|politie|realtor|recipes|rentals|reviews|rexroth|samsung|sandvik|schmidt|schwarz|science|shiksha|singles|staples|storage|support|surgery|systems|temasek|theater|theatre|tickets|toshiba|trading|walmart|wanggou|watches|weather|website|wedding|whoswho|windows|winners|yamaxun|youtube|zuerich|католик|البحرين|الجزائر|العليان|پاکستان|كاثوليك|இந்தியா|abbott|abbvie|africa|agency|airbus|airtel|alipay|alsace|alstom|amazon|anquan|aramco|author|bayern|beauty|berlin|bharti|bostik|boston|broker|camera|career|casino|center|chanel|chrome|church|circle|claims|clinic|coffee|comsec|condos|coupon|credit|cruise|dating|datsun|dealer|degree|dental|design|direct|doctor|dunlop|dupont|durban|emerck|energy|estate|events|expert|family|flickr|futbol|gallup|garden|george|giving|global|google|gratis|health|hermes|hiphop|hockey|hotels|hughes|imamat|insure|intuit|jaguar|joburg|juegos|kaufen|kindle|kosher|latino|lawyer|lefrak|living|locker|london|luxury|madrid|maison|makeup|market|mattel|mobile|monash|mormon|moscow|museum|nagoya|nissan|nissay|norton|nowruz|office|olayan|online|oracle|orange|otsuka|pfizer|photos|physio|pictet|quebec|racing|realty|reisen|repair|report|review|rogers|ryukyu|safety|sakura|sanofi|school|schule|search|secure|select|shouji|soccer|social|stream|studio|supply|suzuki|swatch|sydney|taipei|taobao|target|tattoo|tennis|tienda|tjmaxx|tkmaxx|toyota|travel|unicom|viajes|viking|villas|virgin|vision|voting|voyage|walter|webcam|xihuan|yachts|yandex|zappos|москва|онлайн|ابوظبي|ارامكو|الاردن|المغرب|امارات|فلسطين|مليسيا|भारतम्|இலங்கை|ファッション|actor|adult|aetna|amfam|amica|apple|archi|audio|autos|azure|baidu|beats|bible|bingo|black|boats|bosch|build|canon|cards|chase|cheap|cisco|citic|click|cloud|coach|codes|crown|cymru|dance|deals|delta|drive|dubai|earth|edeka|email|epson|faith|fedex|final|forex|forum|gallo|games|gifts|gives|glass|globo|gmail|green|gripe|group|gucci|guide|homes|honda|horse|house|hyatt|ikano|irish|jetzt|koeln|kyoto|lamer|lease|legal|lexus|lilly|lipsy|loans|locus|lotte|lotto|mango|media|miami|money|movie|music|nexus|nikon|ninja|nokia|nowtv|omega|osaka|paris|parts|party|phone|photo|pizza|place|poker|praxi|press|prime|promo|quest|radio|rehab|reise|ricoh|rocks|rodeo|rugby|salon|sener|seven|sharp|shell|shoes|skype|sling|smart|smile|solar|space|sport|stada|store|study|style|sucks|swiss|tatar|tires|tirol|tmall|today|tokyo|tools|toray|total|tours|trade|trust|tunes|tushu|ubank|vegas|video|vodka|volvo|wales|watch|weber|weibo|works|world|xerox|yahoo|ישראל|ایران|بازار|بھارت|سودان|سورية|همراه|भारोत|संगठन|বাংলা|భారత్|ഭാരതം|嘉里大酒店|aarp|able|aero|akdn|ally|amex|arab|army|arpa|arte|asda|asia|audi|auto|baby|band|bank|bbva|beer|best|bike|bing|blog|blue|bofa|bond|book|buzz|cafe|call|camp|care|cars|casa|case|cash|cbre|cern|chat|citi|city|club|cool|coop|cyou|data|date|dclk|deal|dell|desi|diet|dish|docs|dvag|erni|fage|fail|fans|farm|fast|fido|film|fire|fish|flir|food|ford|free|fund|game|gbiz|gent|ggee|gift|gmbh|gold|golf|goog|guge|guru|hair|haus|hdfc|help|here|host|hsbc|icbc|ieee|imdb|immo|info|itau|java|jeep|jobs|jprs|kddi|kids|kiwi|kpmg|kred|land|lego|lgbt|lidl|life|like|limo|link|live|loan|love|ltda|luxe|maif|meet|meme|menu|mini|mint|mobi|moda|moto|name|navy|news|next|nico|nike|ollo|open|page|pars|pccw|pics|ping|pink|play|plus|pohl|porn|post|prod|prof|qpon|read|reit|rent|rest|rich|room|rsvp|ruhr|safe|sale|sarl|save|saxo|scot|seat|seek|sexy|shia|shop|show|silk|sina|site|skin|sncf|sohu|song|sony|spot|star|surf|talk|taxi|team|tech|teva|tiaa|tips|town|toys|tube|vana|visa|viva|vivo|vote|voto|wang|weir|wien|wiki|wine|work|xbox|yoga|zara|zero|zone|дети|сайт|بارت|بيتك|ڀارت|تونس|شبكة|عراق|عمان|موقع|भारत|ভারত|ভাৰত|ਭਾਰਤ|ભારત|ଭାରତ|ಭಾರತ|ලංකා|アマゾン|グーグル|クラウド|ポイント|组织机构|電訊盈科|香格里拉|aaa|abb|abc|aco|ads|aeg|afl|aig|anz|aol|app|art|aws|axa|bar|bbc|bbt|bcg|bcn|bet|bid|bio|biz|bms|bmw|bom|boo|bot|box|buy|bzh|cab|cal|cam|car|cat|cba|cbn|ceo|cfa|cfd|com|cpa|crs|dad|day|dds|dev|dhl|diy|dnp|dog|dot|dtv|dvr|eat|eco|edu|esq|eus|fan|fit|fly|foo|fox|frl|ftr|fun|fyi|gal|gap|gay|gdn|gea|gle|gmo|gmx|goo|gop|got|gov|hbo|hiv|hkt|hot|how|ibm|ice|icu|ifm|inc|ing|ink|int|ist|itv|jcb|jio|jll|jmp|jnj|jot|joy|kfh|kia|kim|kpn|krd|lat|law|lds|llc|llp|lol|lpl|ltd|man|map|mba|med|men|mil|mit|mlb|mls|mma|moe|moi|mom|mov|msd|mtn|mtr|nab|nba|nec|net|new|nfl|ngo|nhk|now|nra|nrw|ntt|nyc|obi|one|ong|onl|ooo|org|ott|ovh|pay|pet|phd|pid|pin|pnc|pro|pru|pub|pwc|red|ren|ril|rio|rip|run|rwe|sap|sas|sbi|sbs|scb|sew|sex|sfr|ski|sky|soy|spa|srl|stc|tab|tax|tci|tdk|tel|thd|tjx|top|trv|tui|tvs|ubs|uno|uol|ups|vet|vig|vin|vip|wed|win|wme|wow|wtc|wtf|xin|xxx|xyz|you|yun|zip|бел|ком|қаз|мкд|мон|орг|рус|срб|укр|հայ|קום|عرب|قطر|كوم|مصر|कॉम|नेट|คอม|ไทย|ລາວ|ストア|セール|みんな|中文网|亚马逊|天主教|我爱你|新加坡|淡马锡|飞利浦|ac|ad|ae|af|ag|ai|al|am|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cw|cx|cy|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gg|gh|gi|gl|gm|gn|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|mv|mw|mx|my|mz|na|nc|ne|nf|ng|ni|nl|no|np|nr|nu|nz|om|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|ps|pt|pw|py|qa|re|ro|rs|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sk|sl|sm|sn|so|sr|ss|st|su|sv|sx|sy|sz|tc|td|tf|tg|th|tj|tk|tl|tm|tn|to|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|za|zm|zw|ελ|ευ|бг|ею|рф|გე|닷넷|닷컴|삼성|한국|コム|世界|中信|中国|中國|企业|佛山|信息|健康|八卦|公司|公益|台湾|台灣|商城|商店|商标|嘉里|在线|大拿|娱乐|家電|广东|微博|慈善|手机|招聘|政务|政府|新闻|时尚|書籍|机构|游戏|澳門|点看|移动|网址|网店|网站|网络|联通|谷歌|购物|通販|集团|食品|餐厅|香港)", B0 = new RegExp("^" + l0 + "$"), p0 = /[\/?#]/, b0 = /[-+&@#/%=~_()|'$*\[\]{}\u2713]/, Gf = /[?!:,.;^]/, Xf = /https?:\/\//i, g0 = new RegExp("^" + Xf.source, "i"), m0 = new RegExp(Gf.source + "$"), h0 = /^(javascript|vbscript):/i, _0 = /^[A-Za-z][-.+A-Za-z0-9]*:(\/\/)?([^:/]*)/, v0 = /^(?:\/\/)?([^/#?:]+)/;
+), B0 = "(?:xn--vermgensberatung-pwb|xn--vermgensberater-ctb|xn--clchc0ea0b2g2a9gcd|xn--w4r85el8fhu5dnra|travelersinsurance|vermögensberatung|xn--5su34j936bgsg|xn--bck1b9a5dre4c|xn--mgbah1a3hjkrd|xn--mgbai9azgqp6j|xn--mgberp4a5d4ar|xn--xkc2dl3a5ee0h|vermögensberater|xn--fzys8d69uvgm|xn--mgba7c0bbn0a|xn--mgbcpq6gpa1a|xn--xkc2al3hye2a|americanexpress|kerryproperties|sandvikcoromant|xn--i1b6b1a6a2e|xn--kcrx77d1x4a|xn--lgbbat1ad8j|xn--mgba3a4f16a|xn--mgbc0a9azcg|xn--nqv7fs00ema|americanfamily|kerrylogistics|weatherchannel|xn--54b7fta0cc|xn--6qq986b3xl|xn--80aqecdr1a|xn--b4w605ferd|xn--fiq228c5hs|xn--h2breg3eve|xn--jlq480n2rg|xn--mgba3a3ejt|xn--mgbaam7a8h|xn--mgbayh7gpa|xn--mgbbh1a71e|xn--mgbca7dzdo|xn--mgbi4ecexp|xn--mgbx4cd0ab|xn--rvc1e0am3e|international|lifeinsurance|wolterskluwer|xn--cckwcxetd|xn--eckvdtc9d|xn--fpcrj9c3d|xn--fzc2c9e2c|xn--h2brj9c8c|xn--tiq49xqyj|xn--yfro4i67o|xn--ygbi2ammx|construction|lplfinancial|scholarships|versicherung|xn--3e0b707e|xn--45br5cyl|xn--4dbrk0ce|xn--80adxhks|xn--80asehdb|xn--8y0a063a|xn--gckr3f0f|xn--mgb9awbf|xn--mgbab2bd|xn--mgbgu82a|xn--mgbpl2fh|xn--mgbt3dhd|xn--mk1bu44c|xn--ngbc5azd|xn--ngbe9e0a|xn--ogbpf8fl|xn--qcka1pmc|accountants|barclaycard|blackfriday|blockbuster|bridgestone|calvinklein|contractors|creditunion|engineering|enterprises|investments|kerryhotels|lamborghini|motorcycles|olayangroup|photography|playstation|productions|progressive|redumbrella|williamhill|xn--11b4c3d|xn--1ck2e1b|xn--1qqw23a|xn--2scrj9c|xn--3bst00m|xn--3ds443g|xn--3hcrj9c|xn--42c2d9a|xn--45brj9c|xn--55qw42g|xn--6frz82g|xn--80ao21a|xn--9krt00a|xn--cck2b3b|xn--czr694b|xn--d1acj3b|xn--efvy88h|xn--fct429k|xn--fjq720a|xn--flw351e|xn--g2xx48c|xn--gecrj9c|xn--gk3at1e|xn--h2brj9c|xn--hxt814e|xn--imr513n|xn--j6w193g|xn--jvr189m|xn--kprw13d|xn--kpry57d|xn--mgbbh1a|xn--mgbtx2b|xn--mix891f|xn--nyqy26a|xn--otu796d|xn--pgbs0dh|xn--q9jyb4c|xn--rhqv96g|xn--rovu88b|xn--s9brj9c|xn--ses554g|xn--t60b56a|xn--vuq861b|xn--w4rs40l|xn--xhq521b|xn--zfr164b|சிங்கப்பூர்|accountant|apartments|associates|basketball|bnpparibas|boehringer|capitalone|consulting|creditcard|cuisinella|eurovision|extraspace|foundation|healthcare|immobilien|industries|management|mitsubishi|nextdirect|properties|protection|prudential|realestate|republican|restaurant|schaeffler|tatamotors|technology|university|vlaanderen|xn--30rr7y|xn--3pxu8k|xn--45q11c|xn--4gbrim|xn--55qx5d|xn--5tzm5g|xn--80aswg|xn--90a3ac|xn--9dbq2a|xn--9et52u|xn--c2br7g|xn--cg4bki|xn--czrs0t|xn--czru2d|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--io0a7i|xn--kput3i|xn--mxtq1m|xn--o3cw4h|xn--pssy2u|xn--q7ce6a|xn--unup4y|xn--wgbh1c|xn--wgbl6a|xn--y9a3aq|accenture|allfinanz|amsterdam|analytics|aquarelle|barcelona|bloomberg|christmas|community|directory|education|equipment|fairwinds|financial|firestone|fresenius|furniture|goldpoint|hisamitsu|homedepot|homegoods|homesense|institute|insurance|kuokgroup|lancaster|landrover|lifestyle|marketing|marshalls|melbourne|microsoft|panasonic|pramerica|richardli|shangrila|solutions|statebank|statefarm|stockholm|travelers|vacations|xn--90ais|xn--c1avg|xn--d1alf|xn--e1a4c|xn--fhbei|xn--j1aef|xn--j1amh|xn--l1acc|xn--ngbrx|xn--nqv7f|xn--p1acf|xn--qxa6a|xn--tckwe|xn--vhquv|yodobashi|موريتانيا|abudhabi|airforce|allstate|attorney|barclays|barefoot|bargains|baseball|boutique|bradesco|broadway|brussels|builders|business|capetown|catering|catholic|cipriani|cleaning|clinique|clothing|commbank|computer|delivery|deloitte|democrat|diamonds|discount|discover|download|engineer|ericsson|exchange|feedback|fidelity|firmdale|football|frontier|goodyear|grainger|graphics|hdfcbank|helsinki|holdings|hospital|infiniti|ipiranga|istanbul|jpmorgan|lighting|lundbeck|marriott|mckinsey|memorial|merckmsd|mortgage|observer|partners|pharmacy|pictures|plumbing|property|redstone|reliance|saarland|samsclub|security|services|shopping|softbank|software|stcgroup|supplies|training|vanguard|ventures|verisign|woodside|xn--90ae|xn--node|xn--p1ai|xn--qxam|yokohama|السعودية|abogado|academy|agakhan|alibaba|android|athleta|auction|audible|auspost|banamex|bauhaus|bentley|bestbuy|booking|brother|capital|caravan|careers|channel|charity|chintai|citadel|clubmed|college|cologne|company|compare|contact|cooking|corsica|country|coupons|courses|cricket|cruises|dentist|digital|domains|exposed|express|farmers|fashion|ferrari|ferrero|finance|fishing|fitness|flights|florist|flowers|forsale|frogans|fujitsu|gallery|genting|godaddy|grocery|guitars|hamburg|hangout|hitachi|holiday|hosting|hotmail|hyundai|ismaili|jewelry|juniper|kitchen|komatsu|lacaixa|lanxess|lasalle|latrobe|leclerc|limited|lincoln|markets|monster|netbank|netflix|network|neustar|okinawa|organic|origins|philips|pioneer|politie|realtor|recipes|rentals|reviews|rexroth|samsung|sandvik|schmidt|schwarz|science|shiksha|singles|staples|storage|support|surgery|systems|temasek|theater|theatre|tickets|toshiba|trading|walmart|wanggou|watches|weather|website|wedding|whoswho|windows|winners|yamaxun|youtube|zuerich|католик|البحرين|الجزائر|العليان|پاکستان|كاثوليك|இந்தியா|abbott|abbvie|africa|agency|airbus|airtel|alipay|alsace|alstom|amazon|anquan|aramco|author|bayern|beauty|berlin|bharti|bostik|boston|broker|camera|career|casino|center|chanel|chrome|church|circle|claims|clinic|coffee|comsec|condos|coupon|credit|cruise|dating|datsun|dealer|degree|dental|design|direct|doctor|dunlop|dupont|durban|emerck|energy|estate|events|expert|family|flickr|futbol|gallup|garden|george|giving|global|google|gratis|health|hermes|hiphop|hockey|hotels|hughes|imamat|insure|intuit|jaguar|joburg|juegos|kaufen|kindle|kosher|latino|lawyer|lefrak|living|locker|london|luxury|madrid|maison|makeup|market|mattel|mobile|monash|mormon|moscow|museum|nagoya|nissan|nissay|norton|nowruz|office|olayan|online|oracle|orange|otsuka|pfizer|photos|physio|pictet|quebec|racing|realty|reisen|repair|report|review|rogers|ryukyu|safety|sakura|sanofi|school|schule|search|secure|select|shouji|soccer|social|stream|studio|supply|suzuki|swatch|sydney|taipei|taobao|target|tattoo|tennis|tienda|tjmaxx|tkmaxx|toyota|travel|unicom|viajes|viking|villas|virgin|vision|voting|voyage|walter|webcam|xihuan|yachts|yandex|zappos|москва|онлайн|ابوظبي|ارامكو|الاردن|المغرب|امارات|فلسطين|مليسيا|भारतम्|இலங்கை|ファッション|actor|adult|aetna|amfam|amica|apple|archi|audio|autos|azure|baidu|beats|bible|bingo|black|boats|bosch|build|canon|cards|chase|cheap|cisco|citic|click|cloud|coach|codes|crown|cymru|dance|deals|delta|drive|dubai|earth|edeka|email|epson|faith|fedex|final|forex|forum|gallo|games|gifts|gives|glass|globo|gmail|green|gripe|group|gucci|guide|homes|honda|horse|house|hyatt|ikano|irish|jetzt|koeln|kyoto|lamer|lease|legal|lexus|lilly|lipsy|loans|locus|lotte|lotto|mango|media|miami|money|movie|music|nexus|nikon|ninja|nokia|nowtv|omega|osaka|paris|parts|party|phone|photo|pizza|place|poker|praxi|press|prime|promo|quest|radio|rehab|reise|ricoh|rocks|rodeo|rugby|salon|sener|seven|sharp|shell|shoes|skype|sling|smart|smile|solar|space|sport|stada|store|study|style|sucks|swiss|tatar|tires|tirol|tmall|today|tokyo|tools|toray|total|tours|trade|trust|tunes|tushu|ubank|vegas|video|vodka|volvo|wales|watch|weber|weibo|works|world|xerox|yahoo|ישראל|ایران|بازار|بھارت|سودان|سورية|همراه|भारोत|संगठन|বাংলা|భారత్|ഭാരതം|嘉里大酒店|aarp|able|aero|akdn|ally|amex|arab|army|arpa|arte|asda|asia|audi|auto|baby|band|bank|bbva|beer|best|bike|bing|blog|blue|bofa|bond|book|buzz|cafe|call|camp|care|cars|casa|case|cash|cbre|cern|chat|citi|city|club|cool|coop|cyou|data|date|dclk|deal|dell|desi|diet|dish|docs|dvag|erni|fage|fail|fans|farm|fast|fido|film|fire|fish|flir|food|ford|free|fund|game|gbiz|gent|ggee|gift|gmbh|gold|golf|goog|guge|guru|hair|haus|hdfc|help|here|host|hsbc|icbc|ieee|imdb|immo|info|itau|java|jeep|jobs|jprs|kddi|kids|kiwi|kpmg|kred|land|lego|lgbt|lidl|life|like|limo|link|live|loan|love|ltda|luxe|maif|meet|meme|menu|mini|mint|mobi|moda|moto|name|navy|news|next|nico|nike|ollo|open|page|pars|pccw|pics|ping|pink|play|plus|pohl|porn|post|prod|prof|qpon|read|reit|rent|rest|rich|room|rsvp|ruhr|safe|sale|sarl|save|saxo|scot|seat|seek|sexy|shia|shop|show|silk|sina|site|skin|sncf|sohu|song|sony|spot|star|surf|talk|taxi|team|tech|teva|tiaa|tips|town|toys|tube|vana|visa|viva|vivo|vote|voto|wang|weir|wien|wiki|wine|work|xbox|yoga|zara|zero|zone|дети|сайт|بارت|بيتك|ڀارت|تونس|شبكة|عراق|عمان|موقع|भारत|ভারত|ভাৰত|ਭਾਰਤ|ભારત|ଭାରତ|ಭಾರತ|ලංකා|アマゾン|グーグル|クラウド|ポイント|组织机构|電訊盈科|香格里拉|aaa|abb|abc|aco|ads|aeg|afl|aig|anz|aol|app|art|aws|axa|bar|bbc|bbt|bcg|bcn|bet|bid|bio|biz|bms|bmw|bom|boo|bot|box|buy|bzh|cab|cal|cam|car|cat|cba|cbn|ceo|cfa|cfd|com|cpa|crs|dad|day|dds|dev|dhl|diy|dnp|dog|dot|dtv|dvr|eat|eco|edu|esq|eus|fan|fit|fly|foo|fox|frl|ftr|fun|fyi|gal|gap|gay|gdn|gea|gle|gmo|gmx|goo|gop|got|gov|hbo|hiv|hkt|hot|how|ibm|ice|icu|ifm|inc|ing|ink|int|ist|itv|jcb|jio|jll|jmp|jnj|jot|joy|kfh|kia|kim|kpn|krd|lat|law|lds|llc|llp|lol|lpl|ltd|man|map|mba|med|men|mil|mit|mlb|mls|mma|moe|moi|mom|mov|msd|mtn|mtr|nab|nba|nec|net|new|nfl|ngo|nhk|now|nra|nrw|ntt|nyc|obi|one|ong|onl|ooo|org|ott|ovh|pay|pet|phd|pid|pin|pnc|pro|pru|pub|pwc|red|ren|ril|rio|rip|run|rwe|sap|sas|sbi|sbs|scb|sew|sex|sfr|ski|sky|soy|spa|srl|stc|tab|tax|tci|tdk|tel|thd|tjx|top|trv|tui|tvs|ubs|uno|uol|ups|vet|vig|vin|vip|wed|win|wme|wow|wtc|wtf|xin|xxx|xyz|you|yun|zip|бел|ком|қаз|мкд|мон|орг|рус|срб|укр|հայ|קום|عرب|قطر|كوم|مصر|कॉम|नेट|คอม|ไทย|ລາວ|ストア|セール|みんな|中文网|亚马逊|天主教|我爱你|新加坡|淡马锡|飞利浦|ac|ad|ae|af|ag|ai|al|am|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cw|cx|cy|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gg|gh|gi|gl|gm|gn|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|mv|mw|mx|my|mz|na|nc|ne|nf|ng|ni|nl|no|np|nr|nu|nz|om|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|ps|pt|pw|py|qa|re|ro|rs|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sk|sl|sm|sn|so|sr|ss|st|su|sv|sx|sy|sz|tc|td|tf|tg|th|tj|tk|tl|tm|tn|to|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|za|zm|zw|ελ|ευ|бг|ею|рф|გე|닷넷|닷컴|삼성|한국|コム|世界|中信|中国|中國|企业|佛山|信息|健康|八卦|公司|公益|台湾|台灣|商城|商店|商标|嘉里|在线|大拿|娱乐|家電|广东|微博|慈善|手机|招聘|政务|政府|新闻|时尚|書籍|机构|游戏|澳門|点看|移动|网址|网店|网站|网络|联通|谷歌|购物|通販|集团|食品|餐厅|香港)", p0 = new RegExp("^" + B0 + "$"), b0 = /[\/?#]/, g0 = /[-+&@#/%=~_()|'$*\[\]{}\u2713]/, Gf = /[?!:,.;^]/, Xf = /https?:\/\//i, m0 = new RegExp("^" + Xf.source, "i"), h0 = new RegExp(Gf.source + "$"), _0 = /^(javascript|vbscript):/i, v0 = /^[A-Za-z][-.+A-Za-z0-9]*:(\/\/)?([^:/]*)/, A0 = /^(?:\/\/)?([^/#?:]+)/;
 function Vu(D) {
   return zu.test(D);
 }
@@ -405,25 +405,25 @@ function $D(D) {
   return D === "_" || _u(D);
 }
 function sf(D) {
-  return Su.test(D) || b0.test(D) || Gf.test(D);
+  return Su.test(D) || g0.test(D) || Gf.test(D);
 }
 function PD(D) {
-  return p0.test(D);
+  return b0.test(D);
 }
 function Yf(D) {
-  return B0.test(D.toLowerCase());
+  return p0.test(D.toLowerCase());
 }
-function A0(D) {
-  if (h0.test(D))
+function y0(D) {
+  if (_0.test(D))
     return !1;
-  var u = D.match(_0);
+  var u = D.match(v0);
   if (!u)
     return !1;
   var f = !!u[1], e = u[2];
   return f ? !0 : !(e.indexOf(".") === -1 || !zu.test(e));
 }
-function y0(D) {
-  var u = D.match(v0);
+function w0(D) {
+  var u = D.match(A0);
   if (!u)
     return !1;
   var f = u[0], e = f.split(".");
@@ -432,12 +432,12 @@ function y0(D) {
   var F = e[e.length - 1];
   return !!Yf(F);
 }
-var w0 = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/, k0 = /[:/?#]/;
-function x0(D) {
-  var u = D.split(k0, 1)[0];
-  return w0.test(u);
+var k0 = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/, x0 = /[:/?#]/;
+function S0(D) {
+  var u = D.split(x0, 1)[0];
+  return k0.test(u);
 }
-var S0 = /^(https?:\/\/)?(www\.)?/i, T0 = /^\/\//, O0 = (
+var T0 = /^(https?:\/\/)?(www\.)?/i, O0 = /^\/\//, j0 = (
   /** @class */
   function(D) {
     fD(u, D);
@@ -460,23 +460,23 @@ var S0 = /^(https?:\/\/)?(www\.)?/i, T0 = /^\/\//, O0 = (
       return f.replace(/&amp;/g, "&");
     }, u.prototype.getAnchorText = function() {
       var f = this.getMatchedText();
-      return this.protocolRelativeMatch && (f = P0(f)), this.stripPrefix.scheme && (f = j0(f)), this.stripPrefix.www && (f = $0(f)), this.stripTrailingSlash && (f = I0(f)), this.decodePercentEncoding && (f = z0(f)), f;
+      return this.protocolRelativeMatch && (f = I0(f)), this.stripPrefix.scheme && (f = $0(f)), this.stripPrefix.www && (f = P0(f)), this.stripTrailingSlash && (f = z0(f)), this.decodePercentEncoding && (f = N0(f)), f;
     }, u;
   }(eD)
 );
-function j0(D) {
-  return D.replace(g0, "");
-}
 function $0(D) {
-  return D.replace(S0, "$1");
+  return D.replace(m0, "");
 }
 function P0(D) {
-  return D.replace(T0, "");
+  return D.replace(T0, "$1");
 }
 function I0(D) {
-  return D.charAt(D.length - 1) === "/" && (D = D.slice(0, -1)), D;
+  return D.replace(O0, "");
 }
 function z0(D) {
+  return D.charAt(D.length - 1) === "/" && (D = D.slice(0, -1)), D;
+}
+function N0(D) {
   var u = D.replace(/%22/gi, "&quot;").replace(/%26/gi, "&amp;").replace(/%27/gi, "&#39;").replace(/%3C/gi, "&lt;").replace(/%3E/gi, "&gt;");
   try {
     return decodeURIComponent(u);
@@ -484,18 +484,18 @@ function z0(D) {
     return u;
   }
 }
-var N0 = /^mailto:/i, q0 = new RegExp("[".concat(Vf, "!#$%&'*+/=?^_`{|}~-]"));
-function R0(D) {
+var q0 = /^mailto:/i, R0 = new RegExp("[".concat(Vf, "!#$%&'*+/=?^_`{|}~-]"));
+function L0(D) {
   return Su.test(D);
 }
 function ID(D) {
-  return q0.test(D);
+  return R0.test(D);
 }
-function L0(D) {
+function M0(D) {
   var u = D.split(".").pop() || "";
   return Yf(u);
 }
-var M0 = (
+var H0 = (
   /** @class */
   function(D) {
     fD(u, D);
@@ -517,16 +517,16 @@ var M0 = (
 function Cf(D) {
   return D === "_" || Su.test(D);
 }
-function H0(D) {
+function U0(D) {
   return D.length <= 140;
 }
-var U0 = [
+var V0 = [
   "twitter",
   "facebook",
   "instagram",
   "tiktok",
   "youtube"
-], V0 = (
+], W0 = (
   /** @class */
   function(D) {
     fD(u, D);
@@ -563,7 +563,7 @@ var U0 = [
       return e && f.push(e), f;
     }, u;
   }(eD)
-), W0 = {
+), G0 = {
   twitter: /^@\w{1,15}$/,
   instagram: /^@[_\w]{1,30}$/,
   soundcloud: /^@[-a-z0-9_]{3,25}$/,
@@ -574,21 +574,21 @@ var U0 = [
   // dashes, or latin middle dots ('·').
   // https://support.google.com/youtube/answer/11585688?hl=en&co=GENIE.Platform%3DAndroid#tns
   youtube: /^@[-.·\w]{3,30}$/
-}, G0 = /[-\w.]/;
+}, X0 = /[-\w.]/;
 function cf(D) {
-  return G0.test(D);
+  return X0.test(D);
 }
-function X0(D, u) {
-  var f = W0[u];
+function Y0(D, u) {
+  var f = G0[u];
   return f.test(D);
 }
-var Y0 = [
+var Q0 = [
   "twitter",
   "instagram",
   "soundcloud",
   "tiktok",
   "youtube"
-], Q0 = (
+], K0 = (
   /** @class */
   function(D) {
     fD(u, D);
@@ -624,18 +624,18 @@ var Y0 = [
       return e && f.push(e), f;
     }, u;
   }(eD)
-), K0 = /[-. ]/, J0 = /[-. ()]/, Z0 = /[,;]/, u3 = /(?:(?:(?:(\+)?\d{1,3}[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4})|(?:(\+)(?:9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)[-. ]?(?:\d[-. ]?){6,12}\d+))([,;]+[0-9]+#?)*/, D3 = /(0([1-9]-?[1-9]\d{3}|[1-9]{2}-?\d{3}|[1-9]{2}\d{1}-?\d{2}|[1-9]{2}\d{2}-?\d{1})-?\d{4}|0[789]0-?\d{4}-?\d{4}|050-?\d{4}-?\d{4})/, f3 = new RegExp("^".concat(u3.source, "|").concat(D3.source, "$"));
+), J0 = /[-. ]/, Z0 = /[-. ()]/, u3 = /[,;]/, D3 = /(?:(?:(?:(\+)?\d{1,3}[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4})|(?:(\+)(?:9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)[-. ]?(?:\d[-. ]?){6,12}\d+))([,;]+[0-9]+#?)*/, f3 = /(0([1-9]-?[1-9]\d{3}|[1-9]{2}-?\d{3}|[1-9]{2}\d{1}-?\d{2}|[1-9]{2}\d{2}-?\d{1})-?\d{4}|0[789]0-?\d{4}-?\d{4}|050-?\d{4}-?\d{4})/, e3 = new RegExp("^".concat(D3.source, "|").concat(f3.source, "$"));
 function Ef(D) {
-  return K0.test(D);
+  return J0.test(D);
 }
 function zD(D) {
-  return Z0.test(D);
+  return u3.test(D);
 }
-function e3(D) {
-  var u = D.charAt(0) === "+" || J0.test(D);
-  return u && f3.test(D);
+function t3(D) {
+  var u = D.charAt(0) === "+" || Z0.test(D);
+  return u && e3.test(D);
 }
-var t3 = (
+var F3 = (
   /** @class */
   function(D) {
     fD(u, D);
@@ -656,7 +656,7 @@ var t3 = (
     }, u;
   }(eD)
 );
-function F3(D, u) {
+function n3(D, u) {
   for (var f = u.tagBuilder, e = u.stripPrefix, F = u.stripTrailingSlash, t = u.decodePercentEncoding, n = u.hashtagServiceName, a = u.mentionServiceName, r = [], C = D.length, d = [], c = 0; c < C; c++) {
     var o = D.charAt(c);
     if (d.length === 0)
@@ -802,7 +802,7 @@ function F3(D, u) {
       }
       if (c > 0 && Vu(o)) {
         var A = D.charAt(c - 1);
-        !Vu(A) && !d.some(s3) && d.push(cD(
+        !Vu(A) && !d.some(C3) && d.push(cD(
           c,
           0
           /* State.SchemeChar */
@@ -817,13 +817,13 @@ function F3(D, u) {
   return r;
   function w(i) {
     if (i === "#")
-      d.push(i3(
+      d.push(o3(
         c,
         28
         /* State.HashtagHashChar */
       ));
     else if (i === "@")
-      d.push(o3(
+      d.push(s3(
         c,
         30
         /* State.MentionAtChar */
@@ -851,13 +851,13 @@ function F3(D, u) {
         c,
         38
         /* State.PhoneNumberDigit */
-      )), d.push(d3(
+      )), d.push(r3(
         c,
         13
         /* State.IpV4Digit */
-      ))), R0(i)) {
+      ))), L0(i)) {
         var s = i.toLowerCase() === "m" ? 15 : 22;
-        d.push(r3(c, s));
+        d.push(i3(c, s));
       }
       Vu(i) && d.push(cD(
         c,
@@ -1011,24 +1011,24 @@ function F3(D, u) {
   function L(i) {
     if (P(d, i), !!i.acceptStateReached) {
       var s = i.startIdx, $ = D.slice(i.startIdx, c);
-      if ($ = a3($), i.type === "url") {
+      if ($ = d3($), i.type === "url") {
         var v1 = D.charAt(i.startIdx - 1);
         if (v1 === "@")
           return;
         var Uu = i.matchType;
         if (Uu === "scheme") {
           var OD = Xf.exec($);
-          if (OD && (s = s + OD.index, $ = $.slice(OD.index)), !A0($))
+          if (OD && (s = s + OD.index, $ = $.slice(OD.index)), !y0($))
             return;
         } else if (Uu === "tld") {
-          if (!y0($))
+          if (!w0($))
             return;
         } else if (Uu === "ipV4") {
-          if (!x0($))
+          if (!S0($))
             return;
         } else
           Iu(Uu);
-        r.push(new O0({
+        r.push(new j0({
           tagBuilder: f,
           matchedText: $,
           offset: s,
@@ -1042,14 +1042,14 @@ function F3(D, u) {
           decodePercentEncoding: t
         }));
       } else if (i.type === "email")
-        L0($) && r.push(new M0({
+        M0($) && r.push(new H0({
           tagBuilder: f,
           matchedText: $,
           offset: s,
-          email: $.replace(N0, "")
+          email: $.replace(q0, "")
         }));
       else if (i.type === "hashtag")
-        H0($) && r.push(new V0({
+        U0($) && r.push(new W0({
           tagBuilder: f,
           matchedText: $,
           offset: s,
@@ -1057,7 +1057,7 @@ function F3(D, u) {
           hashtag: $.slice(1)
         }));
       else if (i.type === "mention")
-        X0($, a) && r.push(new Q0({
+        Y0($, a) && r.push(new K0({
           tagBuilder: f,
           matchedText: $,
           offset: s,
@@ -1066,9 +1066,9 @@ function F3(D, u) {
           // strip off the '@' character at the beginning
         }));
       else if (i.type === "phone") {
-        if ($ = $.replace(/ +$/g, ""), e3($)) {
+        if ($ = $.replace(/ +$/g, ""), t3($)) {
           var A1 = $.replace(/[^0-9,;#]/g, "");
-          r.push(new t3({
+          r.push(new F3({
             tagBuilder: f,
             matchedText: $,
             offset: s,
@@ -1081,19 +1081,19 @@ function F3(D, u) {
     }
   }
 }
-var n3 = /[\(\{\[]/, lf = /[\)\}\]]/, Bf = {
+var a3 = /[\(\{\[]/, lf = /[\)\}\]]/, Bf = {
   ")": "(",
   "}": "{",
   "]": "["
 };
-function a3(D) {
+function d3(D) {
   for (var u = {
     "(": 0,
     "{": 0,
     "[": 0
   }, f = 0; f < D.length; f++) {
     var e = D.charAt(f);
-    n3.test(e) ? u[e]++ : lf.test(e) && u[Bf[e]]--;
+    a3.test(e) ? u[e]++ : lf.test(e) && u[Bf[e]]--;
   }
   for (var F = D.length - 1, t; F >= 0; )
     if (t = D.charAt(F), lf.test(t)) {
@@ -1102,7 +1102,7 @@ function a3(D) {
         u[n]++, F--;
       else
         break;
-    } else if (m0.test(t))
+    } else if (h0.test(t))
       F--;
     else
       break;
@@ -1126,7 +1126,7 @@ function ND(D, u) {
     matchType: "tld"
   };
 }
-function d3(D, u) {
+function r3(D, u) {
   return {
     type: "url",
     startIdx: D,
@@ -1137,7 +1137,7 @@ function d3(D, u) {
     // starts at 1 because we create this machine when encountering the first octet
   };
 }
-function r3(D, u) {
+function i3(D, u) {
   return {
     type: "email",
     startIdx: D,
@@ -1145,7 +1145,7 @@ function r3(D, u) {
     acceptStateReached: !1
   };
 }
-function i3(D, u) {
+function o3(D, u) {
   return {
     type: "hashtag",
     startIdx: D,
@@ -1153,7 +1153,7 @@ function i3(D, u) {
     acceptStateReached: !1
   };
 }
-function o3(D, u) {
+function s3(D, u) {
   return {
     type: "mention",
     startIdx: D,
@@ -1169,10 +1169,10 @@ function qD(D, u) {
     acceptStateReached: !1
   };
 }
-function s3(D) {
+function C3(D) {
   return D.type === "url" && D.matchType === "scheme";
 }
-function C3(D, u) {
+function c3(D, u) {
   for (var f = u.onOpenTag, e = u.onCloseTag, F = u.onText, t = u.onComment, n = u.onDoctype, a = new pu(), r = 0, C = D.length, d = 0, c = 0, o = a; r < C; ) {
     var B = D.charAt(r);
     switch (d) {
@@ -1258,7 +1258,7 @@ function C3(D, u) {
     l === ">" ? W() : zu.test(l) ? d = 3 : W();
   }
   function _(l) {
-    du.test(l) || (l === "/" ? d = 12 : l === ">" ? J() : l === "<" ? Y() : l === "=" || jD.test(l) || n0.test(l) ? W() : d = 5);
+    du.test(l) || (l === "/" ? d = 12 : l === ">" ? J() : l === "<" ? Y() : l === "=" || jD.test(l) || a0.test(l) ? W() : d = 5);
   }
   function v(l) {
     du.test(l) ? d = 6 : l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? J() : l === "<" ? Y() : jD.test(l) && W();
@@ -1338,7 +1338,7 @@ var pu = (
     }
     return D;
   }()
-), c3 = (
+), E3 = (
   /** @class */
   function() {
     function D(u) {
@@ -1348,14 +1348,14 @@ var pu = (
       }, this.stripTrailingSlash = !0, this.decodePercentEncoding = !0, this.truncate = {
         length: 0,
         location: "end"
-      }, this.className = "", this.replaceFn = null, this.context = void 0, this.sanitizeHtml = !1, this.tagBuilder = null, this.urls = E3(u.urls), this.email = fu(u.email) ? u.email : this.email, this.phone = fu(u.phone) ? u.phone : this.phone, this.hashtag = u.hashtag || this.hashtag, this.mention = u.mention || this.mention, this.newWindow = fu(u.newWindow) ? u.newWindow : this.newWindow, this.stripPrefix = l3(u.stripPrefix), this.stripTrailingSlash = fu(u.stripTrailingSlash) ? u.stripTrailingSlash : this.stripTrailingSlash, this.decodePercentEncoding = fu(u.decodePercentEncoding) ? u.decodePercentEncoding : this.decodePercentEncoding, this.sanitizeHtml = u.sanitizeHtml || !1;
+      }, this.className = "", this.replaceFn = null, this.context = void 0, this.sanitizeHtml = !1, this.tagBuilder = null, this.urls = l3(u.urls), this.email = fu(u.email) ? u.email : this.email, this.phone = fu(u.phone) ? u.phone : this.phone, this.hashtag = u.hashtag || this.hashtag, this.mention = u.mention || this.mention, this.newWindow = fu(u.newWindow) ? u.newWindow : this.newWindow, this.stripPrefix = B3(u.stripPrefix), this.stripTrailingSlash = fu(u.stripTrailingSlash) ? u.stripTrailingSlash : this.stripTrailingSlash, this.decodePercentEncoding = fu(u.decodePercentEncoding) ? u.decodePercentEncoding : this.decodePercentEncoding, this.sanitizeHtml = u.sanitizeHtml || !1;
       var f = this.mention;
-      if (f !== !1 && Y0.indexOf(f) === -1)
+      if (f !== !1 && Q0.indexOf(f) === -1)
         throw new Error("invalid `mention` cfg '".concat(f, "' - see docs"));
       var e = this.hashtag;
-      if (e !== !1 && U0.indexOf(e) === -1)
+      if (e !== !1 && V0.indexOf(e) === -1)
         throw new Error("invalid `hashtag` cfg '".concat(e, "' - see docs"));
-      this.truncate = B3(u.truncate), this.className = u.className || this.className, this.replaceFn = u.replaceFn || this.replaceFn, this.context = u.context || this;
+      this.truncate = p3(u.truncate), this.className = u.className || this.className, this.replaceFn = u.replaceFn || this.replaceFn, this.context = u.context || this;
     }
     return D.link = function(u, f) {
       var e = new D(f);
@@ -1365,7 +1365,7 @@ var pu = (
       return e.parse(u);
     }, D.prototype.parse = function(u) {
       var f = this, e = ["a", "style", "script"], F = 0, t = [];
-      return C3(u, {
+      return c3(u, {
         onOpenTag: function(n) {
           e.indexOf(n) >= 0 && F++;
         },
@@ -1429,7 +1429,7 @@ var pu = (
       }), u;
     }, D.prototype.parseText = function(u, f) {
       f === void 0 && (f = 0), f = f || 0;
-      for (var e = F3(u, {
+      for (var e = n3(u, {
         tagBuilder: this.getTagBuilder(),
         stripPrefix: this.stripPrefix,
         stripTrailingSlash: this.stripTrailingSlash,
@@ -1460,39 +1460,39 @@ var pu = (
       return e.toAnchorString();
     }, D.prototype.getTagBuilder = function() {
       var u = this.tagBuilder;
-      return u || (u = this.tagBuilder = new E0({
+      return u || (u = this.tagBuilder = new l0({
         newWindow: this.newWindow,
         truncate: this.truncate,
         className: this.className
       })), u;
-    }, D.version = f0, D;
+    }, D.version = e0, D;
   }()
 );
-function E3(D) {
+function l3(D) {
   return D == null && (D = !0), fu(D) ? { schemeMatches: D, tldMatches: D, ipV4Matches: D } : {
     schemeMatches: fu(D.schemeMatches) ? D.schemeMatches : !0,
     tldMatches: fu(D.tldMatches) ? D.tldMatches : !0,
     ipV4Matches: fu(D.ipV4Matches) ? D.ipV4Matches : !0
   };
 }
-function l3(D) {
+function B3(D) {
   return D == null && (D = !0), fu(D) ? { scheme: D, www: D } : {
     scheme: fu(D.scheme) ? D.scheme : !0,
     www: fu(D.www) ? D.www : !0
   };
 }
-function B3(D) {
-  return typeof D == "number" ? { length: D, location: "end" } : t0(D || {}, {
+function p3(D) {
+  return typeof D == "number" ? { length: D, location: "end" } : F0(D || {}, {
     length: Number.POSITIVE_INFINITY,
     location: "end"
   });
 }
-var p3 = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
+var b3 = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
 function uf(D) {
   return D && D.__esModule && Object.prototype.hasOwnProperty.call(D, "default") ? D.default : D;
 }
 var RD, pf;
-function b3() {
+function g3() {
   if (pf) return RD;
   pf = 1;
   const D = {
@@ -1531,12 +1531,12 @@ function b3() {
     return a;
   }, RD;
 }
-var g3 = b3();
-const m3 = /* @__PURE__ */ uf(g3), h3 = {
+var m3 = g3();
+const h3 = /* @__PURE__ */ uf(m3), _3 = {
   components: {
     IconBase: Hf,
     IconCross: Uf,
-    IconEdit: K1
+    IconEdit: J1
   },
   props: {
     message: {
@@ -1562,8 +1562,8 @@ const m3 = /* @__PURE__ */ uf(g3), h3 = {
   },
   computed: {
     messageText() {
-      const D = D0(this.message.data.text);
-      return c3.link(this.messageStyling ? m3(D) : D, {
+      const D = f0(this.message.data.text);
+      return E3.link(this.messageStyling ? h3(D) : D, {
         className: "chatLink",
         truncate: { length: 50, location: "smart" }
       });
@@ -1591,11 +1591,11 @@ const m3 = /* @__PURE__ */ uf(g3), h3 = {
       };
     }
   }
-}, _3 = ["disabled"], v3 = { key: 1 }, A3 = ["innerHTML"], y3 = {
+}, v3 = ["disabled"], A3 = { key: 1 }, y3 = ["innerHTML"], w3 = {
   key: 1,
   class: "sc-message--edited"
 };
-function w3(D, u, f, e, F, t) {
+function k3(D, u, f, e, F, t) {
   const n = T("IconEdit"), a = T("IconBase"), r = T("IconCross");
   return p(), g("div", {
     class: "sc-message--text",
@@ -1620,8 +1620,8 @@ function w3(D, u, f, e, F, t) {
           ]),
           _: 1
         }, 8, ["color"])
-      ], 8, _3)) : I("", !0),
-      D.showDeletion ? (p(), g("div", v3, [
+      ], 8, v3)) : I("", !0),
+      D.showDeletion ? (p(), g("div", A3, [
         t.me && f.message.id != null && f.message.id != null ? (p(), g("button", {
           key: 0,
           onClick: u[1] || (u[1] = (C) => t.ifelse(
@@ -1656,13 +1656,13 @@ function w3(D, u, f, e, F, t) {
       y("p", {
         class: "sc-message--text-content",
         innerHTML: t.messageText
-      }, null, 8, A3),
+      }, null, 8, y3),
       f.message.data.meta ? (p(), g("p", {
         key: 0,
         class: "sc-message--meta",
         style: R({ color: f.messageColors.color })
       }, K(f.message.data.meta), 5)) : I("", !0),
-      f.message.isEdited ? (p(), g("p", y3, [
+      f.message.isEdited ? (p(), g("p", w3, [
         q(a, {
           width: "10",
           "icon-name": "edited"
@@ -1677,7 +1677,7 @@ function w3(D, u, f, e, F, t) {
     ], !0)
   ], 4);
 }
-const k3 = /* @__PURE__ */ M(h3, [["render", w3], ["__scopeId", "data-v-329dc07b"]]), x3 = {
+const x3 = /* @__PURE__ */ M(_3, [["render", k3], ["__scopeId", "data-v-329dc07b"]]), S3 = {
   props: {
     data: {
       type: Object,
@@ -1688,17 +1688,17 @@ const k3 = /* @__PURE__ */ M(h3, [["render", w3], ["__scopeId", "data-v-329dc07b
       required: !0
     }
   }
-}, S3 = { class: "sc-message--file-icon" }, T3 = ["src"], O3 = ["href"];
-function j3(D, u, f, e, F, t) {
+}, T3 = { class: "sc-message--file-icon" }, O3 = ["src"], j3 = ["href"];
+function $3(D, u, f, e, F, t) {
   return p(), g("div", {
     class: "sc-message--file",
     style: R(f.messageColors)
   }, [
-    y("div", S3, [
+    y("div", T3, [
       y("img", {
         src: f.data.file.url,
         class: "sc-image"
-      }, null, 8, T3)
+      }, null, 8, O3)
     ]),
     y("div", {
       class: "sc-message--file-name",
@@ -1707,7 +1707,7 @@ function j3(D, u, f, e, F, t) {
       y("a", {
         href: f.data.file.url ? f.data.file.url : "#",
         target: "_blank"
-      }, K(f.data.file.name || ""), 9, O3)
+      }, K(f.data.file.name || ""), 9, j3)
     ], 4),
     y("div", {
       class: "sc-message--file-text",
@@ -1722,18 +1722,18 @@ function j3(D, u, f, e, F, t) {
     ], 4)
   ], 4);
 }
-const $3 = /* @__PURE__ */ M(x3, [["render", j3], ["__scopeId", "data-v-a59a1bf3"]]), P3 = {
+const P3 = /* @__PURE__ */ M(S3, [["render", $3], ["__scopeId", "data-v-a59a1bf3"]]), I3 = {
   props: {
     data: {
       type: Object,
       required: !0
     }
   }
-}, I3 = { class: "sc-message--emoji" };
-function z3(D, u, f, e, F, t) {
-  return p(), g("div", I3, K(f.data.emoji), 1);
+}, z3 = { class: "sc-message--emoji" };
+function N3(D, u, f, e, F, t) {
+  return p(), g("div", z3, K(f.data.emoji), 1);
 }
-const N3 = /* @__PURE__ */ M(P3, [["render", z3], ["__scopeId", "data-v-ae11d5de"]]), q3 = {
+const q3 = /* @__PURE__ */ M(I3, [["render", N3], ["__scopeId", "data-v-ae11d5de"]]), R3 = {
   props: {
     messageColors: {
       type: Object,
@@ -1741,7 +1741,7 @@ const N3 = /* @__PURE__ */ M(P3, [["render", z3], ["__scopeId", "data-v-ae11d5de
     }
   }
 };
-function R3(D, u, f, e, F, t) {
+function L3(D, u, f, e, F, t) {
   return p(), g("div", {
     class: "sc-typing-indicator",
     style: R(f.messageColors)
@@ -1751,7 +1751,7 @@ function R3(D, u, f, e, F, t) {
     y("span", null, null, -1)
   ]), 4);
 }
-const L3 = /* @__PURE__ */ M(q3, [["render", R3], ["__scopeId", "data-v-3df57161"]]), M3 = {
+const M3 = /* @__PURE__ */ M(R3, [["render", L3], ["__scopeId", "data-v-3df57161"]]), H3 = {
   props: {
     data: {
       type: Object,
@@ -1763,7 +1763,7 @@ const L3 = /* @__PURE__ */ M(q3, [["render", R3], ["__scopeId", "data-v-3df57161
     }
   }
 };
-function H3(D, u, f, e, F, t) {
+function U3(D, u, f, e, F, t) {
   return p(), g("div", {
     class: "sc-message--system",
     style: R(f.messageColors)
@@ -1778,13 +1778,13 @@ function H3(D, u, f, e, F, t) {
     ], !0)
   ], 4);
 }
-const U3 = /* @__PURE__ */ M(M3, [["render", H3], ["__scopeId", "data-v-c0484e01"]]), Qf = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='-4749.48%20-5020%2035.036%2035.036'%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M0-399.479H17.555v17.555H0Z'%20transform='translate(0%20399.479)'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20transform='translate(-4886%20-5075)'%3e%3ccircle%20class='b'%20cx='17.518'%20cy='17.518'%20r='17.518'%20transform='translate(136.52%2055)'/%3e%3cg%20transform='translate(145.13%2064)'%3e%3cg%20class='c'%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='d'%20d='M-381.924-190.962a8.778,8.778,0,0,0-8.778-8.778,8.778,8.778,0,0,0-8.778,8.778,8.745,8.745,0,0,0,2.26,5.879v1.442c0,.8.492,1.457,1.1,1.457h5.83a.843.843,0,0,0,.183-.02,8.778,8.778,0,0,0,8.184-8.757'%20transform='translate(399.479%20199.74)'/%3e%3c/g%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='e'%20d='M-68.763-194.079a9.292,9.292,0,0,1,6.38-8.888c-.252-.022-.506-.033-.763-.033a8.774,8.774,0,0,0-8.778,8.778A9.508,9.508,0,0,0-69.7-188.3c.005,0,0,.009,0,.01-.311.352-1.924,2.849.021,2.849h2.25c-1.23-.022,1.263-2.107.269-3.494a8.225,8.225,0,0,1-1.6-5.141'%20transform='translate(71.924%20203)'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", V3 = {
+const V3 = /* @__PURE__ */ M(H3, [["render", U3], ["__scopeId", "data-v-c0484e01"]]), Qf = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='-4749.48%20-5020%2035.036%2035.036'%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M0-399.479H17.555v17.555H0Z'%20transform='translate(0%20399.479)'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20transform='translate(-4886%20-5075)'%3e%3ccircle%20class='b'%20cx='17.518'%20cy='17.518'%20r='17.518'%20transform='translate(136.52%2055)'/%3e%3cg%20transform='translate(145.13%2064)'%3e%3cg%20class='c'%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='d'%20d='M-381.924-190.962a8.778,8.778,0,0,0-8.778-8.778,8.778,8.778,0,0,0-8.778,8.778,8.745,8.745,0,0,0,2.26,5.879v1.442c0,.8.492,1.457,1.1,1.457h5.83a.843.843,0,0,0,.183-.02,8.778,8.778,0,0,0,8.184-8.757'%20transform='translate(399.479%20199.74)'/%3e%3c/g%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='e'%20d='M-68.763-194.079a9.292,9.292,0,0,1,6.38-8.888c-.252-.022-.506-.033-.763-.033a8.774,8.774,0,0,0-8.778,8.778A9.508,9.508,0,0,0-69.7-188.3c.005,0,0,.009,0,.01-.311.352-1.924,2.849.021,2.849h2.25c-1.23-.022,1.263-2.107.269-3.494a8.225,8.225,0,0,1-1.6-5.141'%20transform='translate(71.924%20203)'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", W3 = {
   components: {
-    TextMessage: k3,
-    FileMessage: $3,
-    EmojiMessage: N3,
-    TypingMessage: L3,
-    SystemMessage: U3
+    TextMessage: x3,
+    FileMessage: P3,
+    EmojiMessage: q3,
+    TypingMessage: M3,
+    SystemMessage: V3
   },
   props: {
     message: {
@@ -1842,8 +1842,8 @@ const U3 = /* @__PURE__ */ M(M3, [["render", H3], ["__scopeId", "data-v-c0484e01
       return this.messageMargin ? this.message.author === "me" && this.messageMargin.sender ? this.messageMargin.sender : this.message.type === "system" && this.messageMargin.system ? this.messageMargin.system : this.messageMargin.recipient ? this.messageMargin.recipient : "auto" : "auto";
     }
   }
-}, W3 = ["id"], G3 = ["title"];
-function X3(D, u, f, e, F, t) {
+}, G3 = ["id"], X3 = ["title"];
+function Y3(D, u, f, e, F, t) {
   const n = T("TextMessage"), a = T("EmojiMessage"), r = T("FileMessage"), C = T("TypingMessage"), d = T("SystemMessage"), c = w1("tooltip");
   return p(), g("div", {
     id: f.message.id,
@@ -1870,7 +1870,7 @@ function X3(D, u, f, e, F, t) {
           style: R({
             backgroundImage: `url(${t.chatImageUrl})`
           })
-        }, null, 12, G3)), [
+        }, null, 12, X3)), [
           [c, t.authorName]
         ]) : I("", !0)
       ]),
@@ -1921,13 +1921,13 @@ function X3(D, u, f, e, F, t) {
         _: 3
       }, 8, ["data", "message-colors"])) : I("", !0)
     ], 2)
-  ], 12, W3);
+  ], 12, G3);
 }
-const Y3 = /* @__PURE__ */ M(V3, [["render", X3]]);
+const Q3 = /* @__PURE__ */ M(W3, [["render", Y3]]);
 let LD;
-const Q3 = {
+const K3 = {
   components: {
-    Message: Y3
+    Message: Q3
   },
   props: {
     participants: {
@@ -2008,7 +2008,7 @@ const Q3 = {
     }
   }
 };
-function K3(D, u, f, e, F, t) {
+function J3(D, u, f, e, F, t) {
   const n = T("Message");
   return p(), g("div", {
     ref: "scrollList",
@@ -2066,9 +2066,9 @@ function K3(D, u, f, e, F, t) {
     ])
   ], 36);
 }
-const J3 = /* @__PURE__ */ M(Q3, [["render", K3], ["__scopeId", "data-v-505f0c8f"]]);
+const Z3 = /* @__PURE__ */ M(K3, [["render", J3], ["__scopeId", "data-v-505f0c8f"]]);
 var ED = { exports: {} }, bf;
-function Z3() {
+function ue() {
   return bf || (bf = 1, function(D, u) {
     (function() {
       var f = this, e = f.EmojiConvertor, F = function() {
@@ -4655,12 +4655,12 @@ function Z3() {
         "26f9-1f3ff-200d-2642-fe0f": ["26f9-1f3ff", 58, 51, 15]
       }, D.exports && (u = D.exports = F), u.EmojiConvertor = F;
     }).call(/* @__PURE__ */ function() {
-      return this || (typeof window < "u" ? window : p3);
+      return this || (typeof window < "u" ? window : b3);
     }());
   }(ED, ED.exports)), ED.exports;
 }
-var ue = Z3();
-const De = /* @__PURE__ */ uf(ue), fe = [
+var De = ue();
+const fe = /* @__PURE__ */ uf(De), ee = [
   {
     name: "People",
     emojis: [
@@ -5314,7 +5314,7 @@ const De = /* @__PURE__ */ uf(ue), fe = [
       "🔹"
     ]
   }
-], ee = {
+], te = {
   props: {
     onBlur: {
       type: Function,
@@ -5331,8 +5331,8 @@ const De = /* @__PURE__ */ uf(ue), fe = [
   },
   data() {
     return {
-      emojiData: fe,
-      emojiConvertor: new De()
+      emojiData: ee,
+      emojiConvertor: new fe()
     };
   },
   mounted() {
@@ -5352,8 +5352,8 @@ const De = /* @__PURE__ */ uf(ue), fe = [
       this.onEmojiPicked(D), this.$refs.domNode.blur();
     }
   }
-}, te = { class: "sc-emoji-picker--content" }, Fe = ["onClick"];
-function ne(D, u, f, e, F, t) {
+}, Fe = { class: "sc-emoji-picker--content" }, ne = ["onClick"];
+function ae(D, u, f, e, F, t) {
   return p(), g("div", {
     ref: "domNode",
     tabIndex: "0",
@@ -5361,7 +5361,7 @@ function ne(D, u, f, e, F, t) {
     style: R({ background: f.colors.emojiPicker.bg ?? "white" }),
     onBlur: u[0] || (u[0] = (...n) => f.onBlur && f.onBlur(...n))
   }, [
-    y("div", te, [
+    y("div", Fe, [
       (p(!0), g(qu, null, Qu(F.emojiData, (n) => (p(), g("div", {
         key: n.name,
         class: "sc-emoji-picker--category"
@@ -5374,14 +5374,14 @@ function ne(D, u, f, e, F, t) {
           key: a,
           class: "sc-emoji-picker--emoji",
           onClick: (r) => t.emojiClicked(a)
-        }, K(a), 9, Fe))), 128))
+        }, K(a), 9, ne))), 128))
       ]))), 128))
     ])
   ], 36);
 }
-const ae = /* @__PURE__ */ M(ee, [["render", ne], ["__scopeId", "data-v-88c66c15"]]), de = {
+const de = /* @__PURE__ */ M(te, [["render", ae], ["__scopeId", "data-v-88c66c15"]]), re = {
   components: {
-    EmojiPicker: ae
+    EmojiPicker: de
   },
   props: {
     onEmojiPicked: {
@@ -5410,10 +5410,10 @@ const ae = /* @__PURE__ */ M(ee, [["render", ne], ["__scopeId", "data-v-88c66c15
       this.isActive = !1;
     }
   }
-}, re = { class: "sc-user-input--picker-wrapper" }, ie = ["color"];
-function oe(D, u, f, e, F, t) {
+}, ie = { class: "sc-user-input--picker-wrapper" }, oe = ["color"];
+function se(D, u, f, e, F, t) {
   const n = T("EmojiPicker");
-  return p(), g("div", re, [
+  return p(), g("div", ie, [
     F.isActive ? (p(), V(n, {
       key: 0,
       "on-emoji-picked": f.onEmojiPicked,
@@ -5463,11 +5463,11 @@ function oe(D, u, f, e, F, t) {
               c0.471-0.286,1.084-0.136,1.372,0.335c0.094,0.151,2.161,3.396,6.74,3.396c4.713,0,7.518-3.462,7.545-3.497
               c0.343-0.432,0.973-0.504,1.405-0.161c0.433,0.344,0.505,0.973,0.161,1.405C27.009,23.374,23.703,27.453,18.035,27.453z` })
         ], -1)
-      ]), 10, ie))
+      ]), 10, oe))
     ])
   ]);
 }
-const se = /* @__PURE__ */ M(de, [["render", oe], ["__scopeId", "data-v-967f979e"]]), Ce = {
+const Ce = /* @__PURE__ */ M(re, [["render", se], ["__scopeId", "data-v-967f979e"]]), ce = {
   props: {
     onChange: {
       type: Function,
@@ -5491,9 +5491,9 @@ const se = /* @__PURE__ */ M(de, [["render", oe], ["__scopeId", "data-v-967f979e
       this.onChange(D.target.files[0]);
     }
   }
-}, ce = { style: { position: "relative" } }, Ee = ["color"], le = ["accept"];
-function Be(D, u, f, e, F, t) {
-  return p(), g("div", ce, [
+}, Ee = { style: { position: "relative" } }, le = ["color"], Be = ["accept"];
+function pe(D, u, f, e, F, t) {
+  return p(), g("div", Ee, [
     y("button", {
       class: "sc-user-input--file-icon-wrapper",
       type: "button",
@@ -5514,18 +5514,18 @@ function Be(D, u, f, e, F, t) {
         fill: "currentColor"
       }, u[2] || (u[2] = [
         y("path", { d: "M20.807 10.22l-2.030-2.029-10.15 10.148c-1.682 1.681-1.682 4.408 0 6.089s4.408 1.681 6.090 0l12.18-12.178c2.804-2.802 2.804-7.346 0-10.148-2.802-2.803-7.347-2.803-10.149 0l-12.788 12.787c-0.009 0.009-0.019 0.018-0.027 0.026-3.909 3.909-3.909 10.245 0 14.153 3.908 3.908 10.246 3.908 14.156 0 0.009-0.009 0.016-0.018 0.026-0.027l0.001 0.001 8.729-8.728-2.031-2.029-8.729 8.727c-0.009 0.008-0.018 0.018-0.026 0.026-2.784 2.783-7.312 2.783-10.096 0-2.783-2.783-2.783-7.31 0-10.093 0.010-0.009 0.019-0.018 0.028-0.026l-0.001-0.002 12.79-12.786c1.678-1.679 4.411-1.679 6.090 0s1.678 4.411 0 6.089l-12.18 12.178c-0.56 0.56-1.47 0.56-2.030 0-0.559-0.559-0.559-1.47 0-2.029l10.15-10.149z" }, null, -1)
-      ]), 8, Ee)),
+      ]), 8, le)),
       y("input", {
         ref: "inputRef",
         id: "file-input",
         type: "file",
         accept: f.acceptedFileTypes.join(","),
         onChange: u[0] || (u[0] = (...n) => t._handleChange && t._handleChange(...n))
-      }, null, 40, le)
+      }, null, 40, Be)
     ])
   ]);
 }
-const pe = /* @__PURE__ */ M(Ce, [["render", Be], ["__scopeId", "data-v-8db5b373"]]), be = {
+const be = /* @__PURE__ */ M(ce, [["render", pe], ["__scopeId", "data-v-8db5b373"]]), ge = {
   components: {
     IconBase: Hf
   },
@@ -5539,10 +5539,10 @@ const pe = /* @__PURE__ */ M(Ce, [["render", Be], ["__scopeId", "data-v-8db5b373
       default: ""
     }
   }
-}, ge = { class: "sc-user-input--button-icon-wrapper" };
-function me(D, u, f, e, F, t) {
+}, me = { class: "sc-user-input--button-icon-wrapper" };
+function he(D, u, f, e, F, t) {
   const n = T("IconBase");
-  return p(), g("button", ge, [
+  return p(), g("button", me, [
     q(n, {
       color: f.color,
       width: "20",
@@ -5556,7 +5556,7 @@ function me(D, u, f, e, F, t) {
     }, 8, ["color", "icon-name"])
   ]);
 }
-const he = /* @__PURE__ */ M(be, [["render", me], ["__scopeId", "data-v-3ee3b811"]]), _e = {
+const _e = /* @__PURE__ */ M(ge, [["render", he], ["__scopeId", "data-v-3ee3b811"]]), ve = {
   props: {
     suggestions: {
       type: Array,
@@ -5570,8 +5570,8 @@ const he = /* @__PURE__ */ M(be, [["render", me], ["__scopeId", "data-v-3ee3b811
   data() {
     return {};
   }
-}, ve = ["onClick"];
-function Ae(D, u, f, e, F, t) {
+}, Ae = ["onClick"];
+function ye(D, u, f, e, F, t) {
   return p(), g("div", {
     class: "sc-suggestions-row",
     style: R({ background: f.colors.messageList.bg })
@@ -5584,26 +5584,26 @@ function Ae(D, u, f, e, F, t) {
         color: f.colors.sentMessage.bg
       }),
       onClick: (r) => D.$emit("sendSuggestion", n)
-    }, K(n), 13, ve))), 128))
+    }, K(n), 13, Ae))), 128))
   ], 4);
 }
-const ye = /* @__PURE__ */ M(_e, [["render", Ae]]), we = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2018.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2056%2056'%20style='enable-background:new%200%200%2056%2056;'%20xml:space='preserve'%3e%3cg%20id='svg_1'%3e%3cpath%20id='svg_2'%20fill='%23E9E9E0'%20d='m36.985,0l-29.022,0c-0.808,0%20-1.463,0.655%20-1.463,1.926l0,53.074c0,0.345%200.655,1%201.463,1l40.074,0c0.808,0%201.463,-0.655%201.463,-1l0,-42.022c0,-0.696%20-0.093,-0.92%20-0.257,-1.085l-11.636,-11.636c-0.165,-0.164%20-0.389,-0.257%20-0.622,-0.257z'/%3e%3cpolygon%20id='svg_3'%20fill='%23D9D7CA'%20points='37.5,0.151%2037.5,12%2049.349,12%20'/%3e%3cpath%20id='svg_4'%20fill='%2395A5A5'%20d='m48.037,56l-40.074,0c-0.808,0%20-1.463,-0.655%20-1.463,-1.463l0,-15.537l43,0l0,15.537c0,0.808%20-0.655,1.463%20-1.463,1.463z'/%3e%3cpath%20id='svg_9'%20fill='%23C8BDB8'%20d='m18.5,13l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_10'%20fill='%23C8BDB8'%20d='m21.5,18l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_11'%20fill='%23C8BDB8'%20d='m25.5,18c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.44%20-0.29,-0.71s0.109,-0.52%200.3,-0.71c0.36,-0.37%201.04,-0.37%201.41,0c0.18,0.19%200.29,0.45%200.29,0.71c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_12'%20fill='%23C8BDB8'%20d='m37.5,18l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_13'%20fill='%23C8BDB8'%20d='m12.5,33c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.45%20-0.29,-0.71c0,-0.26%200.109,-0.52%200.29,-0.71c0.37,-0.37%201.05,-0.37%201.42,0.01c0.18,0.18%200.29,0.44%200.29,0.7c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_14'%20fill='%23C8BDB8'%20d='m24.5,33l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_15'%20fill='%23C8BDB8'%20d='m43.5,18l-2,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l2,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_16'%20fill='%23C8BDB8'%20d='m34.5,23l-22,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l22,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_17'%20fill='%23C8BDB8'%20d='m43.5,23l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_18'%20fill='%23C8BDB8'%20d='m16.5,28l-4,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l4,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_19'%20fill='%23C8BDB8'%20d='m30.5,28l-10,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l10,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_20'%20fill='%23C8BDB8'%20d='m43.5,28l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3c/g%3e%3cg%20id='svg_21'/%3e%3cg%20id='svg_22'/%3e%3cg%20id='svg_23'/%3e%3cg%20id='svg_24'/%3e%3cg%20id='svg_25'/%3e%3cg%20id='svg_26'/%3e%3cg%20id='svg_27'/%3e%3cg%20id='svg_28'/%3e%3cg%20id='svg_29'/%3e%3cg%20id='svg_30'/%3e%3cg%20id='svg_31'/%3e%3cg%20id='svg_32'/%3e%3cg%20id='svg_33'/%3e%3cg%20id='svg_34'/%3e%3cg%20id='svg_35'/%3e%3c/svg%3e", ke = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2019.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3cpath%20d='M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88%20c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242%20C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879%20s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", xe = {}, Se = { d: "M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" };
-function Te(D, u) {
-  return p(), g("path", Se);
+const we = /* @__PURE__ */ M(ve, [["render", ye]]), ke = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2018.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2056%2056'%20style='enable-background:new%200%200%2056%2056;'%20xml:space='preserve'%3e%3cg%20id='svg_1'%3e%3cpath%20id='svg_2'%20fill='%23E9E9E0'%20d='m36.985,0l-29.022,0c-0.808,0%20-1.463,0.655%20-1.463,1.926l0,53.074c0,0.345%200.655,1%201.463,1l40.074,0c0.808,0%201.463,-0.655%201.463,-1l0,-42.022c0,-0.696%20-0.093,-0.92%20-0.257,-1.085l-11.636,-11.636c-0.165,-0.164%20-0.389,-0.257%20-0.622,-0.257z'/%3e%3cpolygon%20id='svg_3'%20fill='%23D9D7CA'%20points='37.5,0.151%2037.5,12%2049.349,12%20'/%3e%3cpath%20id='svg_4'%20fill='%2395A5A5'%20d='m48.037,56l-40.074,0c-0.808,0%20-1.463,-0.655%20-1.463,-1.463l0,-15.537l43,0l0,15.537c0,0.808%20-0.655,1.463%20-1.463,1.463z'/%3e%3cpath%20id='svg_9'%20fill='%23C8BDB8'%20d='m18.5,13l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_10'%20fill='%23C8BDB8'%20d='m21.5,18l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_11'%20fill='%23C8BDB8'%20d='m25.5,18c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.44%20-0.29,-0.71s0.109,-0.52%200.3,-0.71c0.36,-0.37%201.04,-0.37%201.41,0c0.18,0.19%200.29,0.45%200.29,0.71c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_12'%20fill='%23C8BDB8'%20d='m37.5,18l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_13'%20fill='%23C8BDB8'%20d='m12.5,33c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.45%20-0.29,-0.71c0,-0.26%200.109,-0.52%200.29,-0.71c0.37,-0.37%201.05,-0.37%201.42,0.01c0.18,0.18%200.29,0.44%200.29,0.7c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_14'%20fill='%23C8BDB8'%20d='m24.5,33l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_15'%20fill='%23C8BDB8'%20d='m43.5,18l-2,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l2,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_16'%20fill='%23C8BDB8'%20d='m34.5,23l-22,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l22,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_17'%20fill='%23C8BDB8'%20d='m43.5,23l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_18'%20fill='%23C8BDB8'%20d='m16.5,28l-4,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l4,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_19'%20fill='%23C8BDB8'%20d='m30.5,28l-10,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l10,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_20'%20fill='%23C8BDB8'%20d='m43.5,28l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3c/g%3e%3cg%20id='svg_21'/%3e%3cg%20id='svg_22'/%3e%3cg%20id='svg_23'/%3e%3cg%20id='svg_24'/%3e%3cg%20id='svg_25'/%3e%3cg%20id='svg_26'/%3e%3cg%20id='svg_27'/%3e%3cg%20id='svg_28'/%3e%3cg%20id='svg_29'/%3e%3cg%20id='svg_30'/%3e%3cg%20id='svg_31'/%3e%3cg%20id='svg_32'/%3e%3cg%20id='svg_33'/%3e%3cg%20id='svg_34'/%3e%3cg%20id='svg_35'/%3e%3c/svg%3e", xe = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2019.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3cpath%20d='M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88%20c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242%20C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879%20s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", Se = {}, Te = { d: "M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" };
+function Oe(D, u) {
+  return p(), g("path", Te);
 }
-const Oe = /* @__PURE__ */ M(xe, [["render", Te]]), je = {}, $e = { d: "M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z" };
-function Pe(D, u) {
-  return p(), g("path", $e);
+const je = /* @__PURE__ */ M(Se, [["render", Oe]]), $e = {}, Pe = { d: "M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z" };
+function Ie(D, u) {
+  return p(), g("path", Pe);
 }
-const Ie = /* @__PURE__ */ M(je, [["render", Pe]]), ze = {
+const ze = /* @__PURE__ */ M($e, [["render", Ie]]), Ne = {
   components: {
-    EmojiIcon: se,
-    FileIcons: pe,
-    UserInputButton: he,
-    Suggestions: ye,
+    EmojiIcon: Ce,
+    FileIcons: be,
+    UserInputButton: _e,
+    Suggestions: we,
     IconCross: Uf,
-    IconOk: Oe,
-    IconSend: Ie
+    IconOk: je,
+    IconSend: ze
   },
   props: {
     icons: {
@@ -5611,11 +5611,11 @@ const Ie = /* @__PURE__ */ M(je, [["render", Pe]]), ze = {
       default: function() {
         return {
           file: {
-            img: we,
+            img: ke,
             name: "default"
           },
           closeSvg: {
-            img: ke,
+            img: xe,
             name: "default"
           }
         };
@@ -5772,17 +5772,17 @@ const Ie = /* @__PURE__ */ M(je, [["render", Pe]]), ze = {
       Du.setState("editMessage", null);
     }
   }
-}, Ne = { class: "icon-file-message" }, qe = ["src", "alt"], Re = ["src", "alt"], Le = ["placeholder"], Me = { class: "sc-user-input--buttons" }, He = {
+}, qe = { class: "icon-file-message" }, Re = ["src", "alt"], Le = ["src", "alt"], Me = ["placeholder"], He = { class: "sc-user-input--buttons" }, Ue = {
   key: 0,
   class: "sc-user-input--button"
-}, Ue = {
+}, Ve = {
   key: 1,
   class: "sc-user-input--button"
-}, Ve = {
+}, We = {
   key: 2,
   class: "sc-user-input--button"
-}, We = { class: "sc-user-input--button" };
-function Ge(D, u, f, e, F, t) {
+}, Ge = { class: "sc-user-input--button" };
+function Xe(D, u, f, e, F, t) {
   const n = T("Suggestions"), a = T("EmojiIcon"), r = T("FileIcons"), C = T("IconCross"), d = T("UserInputButton"), c = T("IconOk"), o = T("IconSend");
   return p(), g("div", null, [
     q(n, {
@@ -5798,12 +5798,12 @@ function Ge(D, u, f, e, F, t) {
         color: f.colors.userInput.bg
       })
     }, [
-      y("span", Ne, [
+      y("span", qe, [
         y("img", {
           src: f.icons.file.img,
           alt: f.icons.file.name,
           height: "15"
-        }, null, 8, qe)
+        }, null, 8, Re)
       ]),
       Nu(" " + K(F.file.name) + " ", 1),
       y("span", {
@@ -5815,7 +5815,7 @@ function Ge(D, u, f, e, F, t) {
           alt: f.icons.closeSvg.name,
           height: "10",
           title: "Remove the file"
-        }, null, 8, Re)
+        }, null, 8, Le)
       ])
     ], 4)) : I("", !0),
     y("form", {
@@ -5835,24 +5835,24 @@ function Ge(D, u, f, e, F, t) {
         onKeydown: u[3] || (u[3] = (...B) => t.handleKey && t.handleKey(...B)),
         onInput: u[4] || (u[4] = (...B) => t.handleInput && t.handleInput(...B)),
         "on:focusUserInput": u[5] || (u[5] = (B) => t.focusUserInput())
-      }, null, 44, Le),
-      y("div", Me, [
+      }, null, 44, Me),
+      y("div", He, [
         u[6] || (u[6] = y("div", { class: "sc-user-input--button" }, null, -1)),
-        f.showEmoji && !t.isEditing ? (p(), g("div", He, [
+        f.showEmoji && !t.isEditing ? (p(), g("div", Ue, [
           q(a, {
             "on-emoji-picked": t._handleEmojiPicked,
             color: f.colors.userInput.text,
             colors: f.colors
           }, null, 8, ["on-emoji-picked", "color", "colors"])
         ])) : I("", !0),
-        f.showFile && !t.isEditing ? (p(), g("div", Ue, [
+        f.showFile && !t.isEditing ? (p(), g("div", Ve, [
           q(r, {
             "on-change": t._handleFileSubmit,
             color: f.colors.userInput.text,
             acceptedFileTypes: f.acceptedFileTypes
           }, null, 8, ["on-change", "color", "acceptedFileTypes"])
         ])) : I("", !0),
-        t.isEditing ? (p(), g("div", Ve, [
+        t.isEditing ? (p(), g("div", We, [
           q(d, {
             color: f.colors.userInput.text,
             tooltip: "cancel",
@@ -5864,7 +5864,7 @@ function Ge(D, u, f, e, F, t) {
             _: 1
           }, 8, ["color", "onClick"])
         ])) : I("", !0),
-        y("div", We, [
+        y("div", Ge, [
           t.isEditing ? (p(), V(d, {
             key: 0,
             color: f.colors.userInput.text,
@@ -5891,7 +5891,7 @@ function Ge(D, u, f, e, F, t) {
     ], 6)
   ]);
 }
-const Xe = /* @__PURE__ */ M(ze, [["render", Ge]]), Ye = {
+const Ye = /* @__PURE__ */ M(Ne, [["render", Xe]]), Qe = {
   props: {
     participants: {
       type: Array,
@@ -5912,22 +5912,22 @@ const Xe = /* @__PURE__ */ M(ze, [["render", Ge]]), Ye = {
       }, this.colors);
     }
   }
-}, Qe = { style: { "padding-top": "5px" } }, Ke = { style: { "text-align": "center" } }, Je = ["src"];
-function Ze(D, u, f, e, F, t) {
+}, Ke = { style: { "padding-top": "5px" } }, Je = { style: { "text-align": "center" } }, Ze = ["src"];
+function u2(D, u, f, e, F, t) {
   return p(), g("div", {
     class: "user-list",
     style: R({ background: t.userListColor.userList.bg })
   }, [
-    y("table", Qe, [
+    y("table", Ke, [
       y("tbody", null, [
         (p(!0), g(qu, null, Qu(f.participants, (n) => (p(), g("tr", {
           key: n.id
         }, [
-          y("td", Ke, [
+          y("td", Je, [
             y("img", {
               src: n.imageUrl,
               class: "img-msg"
-            }, null, 8, Je)
+            }, null, 8, Ze)
           ]),
           y("td", {
             class: "user-element",
@@ -5938,12 +5938,12 @@ function Ze(D, u, f, e, F, t) {
     ])
   ], 4);
 }
-const u2 = /* @__PURE__ */ M(Ye, [["render", Ze], ["__scopeId", "data-v-4899c8d9"]]), D2 = {
+const D2 = /* @__PURE__ */ M(Qe, [["render", u2], ["__scopeId", "data-v-4899c8d9"]]), f2 = {
   components: {
-    Header: M1,
-    MessageList: J3,
-    UserInput: Xe,
-    UserList: u2
+    Header: H1,
+    MessageList: Z3,
+    UserInput: Ye,
+    UserList: D2
   },
   props: {
     showEmoji: {
@@ -6039,7 +6039,7 @@ const u2 = /* @__PURE__ */ M(Ye, [["render", Ze], ["__scopeId", "data-v-4899c8d9
     }
   }
 };
-function f2(D, u, f, e, F, t) {
+function e2(D, u, f, e, F, t) {
   const n = T("Header"), a = T("UserList"), r = T("MessageList"), C = T("UserInput");
   return p(), g("div", {
     class: DD(["sc-chat-window", { opened: f.isOpen, closed: !f.isOpen }])
@@ -6118,9 +6118,9 @@ function f2(D, u, f, e, F, t) {
     }, null, 8, ["show-emoji", "show-emoji-in-text", "on-submit", "suggestions", "show-file", "placeholder", "colors", "acceptedFileTypes"]))
   ], 2);
 }
-const e2 = /* @__PURE__ */ M(D2, [["render", f2], ["__scopeId", "data-v-9301130a"]]), t2 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAKVQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////uP3jVQAAADd0Uk5TAE9lCAXd9XA4y/9zDQJG7HYB8Hc3yHoPQ8fuezMSoYPrEcEugj0tqb6G+Lw5ifHcKk3SIAx/MjRpS8YAAADsSURBVHic7dDJDoIwEIDhQURwQNGiIBVkUQH3BfX9H00MEvHW9qj9L3RIvkxTAJlMJvu1lI7aHtWOwm67Wk9vz3pP67Jro4+m1QyWiX2D3cJgqNmjt7ZGtjYccGAYK8R26qNjE2XMY6smU3Q9AM/F6YSTVrtnPp173pz6M969Lx1Q6rqUBgK2KvAR/UCIAoQLxEUoiCMSxyQSokmE6XKZYpQI2BVJ1wDrlKz4dXXn7PXN+G8e5lhk9TErMOd6tXCz3e2bYb/bbnj04Xg6f6bz6Xhgtxe8lu25vOKFGd/uj+8fj/uNfbVMJpP9QU/STxAzeUFqVwAAAABJRU5ErkJggg==", F2 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='18'%20height='18'%3e%3crect%20id='backgroundrect'%20width='100%25'%20height='100%25'%20x='0'%20y='0'%20fill='none'%20stroke='none'/%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M%200%200%20H%2017.555%20v%2017.555%20H%200%20Z'%20id='svg_1'%20transform=''/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20class='currentLayer'%20style=''%3e%3ctitle%3eLayer%201%3c/title%3e%3cg%20id='svg_2'%20class='selected'%20transform=''%3e%3cg%20id='svg_3'%20transform=''%3e%3cg%20class='c'%20id='svg_4'%20transform=''%3e%3cg%20id='svg_5'%20transform=''%3e%3cpath%20class='d'%20d='M%2017.556%208.77842%20a%208.778%208.778%200%200%200%20-8.778%20-8.778%20a%208.778%208.778%200%200%200%20-8.778%208.778%20a%208.745%208.745%200%200%200%202.26%205.879%20v%201.442%20c%200%200.8%200.492%201.457%201.1%201.457%20h%205.83%20a%200.843%200.843%200%200%200%200.183%20-0.02%20a%208.778%208.778%200%200%200%208.184%20-8.757'%20id='svg_6'%20transform=''/%3e%3c/g%3e%3cg%20id='svg_7'%20transform=''%3e%3cpath%20class='e'%20d='M%203.16148%208.921%20a%209.292%209.292%200%200%201%206.38%20-8.888%20c%20-0.252%20-0.022%20-0.506%20-0.033%20-0.763%20-0.033%20a%208.774%208.774%200%200%200%20-8.778%208.778%20A%209.508%209.508%200%200%200%202.22447%2014.7003%20c%200.005%200%200%200.009%200%200.01%20c%20-0.311%200.352%20-1.924%202.849%200.021%202.849%20h%202.25%20c%20-1.23%20-0.022%201.263%20-2.107%200.269%20-3.494%20a%208.225%208.225%200%200%201%20-1.6%20-5.141'%20id='svg_8'%20transform=''/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", n2 = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3crect%20x='0'%20y='20'%20width='47.971'%20height='7.971'%20rx='5'%20ry='5'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", a2 = {
+const t2 = /* @__PURE__ */ M(f2, [["render", e2], ["__scopeId", "data-v-9301130a"]]), F2 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAKVQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////uP3jVQAAADd0Uk5TAE9lCAXd9XA4y/9zDQJG7HYB8Hc3yHoPQ8fuezMSoYPrEcEugj0tqb6G+Lw5ifHcKk3SIAx/MjRpS8YAAADsSURBVHic7dDJDoIwEIDhQURwQNGiIBVkUQH3BfX9H00MEvHW9qj9L3RIvkxTAJlMJvu1lI7aHtWOwm67Wk9vz3pP67Jro4+m1QyWiX2D3cJgqNmjt7ZGtjYccGAYK8R26qNjE2XMY6smU3Q9AM/F6YSTVrtnPp173pz6M969Lx1Q6rqUBgK2KvAR/UCIAoQLxEUoiCMSxyQSokmE6XKZYpQI2BVJ1wDrlKz4dXXn7PXN+G8e5lhk9TErMOd6tXCz3e2bYb/bbnj04Xg6f6bz6Xhgtxe8lu25vOKFGd/uj+8fj/uNfbVMJpP9QU/STxAzeUFqVwAAAABJRU5ErkJggg==", n2 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='18'%20height='18'%3e%3crect%20id='backgroundrect'%20width='100%25'%20height='100%25'%20x='0'%20y='0'%20fill='none'%20stroke='none'/%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M%200%200%20H%2017.555%20v%2017.555%20H%200%20Z'%20id='svg_1'%20transform=''/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20class='currentLayer'%20style=''%3e%3ctitle%3eLayer%201%3c/title%3e%3cg%20id='svg_2'%20class='selected'%20transform=''%3e%3cg%20id='svg_3'%20transform=''%3e%3cg%20class='c'%20id='svg_4'%20transform=''%3e%3cg%20id='svg_5'%20transform=''%3e%3cpath%20class='d'%20d='M%2017.556%208.77842%20a%208.778%208.778%200%200%200%20-8.778%20-8.778%20a%208.778%208.778%200%200%200%20-8.778%208.778%20a%208.745%208.745%200%200%200%202.26%205.879%20v%201.442%20c%200%200.8%200.492%201.457%201.1%201.457%20h%205.83%20a%200.843%200.843%200%200%200%200.183%20-0.02%20a%208.778%208.778%200%200%200%208.184%20-8.757'%20id='svg_6'%20transform=''/%3e%3c/g%3e%3cg%20id='svg_7'%20transform=''%3e%3cpath%20class='e'%20d='M%203.16148%208.921%20a%209.292%209.292%200%200%201%206.38%20-8.888%20c%20-0.252%20-0.022%20-0.506%20-0.033%20-0.763%20-0.033%20a%208.774%208.774%200%200%200%20-8.778%208.778%20A%209.508%209.508%200%200%200%202.22447%2014.7003%20c%200.005%200%200%200.009%200%200.01%20c%20-0.311%200.352%20-1.924%202.849%200.021%202.849%20h%202.25%20c%20-1.23%20-0.022%201.263%20-2.107%200.269%20-3.494%20a%208.225%208.225%200%200%201%20-1.6%20-5.141'%20id='svg_8'%20transform=''/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", a2 = {
   components: {
-    ChatWindow: e2
+    ChatWindow: t2
   },
   props: {
     icons: {
@@ -6128,15 +6128,15 @@ const e2 = /* @__PURE__ */ M(D2, [["render", f2], ["__scopeId", "data-v-9301130a
       default: function() {
         return {
           open: {
-            img: F2,
+            img: n2,
             name: "default"
           },
           close: {
-            img: t2,
+            img: F2,
             name: "default"
           },
           minimize: {
-            img: n2,
+            img: I1,
             name: "default"
           }
         };
