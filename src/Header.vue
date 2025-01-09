@@ -23,7 +23,7 @@
 
 <script>
 import {mapState} from './store/'
-import CloseIcon from './assets/close-icon-big.png'
+import CloseIcon from './assets/close.png'
 import MinimizeIcon from './assets/minimize.svg'
 
 export default {
