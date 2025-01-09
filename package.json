@@ -27,7 +27,8 @@
     "minimist": "1.2.8",
     "msgdown": "^1.0.2",
     "tiny-emitter": "^2.1.0",
-    "v-tooltip": "^4.0.0-alpha.1"
+    "v-tooltip": "^4.0.0-alpha.1",
+    "vue3-beautiful-chat": "github:PedroCavaleiro/vue3-beautiful-chat#dev"
   },
   "devDependencies": {
     "@rollup/plugin-dynamic-import-vars": "^2.1.5",
