@@ -148,7 +148,12 @@ export default {
       type: Array,
       required: false,
       default: () => ['*/*']
-    }
+    },
+    showMinimizeButton: {
+      type: Boolean,
+      required: false,
+      default : false
+    },
   },
   data() {
     return {
