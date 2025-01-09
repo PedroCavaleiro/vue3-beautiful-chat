@@ -40,11 +40,6 @@ const P1 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AA
     colors: {
       type: Object,
       required: !0
-    },
-    showMinimizeButton: {
-      type: Boolean,
-      required: !1,
-      default: !1
     }
   },
   data() {
@@ -88,7 +83,7 @@ function L1(D, u, f, e, F, t) {
         Nu(K(f.title), 1)
       ], !0)
     ])),
-    f.showMinimizeButton ? (p(), g("div", {
+    D.showMinimizeButton ? (p(), g("div", {
       key: 3,
       class: "sc-header--close-button",
       onClick: u[1] || (u[1] = (n) => D.$emit("minimize"))
@@ -110,7 +105,7 @@ function L1(D, u, f, e, F, t) {
     ])) : I("", !0)
   ], 4);
 }
-const M1 = /* @__PURE__ */ M(I1, [["render", L1], ["__scopeId", "data-v-4a6380e5"]]), H1 = {
+const M1 = /* @__PURE__ */ M(I1, [["render", L1], ["__scopeId", "data-v-9d9eb6ac"]]), H1 = {
   props: {
     iconName: {
       type: String,
@@ -6358,6 +6353,7 @@ function i2(D, u, f, e, F, t) {
       "message-styling": f.messageStyling,
       messageMargin: f.messageMargin,
       acceptedFileTypes: f.acceptedFileTypes,
+      showMinimizeButton: f.showMinimizeButton,
       onClose: f.close,
       onMinimize: f.minimize,
       onScrollToTop: u[1] || (u[1] = (a) => D.$emit("scrollToTop")),
@@ -6394,10 +6390,10 @@ function i2(D, u, f, e, F, t) {
         }, void 0, !0)
       ]),
       _: 3
-    }, 8, ["message-list", "on-user-input-submit", "participants", "title", "is-open", "show-emoji", "show-emoji-in-text", "show-file", "show-confirmation-deletion", "confirmation-deletion-message", "show-header", "placeholder", "show-typing-indicator", "colors", "always-scroll-to-bottom", "message-styling", "messageMargin", "acceptedFileTypes", "onClose", "onMinimize"])
+    }, 8, ["message-list", "on-user-input-submit", "participants", "title", "is-open", "show-emoji", "show-emoji-in-text", "show-file", "show-confirmation-deletion", "confirmation-deletion-message", "show-header", "placeholder", "show-typing-indicator", "colors", "always-scroll-to-bottom", "message-styling", "messageMargin", "acceptedFileTypes", "showMinimizeButton", "onClose", "onMinimize"])
   ]);
 }
-const o2 = /* @__PURE__ */ M(n2, [["render", i2], ["__scopeId", "data-v-75418d21"]]);
+const o2 = /* @__PURE__ */ M(n2, [["render", i2], ["__scopeId", "data-v-0c0a5574"]]);
 var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], Ru = "start", Df = "end", s2 = "clippingParents", Qf = "viewport", Wu = "popper", C2 = "reference", bf = /* @__PURE__ */ tD.reduce(function(D, u) {
   return D.concat([u + "-" + Ru, u + "-" + Df]);
 }, []), yD = /* @__PURE__ */ [].concat(tD, [AD]).reduce(function(D, u) {

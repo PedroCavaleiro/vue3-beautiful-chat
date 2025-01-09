@@ -46,11 +46,6 @@ export default {
       type: Object,
       required: true
     },
-    showMinimizeButton: {
-      type: Boolean,
-      required: false,
-      default : false
-    },
   },
   data() {
     return {
