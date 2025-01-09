@@ -14,7 +14,7 @@
 
     <div v-if="showMinimizeButton" class="sc-header--minimize-button" @click="$emit('minimize')">
       <img v-if="icons.minimize.img" :src="icons.minimize.img" :alt="icons.minimize.name" />
-      <template v-else v-html="minimizeIcon"></template>
+      <svg v-else xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 47.971 47.971"  xml:space="preserve"><g><rect x="0" y="20" width="47.971" height="7.971" rx="3" ry="3"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
     </div>
     <div v-if="showCloseButton" class="sc-header--close-button" @click="$emit('close')">
       <img :src="icons.close.img" :alt="icons.close.name" />
@@ -24,7 +24,6 @@
 
 <script>
 import {mapState} from './store/'
-import CloseIcon from './assets/close.svg'
 import MinimizeIcon from './assets/minimize.svg'
 
 export default {
