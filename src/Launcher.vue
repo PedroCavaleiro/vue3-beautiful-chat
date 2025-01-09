@@ -1,11 +1,11 @@
 <template>
   <div>
     <div
-      v-if="showLauncher"
-      class="sc-launcher"
-      :class="{opened: isOpen}"
-      :style="{backgroundColor: colors.launcher.bg}"
-      @click.prevent="isOpen ? close() : openAndFocus()"
+        v-if="showLauncher"
+        class="sc-launcher"
+        :class="{opened: isOpen}"
+        :style="{backgroundColor: colors.launcher.bg}"
+        @click.prevent="isOpen ? close() : openAndFocus()"
     >
       <div v-if="newMessagesCount > 0 && !isOpen" class="sc-new-messsages-count">
         {{ newMessagesCount }}
@@ -71,7 +71,7 @@
 import store from './store/'
 import ChatWindow from './ChatWindow.vue'
 
-import CloseIcon from './assets/close.svg'
+import CloseIcon from './assets/close-icon.png'
 import OpenIcon from './assets/logo-no-bg.svg'
 
 export default {
@@ -89,10 +89,6 @@ export default {
           },
           close: {
             img: CloseIcon,
-            name: 'default'
-          },
-          minimize: {
-            img: null,
             name: 'default'
           }
         }
