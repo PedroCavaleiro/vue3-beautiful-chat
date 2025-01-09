@@ -12,8 +12,8 @@
       </slot>
     </div>
 
-    <div v-if="showMinimizeButton" class="sc-header--close-button" @click="$emit('minimize')">
-      <img :src="icons.close.img" :alt="icons.close.name" />
+    <div v-if="showMinimizeButton" class="sc-header--minimize-button" @click="$emit('minimize')">
+      <img :src="icons.minimize.img" :alt="icons.minimize.name" />
     </div>
     <div v-if="showCloseButton" class="sc-header--close-button" @click="$emit('close')">
       <img :src="icons.close.img" :alt="icons.close.name" />
@@ -32,6 +32,10 @@ export default {
       default: function () {
         return {
           close: {
+            img: CloseIcon,
+            name: 'default'
+          },
+          minimize: {
             img: CloseIcon,
             name: 'default'
           }
@@ -104,6 +108,16 @@ export default {
   align-self: center;
   height: 40px;
   margin-right: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+.sc-header--minimize-button {
+  width: 40px;
+  align-self: center;
+  height: 40px;
   box-sizing: border-box;
   cursor: pointer;
   border-radius: 5px;

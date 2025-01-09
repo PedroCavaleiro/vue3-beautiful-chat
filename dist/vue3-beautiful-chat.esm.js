@@ -1,13 +1,13 @@
-import { reactive as A1, openBlock as p, createElementBlock as g, normalizeStyle as R, createCommentVNode as I, renderSlot as O, createTextVNode as Nu, toDisplayString as K, createElementVNode as y, resolveComponent as T, createVNode as q, withCtx as j, resolveDirective as y1, normalizeClass as DD, withDirectives as qf, createBlock as V, Fragment as qu, renderList as Qu, vShow as w1, withModifiers as Gu, pushScopeId as k1, popScopeId as x1, nextTick as S1, withScopeId as T1, withKeys as O1, mergeProps as Rf, createApp as j1, h as $1 } from "vue";
+import { reactive as y1, openBlock as p, createElementBlock as g, normalizeStyle as R, createCommentVNode as I, renderSlot as O, createTextVNode as Nu, toDisplayString as K, createElementVNode as y, resolveComponent as T, createVNode as q, withCtx as j, resolveDirective as w1, normalizeClass as DD, withDirectives as Rf, createBlock as V, Fragment as qu, renderList as Qu, vShow as k1, withModifiers as Gu, pushScopeId as x1, popScopeId as S1, nextTick as T1, withScopeId as O1, withKeys as j1, mergeProps as Lf, createApp as $1, h as P1 } from "vue";
 const Du = {
-  state: A1({
+  state: y1({
     editMessage: null
   }),
   setState(D, u) {
     this.state[D] = u;
   }
 };
-function Lf(D) {
+function Mf(D) {
   const u = {};
   return D.forEach((f) => {
     u[f] = function() {
@@ -15,7 +15,7 @@ function Lf(D) {
     };
   }), u;
 }
-const P1 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURUxpcf///////////////////////////////////////////////////////3EAnbYAAAAOdFJOUwADZ66SoQjEhnS7/gsNGQL7+wAAAKtJREFUKM+F01sOhCAQRNESFV/I/pc70Og0YJfyJbmHhBAbGGYHstw8IPV4EOGOmERYIhGpxyUAJxHSz/xlC+1FxE64qB1yj1ZID7oXsel+63ovnj2JXUXue+hvrcLugL+EdG+9XBG8X+Kl34J3YM1g/egvIvdx5EK691RIz78YEXdnQrst6m6JqemXmNo+D/WJNAyVePZWWL0WdlfB+l+UAQQReaAc65DB/wGsZgzLN0IQWAAAAABJRU5ErkJggg==", M = (D, u) => {
+const df = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURUxpcf///////////////////////////////////////////////////////3EAnbYAAAAOdFJOUwADZ66SoQjEhnS7/gsNGQL7+wAAAKtJREFUKM+F01sOhCAQRNESFV/I/pc70Og0YJfyJbmHhBAbGGYHstw8IPV4EOGOmERYIhGpxyUAJxHSz/xlC+1FxE64qB1yj1ZID7oXsel+63ovnj2JXUXue+hvrcLugL+EdG+9XBG8X+Kl34J3YM1g/egvIvdx5EK691RIz78YEXdnQrst6m6JqemXmNo+D/WJNAyVePZWWL0WdlfB+l+UAQQReaAc65DB/wGsZgzLN0IQWAAAAABJRU5ErkJggg==", M = (D, u) => {
   const f = D.__vccOpts || D;
   for (const [e, F] of u)
     f[e] = F;
@@ -27,7 +27,11 @@ const P1 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AA
       default: function() {
         return {
           close: {
-            img: P1,
+            img: df,
+            name: "default"
+          },
+          minimize: {
+            img: df,
             name: "default"
           }
         };
@@ -48,7 +52,7 @@ const P1 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AA
     };
   },
   computed: {
-    ...Lf(["disableUserListToggle", "titleImageUrl", "showCloseButton", "showMinimizeButton"])
+    ...Mf(["disableUserListToggle", "titleImageUrl", "showCloseButton", "showMinimizeButton"])
   },
   methods: {
     toggleUserList() {
@@ -85,12 +89,12 @@ function L1(D, u, f, e, F, t) {
     ])),
     D.showMinimizeButton ? (p(), g("div", {
       key: 3,
-      class: "sc-header--close-button",
+      class: "sc-header--minimize-button",
       onClick: u[1] || (u[1] = (n) => D.$emit("minimize"))
     }, [
       y("img", {
-        src: f.icons.close.img,
-        alt: f.icons.close.name
+        src: f.icons.minimize.img,
+        alt: f.icons.minimize.name
       }, null, 8, q1)
     ])) : I("", !0),
     D.showCloseButton ? (p(), g("div", {
@@ -105,7 +109,7 @@ function L1(D, u, f, e, F, t) {
     ])) : I("", !0)
   ], 4);
 }
-const M1 = /* @__PURE__ */ M(I1, [["render", L1], ["__scopeId", "data-v-9d9eb6ac"]]), H1 = {
+const M1 = /* @__PURE__ */ M(I1, [["render", L1], ["__scopeId", "data-v-650bf902"]]), H1 = {
   props: {
     iconName: {
       type: String,
@@ -143,7 +147,7 @@ function G1(D, u, f, e, F, t) {
     ], 8, W1)
   ], 8, U1);
 }
-const Mf = /* @__PURE__ */ M(H1, [["render", G1], ["__scopeId", "data-v-1fd45a6c"]]), X1 = {}, Y1 = { d: "M19.404,6.65l-5.998-5.996c-0.292-0.292-0.765-0.292-1.056,0l-2.22,2.22l-8.311,8.313l-0.003,0.001v0.003l-0.161,0.161c-0.114,0.112-0.187,0.258-0.21,0.417l-1.059,7.051c-0.035,0.233,0.044,0.47,0.21,0.639c0.143,0.14,0.333,0.219,0.528,0.219c0.038,0,0.073-0.003,0.111-0.009l7.054-1.055c0.158-0.025,0.306-0.098,0.417-0.211l8.478-8.476l2.22-2.22C19.695,7.414,19.695,6.941,19.404,6.65z M8.341,16.656l-0.989-0.99l7.258-7.258l0.989,0.99L8.341,16.656z M2.332,15.919l0.411-2.748l4.143,4.143l-2.748,0.41L2.332,15.919z M13.554,7.351L6.296,14.61l-0.849-0.848l7.259-7.258l0.423,0.424L13.554,7.351zM10.658,4.457l0.992,0.99l-7.259,7.258L3.4,11.715L10.658,4.457z M16.656,8.342l-1.517-1.517V6.823h-0.003l-0.951-0.951l-2.471-2.471l1.164-1.164l4.942,4.94L16.656,8.342z" };
+const Hf = /* @__PURE__ */ M(H1, [["render", G1], ["__scopeId", "data-v-1fd45a6c"]]), X1 = {}, Y1 = { d: "M19.404,6.65l-5.998-5.996c-0.292-0.292-0.765-0.292-1.056,0l-2.22,2.22l-8.311,8.313l-0.003,0.001v0.003l-0.161,0.161c-0.114,0.112-0.187,0.258-0.21,0.417l-1.059,7.051c-0.035,0.233,0.044,0.47,0.21,0.639c0.143,0.14,0.333,0.219,0.528,0.219c0.038,0,0.073-0.003,0.111-0.009l7.054-1.055c0.158-0.025,0.306-0.098,0.417-0.211l8.478-8.476l2.22-2.22C19.695,7.414,19.695,6.941,19.404,6.65z M8.341,16.656l-0.989-0.99l7.258-7.258l0.989,0.99L8.341,16.656z M2.332,15.919l0.411-2.748l4.143,4.143l-2.748,0.41L2.332,15.919z M13.554,7.351L6.296,14.61l-0.849-0.848l7.259-7.258l0.423,0.424L13.554,7.351zM10.658,4.457l0.992,0.99l-7.259,7.258L3.4,11.715L10.658,4.457z M16.656,8.342l-1.517-1.517V6.823h-0.003l-0.951-0.951l-2.471-2.471l1.164-1.164l4.942,4.94L16.656,8.342z" };
 function Q1(D, u) {
   return p(), g("path", Y1);
 }
@@ -151,13 +155,13 @@ const K1 = /* @__PURE__ */ M(X1, [["render", Q1]]), J1 = {}, Z1 = { d: "M15.898,
 function u0(D, u) {
   return p(), g("path", Z1);
 }
-const Hf = /* @__PURE__ */ M(J1, [["render", u0]]), df = (D) => D.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const Uf = /* @__PURE__ */ M(J1, [["render", u0]]), rf = (D) => D.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 function D0(D, ...u) {
   if (typeof D == "string")
-    return df(D);
+    return rf(D);
   let f = D[0];
   for (const [e, F] of u.entries())
-    f = f + df(String(F)) + D[e + 1];
+    f = f + rf(String(F)) + D[e + 1];
   return f;
 }
 var f0 = "4.1.0";
@@ -187,7 +191,7 @@ function wu(D, u) {
 function Iu(D) {
   throw new Error("Unhandled case for value: '".concat(D, "'"));
 }
-var zu = /[A-Za-z]/, Z = /[\d]/, du = /\s/, jD = /['"]/, n0 = /[\x00-\x1F\x7F]/, a0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, d0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, r0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, i0 = a0 + d0 + r0, o0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Uf = i0 + o0, Su = new RegExp("[".concat(Uf, "]")), Vf = (
+var zu = /[A-Za-z]/, Z = /[\d]/, du = /\s/, jD = /['"]/, n0 = /[\x00-\x1F\x7F]/, a0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, d0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, r0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, i0 = a0 + d0 + r0, o0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Vf = i0 + o0, Su = new RegExp("[".concat(Vf, "]")), Wf = (
   /** @class */
   function() {
     function D(u) {
@@ -315,7 +319,7 @@ var E0 = (
       u === void 0 && (u = {}), this.newWindow = !1, this.truncate = {}, this.className = "", this.newWindow = u.newWindow || !1, this.truncate = u.truncate || {}, this.className = u.className || "";
     }
     return D.prototype.build = function(u) {
-      return new Vf({
+      return new Wf({
         tagName: "a",
         attrs: this.createAttrs(u),
         innerHtml: this.processAnchorText(u.getAnchorText())
@@ -387,11 +391,11 @@ var eD = (
       return this.tagBuilder.build(this);
     }, D;
   }()
-), l0 = "(?:xn--vermgensberatung-pwb|xn--vermgensberater-ctb|xn--clchc0ea0b2g2a9gcd|xn--w4r85el8fhu5dnra|travelersinsurance|vermögensberatung|xn--5su34j936bgsg|xn--bck1b9a5dre4c|xn--mgbah1a3hjkrd|xn--mgbai9azgqp6j|xn--mgberp4a5d4ar|xn--xkc2dl3a5ee0h|vermögensberater|xn--fzys8d69uvgm|xn--mgba7c0bbn0a|xn--mgbcpq6gpa1a|xn--xkc2al3hye2a|americanexpress|kerryproperties|sandvikcoromant|xn--i1b6b1a6a2e|xn--kcrx77d1x4a|xn--lgbbat1ad8j|xn--mgba3a4f16a|xn--mgbc0a9azcg|xn--nqv7fs00ema|americanfamily|kerrylogistics|weatherchannel|xn--54b7fta0cc|xn--6qq986b3xl|xn--80aqecdr1a|xn--b4w605ferd|xn--fiq228c5hs|xn--h2breg3eve|xn--jlq480n2rg|xn--mgba3a3ejt|xn--mgbaam7a8h|xn--mgbayh7gpa|xn--mgbbh1a71e|xn--mgbca7dzdo|xn--mgbi4ecexp|xn--mgbx4cd0ab|xn--rvc1e0am3e|international|lifeinsurance|wolterskluwer|xn--cckwcxetd|xn--eckvdtc9d|xn--fpcrj9c3d|xn--fzc2c9e2c|xn--h2brj9c8c|xn--tiq49xqyj|xn--yfro4i67o|xn--ygbi2ammx|construction|lplfinancial|scholarships|versicherung|xn--3e0b707e|xn--45br5cyl|xn--4dbrk0ce|xn--80adxhks|xn--80asehdb|xn--8y0a063a|xn--gckr3f0f|xn--mgb9awbf|xn--mgbab2bd|xn--mgbgu82a|xn--mgbpl2fh|xn--mgbt3dhd|xn--mk1bu44c|xn--ngbc5azd|xn--ngbe9e0a|xn--ogbpf8fl|xn--qcka1pmc|accountants|barclaycard|blackfriday|blockbuster|bridgestone|calvinklein|contractors|creditunion|engineering|enterprises|investments|kerryhotels|lamborghini|motorcycles|olayangroup|photography|playstation|productions|progressive|redumbrella|williamhill|xn--11b4c3d|xn--1ck2e1b|xn--1qqw23a|xn--2scrj9c|xn--3bst00m|xn--3ds443g|xn--3hcrj9c|xn--42c2d9a|xn--45brj9c|xn--55qw42g|xn--6frz82g|xn--80ao21a|xn--9krt00a|xn--cck2b3b|xn--czr694b|xn--d1acj3b|xn--efvy88h|xn--fct429k|xn--fjq720a|xn--flw351e|xn--g2xx48c|xn--gecrj9c|xn--gk3at1e|xn--h2brj9c|xn--hxt814e|xn--imr513n|xn--j6w193g|xn--jvr189m|xn--kprw13d|xn--kpry57d|xn--mgbbh1a|xn--mgbtx2b|xn--mix891f|xn--nyqy26a|xn--otu796d|xn--pgbs0dh|xn--q9jyb4c|xn--rhqv96g|xn--rovu88b|xn--s9brj9c|xn--ses554g|xn--t60b56a|xn--vuq861b|xn--w4rs40l|xn--xhq521b|xn--zfr164b|சிங்கப்பூர்|accountant|apartments|associates|basketball|bnpparibas|boehringer|capitalone|consulting|creditcard|cuisinella|eurovision|extraspace|foundation|healthcare|immobilien|industries|management|mitsubishi|nextdirect|properties|protection|prudential|realestate|republican|restaurant|schaeffler|tatamotors|technology|university|vlaanderen|xn--30rr7y|xn--3pxu8k|xn--45q11c|xn--4gbrim|xn--55qx5d|xn--5tzm5g|xn--80aswg|xn--90a3ac|xn--9dbq2a|xn--9et52u|xn--c2br7g|xn--cg4bki|xn--czrs0t|xn--czru2d|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--io0a7i|xn--kput3i|xn--mxtq1m|xn--o3cw4h|xn--pssy2u|xn--q7ce6a|xn--unup4y|xn--wgbh1c|xn--wgbl6a|xn--y9a3aq|accenture|allfinanz|amsterdam|analytics|aquarelle|barcelona|bloomberg|christmas|community|directory|education|equipment|fairwinds|financial|firestone|fresenius|furniture|goldpoint|hisamitsu|homedepot|homegoods|homesense|institute|insurance|kuokgroup|lancaster|landrover|lifestyle|marketing|marshalls|melbourne|microsoft|panasonic|pramerica|richardli|shangrila|solutions|statebank|statefarm|stockholm|travelers|vacations|xn--90ais|xn--c1avg|xn--d1alf|xn--e1a4c|xn--fhbei|xn--j1aef|xn--j1amh|xn--l1acc|xn--ngbrx|xn--nqv7f|xn--p1acf|xn--qxa6a|xn--tckwe|xn--vhquv|yodobashi|موريتانيا|abudhabi|airforce|allstate|attorney|barclays|barefoot|bargains|baseball|boutique|bradesco|broadway|brussels|builders|business|capetown|catering|catholic|cipriani|cleaning|clinique|clothing|commbank|computer|delivery|deloitte|democrat|diamonds|discount|discover|download|engineer|ericsson|exchange|feedback|fidelity|firmdale|football|frontier|goodyear|grainger|graphics|hdfcbank|helsinki|holdings|hospital|infiniti|ipiranga|istanbul|jpmorgan|lighting|lundbeck|marriott|mckinsey|memorial|merckmsd|mortgage|observer|partners|pharmacy|pictures|plumbing|property|redstone|reliance|saarland|samsclub|security|services|shopping|softbank|software|stcgroup|supplies|training|vanguard|ventures|verisign|woodside|xn--90ae|xn--node|xn--p1ai|xn--qxam|yokohama|السعودية|abogado|academy|agakhan|alibaba|android|athleta|auction|audible|auspost|banamex|bauhaus|bentley|bestbuy|booking|brother|capital|caravan|careers|channel|charity|chintai|citadel|clubmed|college|cologne|company|compare|contact|cooking|corsica|country|coupons|courses|cricket|cruises|dentist|digital|domains|exposed|express|farmers|fashion|ferrari|ferrero|finance|fishing|fitness|flights|florist|flowers|forsale|frogans|fujitsu|gallery|genting|godaddy|grocery|guitars|hamburg|hangout|hitachi|holiday|hosting|hotmail|hyundai|ismaili|jewelry|juniper|kitchen|komatsu|lacaixa|lanxess|lasalle|latrobe|leclerc|limited|lincoln|markets|monster|netbank|netflix|network|neustar|okinawa|organic|origins|philips|pioneer|politie|realtor|recipes|rentals|reviews|rexroth|samsung|sandvik|schmidt|schwarz|science|shiksha|singles|staples|storage|support|surgery|systems|temasek|theater|theatre|tickets|toshiba|trading|walmart|wanggou|watches|weather|website|wedding|whoswho|windows|winners|yamaxun|youtube|zuerich|католик|البحرين|الجزائر|العليان|پاکستان|كاثوليك|இந்தியா|abbott|abbvie|africa|agency|airbus|airtel|alipay|alsace|alstom|amazon|anquan|aramco|author|bayern|beauty|berlin|bharti|bostik|boston|broker|camera|career|casino|center|chanel|chrome|church|circle|claims|clinic|coffee|comsec|condos|coupon|credit|cruise|dating|datsun|dealer|degree|dental|design|direct|doctor|dunlop|dupont|durban|emerck|energy|estate|events|expert|family|flickr|futbol|gallup|garden|george|giving|global|google|gratis|health|hermes|hiphop|hockey|hotels|hughes|imamat|insure|intuit|jaguar|joburg|juegos|kaufen|kindle|kosher|latino|lawyer|lefrak|living|locker|london|luxury|madrid|maison|makeup|market|mattel|mobile|monash|mormon|moscow|museum|nagoya|nissan|nissay|norton|nowruz|office|olayan|online|oracle|orange|otsuka|pfizer|photos|physio|pictet|quebec|racing|realty|reisen|repair|report|review|rogers|ryukyu|safety|sakura|sanofi|school|schule|search|secure|select|shouji|soccer|social|stream|studio|supply|suzuki|swatch|sydney|taipei|taobao|target|tattoo|tennis|tienda|tjmaxx|tkmaxx|toyota|travel|unicom|viajes|viking|villas|virgin|vision|voting|voyage|walter|webcam|xihuan|yachts|yandex|zappos|москва|онлайн|ابوظبي|ارامكو|الاردن|المغرب|امارات|فلسطين|مليسيا|भारतम्|இலங்கை|ファッション|actor|adult|aetna|amfam|amica|apple|archi|audio|autos|azure|baidu|beats|bible|bingo|black|boats|bosch|build|canon|cards|chase|cheap|cisco|citic|click|cloud|coach|codes|crown|cymru|dance|deals|delta|drive|dubai|earth|edeka|email|epson|faith|fedex|final|forex|forum|gallo|games|gifts|gives|glass|globo|gmail|green|gripe|group|gucci|guide|homes|honda|horse|house|hyatt|ikano|irish|jetzt|koeln|kyoto|lamer|lease|legal|lexus|lilly|lipsy|loans|locus|lotte|lotto|mango|media|miami|money|movie|music|nexus|nikon|ninja|nokia|nowtv|omega|osaka|paris|parts|party|phone|photo|pizza|place|poker|praxi|press|prime|promo|quest|radio|rehab|reise|ricoh|rocks|rodeo|rugby|salon|sener|seven|sharp|shell|shoes|skype|sling|smart|smile|solar|space|sport|stada|store|study|style|sucks|swiss|tatar|tires|tirol|tmall|today|tokyo|tools|toray|total|tours|trade|trust|tunes|tushu|ubank|vegas|video|vodka|volvo|wales|watch|weber|weibo|works|world|xerox|yahoo|ישראל|ایران|بازار|بھارت|سودان|سورية|همراه|भारोत|संगठन|বাংলা|భారత్|ഭാരതം|嘉里大酒店|aarp|able|aero|akdn|ally|amex|arab|army|arpa|arte|asda|asia|audi|auto|baby|band|bank|bbva|beer|best|bike|bing|blog|blue|bofa|bond|book|buzz|cafe|call|camp|care|cars|casa|case|cash|cbre|cern|chat|citi|city|club|cool|coop|cyou|data|date|dclk|deal|dell|desi|diet|dish|docs|dvag|erni|fage|fail|fans|farm|fast|fido|film|fire|fish|flir|food|ford|free|fund|game|gbiz|gent|ggee|gift|gmbh|gold|golf|goog|guge|guru|hair|haus|hdfc|help|here|host|hsbc|icbc|ieee|imdb|immo|info|itau|java|jeep|jobs|jprs|kddi|kids|kiwi|kpmg|kred|land|lego|lgbt|lidl|life|like|limo|link|live|loan|love|ltda|luxe|maif|meet|meme|menu|mini|mint|mobi|moda|moto|name|navy|news|next|nico|nike|ollo|open|page|pars|pccw|pics|ping|pink|play|plus|pohl|porn|post|prod|prof|qpon|read|reit|rent|rest|rich|room|rsvp|ruhr|safe|sale|sarl|save|saxo|scot|seat|seek|sexy|shia|shop|show|silk|sina|site|skin|sncf|sohu|song|sony|spot|star|surf|talk|taxi|team|tech|teva|tiaa|tips|town|toys|tube|vana|visa|viva|vivo|vote|voto|wang|weir|wien|wiki|wine|work|xbox|yoga|zara|zero|zone|дети|сайт|بارت|بيتك|ڀارت|تونس|شبكة|عراق|عمان|موقع|भारत|ভারত|ভাৰত|ਭਾਰਤ|ભારત|ଭାରତ|ಭಾರತ|ලංකා|アマゾン|グーグル|クラウド|ポイント|组织机构|電訊盈科|香格里拉|aaa|abb|abc|aco|ads|aeg|afl|aig|anz|aol|app|art|aws|axa|bar|bbc|bbt|bcg|bcn|bet|bid|bio|biz|bms|bmw|bom|boo|bot|box|buy|bzh|cab|cal|cam|car|cat|cba|cbn|ceo|cfa|cfd|com|cpa|crs|dad|day|dds|dev|dhl|diy|dnp|dog|dot|dtv|dvr|eat|eco|edu|esq|eus|fan|fit|fly|foo|fox|frl|ftr|fun|fyi|gal|gap|gay|gdn|gea|gle|gmo|gmx|goo|gop|got|gov|hbo|hiv|hkt|hot|how|ibm|ice|icu|ifm|inc|ing|ink|int|ist|itv|jcb|jio|jll|jmp|jnj|jot|joy|kfh|kia|kim|kpn|krd|lat|law|lds|llc|llp|lol|lpl|ltd|man|map|mba|med|men|mil|mit|mlb|mls|mma|moe|moi|mom|mov|msd|mtn|mtr|nab|nba|nec|net|new|nfl|ngo|nhk|now|nra|nrw|ntt|nyc|obi|one|ong|onl|ooo|org|ott|ovh|pay|pet|phd|pid|pin|pnc|pro|pru|pub|pwc|red|ren|ril|rio|rip|run|rwe|sap|sas|sbi|sbs|scb|sew|sex|sfr|ski|sky|soy|spa|srl|stc|tab|tax|tci|tdk|tel|thd|tjx|top|trv|tui|tvs|ubs|uno|uol|ups|vet|vig|vin|vip|wed|win|wme|wow|wtc|wtf|xin|xxx|xyz|you|yun|zip|бел|ком|қаз|мкд|мон|орг|рус|срб|укр|հայ|קום|عرب|قطر|كوم|مصر|कॉम|नेट|คอม|ไทย|ລາວ|ストア|セール|みんな|中文网|亚马逊|天主教|我爱你|新加坡|淡马锡|飞利浦|ac|ad|ae|af|ag|ai|al|am|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cw|cx|cy|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gg|gh|gi|gl|gm|gn|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|mv|mw|mx|my|mz|na|nc|ne|nf|ng|ni|nl|no|np|nr|nu|nz|om|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|ps|pt|pw|py|qa|re|ro|rs|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sk|sl|sm|sn|so|sr|ss|st|su|sv|sx|sy|sz|tc|td|tf|tg|th|tj|tk|tl|tm|tn|to|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|za|zm|zw|ελ|ευ|бг|ею|рф|გე|닷넷|닷컴|삼성|한국|コム|世界|中信|中国|中國|企业|佛山|信息|健康|八卦|公司|公益|台湾|台灣|商城|商店|商标|嘉里|在线|大拿|娱乐|家電|广东|微博|慈善|手机|招聘|政务|政府|新闻|时尚|書籍|机构|游戏|澳門|点看|移动|网址|网店|网站|网络|联通|谷歌|购物|通販|集团|食品|餐厅|香港)", B0 = new RegExp("^" + l0 + "$"), p0 = /[\/?#]/, b0 = /[-+&@#/%=~_()|'$*\[\]{}\u2713]/, Wf = /[?!:,.;^]/, Gf = /https?:\/\//i, g0 = new RegExp("^" + Gf.source, "i"), m0 = new RegExp(Wf.source + "$"), h0 = /^(javascript|vbscript):/i, _0 = /^[A-Za-z][-.+A-Za-z0-9]*:(\/\/)?([^:/]*)/, v0 = /^(?:\/\/)?([^/#?:]+)/;
+), l0 = "(?:xn--vermgensberatung-pwb|xn--vermgensberater-ctb|xn--clchc0ea0b2g2a9gcd|xn--w4r85el8fhu5dnra|travelersinsurance|vermögensberatung|xn--5su34j936bgsg|xn--bck1b9a5dre4c|xn--mgbah1a3hjkrd|xn--mgbai9azgqp6j|xn--mgberp4a5d4ar|xn--xkc2dl3a5ee0h|vermögensberater|xn--fzys8d69uvgm|xn--mgba7c0bbn0a|xn--mgbcpq6gpa1a|xn--xkc2al3hye2a|americanexpress|kerryproperties|sandvikcoromant|xn--i1b6b1a6a2e|xn--kcrx77d1x4a|xn--lgbbat1ad8j|xn--mgba3a4f16a|xn--mgbc0a9azcg|xn--nqv7fs00ema|americanfamily|kerrylogistics|weatherchannel|xn--54b7fta0cc|xn--6qq986b3xl|xn--80aqecdr1a|xn--b4w605ferd|xn--fiq228c5hs|xn--h2breg3eve|xn--jlq480n2rg|xn--mgba3a3ejt|xn--mgbaam7a8h|xn--mgbayh7gpa|xn--mgbbh1a71e|xn--mgbca7dzdo|xn--mgbi4ecexp|xn--mgbx4cd0ab|xn--rvc1e0am3e|international|lifeinsurance|wolterskluwer|xn--cckwcxetd|xn--eckvdtc9d|xn--fpcrj9c3d|xn--fzc2c9e2c|xn--h2brj9c8c|xn--tiq49xqyj|xn--yfro4i67o|xn--ygbi2ammx|construction|lplfinancial|scholarships|versicherung|xn--3e0b707e|xn--45br5cyl|xn--4dbrk0ce|xn--80adxhks|xn--80asehdb|xn--8y0a063a|xn--gckr3f0f|xn--mgb9awbf|xn--mgbab2bd|xn--mgbgu82a|xn--mgbpl2fh|xn--mgbt3dhd|xn--mk1bu44c|xn--ngbc5azd|xn--ngbe9e0a|xn--ogbpf8fl|xn--qcka1pmc|accountants|barclaycard|blackfriday|blockbuster|bridgestone|calvinklein|contractors|creditunion|engineering|enterprises|investments|kerryhotels|lamborghini|motorcycles|olayangroup|photography|playstation|productions|progressive|redumbrella|williamhill|xn--11b4c3d|xn--1ck2e1b|xn--1qqw23a|xn--2scrj9c|xn--3bst00m|xn--3ds443g|xn--3hcrj9c|xn--42c2d9a|xn--45brj9c|xn--55qw42g|xn--6frz82g|xn--80ao21a|xn--9krt00a|xn--cck2b3b|xn--czr694b|xn--d1acj3b|xn--efvy88h|xn--fct429k|xn--fjq720a|xn--flw351e|xn--g2xx48c|xn--gecrj9c|xn--gk3at1e|xn--h2brj9c|xn--hxt814e|xn--imr513n|xn--j6w193g|xn--jvr189m|xn--kprw13d|xn--kpry57d|xn--mgbbh1a|xn--mgbtx2b|xn--mix891f|xn--nyqy26a|xn--otu796d|xn--pgbs0dh|xn--q9jyb4c|xn--rhqv96g|xn--rovu88b|xn--s9brj9c|xn--ses554g|xn--t60b56a|xn--vuq861b|xn--w4rs40l|xn--xhq521b|xn--zfr164b|சிங்கப்பூர்|accountant|apartments|associates|basketball|bnpparibas|boehringer|capitalone|consulting|creditcard|cuisinella|eurovision|extraspace|foundation|healthcare|immobilien|industries|management|mitsubishi|nextdirect|properties|protection|prudential|realestate|republican|restaurant|schaeffler|tatamotors|technology|university|vlaanderen|xn--30rr7y|xn--3pxu8k|xn--45q11c|xn--4gbrim|xn--55qx5d|xn--5tzm5g|xn--80aswg|xn--90a3ac|xn--9dbq2a|xn--9et52u|xn--c2br7g|xn--cg4bki|xn--czrs0t|xn--czru2d|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--io0a7i|xn--kput3i|xn--mxtq1m|xn--o3cw4h|xn--pssy2u|xn--q7ce6a|xn--unup4y|xn--wgbh1c|xn--wgbl6a|xn--y9a3aq|accenture|allfinanz|amsterdam|analytics|aquarelle|barcelona|bloomberg|christmas|community|directory|education|equipment|fairwinds|financial|firestone|fresenius|furniture|goldpoint|hisamitsu|homedepot|homegoods|homesense|institute|insurance|kuokgroup|lancaster|landrover|lifestyle|marketing|marshalls|melbourne|microsoft|panasonic|pramerica|richardli|shangrila|solutions|statebank|statefarm|stockholm|travelers|vacations|xn--90ais|xn--c1avg|xn--d1alf|xn--e1a4c|xn--fhbei|xn--j1aef|xn--j1amh|xn--l1acc|xn--ngbrx|xn--nqv7f|xn--p1acf|xn--qxa6a|xn--tckwe|xn--vhquv|yodobashi|موريتانيا|abudhabi|airforce|allstate|attorney|barclays|barefoot|bargains|baseball|boutique|bradesco|broadway|brussels|builders|business|capetown|catering|catholic|cipriani|cleaning|clinique|clothing|commbank|computer|delivery|deloitte|democrat|diamonds|discount|discover|download|engineer|ericsson|exchange|feedback|fidelity|firmdale|football|frontier|goodyear|grainger|graphics|hdfcbank|helsinki|holdings|hospital|infiniti|ipiranga|istanbul|jpmorgan|lighting|lundbeck|marriott|mckinsey|memorial|merckmsd|mortgage|observer|partners|pharmacy|pictures|plumbing|property|redstone|reliance|saarland|samsclub|security|services|shopping|softbank|software|stcgroup|supplies|training|vanguard|ventures|verisign|woodside|xn--90ae|xn--node|xn--p1ai|xn--qxam|yokohama|السعودية|abogado|academy|agakhan|alibaba|android|athleta|auction|audible|auspost|banamex|bauhaus|bentley|bestbuy|booking|brother|capital|caravan|careers|channel|charity|chintai|citadel|clubmed|college|cologne|company|compare|contact|cooking|corsica|country|coupons|courses|cricket|cruises|dentist|digital|domains|exposed|express|farmers|fashion|ferrari|ferrero|finance|fishing|fitness|flights|florist|flowers|forsale|frogans|fujitsu|gallery|genting|godaddy|grocery|guitars|hamburg|hangout|hitachi|holiday|hosting|hotmail|hyundai|ismaili|jewelry|juniper|kitchen|komatsu|lacaixa|lanxess|lasalle|latrobe|leclerc|limited|lincoln|markets|monster|netbank|netflix|network|neustar|okinawa|organic|origins|philips|pioneer|politie|realtor|recipes|rentals|reviews|rexroth|samsung|sandvik|schmidt|schwarz|science|shiksha|singles|staples|storage|support|surgery|systems|temasek|theater|theatre|tickets|toshiba|trading|walmart|wanggou|watches|weather|website|wedding|whoswho|windows|winners|yamaxun|youtube|zuerich|католик|البحرين|الجزائر|العليان|پاکستان|كاثوليك|இந்தியா|abbott|abbvie|africa|agency|airbus|airtel|alipay|alsace|alstom|amazon|anquan|aramco|author|bayern|beauty|berlin|bharti|bostik|boston|broker|camera|career|casino|center|chanel|chrome|church|circle|claims|clinic|coffee|comsec|condos|coupon|credit|cruise|dating|datsun|dealer|degree|dental|design|direct|doctor|dunlop|dupont|durban|emerck|energy|estate|events|expert|family|flickr|futbol|gallup|garden|george|giving|global|google|gratis|health|hermes|hiphop|hockey|hotels|hughes|imamat|insure|intuit|jaguar|joburg|juegos|kaufen|kindle|kosher|latino|lawyer|lefrak|living|locker|london|luxury|madrid|maison|makeup|market|mattel|mobile|monash|mormon|moscow|museum|nagoya|nissan|nissay|norton|nowruz|office|olayan|online|oracle|orange|otsuka|pfizer|photos|physio|pictet|quebec|racing|realty|reisen|repair|report|review|rogers|ryukyu|safety|sakura|sanofi|school|schule|search|secure|select|shouji|soccer|social|stream|studio|supply|suzuki|swatch|sydney|taipei|taobao|target|tattoo|tennis|tienda|tjmaxx|tkmaxx|toyota|travel|unicom|viajes|viking|villas|virgin|vision|voting|voyage|walter|webcam|xihuan|yachts|yandex|zappos|москва|онлайн|ابوظبي|ارامكو|الاردن|المغرب|امارات|فلسطين|مليسيا|भारतम्|இலங்கை|ファッション|actor|adult|aetna|amfam|amica|apple|archi|audio|autos|azure|baidu|beats|bible|bingo|black|boats|bosch|build|canon|cards|chase|cheap|cisco|citic|click|cloud|coach|codes|crown|cymru|dance|deals|delta|drive|dubai|earth|edeka|email|epson|faith|fedex|final|forex|forum|gallo|games|gifts|gives|glass|globo|gmail|green|gripe|group|gucci|guide|homes|honda|horse|house|hyatt|ikano|irish|jetzt|koeln|kyoto|lamer|lease|legal|lexus|lilly|lipsy|loans|locus|lotte|lotto|mango|media|miami|money|movie|music|nexus|nikon|ninja|nokia|nowtv|omega|osaka|paris|parts|party|phone|photo|pizza|place|poker|praxi|press|prime|promo|quest|radio|rehab|reise|ricoh|rocks|rodeo|rugby|salon|sener|seven|sharp|shell|shoes|skype|sling|smart|smile|solar|space|sport|stada|store|study|style|sucks|swiss|tatar|tires|tirol|tmall|today|tokyo|tools|toray|total|tours|trade|trust|tunes|tushu|ubank|vegas|video|vodka|volvo|wales|watch|weber|weibo|works|world|xerox|yahoo|ישראל|ایران|بازار|بھارت|سودان|سورية|همراه|भारोत|संगठन|বাংলা|భారత్|ഭാരതം|嘉里大酒店|aarp|able|aero|akdn|ally|amex|arab|army|arpa|arte|asda|asia|audi|auto|baby|band|bank|bbva|beer|best|bike|bing|blog|blue|bofa|bond|book|buzz|cafe|call|camp|care|cars|casa|case|cash|cbre|cern|chat|citi|city|club|cool|coop|cyou|data|date|dclk|deal|dell|desi|diet|dish|docs|dvag|erni|fage|fail|fans|farm|fast|fido|film|fire|fish|flir|food|ford|free|fund|game|gbiz|gent|ggee|gift|gmbh|gold|golf|goog|guge|guru|hair|haus|hdfc|help|here|host|hsbc|icbc|ieee|imdb|immo|info|itau|java|jeep|jobs|jprs|kddi|kids|kiwi|kpmg|kred|land|lego|lgbt|lidl|life|like|limo|link|live|loan|love|ltda|luxe|maif|meet|meme|menu|mini|mint|mobi|moda|moto|name|navy|news|next|nico|nike|ollo|open|page|pars|pccw|pics|ping|pink|play|plus|pohl|porn|post|prod|prof|qpon|read|reit|rent|rest|rich|room|rsvp|ruhr|safe|sale|sarl|save|saxo|scot|seat|seek|sexy|shia|shop|show|silk|sina|site|skin|sncf|sohu|song|sony|spot|star|surf|talk|taxi|team|tech|teva|tiaa|tips|town|toys|tube|vana|visa|viva|vivo|vote|voto|wang|weir|wien|wiki|wine|work|xbox|yoga|zara|zero|zone|дети|сайт|بارت|بيتك|ڀارت|تونس|شبكة|عراق|عمان|موقع|भारत|ভারত|ভাৰত|ਭਾਰਤ|ભારત|ଭାରତ|ಭಾರತ|ලංකා|アマゾン|グーグル|クラウド|ポイント|组织机构|電訊盈科|香格里拉|aaa|abb|abc|aco|ads|aeg|afl|aig|anz|aol|app|art|aws|axa|bar|bbc|bbt|bcg|bcn|bet|bid|bio|biz|bms|bmw|bom|boo|bot|box|buy|bzh|cab|cal|cam|car|cat|cba|cbn|ceo|cfa|cfd|com|cpa|crs|dad|day|dds|dev|dhl|diy|dnp|dog|dot|dtv|dvr|eat|eco|edu|esq|eus|fan|fit|fly|foo|fox|frl|ftr|fun|fyi|gal|gap|gay|gdn|gea|gle|gmo|gmx|goo|gop|got|gov|hbo|hiv|hkt|hot|how|ibm|ice|icu|ifm|inc|ing|ink|int|ist|itv|jcb|jio|jll|jmp|jnj|jot|joy|kfh|kia|kim|kpn|krd|lat|law|lds|llc|llp|lol|lpl|ltd|man|map|mba|med|men|mil|mit|mlb|mls|mma|moe|moi|mom|mov|msd|mtn|mtr|nab|nba|nec|net|new|nfl|ngo|nhk|now|nra|nrw|ntt|nyc|obi|one|ong|onl|ooo|org|ott|ovh|pay|pet|phd|pid|pin|pnc|pro|pru|pub|pwc|red|ren|ril|rio|rip|run|rwe|sap|sas|sbi|sbs|scb|sew|sex|sfr|ski|sky|soy|spa|srl|stc|tab|tax|tci|tdk|tel|thd|tjx|top|trv|tui|tvs|ubs|uno|uol|ups|vet|vig|vin|vip|wed|win|wme|wow|wtc|wtf|xin|xxx|xyz|you|yun|zip|бел|ком|қаз|мкд|мон|орг|рус|срб|укр|հայ|קום|عرب|قطر|كوم|مصر|कॉम|नेट|คอม|ไทย|ລາວ|ストア|セール|みんな|中文网|亚马逊|天主教|我爱你|新加坡|淡马锡|飞利浦|ac|ad|ae|af|ag|ai|al|am|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cw|cx|cy|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gg|gh|gi|gl|gm|gn|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|mv|mw|mx|my|mz|na|nc|ne|nf|ng|ni|nl|no|np|nr|nu|nz|om|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|ps|pt|pw|py|qa|re|ro|rs|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sk|sl|sm|sn|so|sr|ss|st|su|sv|sx|sy|sz|tc|td|tf|tg|th|tj|tk|tl|tm|tn|to|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|za|zm|zw|ελ|ευ|бг|ею|рф|გე|닷넷|닷컴|삼성|한국|コム|世界|中信|中国|中國|企业|佛山|信息|健康|八卦|公司|公益|台湾|台灣|商城|商店|商标|嘉里|在线|大拿|娱乐|家電|广东|微博|慈善|手机|招聘|政务|政府|新闻|时尚|書籍|机构|游戏|澳門|点看|移动|网址|网店|网站|网络|联通|谷歌|购物|通販|集团|食品|餐厅|香港)", B0 = new RegExp("^" + l0 + "$"), p0 = /[\/?#]/, b0 = /[-+&@#/%=~_()|'$*\[\]{}\u2713]/, Gf = /[?!:,.;^]/, Xf = /https?:\/\//i, g0 = new RegExp("^" + Xf.source, "i"), m0 = new RegExp(Gf.source + "$"), h0 = /^(javascript|vbscript):/i, _0 = /^[A-Za-z][-.+A-Za-z0-9]*:(\/\/)?([^:/]*)/, v0 = /^(?:\/\/)?([^/#?:]+)/;
 function Vu(D) {
   return zu.test(D);
 }
-function rf(D) {
+function of(D) {
   return zu.test(D) || Z.test(D) || D === "+" || D === "-" || D === ".";
 }
 function _u(D) {
@@ -400,13 +404,13 @@ function _u(D) {
 function $D(D) {
   return D === "_" || _u(D);
 }
-function of(D) {
-  return Su.test(D) || b0.test(D) || Wf.test(D);
+function sf(D) {
+  return Su.test(D) || b0.test(D) || Gf.test(D);
 }
 function PD(D) {
   return p0.test(D);
 }
-function Xf(D) {
+function Yf(D) {
   return B0.test(D.toLowerCase());
 }
 function A0(D) {
@@ -426,7 +430,7 @@ function y0(D) {
   if (e.length < 2)
     return !1;
   var F = e[e.length - 1];
-  return !!Xf(F);
+  return !!Yf(F);
 }
 var w0 = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/, k0 = /[:/?#]/;
 function x0(D) {
@@ -480,7 +484,7 @@ function z0(D) {
     return u;
   }
 }
-var N0 = /^mailto:/i, q0 = new RegExp("[".concat(Uf, "!#$%&'*+/=?^_`{|}~-]"));
+var N0 = /^mailto:/i, q0 = new RegExp("[".concat(Vf, "!#$%&'*+/=?^_`{|}~-]"));
 function R0(D) {
   return Su.test(D);
 }
@@ -489,7 +493,7 @@ function ID(D) {
 }
 function L0(D) {
   var u = D.split(".").pop() || "";
-  return Xf(u);
+  return Yf(u);
 }
 var M0 = (
   /** @class */
@@ -510,7 +514,7 @@ var M0 = (
     }, u;
   }(eD)
 );
-function sf(D) {
+function Cf(D) {
   return D === "_" || Su.test(D);
 }
 function H0(D) {
@@ -571,7 +575,7 @@ var U0 = [
   // https://support.google.com/youtube/answer/11585688?hl=en&co=GENIE.Platform%3DAndroid#tns
   youtube: /^@[-.·\w]{3,30}$/
 }, G0 = /[-\w.]/;
-function Cf(D) {
+function cf(D) {
   return G0.test(D);
 }
 function X0(D, u) {
@@ -621,7 +625,7 @@ var Y0 = [
     }, u;
   }(eD)
 ), K0 = /[-. ]/, J0 = /[-. ()]/, Z0 = /[,;]/, u3 = /(?:(?:(?:(\+)?\d{1,3}[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4})|(?:(\+)(?:9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)[-. ]?(?:\d[-. ]?){6,12}\d+))([,;]+[0-9]+#?)*/, D3 = /(0([1-9]-?[1-9]\d{3}|[1-9]{2}-?\d{3}|[1-9]{2}\d{1}-?\d{2}|[1-9]{2}\d{2}-?\d{1})-?\d{4}|0[789]0-?\d{4}-?\d{4}|050-?\d{4}-?\d{4})/, f3 = new RegExp("^".concat(u3.source, "|").concat(D3.source, "$"));
-function cf(D) {
+function Ef(D) {
   return K0.test(D);
 }
 function zD(D) {
@@ -781,16 +785,16 @@ function F3(D, u) {
             SD(E, o);
             break;
           case 38:
-            b1(E, o);
-            break;
-          case 39:
             g1(E, o);
             break;
-          case 40:
+          case 39:
             m1(E, o);
             break;
-          case 41:
+          case 40:
             h1(E, o);
+            break;
+          case 41:
+            _1(E, o);
             break;
           default:
             Iu(E.state);
@@ -867,14 +871,14 @@ function F3(D, u) {
     }
   }
   function _(i, s) {
-    s === ":" ? i.state = 2 : s === "-" ? i.state = 1 : rf(s) || P(d, i);
+    s === ":" ? i.state = 2 : s === "-" ? i.state = 1 : of(s) || P(d, i);
   }
   function v(i, s) {
     s === "-" || (s === "/" ? (P(d, i), d.push(ND(
       c,
       11
       /* State.ProtocolRelativeSlash1 */
-    ))) : rf(s) ? i.state = 0 : P(d, i));
+    ))) : of(s) ? i.state = 0 : P(d, i));
   }
   function b(i, s) {
     s === "/" ? i.state = 3 : s === "." ? P(d, i) : _u(s) ? (i.state = 5, Vu(s) && d.push(cD(
@@ -884,7 +888,7 @@ function F3(D, u) {
     ))) : P(d, i);
   }
   function m(i, s) {
-    s === "/" ? i.state = 4 : of(s) ? (i.state = 10, i.acceptStateReached = !0) : L(i);
+    s === "/" ? i.state = 4 : sf(s) ? (i.state = 10, i.acceptStateReached = !0) : L(i);
   }
   function k(i, s) {
     s === "/" ? i.state = 10 : _u(s) ? (i.state = 5, i.acceptStateReached = !0) : P(d, i);
@@ -917,7 +921,7 @@ function F3(D, u) {
     Z.test(s) || (PD(s) ? i.state = 10 : L(i));
   }
   function Eu(i, s) {
-    of(s) || L(i);
+    sf(s) || L(i);
   }
   function au(i, s) {
     s.toLowerCase() === "a" ? i.state = 16 : Q(i, s);
@@ -959,16 +963,16 @@ function F3(D, u) {
     s === "." || s === "-" ? L(i) : _u(s) ? (i.state = 25, i.acceptStateReached = !0) : L(i);
   }
   function aD(i, s) {
-    sf(s) ? (i.state = 29, i.acceptStateReached = !0) : P(d, i);
+    Cf(s) ? (i.state = 29, i.acceptStateReached = !0) : P(d, i);
   }
   function dD(i, s) {
-    sf(s) || L(i);
+    Cf(s) || L(i);
   }
   function rD(i, s) {
-    Cf(s) ? (i.state = 31, i.acceptStateReached = !0) : P(d, i);
+    cf(s) ? (i.state = 31, i.acceptStateReached = !0) : P(d, i);
   }
   function iD(i, s) {
-    Cf(s) || (Su.test(s) ? P(d, i) : L(i));
+    cf(s) || (Su.test(s) ? P(d, i) : L(i));
   }
   function SD(i, s) {
     Z.test(s) ? i.state = 38 : (P(d, i), w(s));
@@ -986,34 +990,34 @@ function F3(D, u) {
     s === ")" ? i.state = 36 : P(d, i);
   }
   function CD(i, s) {
-    Z.test(s) ? i.state = 38 : cf(s) ? i.state = 39 : P(d, i);
+    Z.test(s) ? i.state = 38 : Ef(s) ? i.state = 39 : P(d, i);
   }
-  function b1(i, s) {
-    i.acceptStateReached = !0, zD(s) ? i.state = 40 : s === "#" ? i.state = 41 : Z.test(s) || (s === "(" ? i.state = 32 : cf(s) ? i.state = 39 : (L(i), Vu(s) && d.push(cD(
+  function g1(i, s) {
+    i.acceptStateReached = !0, zD(s) ? i.state = 40 : s === "#" ? i.state = 41 : Z.test(s) || (s === "(" ? i.state = 32 : Ef(s) ? i.state = 39 : (L(i), Vu(s) && d.push(cD(
       c,
       0
       /* State.SchemeChar */
     ))));
   }
-  function g1(i, s) {
+  function m1(i, s) {
     Z.test(s) ? i.state = 38 : s === "(" ? i.state = 32 : (L(i), w(s));
   }
-  function m1(i, s) {
+  function h1(i, s) {
     zD(s) || (s === "#" ? i.state = 41 : Z.test(s) ? i.state = 38 : L(i));
   }
-  function h1(i, s) {
+  function _1(i, s) {
     zD(s) ? i.state = 40 : Z.test(s) ? P(d, i) : L(i);
   }
   function L(i) {
     if (P(d, i), !!i.acceptStateReached) {
       var s = i.startIdx, $ = D.slice(i.startIdx, c);
       if ($ = a3($), i.type === "url") {
-        var _1 = D.charAt(i.startIdx - 1);
-        if (_1 === "@")
+        var v1 = D.charAt(i.startIdx - 1);
+        if (v1 === "@")
           return;
         var Uu = i.matchType;
         if (Uu === "scheme") {
-          var OD = Gf.exec($);
+          var OD = Xf.exec($);
           if (OD && (s = s + OD.index, $ = $.slice(OD.index)), !A0($))
             return;
         } else if (Uu === "tld") {
@@ -1063,12 +1067,12 @@ function F3(D, u) {
         }));
       else if (i.type === "phone") {
         if ($ = $.replace(/ +$/g, ""), e3($)) {
-          var v1 = $.replace(/[^0-9,;#]/g, "");
+          var A1 = $.replace(/[^0-9,;#]/g, "");
           r.push(new t3({
             tagBuilder: f,
             matchedText: $,
             offset: s,
-            number: v1,
+            number: A1,
             plusSign: $.charAt(0) === "+"
           }));
         }
@@ -1077,7 +1081,7 @@ function F3(D, u) {
     }
   }
 }
-var n3 = /[\(\{\[]/, Ef = /[\)\}\]]/, lf = {
+var n3 = /[\(\{\[]/, lf = /[\)\}\]]/, Bf = {
   ")": "(",
   "}": "{",
   "]": "["
@@ -1089,11 +1093,11 @@ function a3(D) {
     "[": 0
   }, f = 0; f < D.length; f++) {
     var e = D.charAt(f);
-    n3.test(e) ? u[e]++ : Ef.test(e) && u[lf[e]]--;
+    n3.test(e) ? u[e]++ : lf.test(e) && u[Bf[e]]--;
   }
   for (var F = D.length - 1, t; F >= 0; )
-    if (t = D.charAt(F), Ef.test(t)) {
-      var n = lf[t];
+    if (t = D.charAt(F), lf.test(t)) {
+      var n = Bf[t];
       if (u[n] < 0)
         u[n]++, F--;
       else
@@ -1450,7 +1454,7 @@ var pu = (
         return f;
       if (f === !1)
         return u.getMatchedText();
-      if (f instanceof Vf)
+      if (f instanceof Wf)
         return f.toAnchorString();
       var e = u.buildTag();
       return e.toAnchorString();
@@ -1487,10 +1491,10 @@ var p3 = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
 function uf(D) {
   return D && D.__esModule && Object.prototype.hasOwnProperty.call(D, "default") ? D.default : D;
 }
-var RD, Bf;
+var RD, pf;
 function b3() {
-  if (Bf) return RD;
-  Bf = 1;
+  if (pf) return RD;
+  pf = 1;
   const D = {
     bold: { delimiter: "*", tag: "strong" },
     italic: { delimiter: "/", tag: "em" },
@@ -1530,8 +1534,8 @@ function b3() {
 var g3 = b3();
 const m3 = /* @__PURE__ */ uf(g3), h3 = {
   components: {
-    IconBase: Mf,
-    IconCross: Hf,
+    IconBase: Hf,
+    IconCross: Uf,
     IconEdit: K1
   },
   props: {
@@ -1570,7 +1574,7 @@ const m3 = /* @__PURE__ */ uf(g3), h3 = {
     isEditing() {
       return (Du.state.editMessage && Du.state.editMessage.id) === this.message.id;
     },
-    ...Lf(["showDeletion", "showEdition"])
+    ...Mf(["showDeletion", "showEdition"])
   },
   methods: {
     edit() {
@@ -1774,7 +1778,7 @@ function H3(D, u, f, e, F, t) {
     ], !0)
   ], 4);
 }
-const U3 = /* @__PURE__ */ M(M3, [["render", H3], ["__scopeId", "data-v-c0484e01"]]), Yf = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='-4749.48%20-5020%2035.036%2035.036'%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M0-399.479H17.555v17.555H0Z'%20transform='translate(0%20399.479)'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20transform='translate(-4886%20-5075)'%3e%3ccircle%20class='b'%20cx='17.518'%20cy='17.518'%20r='17.518'%20transform='translate(136.52%2055)'/%3e%3cg%20transform='translate(145.13%2064)'%3e%3cg%20class='c'%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='d'%20d='M-381.924-190.962a8.778,8.778,0,0,0-8.778-8.778,8.778,8.778,0,0,0-8.778,8.778,8.745,8.745,0,0,0,2.26,5.879v1.442c0,.8.492,1.457,1.1,1.457h5.83a.843.843,0,0,0,.183-.02,8.778,8.778,0,0,0,8.184-8.757'%20transform='translate(399.479%20199.74)'/%3e%3c/g%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='e'%20d='M-68.763-194.079a9.292,9.292,0,0,1,6.38-8.888c-.252-.022-.506-.033-.763-.033a8.774,8.774,0,0,0-8.778,8.778A9.508,9.508,0,0,0-69.7-188.3c.005,0,0,.009,0,.01-.311.352-1.924,2.849.021,2.849h2.25c-1.23-.022,1.263-2.107.269-3.494a8.225,8.225,0,0,1-1.6-5.141'%20transform='translate(71.924%20203)'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", V3 = {
+const U3 = /* @__PURE__ */ M(M3, [["render", H3], ["__scopeId", "data-v-c0484e01"]]), Qf = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='-4749.48%20-5020%2035.036%2035.036'%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M0-399.479H17.555v17.555H0Z'%20transform='translate(0%20399.479)'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20transform='translate(-4886%20-5075)'%3e%3ccircle%20class='b'%20cx='17.518'%20cy='17.518'%20r='17.518'%20transform='translate(136.52%2055)'/%3e%3cg%20transform='translate(145.13%2064)'%3e%3cg%20class='c'%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='d'%20d='M-381.924-190.962a8.778,8.778,0,0,0-8.778-8.778,8.778,8.778,0,0,0-8.778,8.778,8.745,8.745,0,0,0,2.26,5.879v1.442c0,.8.492,1.457,1.1,1.457h5.83a.843.843,0,0,0,.183-.02,8.778,8.778,0,0,0,8.184-8.757'%20transform='translate(399.479%20199.74)'/%3e%3c/g%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='e'%20d='M-68.763-194.079a9.292,9.292,0,0,1,6.38-8.888c-.252-.022-.506-.033-.763-.033a8.774,8.774,0,0,0-8.778,8.778A9.508,9.508,0,0,0-69.7-188.3c.005,0,0,.009,0,.01-.311.352-1.924,2.849.021,2.849h2.25c-1.23-.022,1.263-2.107.269-3.494a8.225,8.225,0,0,1-1.6-5.141'%20transform='translate(71.924%20203)'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", V3 = {
   components: {
     TextMessage: k3,
     FileMessage: $3,
@@ -1817,7 +1821,7 @@ const U3 = /* @__PURE__ */ M(M3, [["render", H3], ["__scopeId", "data-v-c0484e01
       return this.user && this.user.name;
     },
     chatImageUrl() {
-      return this.user && this.user.imageUrl || Yf;
+      return this.user && this.user.imageUrl || Qf;
     },
     messageColors() {
       return this.message.author === "me" ? this.sentColorsStyle : this.receivedColorsStyle;
@@ -1840,7 +1844,7 @@ const U3 = /* @__PURE__ */ M(M3, [["render", H3], ["__scopeId", "data-v-c0484e01
   }
 }, W3 = ["id"], G3 = ["title"];
 function X3(D, u, f, e, F, t) {
-  const n = T("TextMessage"), a = T("EmojiMessage"), r = T("FileMessage"), C = T("TypingMessage"), d = T("SystemMessage"), c = y1("tooltip");
+  const n = T("TextMessage"), a = T("EmojiMessage"), r = T("FileMessage"), C = T("TypingMessage"), d = T("SystemMessage"), c = w1("tooltip");
   return p(), g("div", {
     id: f.message.id,
     class: "sc-message",
@@ -1859,7 +1863,7 @@ function X3(D, u, f, e, F, t) {
         message: f.message,
         user: f.user
       }, () => [
-        f.message.type !== "system" && t.authorName && t.authorName !== "me" ? qf((p(), g("div", {
+        f.message.type !== "system" && t.authorName && t.authorName !== "me" ? Rf((p(), g("div", {
           key: 0,
           title: t.authorName,
           class: "sc-message--avatar",
@@ -1970,7 +1974,7 @@ const Q3 = {
   },
   computed: {
     defaultChatIcon() {
-      return Yf;
+      return Qf;
     }
   },
   mounted() {
@@ -2050,7 +2054,7 @@ function K3(D, u, f, e, F, t) {
       ]),
       _: 2
     }, 1032, ["message", "user", "colors", "message-styling", "show-confirmation-deletion", "confirmation-deletion-message", "messageMargin", "onRemove"]))), 128)),
-    qf(q(n, {
+    Rf(q(n, {
       message: { author: f.showTypingIndicator, type: "typing" },
       user: t.profile(f.showTypingIndicator),
       colors: f.colors,
@@ -2058,14 +2062,14 @@ function K3(D, u, f, e, F, t) {
       "show-confirmation-deletion": f.showConfirmationDeletion,
       "confirmation-deletion-message": f.confirmationDeletionMessage
     }, null, 8, ["message", "user", "colors", "message-styling", "show-confirmation-deletion", "confirmation-deletion-message"]), [
-      [w1, f.showTypingIndicator !== ""]
+      [k1, f.showTypingIndicator !== ""]
     ])
   ], 36);
 }
 const J3 = /* @__PURE__ */ M(Q3, [["render", K3], ["__scopeId", "data-v-505f0c8f"]]);
-var ED = { exports: {} }, pf;
+var ED = { exports: {} }, bf;
 function Z3() {
-  return pf || (pf = 1, function(D, u) {
+  return bf || (bf = 1, function(D, u) {
     (function() {
       var f = this, e = f.EmojiConvertor, F = function() {
         var t = this;
@@ -5523,7 +5527,7 @@ function Be(D, u, f, e, F, t) {
 }
 const pe = /* @__PURE__ */ M(Ce, [["render", Be], ["__scopeId", "data-v-8db5b373"]]), be = {
   components: {
-    IconBase: Mf
+    IconBase: Hf
   },
   props: {
     color: {
@@ -5597,7 +5601,7 @@ const Ie = /* @__PURE__ */ M(je, [["render", Pe]]), ze = {
     FileIcons: pe,
     UserInputButton: he,
     Suggestions: ye,
-    IconCross: Hf,
+    IconCross: Uf,
     IconOk: Oe,
     IconSend: Ie
   },
@@ -6114,7 +6118,7 @@ function f2(D, u, f, e, F, t) {
     }, null, 8, ["show-emoji", "show-emoji-in-text", "on-submit", "suggestions", "show-file", "placeholder", "colors", "acceptedFileTypes"]))
   ], 2);
 }
-const e2 = /* @__PURE__ */ M(D2, [["render", f2], ["__scopeId", "data-v-9301130a"]]), t2 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAKVQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////uP3jVQAAADd0Uk5TAE9lCAXd9XA4y/9zDQJG7HYB8Hc3yHoPQ8fuezMSoYPrEcEugj0tqb6G+Lw5ifHcKk3SIAx/MjRpS8YAAADsSURBVHic7dDJDoIwEIDhQURwQNGiIBVkUQH3BfX9H00MEvHW9qj9L3RIvkxTAJlMJvu1lI7aHtWOwm67Wk9vz3pP67Jro4+m1QyWiX2D3cJgqNmjt7ZGtjYccGAYK8R26qNjE2XMY6smU3Q9AM/F6YSTVrtnPp173pz6M969Lx1Q6rqUBgK2KvAR/UCIAoQLxEUoiCMSxyQSokmE6XKZYpQI2BVJ1wDrlKz4dXXn7PXN+G8e5lhk9TErMOd6tXCz3e2bYb/bbnj04Xg6f6bz6Xhgtxe8lu25vOKFGd/uj+8fj/uNfbVMJpP9QU/STxAzeUFqVwAAAABJRU5ErkJggg==", F2 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='18'%20height='18'%3e%3crect%20id='backgroundrect'%20width='100%25'%20height='100%25'%20x='0'%20y='0'%20fill='none'%20stroke='none'/%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M%200%200%20H%2017.555%20v%2017.555%20H%200%20Z'%20id='svg_1'%20transform=''/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20class='currentLayer'%20style=''%3e%3ctitle%3eLayer%201%3c/title%3e%3cg%20id='svg_2'%20class='selected'%20transform=''%3e%3cg%20id='svg_3'%20transform=''%3e%3cg%20class='c'%20id='svg_4'%20transform=''%3e%3cg%20id='svg_5'%20transform=''%3e%3cpath%20class='d'%20d='M%2017.556%208.77842%20a%208.778%208.778%200%200%200%20-8.778%20-8.778%20a%208.778%208.778%200%200%200%20-8.778%208.778%20a%208.745%208.745%200%200%200%202.26%205.879%20v%201.442%20c%200%200.8%200.492%201.457%201.1%201.457%20h%205.83%20a%200.843%200.843%200%200%200%200.183%20-0.02%20a%208.778%208.778%200%200%200%208.184%20-8.757'%20id='svg_6'%20transform=''/%3e%3c/g%3e%3cg%20id='svg_7'%20transform=''%3e%3cpath%20class='e'%20d='M%203.16148%208.921%20a%209.292%209.292%200%200%201%206.38%20-8.888%20c%20-0.252%20-0.022%20-0.506%20-0.033%20-0.763%20-0.033%20a%208.774%208.774%200%200%200%20-8.778%208.778%20A%209.508%209.508%200%200%200%202.22447%2014.7003%20c%200.005%200%200%200.009%200%200.01%20c%20-0.311%200.352%20-1.924%202.849%200.021%202.849%20h%202.25%20c%20-1.23%20-0.022%201.263%20-2.107%200.269%20-3.494%20a%208.225%208.225%200%200%201%20-1.6%20-5.141'%20id='svg_8'%20transform=''/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", n2 = {
+const e2 = /* @__PURE__ */ M(D2, [["render", f2], ["__scopeId", "data-v-9301130a"]]), t2 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAKVQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////uP3jVQAAADd0Uk5TAE9lCAXd9XA4y/9zDQJG7HYB8Hc3yHoPQ8fuezMSoYPrEcEugj0tqb6G+Lw5ifHcKk3SIAx/MjRpS8YAAADsSURBVHic7dDJDoIwEIDhQURwQNGiIBVkUQH3BfX9H00MEvHW9qj9L3RIvkxTAJlMJvu1lI7aHtWOwm67Wk9vz3pP67Jro4+m1QyWiX2D3cJgqNmjt7ZGtjYccGAYK8R26qNjE2XMY6smU3Q9AM/F6YSTVrtnPp173pz6M969Lx1Q6rqUBgK2KvAR/UCIAoQLxEUoiCMSxyQSokmE6XKZYpQI2BVJ1wDrlKz4dXXn7PXN+G8e5lhk9TErMOd6tXCz3e2bYb/bbnj04Xg6f6bz6Xhgtxe8lu25vOKFGd/uj+8fj/uNfbVMJpP9QU/STxAzeUFqVwAAAABJRU5ErkJggg==", F2 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='18'%20height='18'%3e%3crect%20id='backgroundrect'%20width='100%25'%20height='100%25'%20x='0'%20y='0'%20fill='none'%20stroke='none'/%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M%200%200%20H%2017.555%20v%2017.555%20H%200%20Z'%20id='svg_1'%20transform=''/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20class='currentLayer'%20style=''%3e%3ctitle%3eLayer%201%3c/title%3e%3cg%20id='svg_2'%20class='selected'%20transform=''%3e%3cg%20id='svg_3'%20transform=''%3e%3cg%20class='c'%20id='svg_4'%20transform=''%3e%3cg%20id='svg_5'%20transform=''%3e%3cpath%20class='d'%20d='M%2017.556%208.77842%20a%208.778%208.778%200%200%200%20-8.778%20-8.778%20a%208.778%208.778%200%200%200%20-8.778%208.778%20a%208.745%208.745%200%200%200%202.26%205.879%20v%201.442%20c%200%200.8%200.492%201.457%201.1%201.457%20h%205.83%20a%200.843%200.843%200%200%200%200.183%20-0.02%20a%208.778%208.778%200%200%200%208.184%20-8.757'%20id='svg_6'%20transform=''/%3e%3c/g%3e%3cg%20id='svg_7'%20transform=''%3e%3cpath%20class='e'%20d='M%203.16148%208.921%20a%209.292%209.292%200%200%201%206.38%20-8.888%20c%20-0.252%20-0.022%20-0.506%20-0.033%20-0.763%20-0.033%20a%208.774%208.774%200%200%200%20-8.778%208.778%20A%209.508%209.508%200%200%200%202.22447%2014.7003%20c%200.005%200%200%200.009%200%200.01%20c%20-0.311%200.352%20-1.924%202.849%200.021%202.849%20h%202.25%20c%20-1.23%20-0.022%201.263%20-2.107%200.269%20-3.494%20a%208.225%208.225%200%200%201%20-1.6%20-5.141'%20id='svg_8'%20transform=''/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", n2 = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3crect%20x='0'%20y='20'%20width='47.971'%20height='7.971'%20rx='5'%20ry='5'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", a2 = {
   components: {
     ChatWindow: e2
   },
@@ -6129,6 +6133,10 @@ const e2 = /* @__PURE__ */ M(D2, [["render", f2], ["__scopeId", "data-v-9301130a
           },
           close: {
             img: t2,
+            name: "default"
+          },
+          minimize: {
+            img: n2,
             name: "default"
           }
         };
@@ -6302,11 +6310,11 @@ const e2 = /* @__PURE__ */ M(D2, [["render", f2], ["__scopeId", "data-v-9301130a
       this.open(), this.autoFocus && this.$event.$emit("focusUserInput");
     }
   }
-}, a2 = {
+}, d2 = {
   key: 0,
   class: "sc-new-messsages-count"
-}, d2 = ["src", "alt"], r2 = ["src", "alt"];
-function i2(D, u, f, e, F, t) {
+}, r2 = ["src", "alt"], i2 = ["src", "alt"];
+function o2(D, u, f, e, F, t) {
   const n = T("ChatWindow");
   return p(), g("div", null, [
     f.showLauncher ? (p(), g("div", {
@@ -6315,18 +6323,18 @@ function i2(D, u, f, e, F, t) {
       style: R({ backgroundColor: f.colors.launcher.bg }),
       onClick: u[0] || (u[0] = Gu((a) => f.isOpen ? f.close() : t.openAndFocus(), ["prevent"]))
     }, [
-      f.newMessagesCount > 0 && !f.isOpen ? (p(), g("div", a2, K(f.newMessagesCount), 1)) : I("", !0),
+      f.newMessagesCount > 0 && !f.isOpen ? (p(), g("div", d2, K(f.newMessagesCount), 1)) : I("", !0),
       f.isOpen ? (p(), g("img", {
         key: 1,
         class: "sc-closed-icon",
         src: f.icons.close.img,
         alt: f.icons.close.name
-      }, null, 8, d2)) : (p(), g("img", {
+      }, null, 8, r2)) : (p(), g("img", {
         key: 2,
         class: "sc-open-icon",
         src: f.icons.open.img,
         alt: f.icons.open.name
-      }, null, 8, r2))
+      }, null, 8, i2))
     ], 6)) : I("", !0),
     q(n, {
       "message-list": f.messageList,
@@ -6387,12 +6395,12 @@ function i2(D, u, f, e, F, t) {
     }, 8, ["message-list", "on-user-input-submit", "participants", "title", "is-open", "show-emoji", "show-emoji-in-text", "show-file", "show-confirmation-deletion", "confirmation-deletion-message", "show-header", "placeholder", "show-typing-indicator", "colors", "always-scroll-to-bottom", "message-styling", "messageMargin", "acceptedFileTypes", "showMinimizeButton", "onClose", "onMinimize"])
   ]);
 }
-const o2 = /* @__PURE__ */ M(n2, [["render", i2], ["__scopeId", "data-v-0c0a5574"]]);
-var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], Ru = "start", Df = "end", s2 = "clippingParents", Qf = "viewport", Wu = "popper", C2 = "reference", bf = /* @__PURE__ */ tD.reduce(function(D, u) {
+const s2 = /* @__PURE__ */ M(a2, [["render", o2], ["__scopeId", "data-v-c81294e4"]]);
+var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], Ru = "start", Df = "end", C2 = "clippingParents", Kf = "viewport", Wu = "popper", c2 = "reference", gf = /* @__PURE__ */ tD.reduce(function(D, u) {
   return D.concat([u + "-" + Ru, u + "-" + Df]);
 }, []), yD = /* @__PURE__ */ [].concat(tD, [AD]).reduce(function(D, u) {
   return D.concat([u, u + "-" + Ru, u + "-" + Df]);
-}, []), c2 = "beforeRead", E2 = "read", l2 = "afterRead", B2 = "beforeMain", p2 = "main", b2 = "afterMain", g2 = "beforeWrite", m2 = "write", h2 = "afterWrite", UD = [c2, E2, l2, B2, p2, b2, g2, m2, h2];
+}, []), E2 = "beforeRead", l2 = "read", B2 = "afterRead", p2 = "beforeMain", b2 = "main", g2 = "afterMain", m2 = "beforeWrite", h2 = "write", _2 = "afterWrite", UD = [E2, l2, B2, p2, b2, g2, m2, h2, _2];
 function bu(D) {
   return D ? (D.nodeName || "").toLowerCase() : null;
 }
@@ -6413,13 +6421,13 @@ function Fu(D) {
   var u = cu(D).HTMLElement;
   return D instanceof u || D instanceof HTMLElement;
 }
-function Kf(D) {
+function Jf(D) {
   if (typeof ShadowRoot > "u")
     return !1;
   var u = cu(D).ShadowRoot;
   return D instanceof u || D instanceof ShadowRoot;
 }
-function _2(D) {
+function v2(D) {
   var u = D.state;
   Object.keys(u.elements).forEach(function(f) {
     var e = u.styles[f] || {}, F = u.attributes[f] || {}, t = u.elements[f];
@@ -6429,7 +6437,7 @@ function _2(D) {
     }));
   });
 }
-function v2(D) {
+function A2(D) {
   var u = D.state, f = {
     popper: {
       position: u.options.strategy,
@@ -6453,12 +6461,12 @@ function v2(D) {
     });
   };
 }
-const A2 = {
+const y2 = {
   name: "applyStyles",
   enabled: !0,
   phase: "write",
-  fn: _2,
-  effect: v2,
+  fn: v2,
+  effect: A2,
   requires: ["computeStyles"]
 };
 function ru(D) {
@@ -6486,11 +6494,11 @@ function ff(D) {
     height: e
   };
 }
-function Jf(D, u) {
+function Zf(D, u) {
   var f = u.getRootNode && u.getRootNode();
   if (D.contains(u))
     return !0;
-  if (f && Kf(f)) {
+  if (f && Jf(f)) {
     var e = u;
     do {
       if (e && D.isSameNode(e))
@@ -6503,7 +6511,7 @@ function Jf(D, u) {
 function Cu(D) {
   return cu(D).getComputedStyle(D);
 }
-function y2(D) {
+function w2(D) {
   return ["table", "td", "th"].indexOf(bu(D)) >= 0;
 }
 function Au(D) {
@@ -6519,16 +6527,16 @@ function wD(D) {
     // $FlowFixMe[prop-missing]
     D.assignedSlot || // step into the shadow DOM of the parent of a slotted node
     D.parentNode || // DOM Element detected
-    (Kf(D) ? D.host : null) || // ShadowRoot detected
+    (Jf(D) ? D.host : null) || // ShadowRoot detected
     // $FlowFixMe[incompatible-call]: HTMLElement is a Node
     Au(D)
   );
 }
-function gf(D) {
+function mf(D) {
   return !Fu(D) || // https://github.com/popperjs/popper-core/issues/837
   Cu(D).position === "fixed" ? null : D.offsetParent;
 }
-function w2(D) {
+function k2(D) {
   var u = navigator.userAgent.toLowerCase().indexOf("firefox") !== -1, f = navigator.userAgent.indexOf("Trident") !== -1;
   if (f && Fu(D)) {
     var e = Cu(D);
@@ -6544,9 +6552,9 @@ function w2(D) {
   return null;
 }
 function FD(D) {
-  for (var u = cu(D), f = gf(D); f && y2(f) && Cu(f).position === "static"; )
-    f = gf(f);
-  return f && (bu(f) === "html" || bu(f) === "body" && Cu(f).position === "static") ? u : f || w2(D) || u;
+  for (var u = cu(D), f = mf(D); f && w2(f) && Cu(f).position === "static"; )
+    f = mf(f);
+  return f && (bu(f) === "html" || bu(f) === "body" && Cu(f).position === "static") ? u : f || k2(D) || u;
 }
 function ef(D) {
   return ["top", "bottom"].indexOf(D) >= 0 ? "x" : "y";
@@ -6555,7 +6563,7 @@ var vu = Math.max, Ju = Math.min, lD = Math.round;
 function mD(D, u, f) {
   return vu(D, Ju(u, f));
 }
-function Zf() {
+function u1() {
   return {
     top: 0,
     right: 0,
@@ -6563,74 +6571,74 @@ function Zf() {
     left: 0
   };
 }
-function u1(D) {
-  return Object.assign({}, Zf(), D);
+function D1(D) {
+  return Object.assign({}, u1(), D);
 }
-function D1(D, u) {
+function f1(D, u) {
   return u.reduce(function(f, e) {
     return f[e] = D, f;
   }, {});
 }
-var k2 = function(u, f) {
+var x2 = function(u, f) {
   return u = typeof u == "function" ? u(Object.assign({}, f.rects, {
     placement: f.placement
-  })) : u, u1(typeof u != "number" ? u : D1(u, tD));
+  })) : u, D1(typeof u != "number" ? u : f1(u, tD));
 };
-function x2(D) {
+function S2(D) {
   var u, f = D.state, e = D.name, F = D.options, t = f.elements.arrow, n = f.modifiersData.popperOffsets, a = ru(f.placement), r = ef(a), C = [tu, su].indexOf(a) >= 0, d = C ? "height" : "width";
   if (!(!t || !n)) {
-    var c = k2(F.padding, f), o = ff(t), B = r === "y" ? eu : tu, E = r === "y" ? ou : su, A = f.rects.reference[d] + f.rects.reference[r] - n[r] - f.rects.popper[d], h = n[r] - f.rects.reference[r], w = FD(t), _ = w ? r === "y" ? w.clientHeight || 0 : w.clientWidth || 0 : 0, v = A / 2 - h / 2, b = c[B], m = _ - o[d] - c[E], k = _ / 2 - o[d] / 2 + v, x = mD(b, k, m), S = r;
+    var c = x2(F.padding, f), o = ff(t), B = r === "y" ? eu : tu, E = r === "y" ? ou : su, A = f.rects.reference[d] + f.rects.reference[r] - n[r] - f.rects.popper[d], h = n[r] - f.rects.reference[r], w = FD(t), _ = w ? r === "y" ? w.clientHeight || 0 : w.clientWidth || 0 : 0, v = A / 2 - h / 2, b = c[B], m = _ - o[d] - c[E], k = _ / 2 - o[d] / 2 + v, x = mD(b, k, m), S = r;
     f.modifiersData[e] = (u = {}, u[S] = x, u.centerOffset = x - k, u);
   }
 }
-function S2(D) {
+function T2(D) {
   var u = D.state, f = D.options, e = f.element, F = e === void 0 ? "[data-popper-arrow]" : e;
   if (F != null && !(typeof F == "string" && (F = u.elements.popper.querySelector(F), !F))) {
-    if (process.env.NODE_ENV !== "production" && (Fu(F) || console.error(['Popper: "arrow" element must be an HTMLElement (not an SVGElement).', "To use an SVG arrow, wrap it in an HTMLElement that will be used as", "the arrow."].join(" "))), !Jf(u.elements.popper, F)) {
+    if (process.env.NODE_ENV !== "production" && (Fu(F) || console.error(['Popper: "arrow" element must be an HTMLElement (not an SVGElement).', "To use an SVG arrow, wrap it in an HTMLElement that will be used as", "the arrow."].join(" "))), !Zf(u.elements.popper, F)) {
       process.env.NODE_ENV !== "production" && console.error(['Popper: "arrow" modifier\'s `element` must be a child of the popper', "element."].join(" "));
       return;
     }
     u.elements.arrow = F;
   }
 }
-const T2 = {
+const O2 = {
   name: "arrow",
   enabled: !0,
   phase: "main",
-  fn: x2,
-  effect: S2,
+  fn: S2,
+  effect: T2,
   requires: ["popperOffsets"],
   requiresIfExists: ["preventOverflow"]
 };
-var O2 = {
+var j2 = {
   top: "auto",
   right: "auto",
   bottom: "auto",
   left: "auto"
 };
-function j2(D) {
+function $2(D) {
   var u = D.x, f = D.y, e = window, F = e.devicePixelRatio || 1;
   return {
     x: lD(lD(u * F) / F) || 0,
     y: lD(lD(f * F) / F) || 0
   };
 }
-function mf(D) {
-  var u, f = D.popper, e = D.popperRect, F = D.placement, t = D.offsets, n = D.position, a = D.gpuAcceleration, r = D.adaptive, C = D.roundOffsets, d = C === !0 ? j2(t) : typeof C == "function" ? C(t) : t, c = d.x, o = c === void 0 ? 0 : c, B = d.y, E = B === void 0 ? 0 : B, A = t.hasOwnProperty("x"), h = t.hasOwnProperty("y"), w = tu, _ = eu, v = window;
+function hf(D) {
+  var u, f = D.popper, e = D.popperRect, F = D.placement, t = D.offsets, n = D.position, a = D.gpuAcceleration, r = D.adaptive, C = D.roundOffsets, d = C === !0 ? $2(t) : typeof C == "function" ? C(t) : t, c = d.x, o = c === void 0 ? 0 : c, B = d.y, E = B === void 0 ? 0 : B, A = t.hasOwnProperty("x"), h = t.hasOwnProperty("y"), w = tu, _ = eu, v = window;
   if (r) {
     var b = FD(f), m = "clientHeight", k = "clientWidth";
     b === cu(f) && (b = Au(f), Cu(b).position !== "static" && (m = "scrollHeight", k = "scrollWidth")), b = b, F === eu && (_ = ou, E -= b[m] - e.height, E *= a ? 1 : -1), F === tu && (w = su, o -= b[k] - e.width, o *= a ? 1 : -1);
   }
   var x = Object.assign({
     position: n
-  }, r && O2);
+  }, r && j2);
   if (a) {
     var S;
     return Object.assign({}, x, (S = {}, S[_] = h ? "0" : "", S[w] = A ? "0" : "", S.transform = (v.devicePixelRatio || 1) < 2 ? "translate(" + o + "px, " + E + "px)" : "translate3d(" + o + "px, " + E + "px, 0)", S));
   }
   return Object.assign({}, x, (u = {}, u[_] = h ? E + "px" : "", u[w] = A ? o + "px" : "", u.transform = "", u));
 }
-function $2(D) {
+function P2(D) {
   var u = D.state, f = D.options, e = f.gpuAcceleration, F = e === void 0 ? !0 : e, t = f.adaptive, n = t === void 0 ? !0 : t, a = f.roundOffsets, r = a === void 0 ? !0 : a;
   if (process.env.NODE_ENV !== "production") {
     var C = Cu(u.elements.popper).transitionProperty || "";
@@ -6648,12 +6656,12 @@ function $2(D) {
     popperRect: u.rects.popper,
     gpuAcceleration: F
   };
-  u.modifiersData.popperOffsets != null && (u.styles.popper = Object.assign({}, u.styles.popper, mf(Object.assign({}, d, {
+  u.modifiersData.popperOffsets != null && (u.styles.popper = Object.assign({}, u.styles.popper, hf(Object.assign({}, d, {
     offsets: u.modifiersData.popperOffsets,
     position: u.options.strategy,
     adaptive: n,
     roundOffsets: r
-  })))), u.modifiersData.arrow != null && (u.styles.arrow = Object.assign({}, u.styles.arrow, mf(Object.assign({}, d, {
+  })))), u.modifiersData.arrow != null && (u.styles.arrow = Object.assign({}, u.styles.arrow, hf(Object.assign({}, d, {
     offsets: u.modifiersData.arrow,
     position: "absolute",
     adaptive: !1,
@@ -6662,17 +6670,17 @@ function $2(D) {
     "data-popper-placement": u.placement
   });
 }
-const P2 = {
+const I2 = {
   name: "computeStyles",
   enabled: !0,
   phase: "beforeWrite",
-  fn: $2,
+  fn: P2,
   data: {}
 };
 var BD = {
   passive: !0
 };
-function I2(D) {
+function z2(D) {
   var u = D.state, f = D.instance, e = D.options, F = e.scroll, t = F === void 0 ? !0 : F, n = e.resize, a = n === void 0 ? !0 : n, r = cu(u.elements.popper), C = [].concat(u.scrollParents.reference, u.scrollParents.popper);
   return t && C.forEach(function(d) {
     d.addEventListener("scroll", f.update, BD);
@@ -6682,16 +6690,16 @@ function I2(D) {
     }), a && r.removeEventListener("resize", f.update, BD);
   };
 }
-const z2 = {
+const N2 = {
   name: "eventListeners",
   enabled: !0,
   phase: "write",
   fn: function() {
   },
-  effect: I2,
+  effect: z2,
   data: {}
 };
-var N2 = {
+var q2 = {
   left: "right",
   right: "left",
   bottom: "top",
@@ -6699,16 +6707,16 @@ var N2 = {
 };
 function hD(D) {
   return D.replace(/left|right|bottom|top/g, function(u) {
-    return N2[u];
+    return q2[u];
   });
 }
-var q2 = {
+var R2 = {
   start: "end",
   end: "start"
 };
-function hf(D) {
+function _f(D) {
   return D.replace(/start|end/g, function(u) {
-    return q2[u];
+    return R2[u];
   });
 }
 function tf(D) {
@@ -6721,7 +6729,7 @@ function tf(D) {
 function Ff(D) {
   return Lu(Au(D)).left + tf(D).scrollLeft;
 }
-function R2(D) {
+function L2(D) {
   var u = cu(D), f = Au(D), e = u.visualViewport, F = f.clientWidth, t = f.clientHeight, n = 0, a = 0;
   return e && (F = e.width, t = e.height, /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || (n = e.offsetLeft, a = e.offsetTop)), {
     width: F,
@@ -6730,7 +6738,7 @@ function R2(D) {
     y: a
   };
 }
-function L2(D) {
+function M2(D) {
   var u, f = Au(D), e = tf(D), F = (u = D.ownerDocument) == null ? void 0 : u.body, t = vu(f.scrollWidth, f.clientWidth, F ? F.scrollWidth : 0, F ? F.clientWidth : 0), n = vu(f.scrollHeight, f.clientHeight, F ? F.scrollHeight : 0, F ? F.clientHeight : 0), a = -e.scrollLeft + Ff(D), r = -e.scrollTop;
   return Cu(F || f).direction === "rtl" && (a += vu(f.clientWidth, F ? F.clientWidth : 0) - t), {
     width: t,
@@ -6743,13 +6751,13 @@ function nf(D) {
   var u = Cu(D), f = u.overflow, e = u.overflowX, F = u.overflowY;
   return /auto|scroll|overlay|hidden/.test(f + F + e);
 }
-function f1(D) {
-  return ["html", "body", "#document"].indexOf(bu(D)) >= 0 ? D.ownerDocument.body : Fu(D) && nf(D) ? D : f1(wD(D));
+function e1(D) {
+  return ["html", "body", "#document"].indexOf(bu(D)) >= 0 ? D.ownerDocument.body : Fu(D) && nf(D) ? D : e1(wD(D));
 }
 function Xu(D, u) {
   var f;
   u === void 0 && (u = []);
-  var e = f1(D), F = e === ((f = D.ownerDocument) == null ? void 0 : f.body), t = cu(e), n = F ? [t].concat(t.visualViewport || [], nf(e) ? e : []) : e, a = u.concat(n);
+  var e = e1(D), F = e === ((f = D.ownerDocument) == null ? void 0 : f.body), t = cu(e), n = F ? [t].concat(t.visualViewport || [], nf(e) ? e : []) : e, a = u.concat(n);
   return F ? a : (
     // $FlowFixMe[incompatible-call]: isBody tells us target will be an HTMLElement here
     a.concat(Xu(wD(n)))
@@ -6763,30 +6771,30 @@ function VD(D) {
     bottom: D.y + D.height
   });
 }
-function M2(D) {
+function H2(D) {
   var u = Lu(D);
   return u.top = u.top + D.clientTop, u.left = u.left + D.clientLeft, u.bottom = u.top + D.clientHeight, u.right = u.left + D.clientWidth, u.width = D.clientWidth, u.height = D.clientHeight, u.x = u.left, u.y = u.top, u;
 }
-function _f(D, u) {
-  return u === Qf ? VD(R2(D)) : Fu(u) ? M2(u) : VD(L2(Au(D)));
+function vf(D, u) {
+  return u === Kf ? VD(L2(D)) : Fu(u) ? H2(u) : VD(M2(Au(D)));
 }
-function H2(D) {
+function U2(D) {
   var u = Xu(wD(D)), f = ["absolute", "fixed"].indexOf(Cu(D).position) >= 0, e = f && Fu(D) ? FD(D) : D;
   return Ku(e) ? u.filter(function(F) {
-    return Ku(F) && Jf(F, e) && bu(F) !== "body";
+    return Ku(F) && Zf(F, e) && bu(F) !== "body";
   }) : [];
 }
-function U2(D, u, f) {
-  var e = u === "clippingParents" ? H2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], n = F.reduce(function(a, r) {
-    var C = _f(D, r);
+function V2(D, u, f) {
+  var e = u === "clippingParents" ? U2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], n = F.reduce(function(a, r) {
+    var C = vf(D, r);
     return a.top = vu(C.top, a.top), a.right = Ju(C.right, a.right), a.bottom = Ju(C.bottom, a.bottom), a.left = vu(C.left, a.left), a;
-  }, _f(D, t));
+  }, vf(D, t));
   return n.width = n.right - n.left, n.height = n.bottom - n.top, n.x = n.left, n.y = n.top, n;
 }
 function Zu(D) {
   return D.split("-")[1];
 }
-function e1(D) {
+function t1(D) {
   var u = D.reference, f = D.element, e = D.placement, F = e ? ru(e) : null, t = e ? Zu(e) : null, n = u.x + u.width / 2 - f.width / 2, a = u.y + u.height / 2 - f.height / 2, r;
   switch (F) {
     case eu:
@@ -6835,7 +6843,7 @@ function e1(D) {
 }
 function uD(D, u) {
   u === void 0 && (u = {});
-  var f = u, e = f.placement, F = e === void 0 ? D.placement : e, t = f.boundary, n = t === void 0 ? s2 : t, a = f.rootBoundary, r = a === void 0 ? Qf : a, C = f.elementContext, d = C === void 0 ? Wu : C, c = f.altBoundary, o = c === void 0 ? !1 : c, B = f.padding, E = B === void 0 ? 0 : B, A = u1(typeof E != "number" ? E : D1(E, tD)), h = d === Wu ? C2 : Wu, w = D.elements.reference, _ = D.rects.popper, v = D.elements[o ? h : d], b = U2(Ku(v) ? v : v.contextElement || Au(D.elements.popper), n, r), m = Lu(w), k = e1({
+  var f = u, e = f.placement, F = e === void 0 ? D.placement : e, t = f.boundary, n = t === void 0 ? C2 : t, a = f.rootBoundary, r = a === void 0 ? Kf : a, C = f.elementContext, d = C === void 0 ? Wu : C, c = f.altBoundary, o = c === void 0 ? !1 : c, B = f.padding, E = B === void 0 ? 0 : B, A = D1(typeof E != "number" ? E : f1(E, tD)), h = d === Wu ? c2 : Wu, w = D.elements.reference, _ = D.rects.popper, v = D.elements[o ? h : d], b = V2(Ku(v) ? v : v.contextElement || Au(D.elements.popper), n, r), m = Lu(w), k = t1({
     reference: m,
     element: _,
     strategy: "absolute",
@@ -6855,9 +6863,9 @@ function uD(D, u) {
   }
   return H;
 }
-function V2(D, u) {
+function W2(D, u) {
   u === void 0 && (u = {});
-  var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, n = f.padding, a = f.flipVariations, r = f.allowedAutoPlacements, C = r === void 0 ? yD : r, d = Zu(e), c = d ? a ? bf : bf.filter(function(E) {
+  var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, n = f.padding, a = f.flipVariations, r = f.allowedAutoPlacements, C = r === void 0 ? yD : r, d = Zu(e), c = d ? a ? gf : gf.filter(function(E) {
     return Zu(E) === d;
   }) : tD, o = c.filter(function(E) {
     return C.indexOf(E) >= 0;
@@ -6875,17 +6883,17 @@ function V2(D, u) {
     return B[E] - B[A];
   });
 }
-function W2(D) {
+function G2(D) {
   if (ru(D) === AD)
     return [];
   var u = hD(D);
-  return [hf(D), u, hf(u)];
+  return [_f(D), u, _f(u)];
 }
-function G2(D) {
+function X2(D) {
   var u = D.state, f = D.options, e = D.name;
   if (!u.modifiersData[e]._skip) {
-    for (var F = f.mainAxis, t = F === void 0 ? !0 : F, n = f.altAxis, a = n === void 0 ? !0 : n, r = f.fallbackPlacements, C = f.padding, d = f.boundary, c = f.rootBoundary, o = f.altBoundary, B = f.flipVariations, E = B === void 0 ? !0 : B, A = f.allowedAutoPlacements, h = u.options.placement, w = ru(h), _ = w === h, v = r || (_ || !E ? [hD(h)] : W2(h)), b = [h].concat(v).reduce(function(Q, l) {
-      return Q.concat(ru(l) === AD ? V2(u, {
+    for (var F = f.mainAxis, t = F === void 0 ? !0 : F, n = f.altAxis, a = n === void 0 ? !0 : n, r = f.fallbackPlacements, C = f.padding, d = f.boundary, c = f.rootBoundary, o = f.altBoundary, B = f.flipVariations, E = B === void 0 ? !0 : B, A = f.allowedAutoPlacements, h = u.options.placement, w = ru(h), _ = w === h, v = r || (_ || !E ? [hD(h)] : G2(h)), b = [h].concat(v).reduce(function(Q, l) {
+      return Q.concat(ru(l) === AD ? W2(u, {
         placement: l,
         boundary: d,
         rootBoundary: c,
@@ -6929,17 +6937,17 @@ function G2(D) {
     u.placement !== H && (u.modifiersData[e]._skip = !0, u.placement = H, u.reset = !0);
   }
 }
-const X2 = {
+const Y2 = {
   name: "flip",
   enabled: !0,
   phase: "main",
-  fn: G2,
+  fn: X2,
   requiresIfExists: ["offset"],
   data: {
     _skip: !1
   }
 };
-function vf(D, u, f) {
+function Af(D, u, f) {
   return f === void 0 && (f = {
     x: 0,
     y: 0
@@ -6950,17 +6958,17 @@ function vf(D, u, f) {
     left: D.left - u.width - f.x
   };
 }
-function Af(D) {
+function yf(D) {
   return [eu, su, ou, tu].some(function(u) {
     return D[u] >= 0;
   });
 }
-function Y2(D) {
+function Q2(D) {
   var u = D.state, f = D.name, e = u.rects.reference, F = u.rects.popper, t = u.modifiersData.preventOverflow, n = uD(u, {
     elementContext: "reference"
   }), a = uD(u, {
     altBoundary: !0
-  }), r = vf(n, e), C = vf(a, F, t), d = Af(r), c = Af(C);
+  }), r = Af(n, e), C = Af(a, F, t), d = yf(r), c = yf(C);
   u.modifiersData[f] = {
     referenceClippingOffsets: r,
     popperEscapeOffsets: C,
@@ -6971,14 +6979,14 @@ function Y2(D) {
     "data-popper-escaped": c
   });
 }
-const Q2 = {
+const K2 = {
   name: "hide",
   enabled: !0,
   phase: "main",
   requiresIfExists: ["preventOverflow"],
-  fn: Y2
+  fn: Q2
 };
-function K2(D, u, f) {
+function J2(D, u, f) {
   var e = ru(D), F = [tu, eu].indexOf(e) >= 0 ? -1 : 1, t = typeof f == "function" ? f(Object.assign({}, u, {
     placement: D
   })) : f, n = t[0], a = t[1];
@@ -6990,45 +6998,45 @@ function K2(D, u, f) {
     y: a
   };
 }
-function J2(D) {
+function Z2(D) {
   var u = D.state, f = D.options, e = D.name, F = f.offset, t = F === void 0 ? [0, 0] : F, n = yD.reduce(function(d, c) {
-    return d[c] = K2(c, u.rects, t), d;
+    return d[c] = J2(c, u.rects, t), d;
   }, {}), a = n[u.placement], r = a.x, C = a.y;
   u.modifiersData.popperOffsets != null && (u.modifiersData.popperOffsets.x += r, u.modifiersData.popperOffsets.y += C), u.modifiersData[e] = n;
 }
-const Z2 = {
+const u8 = {
   name: "offset",
   enabled: !0,
   phase: "main",
   requires: ["popperOffsets"],
-  fn: J2
+  fn: Z2
 };
-function u8(D) {
+function D8(D) {
   var u = D.state, f = D.name;
-  u.modifiersData[f] = e1({
+  u.modifiersData[f] = t1({
     reference: u.rects.reference,
     element: u.rects.popper,
     strategy: "absolute",
     placement: u.placement
   });
 }
-const D8 = {
+const f8 = {
   name: "popperOffsets",
   enabled: !0,
   phase: "read",
-  fn: u8,
+  fn: D8,
   data: {}
 };
-function f8(D) {
+function e8(D) {
   return D === "x" ? "y" : "x";
 }
-function e8(D) {
+function t8(D) {
   var u = D.state, f = D.options, e = D.name, F = f.mainAxis, t = F === void 0 ? !0 : F, n = f.altAxis, a = n === void 0 ? !1 : n, r = f.boundary, C = f.rootBoundary, d = f.altBoundary, c = f.padding, o = f.tether, B = o === void 0 ? !0 : o, E = f.tetherOffset, A = E === void 0 ? 0 : E, h = uD(u, {
     boundary: r,
     rootBoundary: C,
     padding: c,
     altBoundary: d
-  }), w = ru(u.placement), _ = Zu(u.placement), v = !_, b = ef(w), m = f8(b), k = u.modifiersData.popperOffsets, x = u.rects.reference, S = u.rects.popper, H = typeof A == "function" ? A(Object.assign({}, u.rects, {
+  }), w = ru(u.placement), _ = Zu(u.placement), v = !_, b = ef(w), m = e8(b), k = u.modifiersData.popperOffsets, x = u.rects.reference, S = u.rects.popper, H = typeof A == "function" ? A(Object.assign({}, u.rects, {
     placement: u.placement
   })) : A, z = {
     x: 0,
@@ -7039,7 +7047,7 @@ function e8(D) {
       var U = b === "y" ? eu : tu, uu = b === "y" ? ou : su, G = b === "y" ? "height" : "width", nu = k[b], gu = k[b] + h[U], Eu = k[b] - h[uu], au = B ? -S[G] / 2 : 0, yu = _ === Ru ? x[G] : S[G], W = _ === Ru ? -S[G] : -x[G], Y = u.elements.arrow, J = B && Y ? ff(Y) : {
         width: 0,
         height: 0
-      }, lu = u.modifiersData["arrow#persistent"] ? u.modifiersData["arrow#persistent"].padding : Zf(), Bu = lu[U], Q = lu[uu], l = mD(0, x[G], J[G]), Ou = v ? x[G] / 2 - au - l - Bu - H : yu - l - Bu - H, Mu = v ? -x[G] / 2 + au + l + Q + H : W + l + Q + H, mu = u.elements.arrow && FD(u.elements.arrow), Hu = mu ? b === "y" ? mu.clientTop || 0 : mu.clientLeft || 0 : 0, aD = u.modifiersData.offset ? u.modifiersData.offset[u.placement][b] : 0, dD = k[b] + Ou - aD - Hu, rD = k[b] + Mu - aD;
+      }, lu = u.modifiersData["arrow#persistent"] ? u.modifiersData["arrow#persistent"].padding : u1(), Bu = lu[U], Q = lu[uu], l = mD(0, x[G], J[G]), Ou = v ? x[G] / 2 - au - l - Bu - H : yu - l - Bu - H, Mu = v ? -x[G] / 2 + au + l + Q + H : W + l + Q + H, mu = u.elements.arrow && FD(u.elements.arrow), Hu = mu ? b === "y" ? mu.clientTop || 0 : mu.clientLeft || 0 : 0, aD = u.modifiersData.offset ? u.modifiersData.offset[u.placement][b] : 0, dD = k[b] + Ou - aD - Hu, rD = k[b] + Mu - aD;
       if (t) {
         var iD = mD(B ? Ju(gu, dD) : gu, nu, B ? vu(Eu, rD) : Eu);
         k[b] = iD, z[b] = iD - nu;
@@ -7052,23 +7060,23 @@ function e8(D) {
     u.modifiersData[e] = z;
   }
 }
-const t8 = {
+const F8 = {
   name: "preventOverflow",
   enabled: !0,
   phase: "main",
-  fn: e8,
+  fn: t8,
   requiresIfExists: ["offset"]
 };
-function F8(D) {
+function n8(D) {
   return {
     scrollLeft: D.scrollLeft,
     scrollTop: D.scrollTop
   };
 }
-function n8(D) {
-  return D === cu(D) || !Fu(D) ? tf(D) : F8(D);
+function a8(D) {
+  return D === cu(D) || !Fu(D) ? tf(D) : n8(D);
 }
-function a8(D, u, f) {
+function d8(D, u, f) {
   f === void 0 && (f = !1);
   var e = Au(u), F = Lu(D), t = Fu(u), n = {
     scrollLeft: 0,
@@ -7078,14 +7086,14 @@ function a8(D, u, f) {
     y: 0
   };
   return (t || !t && !f) && ((bu(u) !== "body" || // https://github.com/popperjs/popper-core/issues/1078
-  nf(e)) && (n = n8(u)), Fu(u) ? (a = Lu(u), a.x += u.clientLeft, a.y += u.clientTop) : e && (a.x = Ff(e))), {
+  nf(e)) && (n = a8(u)), Fu(u) ? (a = Lu(u), a.x += u.clientLeft, a.y += u.clientTop) : e && (a.x = Ff(e))), {
     x: F.left + n.scrollLeft - a.x,
     y: F.top + n.scrollTop - a.y,
     width: F.width,
     height: F.height
   };
 }
-function d8(D) {
+function r8(D) {
   var u = /* @__PURE__ */ new Map(), f = /* @__PURE__ */ new Set(), e = [];
   D.forEach(function(t) {
     u.set(t.name, t);
@@ -7104,15 +7112,15 @@ function d8(D) {
     f.has(t.name) || F(t);
   }), e;
 }
-function r8(D) {
-  var u = d8(D);
+function i8(D) {
+  var u = r8(D);
   return UD.reduce(function(f, e) {
     return f.concat(u.filter(function(F) {
       return F.phase === e;
     }));
   }, []);
 }
-function i8(D) {
+function o8(D) {
   var u;
   return function() {
     return u || (u = new Promise(function(f) {
@@ -7129,8 +7137,8 @@ function hu(D) {
     return F.replace(/%s/, t);
   }, D);
 }
-var ku = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s', o8 = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available', s8 = ["name", "enabled", "phase", "fn", "effect", "requires", "options"];
-function C8(D) {
+var ku = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s', s8 = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available', C8 = ["name", "enabled", "phase", "fn", "effect", "requires", "options"];
+function c8(D) {
   D.forEach(function(u) {
     Object.keys(u).forEach(function(f) {
       switch (f) {
@@ -7158,19 +7166,19 @@ function C8(D) {
         case "data":
           break;
         default:
-          console.error('PopperJS: an invalid property has been provided to the "' + u.name + '" modifier, valid properties are ' + s8.map(function(e) {
+          console.error('PopperJS: an invalid property has been provided to the "' + u.name + '" modifier, valid properties are ' + C8.map(function(e) {
             return '"' + e + '"';
           }).join(", ") + '; but "' + f + '" was provided.');
       }
       u.requires && u.requires.forEach(function(e) {
         D.find(function(F) {
           return F.name === e;
-        }) == null && console.error(hu(o8, String(u.name), e, e));
+        }) == null && console.error(hu(s8, String(u.name), e, e));
       });
     });
   });
 }
-function c8(D, u) {
+function E8(D, u) {
   var f = /* @__PURE__ */ new Set();
   return D.filter(function(e) {
     var F = u(e);
@@ -7178,7 +7186,7 @@ function c8(D, u) {
       return f.add(F), !0;
   });
 }
-function E8(D) {
+function l8(D) {
   var u = D.reduce(function(f, e) {
     var F = f[e.name];
     return f[e.name] = F ? Object.assign({}, F, e, {
@@ -7190,27 +7198,27 @@ function E8(D) {
     return u[f];
   });
 }
-var yf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", l8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", wf = {
+var wf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", B8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", kf = {
   placement: "bottom",
   modifiers: [],
   strategy: "absolute"
 };
-function kf() {
+function xf() {
   for (var D = arguments.length, u = new Array(D), f = 0; f < D; f++)
     u[f] = arguments[f];
   return !u.some(function(e) {
     return !(e && typeof e.getBoundingClientRect == "function");
   });
 }
-function B8(D) {
+function p8(D) {
   D === void 0 && (D = {});
-  var u = D, f = u.defaultModifiers, e = f === void 0 ? [] : f, F = u.defaultOptions, t = F === void 0 ? wf : F;
+  var u = D, f = u.defaultModifiers, e = f === void 0 ? [] : f, F = u.defaultOptions, t = F === void 0 ? kf : F;
   return function(a, r, C) {
     C === void 0 && (C = t);
     var d = {
       placement: "bottom",
       orderedModifiers: [],
-      options: Object.assign({}, wf, t),
+      options: Object.assign({}, kf, t),
       modifiersData: {},
       elements: {
         reference: a,
@@ -7225,15 +7233,15 @@ function B8(D) {
           reference: Ku(a) ? Xu(a) : a.contextElement ? Xu(a.contextElement) : [],
           popper: Xu(r)
         };
-        var _ = r8(E8([].concat(e, d.options.modifiers)));
+        var _ = i8(l8([].concat(e, d.options.modifiers)));
         if (d.orderedModifiers = _.filter(function(z) {
           return z.enabled;
         }), process.env.NODE_ENV !== "production") {
-          var v = c8([].concat(_, d.options.modifiers), function(z) {
+          var v = E8([].concat(_, d.options.modifiers), function(z) {
             var U = z.name;
             return U;
           });
-          if (C8(v), ru(d.options.placement) === AD) {
+          if (c8(v), ru(d.options.placement) === AD) {
             var b = d.orderedModifiers.find(function(z) {
               var U = z.name;
               return U === "flip";
@@ -7255,19 +7263,19 @@ function B8(D) {
       forceUpdate: function() {
         if (!o) {
           var w = d.elements, _ = w.reference, v = w.popper;
-          if (!kf(_, v)) {
-            process.env.NODE_ENV !== "production" && console.error(yf);
+          if (!xf(_, v)) {
+            process.env.NODE_ENV !== "production" && console.error(wf);
             return;
           }
           d.rects = {
-            reference: a8(_, FD(v), d.options.strategy === "fixed"),
+            reference: d8(_, FD(v), d.options.strategy === "fixed"),
             popper: ff(v)
           }, d.reset = !1, d.placement = d.options.placement, d.orderedModifiers.forEach(function(U) {
             return d.modifiersData[U.name] = Object.assign({}, U.data);
           });
           for (var b = 0, m = 0; m < d.orderedModifiers.length; m++) {
             if (process.env.NODE_ENV !== "production" && (b += 1, b > 100)) {
-              console.error(l8);
+              console.error(B8);
               break;
             }
             if (d.reset === !0) {
@@ -7286,7 +7294,7 @@ function B8(D) {
       },
       // Async and optimistically optimized update – it will not be executed if
       // not necessary (debounced to run at most once-per-tick)
-      update: i8(function() {
+      update: o8(function() {
         return new Promise(function(h) {
           B.forceUpdate(), h(d);
         });
@@ -7295,8 +7303,8 @@ function B8(D) {
         A(), o = !0;
       }
     };
-    if (!kf(a, r))
-      return process.env.NODE_ENV !== "production" && console.error(yf), B;
+    if (!xf(a, r))
+      return process.env.NODE_ENV !== "production" && console.error(wf), B;
     B.setOptions(C).then(function(h) {
       !o && C.onFirstUpdate && C.onFirstUpdate(h);
     });
@@ -7323,10 +7331,10 @@ function B8(D) {
     return B;
   };
 }
-var p8 = [z2, D8, P2, A2, Z2, X2, t8, T2, Q2], b8 = /* @__PURE__ */ B8({
-  defaultModifiers: p8
+var b8 = [N2, f8, I2, y2, u8, Y2, F8, O2, K2], g8 = /* @__PURE__ */ p8({
+  defaultModifiers: b8
 });
-function g8() {
+function m8() {
   var D = window.navigator.userAgent, u = D.indexOf("MSIE ");
   if (u > 0)
     return parseInt(D.substring(u + 5, D.indexOf(".", u)), 10);
@@ -7340,7 +7348,7 @@ function g8() {
 }
 let _D;
 function WD() {
-  WD.init || (WD.init = !0, _D = g8() !== -1);
+  WD.init || (WD.init = !0, _D = m8() !== -1);
 }
 var kD = {
   name: "ResizeObserver",
@@ -7362,7 +7370,7 @@ var kD = {
     "notify"
   ],
   mounted() {
-    WD(), S1(() => {
+    WD(), T1(() => {
       this._w = this.$el.offsetWidth, this._h = this.$el.offsetHeight, this.emitOnMount && this.emitSize();
     });
     const D = document.createElement("object");
@@ -7389,15 +7397,15 @@ var kD = {
     }
   }
 };
-const m8 = /* @__PURE__ */ T1("data-v-b329ee4c");
-k1("data-v-b329ee4c");
-const h8 = {
+const h8 = /* @__PURE__ */ O1("data-v-b329ee4c");
+x1("data-v-b329ee4c");
+const _8 = {
   class: "resize-observer",
   tabindex: "-1"
 };
-x1();
-const _8 = /* @__PURE__ */ m8((D, u, f, e, F, t) => (p(), V("div", h8)));
-kD.render = _8;
+S1();
+const v8 = /* @__PURE__ */ h8((D, u, f, e, F, t) => (p(), V("div", _8)));
+kD.render = v8;
 kD.__scopeId = "data-v-b329ee4c";
 kD.__file = "src/components/ResizeObserver.vue";
 function Yu(D) {
@@ -7408,7 +7416,7 @@ function Yu(D) {
     return u && typeof Symbol == "function" && u.constructor === Symbol && u !== Symbol.prototype ? "symbol" : typeof u;
   }, Yu(D);
 }
-function xf(D, u, f, e, F, t, n) {
+function Sf(D, u, f, e, F, t, n) {
   try {
     var a = D[t](n), r = a.value;
   } catch (C) {
@@ -7423,16 +7431,16 @@ function xu(D) {
     return new Promise(function(e, F) {
       var t = D.apply(u, f);
       function n(r) {
-        xf(t, e, F, n, a, "next", r);
+        Sf(t, e, F, n, a, "next", r);
       }
       function a(r) {
-        xf(t, e, F, n, a, "throw", r);
+        Sf(t, e, F, n, a, "throw", r);
       }
       n(void 0);
     });
   };
 }
-function v8(D, u, f) {
+function A8(D, u, f) {
   return u in D ? Object.defineProperty(D, u, {
     value: f,
     enumerable: !0,
@@ -7440,7 +7448,7 @@ function v8(D, u, f) {
     writable: !0
   }) : D[u] = f, D;
 }
-function Sf(D, u) {
+function Tf(D, u) {
   var f = Object.keys(D);
   if (Object.getOwnPropertySymbols) {
     var e = Object.getOwnPropertySymbols(D);
@@ -7453,24 +7461,24 @@ function Sf(D, u) {
 function iu(D) {
   for (var u = 1; u < arguments.length; u++) {
     var f = arguments[u] != null ? arguments[u] : {};
-    u % 2 ? Sf(Object(f), !0).forEach(function(e) {
-      v8(D, e, f[e]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(D, Object.getOwnPropertyDescriptors(f)) : Sf(Object(f)).forEach(function(e) {
+    u % 2 ? Tf(Object(f), !0).forEach(function(e) {
+      A8(D, e, f[e]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(D, Object.getOwnPropertyDescriptors(f)) : Tf(Object(f)).forEach(function(e) {
       Object.defineProperty(D, e, Object.getOwnPropertyDescriptor(f, e));
     });
   }
   return D;
 }
-function t1(D) {
-  return A8(D) || y8(D) || F1(D) || w8();
-}
-function A8(D) {
-  if (Array.isArray(D)) return GD(D);
+function F1(D) {
+  return y8(D) || w8(D) || n1(D) || k8();
 }
 function y8(D) {
+  if (Array.isArray(D)) return GD(D);
+}
+function w8(D) {
   if (typeof Symbol < "u" && Symbol.iterator in Object(D)) return Array.from(D);
 }
-function F1(D, u) {
+function n1(D, u) {
   if (D) {
     if (typeof D == "string") return GD(D, u);
     var f = Object.prototype.toString.call(D).slice(8, -1);
@@ -7483,14 +7491,14 @@ function GD(D, u) {
   for (var f = 0, e = new Array(u); f < u; f++) e[f] = D[f];
   return e;
 }
-function w8() {
+function k8() {
   throw new TypeError(`Invalid attempt to spread non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`);
 }
 function XD(D, u) {
   var f;
   if (typeof Symbol > "u" || D[Symbol.iterator] == null) {
-    if (Array.isArray(D) || (f = F1(D)) || u) {
+    if (Array.isArray(D) || (f = n1(D)) || u) {
       f && (D = f);
       var e = 0, F = function() {
       };
@@ -7534,9 +7542,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
   };
 }
-function n1(D, u) {
+function a1(D, u) {
   for (var f in u)
-    Object.prototype.hasOwnProperty.call(u, f) && (Yu(u[f]) === "object" && D[f] ? n1(D[f], u[f]) : D[f] = u[f]);
+    Object.prototype.hasOwnProperty.call(u, f) && (Yu(u[f]) === "object" && D[f] ? a1(D[f], u[f]) : D[f] = u[f]);
 }
 var Tu = {
   // Disable popper components
@@ -7568,7 +7576,7 @@ var Tu = {
       triggers: ["hover", "focus", "touch"],
       // Close tooltip on click on tooltip target
       hideTriggers: function(u) {
-        return [].concat(t1(u), ["click"]);
+        return [].concat(F1(u), ["click"]);
       },
       // Delay (ms)
       delay: {
@@ -7612,7 +7620,7 @@ function N(D, u) {
   while (f);
   return e;
 }
-function k8(D) {
+function x8(D) {
   var u = [D], f = Tu.themes[D] || {};
   do
     f.$extend && !f.$resetCss ? (u.push(f.$extend), f = Tu.themes[f.$extend] || {}) : f = null;
@@ -7625,17 +7633,17 @@ var vD = !1;
 if (typeof window < "u") {
   vD = !1;
   try {
-    var x8 = Object.defineProperty({}, "passive", {
+    var S8 = Object.defineProperty({}, "passive", {
       get: function() {
         vD = !0;
       }
     });
-    window.addEventListener("test", null, x8);
+    window.addEventListener("test", null, S8);
   } catch {
   }
 }
-var a1 = !1;
-typeof window < "u" && typeof navigator < "u" && (a1 = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream);
+var d1 = !1;
+typeof window < "u" && typeof navigator < "u" && (d1 = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream);
 function pD(D, u, f) {
   var e = D.find(function(F) {
     return F.name === u;
@@ -7645,25 +7653,25 @@ function pD(D, u, f) {
     options: {}
   }, D.push(e)), Object.assign(e.options, f);
 }
-var Tf = {
+var Of = {
   hover: "mouseenter",
   focus: "focus",
   click: "click",
   touch: "touchstart"
-}, Of = {
+}, jf = {
   hover: "mouseleave",
   focus: "blur",
   click: "click",
   touch: "touchend"
 };
-function S8(D, u) {
+function T8(D, u) {
   var f = D.indexOf(u);
   f !== -1 && D.splice(f, 1);
 }
 var Pu = [], $u = null, YD = function() {
 };
 typeof window < "u" && (YD = window.Element);
-var d1 = function() {
+var r1 = function() {
   return {
     name: "VPopper",
     props: {
@@ -7974,7 +7982,7 @@ var d1 = function() {
         var u = arguments, f = this;
         return xu(function* () {
           var e = u.length > 0 && u[0] !== void 0 ? u[0] : !1;
-          clearTimeout(f.$_disposeTimer), clearTimeout(f.$_scheduleTimer), f.skipTransition = e, !f.isShown && (f.isMounted || (f.$_ensureContainer(), f.isMounted = !0), f.popperInstance ? (yield f.popperInstance.update(), yield f.$_refreshPopperOptions(), yield f.$_applyShowEffect()) : f.popperInstance = b8(f.referenceNode(), f.$_popperNode, f.$_getPopperOptions()));
+          clearTimeout(f.$_disposeTimer), clearTimeout(f.$_scheduleTimer), f.skipTransition = e, !f.isShown && (f.isMounted || (f.$_ensureContainer(), f.isMounted = !0), f.popperInstance ? (yield f.popperInstance.update(), yield f.$_refreshPopperOptions(), yield f.$_applyShowEffect()) : f.popperInstance = g8(f.referenceNode(), f.$_popperNode, f.$_getPopperOptions()));
         })();
       },
       $_applyShowEffect: function() {
@@ -7989,7 +7997,7 @@ var d1 = function() {
             if (f)
               for (var e, F = 0; F < Pu.length; F++)
                 e = Pu[F], e.showGroup !== f && (e.hide(), e.$emit("close-group"));
-            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield jf(), u.classes.showFrom = !1, u.classes.showTo = !0;
+            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield $f(), u.classes.showFrom = !1, u.classes.showTo = !0;
           }
         })();
       },
@@ -7998,14 +8006,14 @@ var d1 = function() {
         return xu(function* () {
           var e = u.length > 0 && u[0] !== void 0 ? u[0] : !1;
           if (clearTimeout(f.$_scheduleTimer), !!f.isShown) {
-            f.skipTransition = e, S8(Pu, f), $u === f && ($u = null), f.isShown = !1, f.popperInstance && (yield f.$_refreshPopperOptions()), f.$_applyAttrsToTarget({
+            f.skipTransition = e, T8(Pu, f), $u === f && ($u = null), f.isShown = !1, f.popperInstance && (yield f.$_refreshPopperOptions()), f.$_applyAttrsToTarget({
               "aria-describedby": void 0,
               "data-popper-shown": void 0
             }), clearTimeout(f.$_disposeTimer);
             var F = N(f.theme, "disposeTimeout");
             F !== null && (f.$_disposeTimer = setTimeout(function() {
               f.$_popperNode && (f.$_detachPopperNode(), f.isMounted = !1);
-            }, F)), f.$emit("apply-hide"), f.classes.showFrom = !1, f.classes.showTo = !1, f.classes.hideFrom = !0, f.classes.hideTo = !1, yield jf(), f.classes.hideFrom = !1, f.classes.hideTo = !0;
+            }, F)), f.$emit("apply-hide"), f.classes.showFrom = !1, f.classes.showTo = !1, f.classes.hideFrom = !0, f.classes.hideTo = !1, yield $f(), f.classes.hideFrom = !1, f.classes.hideTo = !0;
           }
         })();
       },
@@ -8036,13 +8044,13 @@ var d1 = function() {
             event: n
           }));
         };
-        f(this.$_targetNodes, Tf, this.triggers, this.showTriggers, e), f([this.$_popperNode], Tf, this.popperTriggers, this.popperShowTriggers, e);
+        f(this.$_targetNodes, Of, this.triggers, this.showTriggers, e), f([this.$_popperNode], Of, this.popperTriggers, this.popperShowTriggers, e);
         var F = function(n) {
           n.usedByTooltip || u.hide({
             event: n
           });
         };
-        f(this.$_targetNodes, Of, this.triggers, this.hideTriggers, F), f([this.$_popperNode], Of, this.popperTriggers, this.popperHideTriggers, F);
+        f(this.$_targetNodes, jf, this.triggers, this.hideTriggers, F), f([this.$_popperNode], jf, this.popperTriggers, this.popperHideTriggers, F);
       },
       $_removeEventListeners: function() {
         this.$_events.forEach(function(u) {
@@ -8098,17 +8106,17 @@ var d1 = function() {
     }
   };
 };
-typeof document < "u" && typeof window < "u" && (a1 ? document.addEventListener("touchend", O8, vD ? {
+typeof document < "u" && typeof window < "u" && (d1 ? document.addEventListener("touchend", j8, vD ? {
   passive: !0,
   capture: !0
-} : !0) : window.addEventListener("click", T8, !0));
-function T8(D) {
-  r1(D);
-}
+} : !0) : window.addEventListener("click", O8, !0));
 function O8(D) {
-  r1(D, !0);
+  i1(D);
 }
-function r1(D) {
+function j8(D) {
+  i1(D, !0);
+}
+function i1(D) {
   for (var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1, f = function(t) {
     var n = Pu[t], a = n.popperNode(), r = a.contains(D.target);
     requestAnimationFrame(function() {
@@ -8117,15 +8125,15 @@ function r1(D) {
   }, e = 0; e < Pu.length; e++)
     f(e);
 }
-function jf() {
+function $f() {
   return new Promise(function(D) {
     return requestAnimationFrame(D);
   });
 }
-var i1 = {
+var o1 = {
   computed: {
     themeClass: function() {
-      return k8(this.theme);
+      return x8(this.theme);
     }
   }
 }, xD = {
@@ -8133,7 +8141,7 @@ var i1 = {
   components: {
     ResizeObserver: kD
   },
-  mixins: [i1],
+  mixins: [o1],
   props: {
     popperId: String,
     theme: String,
@@ -8145,15 +8153,15 @@ var i1 = {
     classes: Object
   },
   emits: ["hide", "resize"]
-}, j8 = {
-  class: "v-popper__wrapper"
 }, $8 = {
+  class: "v-popper__wrapper"
+}, P8 = {
   ref: "inner",
   class: "v-popper__inner"
-}, P8 = {
+}, I8 = {
   ref: "arrow",
   class: "v-popper__arrow-container"
-}, I8 = /* @__PURE__ */ q(
+}, z8 = /* @__PURE__ */ q(
   "div",
   {
     class: "v-popper__arrow"
@@ -8162,7 +8170,7 @@ var i1 = {
   -1
   /* HOISTED */
 );
-function z8(D, u, f, e, F, t) {
+function N8(D, u, f, e, F, t) {
   var n = T("ResizeObserver");
   return p(), V(
     "div",
@@ -8180,13 +8188,13 @@ function z8(D, u, f, e, F, t) {
       }]],
       "aria-hidden": f.shown ? "false" : "true",
       tabindex: f.autoHide ? 0 : void 0,
-      onKeyup: u[2] || (u[2] = O1(function(a) {
+      onKeyup: u[2] || (u[2] = j1(function(a) {
         return f.autoHide && D.$emit("hide");
       }, ["esc"]))
     },
-    [q("div", j8, [q(
+    [q("div", $8, [q(
       "div",
-      $8,
+      P8,
       [f.mounted ? (p(), V(
         qu,
         {
@@ -8205,8 +8213,8 @@ function z8(D, u, f, e, F, t) {
       /* NEED_PATCH */
     ), q(
       "div",
-      P8,
-      [I8],
+      I8,
+      [z8],
       512
       /* NEED_PATCH */
     )])],
@@ -8214,9 +8222,9 @@ function z8(D, u, f, e, F, t) {
     ["id", "aria-hidden", "tabindex"]
   );
 }
-xD.render = z8;
+xD.render = N8;
 xD.__file = "src/components/PopperContent.vue";
-var o1 = {
+var s1 = {
   methods: {
     show: function() {
       var u;
@@ -8238,10 +8246,10 @@ var o1 = {
 }, nD = {
   name: "VPopperWrapper",
   components: {
-    Popper: d1(),
+    Popper: r1(),
     PopperContent: xD
   },
-  mixins: [o1, i1],
+  mixins: [s1, o1],
   inheritAttrs: !1,
   props: {
     theme: {
@@ -8257,16 +8265,16 @@ var o1 = {
   },
   methods: {
     getTargetNodes: function() {
-      var u = t1(this.$refs.reference.children);
+      var u = F1(this.$refs.reference.children);
       return u.slice(0, u.length - 1).filter(Boolean);
     }
   }
 };
-function N8(D, u, f, e, F, t) {
+function q8(D, u, f, e, F, t) {
   var n = T("PopperContent"), a = T("Popper");
   return p(), V(
     a,
-    Rf({
+    Lf({
       ref: "popper"
     }, D.$attrs, {
       theme: t.finalTheme,
@@ -8330,7 +8338,7 @@ function N8(D, u, f, e, F, t) {
     ["theme", "target-nodes", "reference-node", "popper-node", "arrow-node"]
   );
 }
-nD.render = N8;
+nD.render = q8;
 nD.__file = "src/components/PopperWrapper.vue";
 var QD = iu(iu({}, nD), {}, {
   name: "VDropdown",
@@ -8350,10 +8358,10 @@ JD.__file = "src/components/Tooltip.vue";
 var af = {
   name: "VTooltipDirective",
   components: {
-    Popper: d1(),
+    Popper: r1(),
     PopperContent: xD
   },
-  mixins: [o1],
+  mixins: [s1],
   inheritAttrs: !1,
   props: {
     theme: {
@@ -8432,11 +8440,11 @@ var af = {
     }
   }
 };
-function q8(D, u, f, e, F, t) {
+function R8(D, u, f, e, F, t) {
   var n = T("PopperContent"), a = T("Popper");
   return p(), V(
     a,
-    Rf({
+    Lf({
       ref: "popper"
     }, D.$attrs, {
       theme: f.theme,
@@ -8506,10 +8514,10 @@ function q8(D, u, f, e, F, t) {
     ["theme", "popper-node", "arrow-node", "onApplyShow", "onApplyHide"]
   );
 }
-af.render = q8;
+af.render = R8;
 af.__file = "src/components/TooltipDirective.vue";
-var s1 = "v-popper--has-tooltip";
-function R8(D, u) {
+var C1 = "v-popper--has-tooltip";
+function L8(D, u) {
   var f = D.placement;
   if (!f && u) {
     var e = XD(yD), F;
@@ -8526,20 +8534,20 @@ function R8(D, u) {
   }
   return f || (f = N(D.theme || "tooltip", "placement")), f;
 }
-function C1(D, u, f) {
+function c1(D, u, f) {
   var e, F = Yu(u);
   return F === "string" ? e = {
     content: u
   } : u && F === "object" ? e = u : e = {
     content: !1
-  }, e.placement = R8(e, f), e.targetNodes = function() {
+  }, e.placement = L8(e, f), e.targetNodes = function() {
     return [D];
   }, e.referenceNode = function() {
     return D;
   }, e;
 }
-function L8(D, u, f) {
-  var e = C1(D, u, f), F = D.$_popper = j1({
+function M8(D, u, f) {
+  var e = c1(D, u, f), F = D.$_popper = $1({
     name: "VTooltipDirective",
     data: function() {
       return {
@@ -8547,89 +8555,89 @@ function L8(D, u, f) {
       };
     },
     render: function() {
-      return $1(af, iu(iu({}, this.options), {}, {
+      return P1(af, iu(iu({}, this.options), {}, {
         ref: "tooltip"
       }));
     }
   }), t = document.createElement("div");
-  return document.body.appendChild(t), F.mount(t), D.classList && D.classList.add(s1), F;
+  return document.body.appendChild(t), F.mount(t), D.classList && D.classList.add(C1), F;
 }
-function c1(D) {
-  D.$_popper && (D.$_popper.unmount(), delete D.$_popper, delete D.$_popperOldShown), D.classList && D.classList.remove(s1);
+function E1(D) {
+  D.$_popper && (D.$_popper.unmount(), delete D.$_popper, delete D.$_popperOldShown), D.classList && D.classList.remove(C1);
 }
-function $f(D, u) {
-  var f = u.value, e = u.modifiers, F = C1(D, f, e);
+function Pf(D, u) {
+  var f = u.value, e = u.modifiers, F = c1(D, f, e);
   if (!F.content || N(F.theme || "tooltip", "disabled"))
-    c1(D);
+    E1(D);
   else {
     var t;
-    D.$_popper ? (t = D.$_popper, t.options = F) : t = L8(D, f, e), typeof f.shown < "u" && f.shown !== D.$_popperOldShown && (D.$_popperOldShown = f.shown, f.shown ? t.$refs.tooltip.show() : t.$refs.tooltip.hide());
+    D.$_popper ? (t = D.$_popper, t.options = F) : t = M8(D, f, e), typeof f.shown < "u" && f.shown !== D.$_popperOldShown && (D.$_popperOldShown = f.shown, f.shown ? t.$refs.tooltip.show() : t.$refs.tooltip.hide());
   }
 }
-var M8 = {
-  beforeMount: $f,
-  updated: $f,
+var H8 = {
+  beforeMount: Pf,
+  updated: Pf,
   beforeUnmount: function(u) {
-    c1(u);
+    E1(u);
   }
 };
-function Pf(D) {
-  D.addEventListener("click", E1), D.addEventListener("touchstart", l1, vD ? {
+function If(D) {
+  D.addEventListener("click", l1), D.addEventListener("touchstart", B1, vD ? {
     passive: !0
   } : !1);
 }
-function If(D) {
-  D.removeEventListener("click", E1), D.removeEventListener("touchstart", l1), D.removeEventListener("touchend", B1), D.removeEventListener("touchcancel", p1);
+function zf(D) {
+  D.removeEventListener("click", l1), D.removeEventListener("touchstart", B1), D.removeEventListener("touchend", p1), D.removeEventListener("touchcancel", b1);
 }
-function E1(D) {
+function l1(D) {
   var u = D.currentTarget;
   D.closePopover = !u.$_vclosepopover_touch, D.closeAllPopover = u.$_closePopoverModifiers && !!u.$_closePopoverModifiers.all;
 }
-function l1(D) {
+function B1(D) {
   if (D.changedTouches.length === 1) {
     var u = D.currentTarget;
     u.$_vclosepopover_touch = !0;
     var f = D.changedTouches[0];
-    u.$_vclosepopover_touchPoint = f, u.addEventListener("touchend", B1), u.addEventListener("touchcancel", p1);
+    u.$_vclosepopover_touchPoint = f, u.addEventListener("touchend", p1), u.addEventListener("touchcancel", b1);
   }
 }
-function B1(D) {
+function p1(D) {
   var u = D.currentTarget;
   if (u.$_vclosepopover_touch = !1, D.changedTouches.length === 1) {
     var f = D.changedTouches[0], e = u.$_vclosepopover_touchPoint;
     D.closePopover = Math.abs(f.screenY - e.screenY) < 20 && Math.abs(f.screenX - e.screenX) < 20, D.closeAllPopover = u.$_closePopoverModifiers && !!u.$_closePopoverModifiers.all;
   }
 }
-function p1(D) {
+function b1(D) {
   var u = D.currentTarget;
   u.$_vclosepopover_touch = !1;
 }
-var H8 = {
+var U8 = {
   beforeMount: function(u, f) {
     var e = f.value, F = f.modifiers;
-    u.$_closePopoverModifiers = F, (typeof e > "u" || e) && Pf(u);
+    u.$_closePopoverModifiers = F, (typeof e > "u" || e) && If(u);
   },
   updated: function(u, f) {
     var e = f.value, F = f.oldValue, t = f.modifiers;
-    u.$_closePopoverModifiers = t, e !== F && (typeof e > "u" || e ? Pf(u) : If(u));
+    u.$_closePopoverModifiers = t, e !== F && (typeof e > "u" || e ? If(u) : zf(u));
   },
   beforeUnmount: function(u) {
-    If(u);
+    zf(u);
   }
 };
 function ZD(D) {
   var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
-  ZD.installed || (ZD.installed = !0, n1(Tu, u), D.directive("tooltip", M8), D.directive("close-popper", H8), D.component("v-tooltip", JD), D.component("VTooltip", JD), D.component("v-dropdown", QD), D.component("VDropdown", QD), D.component("v-menu", KD), D.component("VMenu", KD));
+  ZD.installed || (ZD.installed = !0, a1(Tu, u), D.directive("tooltip", H8), D.directive("close-popper", U8), D.component("v-tooltip", JD), D.component("VTooltip", JD), D.component("v-dropdown", QD), D.component("VDropdown", QD), D.component("v-menu", KD), D.component("VMenu", KD));
 }
-var U8 = {
+var V8 = {
   // eslint-disable-next-line no-undef
   version: "4.0.0-alpha.1",
   install: ZD,
   options: Tu
-}, bD = { exports: {} }, zf;
-function V8() {
-  if (zf) return bD.exports;
-  zf = 1;
+}, bD = { exports: {} }, Nf;
+function W8() {
+  if (Nf) return bD.exports;
+  Nf = 1;
   function D() {
   }
   return D.prototype = {
@@ -8662,24 +8670,24 @@ function V8() {
     }
   }, bD.exports = D, bD.exports.TinyEmitter = D, bD.exports;
 }
-var MD, Nf;
-function W8() {
-  if (Nf) return MD;
-  Nf = 1;
-  var D = V8();
+var MD, qf;
+function G8() {
+  if (qf) return MD;
+  qf = 1;
+  var D = W8();
   return MD = new D(), MD;
 }
-var G8 = W8();
-const gD = /* @__PURE__ */ uf(G8), X8 = {
+var X8 = G8();
+const gD = /* @__PURE__ */ uf(X8), Y8 = {
   $on: (...D) => gD.on(...D),
   $once: (...D) => gD.once(...D),
   $off: (...D) => gD.off(...D),
   $emit: (...D) => gD.emit(...D)
-}, Y8 = "BeautifulChat", K8 = {
+}, Q8 = "BeautifulChat", J8 = {
   install(D, u = {}) {
-    this.installed || D.prototype && D.prototype.$isServer || (this.installed = !0, D.config.globalProperties.$event = X8, this.componentName = u.componentName || Y8, D.component(this.componentName, o2), D.use(U8));
+    this.installed || D.prototype && D.prototype.$isServer || (this.installed = !0, D.config.globalProperties.$event = Y8, this.componentName = u.componentName || Q8, D.component(this.componentName, s2), D.use(V8));
   }
 };
 export {
-  K8 as default
+  J8 as default
 };
