@@ -1,13 +1,13 @@
-import { reactive as y1, openBlock as p, createElementBlock as g, normalizeStyle as R, createCommentVNode as I, renderSlot as O, createTextVNode as Nu, toDisplayString as K, createElementVNode as y, resolveComponent as T, createVNode as q, withCtx as j, resolveDirective as w1, normalizeClass as DD, withDirectives as qf, createBlock as V, Fragment as qu, renderList as Qu, vShow as k1, withModifiers as Gu, pushScopeId as x1, popScopeId as S1, nextTick as T1, withScopeId as O1, withKeys as j1, mergeProps as Rf, createApp as $1, h as P1 } from "vue";
+import { reactive as w1, openBlock as p, createElementBlock as g, normalizeStyle as R, createCommentVNode as I, renderSlot as O, createTextVNode as Nu, toDisplayString as Z, createElementVNode as y, resolveComponent as T, createVNode as q, withCtx as $, resolveDirective as k1, normalizeClass as DD, withDirectives as Rf, createBlock as V, Fragment as qu, renderList as Ku, vShow as x1, withModifiers as Gu, pushScopeId as S1, popScopeId as T1, nextTick as O1, withScopeId as $1, withKeys as j1, mergeProps as Lf, createApp as P1, h as I1 } from "vue";
 const Du = {
-  state: y1({
+  state: w1({
     editMessage: null
   }),
   setState(D, u) {
     this.state[D] = u;
   }
 };
-function Lf(D) {
+function Mf(D) {
   const u = {};
   return D.forEach((f) => {
     u[f] = function() {
@@ -15,7 +15,7 @@ function Lf(D) {
     };
   }), u;
 }
-const I1 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURUxpcf///////////////////////////////////////////////////////3EAnbYAAAAOdFJOUwADZ66SoQjEhnS7/gsNGQL7+wAAAKtJREFUKM+F01sOhCAQRNESFV/I/pc70Og0YJfyJbmHhBAbGGYHstw8IPV4EOGOmERYIhGpxyUAJxHSz/xlC+1FxE64qB1yj1ZID7oXsel+63ovnj2JXUXue+hvrcLugL+EdG+9XBG8X+Kl34J3YM1g/egvIvdx5EK691RIz78YEXdnQrst6m6JqemXmNo+D/WJNAyVePZWWL0WdlfB+l+UAQQReaAc65DB/wGsZgzLN0IQWAAAAABJRU5ErkJggg==", Mf = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3crect%20x='0'%20y='20'%20width='47.971'%20height='7.971'%20rx='5'%20ry='5'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", M = (D, u) => {
+const uf = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2019.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3cpath%20d='M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88%20c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242%20C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879%20s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", Hf = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3crect%20x='0'%20y='20'%20width='47.971'%20height='7.971'%20rx='5'%20ry='5'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", M = (D, u) => {
   const f = D.__vccOpts || D;
   for (const [e, F] of u)
     f[e] = F;
@@ -27,11 +27,11 @@ const I1 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AA
       default: function() {
         return {
           close: {
-            img: I1,
+            img: uf,
             name: "default"
           },
           minimize: {
-            img: Mf,
+            img: Hf,
             name: "default"
           }
         };
@@ -52,7 +52,7 @@ const I1 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AA
     };
   },
   computed: {
-    ...Lf(["disableUserListToggle", "titleImageUrl", "showCloseButton", "showMinimizeButton"])
+    ...Mf(["disableUserListToggle", "titleImageUrl", "showCloseButton", "showMinimizeButton"])
   },
   methods: {
     toggleUserList() {
@@ -76,7 +76,7 @@ function M1(D, u, f, e, F, t) {
     }, null, 8, N1)) : I("", !0),
     D.disableUserListToggle ? (p(), g("div", q1, [
       O(D.$slots, "default", {}, () => [
-        Nu(K(f.title), 1)
+        Nu(Z(f.title), 1)
       ], !0)
     ])) : (p(), g("div", {
       key: 1,
@@ -84,7 +84,7 @@ function M1(D, u, f, e, F, t) {
       onClick: u[0] || (u[0] = (...n) => t.toggleUserList && t.toggleUserList(...n))
     }, [
       O(D.$slots, "default", {}, () => [
-        Nu(K(f.title), 1)
+        Nu(Z(f.title), 1)
       ], !0)
     ])),
     D.showMinimizeButton ? (p(), g("div", {
@@ -109,7 +109,7 @@ function M1(D, u, f, e, F, t) {
     ])) : I("", !0)
   ], 4);
 }
-const H1 = /* @__PURE__ */ M(z1, [["render", M1], ["__scopeId", "data-v-b3c3ad66"]]), U1 = {
+const H1 = /* @__PURE__ */ M(z1, [["render", M1], ["__scopeId", "data-v-b8e6ab9b"]]), U1 = {
   props: {
     iconName: {
       type: String,
@@ -129,7 +129,7 @@ const H1 = /* @__PURE__ */ M(z1, [["render", M1], ["__scopeId", "data-v-b3c3ad66
     }
   }
 }, V1 = ["width", "height", "aria-labelledby"], W1 = ["id"], G1 = ["fill"];
-function X1(D, u, f, e, F, t) {
+function Y1(D, u, f, e, F, t) {
   return p(), g("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: f.width,
@@ -141,27 +141,27 @@ function X1(D, u, f, e, F, t) {
     y("title", {
       id: f.iconName,
       lang: "en"
-    }, K(f.iconName), 9, W1),
+    }, Z(f.iconName), 9, W1),
     y("g", { fill: f.iconColor }, [
       O(D.$slots, "default", {}, void 0, !0)
     ], 8, G1)
   ], 8, V1);
 }
-const Hf = /* @__PURE__ */ M(U1, [["render", X1], ["__scopeId", "data-v-1fd45a6c"]]), Y1 = {}, Q1 = { d: "M19.404,6.65l-5.998-5.996c-0.292-0.292-0.765-0.292-1.056,0l-2.22,2.22l-8.311,8.313l-0.003,0.001v0.003l-0.161,0.161c-0.114,0.112-0.187,0.258-0.21,0.417l-1.059,7.051c-0.035,0.233,0.044,0.47,0.21,0.639c0.143,0.14,0.333,0.219,0.528,0.219c0.038,0,0.073-0.003,0.111-0.009l7.054-1.055c0.158-0.025,0.306-0.098,0.417-0.211l8.478-8.476l2.22-2.22C19.695,7.414,19.695,6.941,19.404,6.65z M8.341,16.656l-0.989-0.99l7.258-7.258l0.989,0.99L8.341,16.656z M2.332,15.919l0.411-2.748l4.143,4.143l-2.748,0.41L2.332,15.919z M13.554,7.351L6.296,14.61l-0.849-0.848l7.259-7.258l0.423,0.424L13.554,7.351zM10.658,4.457l0.992,0.99l-7.259,7.258L3.4,11.715L10.658,4.457z M16.656,8.342l-1.517-1.517V6.823h-0.003l-0.951-0.951l-2.471-2.471l1.164-1.164l4.942,4.94L16.656,8.342z" };
-function K1(D, u) {
-  return p(), g("path", Q1);
+const Uf = /* @__PURE__ */ M(U1, [["render", Y1], ["__scopeId", "data-v-1fd45a6c"]]), X1 = {}, K1 = { d: "M19.404,6.65l-5.998-5.996c-0.292-0.292-0.765-0.292-1.056,0l-2.22,2.22l-8.311,8.313l-0.003,0.001v0.003l-0.161,0.161c-0.114,0.112-0.187,0.258-0.21,0.417l-1.059,7.051c-0.035,0.233,0.044,0.47,0.21,0.639c0.143,0.14,0.333,0.219,0.528,0.219c0.038,0,0.073-0.003,0.111-0.009l7.054-1.055c0.158-0.025,0.306-0.098,0.417-0.211l8.478-8.476l2.22-2.22C19.695,7.414,19.695,6.941,19.404,6.65z M8.341,16.656l-0.989-0.99l7.258-7.258l0.989,0.99L8.341,16.656z M2.332,15.919l0.411-2.748l4.143,4.143l-2.748,0.41L2.332,15.919z M13.554,7.351L6.296,14.61l-0.849-0.848l7.259-7.258l0.423,0.424L13.554,7.351zM10.658,4.457l0.992,0.99l-7.259,7.258L3.4,11.715L10.658,4.457z M16.656,8.342l-1.517-1.517V6.823h-0.003l-0.951-0.951l-2.471-2.471l1.164-1.164l4.942,4.94L16.656,8.342z" };
+function Z1(D, u) {
+  return p(), g("path", K1);
 }
-const J1 = /* @__PURE__ */ M(Y1, [["render", K1]]), Z1 = {}, u0 = { d: "M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z" };
+const Q1 = /* @__PURE__ */ M(X1, [["render", Z1]]), J1 = {}, u0 = { d: "M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z" };
 function D0(D, u) {
   return p(), g("path", u0);
 }
-const Uf = /* @__PURE__ */ M(Z1, [["render", D0]]), df = (D) => D.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const Vf = /* @__PURE__ */ M(J1, [["render", D0]]), rf = (D) => D.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 function f0(D, ...u) {
   if (typeof D == "string")
-    return df(D);
+    return rf(D);
   let f = D[0];
   for (const [e, F] of u.entries())
-    f = f + df(String(F)) + D[e + 1];
+    f = f + rf(String(F)) + D[e + 1];
   return f;
 }
 var e0 = "4.1.0";
@@ -191,7 +191,7 @@ function wu(D, u) {
 function Iu(D) {
   throw new Error("Unhandled case for value: '".concat(D, "'"));
 }
-var zu = /[A-Za-z]/, Z = /[\d]/, du = /\s/, jD = /['"]/, a0 = /[\x00-\x1F\x7F]/, d0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, r0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, i0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, o0 = d0 + r0 + i0, s0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Vf = o0 + s0, Su = new RegExp("[".concat(Vf, "]")), Wf = (
+var zu = /[A-Za-z]/, J = /[\d]/, du = /\s/, $D = /['"]/, a0 = /[\x00-\x1F\x7F]/, d0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, r0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, i0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, o0 = d0 + r0 + i0, s0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Wf = o0 + s0, Su = new RegExp("[".concat(Wf, "]")), Gf = (
   /** @class */
   function() {
     function D(u) {
@@ -319,7 +319,7 @@ var l0 = (
       u === void 0 && (u = {}), this.newWindow = !1, this.truncate = {}, this.className = "", this.newWindow = u.newWindow || !1, this.truncate = u.truncate || {}, this.className = u.className || "";
     }
     return D.prototype.build = function(u) {
-      return new Wf({
+      return new Gf({
         tagName: "a",
         attrs: this.createAttrs(u),
         innerHtml: this.processAnchorText(u.getAnchorText())
@@ -364,14 +364,14 @@ function fD(D, u) {
   }
   D.prototype = u === null ? Object.create(u) : (f.prototype = u.prototype, new f());
 }
-var X = function() {
-  return X = Object.assign || function(u) {
+var Y = function() {
+  return Y = Object.assign || function(u) {
     for (var f, e = 1, F = arguments.length; e < F; e++) {
       f = arguments[e];
       for (var t in f) Object.prototype.hasOwnProperty.call(f, t) && (u[t] = f[t]);
     }
     return u;
-  }, X.apply(this, arguments);
+  }, Y.apply(this, arguments);
 };
 var eD = (
   /** @class */
@@ -391,26 +391,26 @@ var eD = (
       return this.tagBuilder.build(this);
     }, D;
   }()
-), B0 = "(?:xn--vermgensberatung-pwb|xn--vermgensberater-ctb|xn--clchc0ea0b2g2a9gcd|xn--w4r85el8fhu5dnra|travelersinsurance|vermögensberatung|xn--5su34j936bgsg|xn--bck1b9a5dre4c|xn--mgbah1a3hjkrd|xn--mgbai9azgqp6j|xn--mgberp4a5d4ar|xn--xkc2dl3a5ee0h|vermögensberater|xn--fzys8d69uvgm|xn--mgba7c0bbn0a|xn--mgbcpq6gpa1a|xn--xkc2al3hye2a|americanexpress|kerryproperties|sandvikcoromant|xn--i1b6b1a6a2e|xn--kcrx77d1x4a|xn--lgbbat1ad8j|xn--mgba3a4f16a|xn--mgbc0a9azcg|xn--nqv7fs00ema|americanfamily|kerrylogistics|weatherchannel|xn--54b7fta0cc|xn--6qq986b3xl|xn--80aqecdr1a|xn--b4w605ferd|xn--fiq228c5hs|xn--h2breg3eve|xn--jlq480n2rg|xn--mgba3a3ejt|xn--mgbaam7a8h|xn--mgbayh7gpa|xn--mgbbh1a71e|xn--mgbca7dzdo|xn--mgbi4ecexp|xn--mgbx4cd0ab|xn--rvc1e0am3e|international|lifeinsurance|wolterskluwer|xn--cckwcxetd|xn--eckvdtc9d|xn--fpcrj9c3d|xn--fzc2c9e2c|xn--h2brj9c8c|xn--tiq49xqyj|xn--yfro4i67o|xn--ygbi2ammx|construction|lplfinancial|scholarships|versicherung|xn--3e0b707e|xn--45br5cyl|xn--4dbrk0ce|xn--80adxhks|xn--80asehdb|xn--8y0a063a|xn--gckr3f0f|xn--mgb9awbf|xn--mgbab2bd|xn--mgbgu82a|xn--mgbpl2fh|xn--mgbt3dhd|xn--mk1bu44c|xn--ngbc5azd|xn--ngbe9e0a|xn--ogbpf8fl|xn--qcka1pmc|accountants|barclaycard|blackfriday|blockbuster|bridgestone|calvinklein|contractors|creditunion|engineering|enterprises|investments|kerryhotels|lamborghini|motorcycles|olayangroup|photography|playstation|productions|progressive|redumbrella|williamhill|xn--11b4c3d|xn--1ck2e1b|xn--1qqw23a|xn--2scrj9c|xn--3bst00m|xn--3ds443g|xn--3hcrj9c|xn--42c2d9a|xn--45brj9c|xn--55qw42g|xn--6frz82g|xn--80ao21a|xn--9krt00a|xn--cck2b3b|xn--czr694b|xn--d1acj3b|xn--efvy88h|xn--fct429k|xn--fjq720a|xn--flw351e|xn--g2xx48c|xn--gecrj9c|xn--gk3at1e|xn--h2brj9c|xn--hxt814e|xn--imr513n|xn--j6w193g|xn--jvr189m|xn--kprw13d|xn--kpry57d|xn--mgbbh1a|xn--mgbtx2b|xn--mix891f|xn--nyqy26a|xn--otu796d|xn--pgbs0dh|xn--q9jyb4c|xn--rhqv96g|xn--rovu88b|xn--s9brj9c|xn--ses554g|xn--t60b56a|xn--vuq861b|xn--w4rs40l|xn--xhq521b|xn--zfr164b|சிங்கப்பூர்|accountant|apartments|associates|basketball|bnpparibas|boehringer|capitalone|consulting|creditcard|cuisinella|eurovision|extraspace|foundation|healthcare|immobilien|industries|management|mitsubishi|nextdirect|properties|protection|prudential|realestate|republican|restaurant|schaeffler|tatamotors|technology|university|vlaanderen|xn--30rr7y|xn--3pxu8k|xn--45q11c|xn--4gbrim|xn--55qx5d|xn--5tzm5g|xn--80aswg|xn--90a3ac|xn--9dbq2a|xn--9et52u|xn--c2br7g|xn--cg4bki|xn--czrs0t|xn--czru2d|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--io0a7i|xn--kput3i|xn--mxtq1m|xn--o3cw4h|xn--pssy2u|xn--q7ce6a|xn--unup4y|xn--wgbh1c|xn--wgbl6a|xn--y9a3aq|accenture|allfinanz|amsterdam|analytics|aquarelle|barcelona|bloomberg|christmas|community|directory|education|equipment|fairwinds|financial|firestone|fresenius|furniture|goldpoint|hisamitsu|homedepot|homegoods|homesense|institute|insurance|kuokgroup|lancaster|landrover|lifestyle|marketing|marshalls|melbourne|microsoft|panasonic|pramerica|richardli|shangrila|solutions|statebank|statefarm|stockholm|travelers|vacations|xn--90ais|xn--c1avg|xn--d1alf|xn--e1a4c|xn--fhbei|xn--j1aef|xn--j1amh|xn--l1acc|xn--ngbrx|xn--nqv7f|xn--p1acf|xn--qxa6a|xn--tckwe|xn--vhquv|yodobashi|موريتانيا|abudhabi|airforce|allstate|attorney|barclays|barefoot|bargains|baseball|boutique|bradesco|broadway|brussels|builders|business|capetown|catering|catholic|cipriani|cleaning|clinique|clothing|commbank|computer|delivery|deloitte|democrat|diamonds|discount|discover|download|engineer|ericsson|exchange|feedback|fidelity|firmdale|football|frontier|goodyear|grainger|graphics|hdfcbank|helsinki|holdings|hospital|infiniti|ipiranga|istanbul|jpmorgan|lighting|lundbeck|marriott|mckinsey|memorial|merckmsd|mortgage|observer|partners|pharmacy|pictures|plumbing|property|redstone|reliance|saarland|samsclub|security|services|shopping|softbank|software|stcgroup|supplies|training|vanguard|ventures|verisign|woodside|xn--90ae|xn--node|xn--p1ai|xn--qxam|yokohama|السعودية|abogado|academy|agakhan|alibaba|android|athleta|auction|audible|auspost|banamex|bauhaus|bentley|bestbuy|booking|brother|capital|caravan|careers|channel|charity|chintai|citadel|clubmed|college|cologne|company|compare|contact|cooking|corsica|country|coupons|courses|cricket|cruises|dentist|digital|domains|exposed|express|farmers|fashion|ferrari|ferrero|finance|fishing|fitness|flights|florist|flowers|forsale|frogans|fujitsu|gallery|genting|godaddy|grocery|guitars|hamburg|hangout|hitachi|holiday|hosting|hotmail|hyundai|ismaili|jewelry|juniper|kitchen|komatsu|lacaixa|lanxess|lasalle|latrobe|leclerc|limited|lincoln|markets|monster|netbank|netflix|network|neustar|okinawa|organic|origins|philips|pioneer|politie|realtor|recipes|rentals|reviews|rexroth|samsung|sandvik|schmidt|schwarz|science|shiksha|singles|staples|storage|support|surgery|systems|temasek|theater|theatre|tickets|toshiba|trading|walmart|wanggou|watches|weather|website|wedding|whoswho|windows|winners|yamaxun|youtube|zuerich|католик|البحرين|الجزائر|العليان|پاکستان|كاثوليك|இந்தியா|abbott|abbvie|africa|agency|airbus|airtel|alipay|alsace|alstom|amazon|anquan|aramco|author|bayern|beauty|berlin|bharti|bostik|boston|broker|camera|career|casino|center|chanel|chrome|church|circle|claims|clinic|coffee|comsec|condos|coupon|credit|cruise|dating|datsun|dealer|degree|dental|design|direct|doctor|dunlop|dupont|durban|emerck|energy|estate|events|expert|family|flickr|futbol|gallup|garden|george|giving|global|google|gratis|health|hermes|hiphop|hockey|hotels|hughes|imamat|insure|intuit|jaguar|joburg|juegos|kaufen|kindle|kosher|latino|lawyer|lefrak|living|locker|london|luxury|madrid|maison|makeup|market|mattel|mobile|monash|mormon|moscow|museum|nagoya|nissan|nissay|norton|nowruz|office|olayan|online|oracle|orange|otsuka|pfizer|photos|physio|pictet|quebec|racing|realty|reisen|repair|report|review|rogers|ryukyu|safety|sakura|sanofi|school|schule|search|secure|select|shouji|soccer|social|stream|studio|supply|suzuki|swatch|sydney|taipei|taobao|target|tattoo|tennis|tienda|tjmaxx|tkmaxx|toyota|travel|unicom|viajes|viking|villas|virgin|vision|voting|voyage|walter|webcam|xihuan|yachts|yandex|zappos|москва|онлайн|ابوظبي|ارامكو|الاردن|المغرب|امارات|فلسطين|مليسيا|भारतम्|இலங்கை|ファッション|actor|adult|aetna|amfam|amica|apple|archi|audio|autos|azure|baidu|beats|bible|bingo|black|boats|bosch|build|canon|cards|chase|cheap|cisco|citic|click|cloud|coach|codes|crown|cymru|dance|deals|delta|drive|dubai|earth|edeka|email|epson|faith|fedex|final|forex|forum|gallo|games|gifts|gives|glass|globo|gmail|green|gripe|group|gucci|guide|homes|honda|horse|house|hyatt|ikano|irish|jetzt|koeln|kyoto|lamer|lease|legal|lexus|lilly|lipsy|loans|locus|lotte|lotto|mango|media|miami|money|movie|music|nexus|nikon|ninja|nokia|nowtv|omega|osaka|paris|parts|party|phone|photo|pizza|place|poker|praxi|press|prime|promo|quest|radio|rehab|reise|ricoh|rocks|rodeo|rugby|salon|sener|seven|sharp|shell|shoes|skype|sling|smart|smile|solar|space|sport|stada|store|study|style|sucks|swiss|tatar|tires|tirol|tmall|today|tokyo|tools|toray|total|tours|trade|trust|tunes|tushu|ubank|vegas|video|vodka|volvo|wales|watch|weber|weibo|works|world|xerox|yahoo|ישראל|ایران|بازار|بھارت|سودان|سورية|همراه|भारोत|संगठन|বাংলা|భారత్|ഭാരതം|嘉里大酒店|aarp|able|aero|akdn|ally|amex|arab|army|arpa|arte|asda|asia|audi|auto|baby|band|bank|bbva|beer|best|bike|bing|blog|blue|bofa|bond|book|buzz|cafe|call|camp|care|cars|casa|case|cash|cbre|cern|chat|citi|city|club|cool|coop|cyou|data|date|dclk|deal|dell|desi|diet|dish|docs|dvag|erni|fage|fail|fans|farm|fast|fido|film|fire|fish|flir|food|ford|free|fund|game|gbiz|gent|ggee|gift|gmbh|gold|golf|goog|guge|guru|hair|haus|hdfc|help|here|host|hsbc|icbc|ieee|imdb|immo|info|itau|java|jeep|jobs|jprs|kddi|kids|kiwi|kpmg|kred|land|lego|lgbt|lidl|life|like|limo|link|live|loan|love|ltda|luxe|maif|meet|meme|menu|mini|mint|mobi|moda|moto|name|navy|news|next|nico|nike|ollo|open|page|pars|pccw|pics|ping|pink|play|plus|pohl|porn|post|prod|prof|qpon|read|reit|rent|rest|rich|room|rsvp|ruhr|safe|sale|sarl|save|saxo|scot|seat|seek|sexy|shia|shop|show|silk|sina|site|skin|sncf|sohu|song|sony|spot|star|surf|talk|taxi|team|tech|teva|tiaa|tips|town|toys|tube|vana|visa|viva|vivo|vote|voto|wang|weir|wien|wiki|wine|work|xbox|yoga|zara|zero|zone|дети|сайт|بارت|بيتك|ڀارت|تونس|شبكة|عراق|عمان|موقع|भारत|ভারত|ভাৰত|ਭਾਰਤ|ભારત|ଭାରତ|ಭಾರತ|ලංකා|アマゾン|グーグル|クラウド|ポイント|组织机构|電訊盈科|香格里拉|aaa|abb|abc|aco|ads|aeg|afl|aig|anz|aol|app|art|aws|axa|bar|bbc|bbt|bcg|bcn|bet|bid|bio|biz|bms|bmw|bom|boo|bot|box|buy|bzh|cab|cal|cam|car|cat|cba|cbn|ceo|cfa|cfd|com|cpa|crs|dad|day|dds|dev|dhl|diy|dnp|dog|dot|dtv|dvr|eat|eco|edu|esq|eus|fan|fit|fly|foo|fox|frl|ftr|fun|fyi|gal|gap|gay|gdn|gea|gle|gmo|gmx|goo|gop|got|gov|hbo|hiv|hkt|hot|how|ibm|ice|icu|ifm|inc|ing|ink|int|ist|itv|jcb|jio|jll|jmp|jnj|jot|joy|kfh|kia|kim|kpn|krd|lat|law|lds|llc|llp|lol|lpl|ltd|man|map|mba|med|men|mil|mit|mlb|mls|mma|moe|moi|mom|mov|msd|mtn|mtr|nab|nba|nec|net|new|nfl|ngo|nhk|now|nra|nrw|ntt|nyc|obi|one|ong|onl|ooo|org|ott|ovh|pay|pet|phd|pid|pin|pnc|pro|pru|pub|pwc|red|ren|ril|rio|rip|run|rwe|sap|sas|sbi|sbs|scb|sew|sex|sfr|ski|sky|soy|spa|srl|stc|tab|tax|tci|tdk|tel|thd|tjx|top|trv|tui|tvs|ubs|uno|uol|ups|vet|vig|vin|vip|wed|win|wme|wow|wtc|wtf|xin|xxx|xyz|you|yun|zip|бел|ком|қаз|мкд|мон|орг|рус|срб|укр|հայ|קום|عرب|قطر|كوم|مصر|कॉम|नेट|คอม|ไทย|ລາວ|ストア|セール|みんな|中文网|亚马逊|天主教|我爱你|新加坡|淡马锡|飞利浦|ac|ad|ae|af|ag|ai|al|am|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cw|cx|cy|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gg|gh|gi|gl|gm|gn|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|mv|mw|mx|my|mz|na|nc|ne|nf|ng|ni|nl|no|np|nr|nu|nz|om|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|ps|pt|pw|py|qa|re|ro|rs|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sk|sl|sm|sn|so|sr|ss|st|su|sv|sx|sy|sz|tc|td|tf|tg|th|tj|tk|tl|tm|tn|to|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|za|zm|zw|ελ|ευ|бг|ею|рф|გე|닷넷|닷컴|삼성|한국|コム|世界|中信|中国|中國|企业|佛山|信息|健康|八卦|公司|公益|台湾|台灣|商城|商店|商标|嘉里|在线|大拿|娱乐|家電|广东|微博|慈善|手机|招聘|政务|政府|新闻|时尚|書籍|机构|游戏|澳門|点看|移动|网址|网店|网站|网络|联通|谷歌|购物|通販|集团|食品|餐厅|香港)", p0 = new RegExp("^" + B0 + "$"), b0 = /[\/?#]/, g0 = /[-+&@#/%=~_()|'$*\[\]{}\u2713]/, Gf = /[?!:,.;^]/, Xf = /https?:\/\//i, m0 = new RegExp("^" + Xf.source, "i"), h0 = new RegExp(Gf.source + "$"), _0 = /^(javascript|vbscript):/i, v0 = /^[A-Za-z][-.+A-Za-z0-9]*:(\/\/)?([^:/]*)/, A0 = /^(?:\/\/)?([^/#?:]+)/;
+), B0 = "(?:xn--vermgensberatung-pwb|xn--vermgensberater-ctb|xn--clchc0ea0b2g2a9gcd|xn--w4r85el8fhu5dnra|travelersinsurance|vermögensberatung|xn--5su34j936bgsg|xn--bck1b9a5dre4c|xn--mgbah1a3hjkrd|xn--mgbai9azgqp6j|xn--mgberp4a5d4ar|xn--xkc2dl3a5ee0h|vermögensberater|xn--fzys8d69uvgm|xn--mgba7c0bbn0a|xn--mgbcpq6gpa1a|xn--xkc2al3hye2a|americanexpress|kerryproperties|sandvikcoromant|xn--i1b6b1a6a2e|xn--kcrx77d1x4a|xn--lgbbat1ad8j|xn--mgba3a4f16a|xn--mgbc0a9azcg|xn--nqv7fs00ema|americanfamily|kerrylogistics|weatherchannel|xn--54b7fta0cc|xn--6qq986b3xl|xn--80aqecdr1a|xn--b4w605ferd|xn--fiq228c5hs|xn--h2breg3eve|xn--jlq480n2rg|xn--mgba3a3ejt|xn--mgbaam7a8h|xn--mgbayh7gpa|xn--mgbbh1a71e|xn--mgbca7dzdo|xn--mgbi4ecexp|xn--mgbx4cd0ab|xn--rvc1e0am3e|international|lifeinsurance|wolterskluwer|xn--cckwcxetd|xn--eckvdtc9d|xn--fpcrj9c3d|xn--fzc2c9e2c|xn--h2brj9c8c|xn--tiq49xqyj|xn--yfro4i67o|xn--ygbi2ammx|construction|lplfinancial|scholarships|versicherung|xn--3e0b707e|xn--45br5cyl|xn--4dbrk0ce|xn--80adxhks|xn--80asehdb|xn--8y0a063a|xn--gckr3f0f|xn--mgb9awbf|xn--mgbab2bd|xn--mgbgu82a|xn--mgbpl2fh|xn--mgbt3dhd|xn--mk1bu44c|xn--ngbc5azd|xn--ngbe9e0a|xn--ogbpf8fl|xn--qcka1pmc|accountants|barclaycard|blackfriday|blockbuster|bridgestone|calvinklein|contractors|creditunion|engineering|enterprises|investments|kerryhotels|lamborghini|motorcycles|olayangroup|photography|playstation|productions|progressive|redumbrella|williamhill|xn--11b4c3d|xn--1ck2e1b|xn--1qqw23a|xn--2scrj9c|xn--3bst00m|xn--3ds443g|xn--3hcrj9c|xn--42c2d9a|xn--45brj9c|xn--55qw42g|xn--6frz82g|xn--80ao21a|xn--9krt00a|xn--cck2b3b|xn--czr694b|xn--d1acj3b|xn--efvy88h|xn--fct429k|xn--fjq720a|xn--flw351e|xn--g2xx48c|xn--gecrj9c|xn--gk3at1e|xn--h2brj9c|xn--hxt814e|xn--imr513n|xn--j6w193g|xn--jvr189m|xn--kprw13d|xn--kpry57d|xn--mgbbh1a|xn--mgbtx2b|xn--mix891f|xn--nyqy26a|xn--otu796d|xn--pgbs0dh|xn--q9jyb4c|xn--rhqv96g|xn--rovu88b|xn--s9brj9c|xn--ses554g|xn--t60b56a|xn--vuq861b|xn--w4rs40l|xn--xhq521b|xn--zfr164b|சிங்கப்பூர்|accountant|apartments|associates|basketball|bnpparibas|boehringer|capitalone|consulting|creditcard|cuisinella|eurovision|extraspace|foundation|healthcare|immobilien|industries|management|mitsubishi|nextdirect|properties|protection|prudential|realestate|republican|restaurant|schaeffler|tatamotors|technology|university|vlaanderen|xn--30rr7y|xn--3pxu8k|xn--45q11c|xn--4gbrim|xn--55qx5d|xn--5tzm5g|xn--80aswg|xn--90a3ac|xn--9dbq2a|xn--9et52u|xn--c2br7g|xn--cg4bki|xn--czrs0t|xn--czru2d|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--io0a7i|xn--kput3i|xn--mxtq1m|xn--o3cw4h|xn--pssy2u|xn--q7ce6a|xn--unup4y|xn--wgbh1c|xn--wgbl6a|xn--y9a3aq|accenture|allfinanz|amsterdam|analytics|aquarelle|barcelona|bloomberg|christmas|community|directory|education|equipment|fairwinds|financial|firestone|fresenius|furniture|goldpoint|hisamitsu|homedepot|homegoods|homesense|institute|insurance|kuokgroup|lancaster|landrover|lifestyle|marketing|marshalls|melbourne|microsoft|panasonic|pramerica|richardli|shangrila|solutions|statebank|statefarm|stockholm|travelers|vacations|xn--90ais|xn--c1avg|xn--d1alf|xn--e1a4c|xn--fhbei|xn--j1aef|xn--j1amh|xn--l1acc|xn--ngbrx|xn--nqv7f|xn--p1acf|xn--qxa6a|xn--tckwe|xn--vhquv|yodobashi|موريتانيا|abudhabi|airforce|allstate|attorney|barclays|barefoot|bargains|baseball|boutique|bradesco|broadway|brussels|builders|business|capetown|catering|catholic|cipriani|cleaning|clinique|clothing|commbank|computer|delivery|deloitte|democrat|diamonds|discount|discover|download|engineer|ericsson|exchange|feedback|fidelity|firmdale|football|frontier|goodyear|grainger|graphics|hdfcbank|helsinki|holdings|hospital|infiniti|ipiranga|istanbul|jpmorgan|lighting|lundbeck|marriott|mckinsey|memorial|merckmsd|mortgage|observer|partners|pharmacy|pictures|plumbing|property|redstone|reliance|saarland|samsclub|security|services|shopping|softbank|software|stcgroup|supplies|training|vanguard|ventures|verisign|woodside|xn--90ae|xn--node|xn--p1ai|xn--qxam|yokohama|السعودية|abogado|academy|agakhan|alibaba|android|athleta|auction|audible|auspost|banamex|bauhaus|bentley|bestbuy|booking|brother|capital|caravan|careers|channel|charity|chintai|citadel|clubmed|college|cologne|company|compare|contact|cooking|corsica|country|coupons|courses|cricket|cruises|dentist|digital|domains|exposed|express|farmers|fashion|ferrari|ferrero|finance|fishing|fitness|flights|florist|flowers|forsale|frogans|fujitsu|gallery|genting|godaddy|grocery|guitars|hamburg|hangout|hitachi|holiday|hosting|hotmail|hyundai|ismaili|jewelry|juniper|kitchen|komatsu|lacaixa|lanxess|lasalle|latrobe|leclerc|limited|lincoln|markets|monster|netbank|netflix|network|neustar|okinawa|organic|origins|philips|pioneer|politie|realtor|recipes|rentals|reviews|rexroth|samsung|sandvik|schmidt|schwarz|science|shiksha|singles|staples|storage|support|surgery|systems|temasek|theater|theatre|tickets|toshiba|trading|walmart|wanggou|watches|weather|website|wedding|whoswho|windows|winners|yamaxun|youtube|zuerich|католик|البحرين|الجزائر|العليان|پاکستان|كاثوليك|இந்தியா|abbott|abbvie|africa|agency|airbus|airtel|alipay|alsace|alstom|amazon|anquan|aramco|author|bayern|beauty|berlin|bharti|bostik|boston|broker|camera|career|casino|center|chanel|chrome|church|circle|claims|clinic|coffee|comsec|condos|coupon|credit|cruise|dating|datsun|dealer|degree|dental|design|direct|doctor|dunlop|dupont|durban|emerck|energy|estate|events|expert|family|flickr|futbol|gallup|garden|george|giving|global|google|gratis|health|hermes|hiphop|hockey|hotels|hughes|imamat|insure|intuit|jaguar|joburg|juegos|kaufen|kindle|kosher|latino|lawyer|lefrak|living|locker|london|luxury|madrid|maison|makeup|market|mattel|mobile|monash|mormon|moscow|museum|nagoya|nissan|nissay|norton|nowruz|office|olayan|online|oracle|orange|otsuka|pfizer|photos|physio|pictet|quebec|racing|realty|reisen|repair|report|review|rogers|ryukyu|safety|sakura|sanofi|school|schule|search|secure|select|shouji|soccer|social|stream|studio|supply|suzuki|swatch|sydney|taipei|taobao|target|tattoo|tennis|tienda|tjmaxx|tkmaxx|toyota|travel|unicom|viajes|viking|villas|virgin|vision|voting|voyage|walter|webcam|xihuan|yachts|yandex|zappos|москва|онлайн|ابوظبي|ارامكو|الاردن|المغرب|امارات|فلسطين|مليسيا|भारतम्|இலங்கை|ファッション|actor|adult|aetna|amfam|amica|apple|archi|audio|autos|azure|baidu|beats|bible|bingo|black|boats|bosch|build|canon|cards|chase|cheap|cisco|citic|click|cloud|coach|codes|crown|cymru|dance|deals|delta|drive|dubai|earth|edeka|email|epson|faith|fedex|final|forex|forum|gallo|games|gifts|gives|glass|globo|gmail|green|gripe|group|gucci|guide|homes|honda|horse|house|hyatt|ikano|irish|jetzt|koeln|kyoto|lamer|lease|legal|lexus|lilly|lipsy|loans|locus|lotte|lotto|mango|media|miami|money|movie|music|nexus|nikon|ninja|nokia|nowtv|omega|osaka|paris|parts|party|phone|photo|pizza|place|poker|praxi|press|prime|promo|quest|radio|rehab|reise|ricoh|rocks|rodeo|rugby|salon|sener|seven|sharp|shell|shoes|skype|sling|smart|smile|solar|space|sport|stada|store|study|style|sucks|swiss|tatar|tires|tirol|tmall|today|tokyo|tools|toray|total|tours|trade|trust|tunes|tushu|ubank|vegas|video|vodka|volvo|wales|watch|weber|weibo|works|world|xerox|yahoo|ישראל|ایران|بازار|بھارت|سودان|سورية|همراه|भारोत|संगठन|বাংলা|భారత్|ഭാരതം|嘉里大酒店|aarp|able|aero|akdn|ally|amex|arab|army|arpa|arte|asda|asia|audi|auto|baby|band|bank|bbva|beer|best|bike|bing|blog|blue|bofa|bond|book|buzz|cafe|call|camp|care|cars|casa|case|cash|cbre|cern|chat|citi|city|club|cool|coop|cyou|data|date|dclk|deal|dell|desi|diet|dish|docs|dvag|erni|fage|fail|fans|farm|fast|fido|film|fire|fish|flir|food|ford|free|fund|game|gbiz|gent|ggee|gift|gmbh|gold|golf|goog|guge|guru|hair|haus|hdfc|help|here|host|hsbc|icbc|ieee|imdb|immo|info|itau|java|jeep|jobs|jprs|kddi|kids|kiwi|kpmg|kred|land|lego|lgbt|lidl|life|like|limo|link|live|loan|love|ltda|luxe|maif|meet|meme|menu|mini|mint|mobi|moda|moto|name|navy|news|next|nico|nike|ollo|open|page|pars|pccw|pics|ping|pink|play|plus|pohl|porn|post|prod|prof|qpon|read|reit|rent|rest|rich|room|rsvp|ruhr|safe|sale|sarl|save|saxo|scot|seat|seek|sexy|shia|shop|show|silk|sina|site|skin|sncf|sohu|song|sony|spot|star|surf|talk|taxi|team|tech|teva|tiaa|tips|town|toys|tube|vana|visa|viva|vivo|vote|voto|wang|weir|wien|wiki|wine|work|xbox|yoga|zara|zero|zone|дети|сайт|بارت|بيتك|ڀارت|تونس|شبكة|عراق|عمان|موقع|भारत|ভারত|ভাৰত|ਭਾਰਤ|ભારત|ଭାରତ|ಭಾರತ|ලංකා|アマゾン|グーグル|クラウド|ポイント|组织机构|電訊盈科|香格里拉|aaa|abb|abc|aco|ads|aeg|afl|aig|anz|aol|app|art|aws|axa|bar|bbc|bbt|bcg|bcn|bet|bid|bio|biz|bms|bmw|bom|boo|bot|box|buy|bzh|cab|cal|cam|car|cat|cba|cbn|ceo|cfa|cfd|com|cpa|crs|dad|day|dds|dev|dhl|diy|dnp|dog|dot|dtv|dvr|eat|eco|edu|esq|eus|fan|fit|fly|foo|fox|frl|ftr|fun|fyi|gal|gap|gay|gdn|gea|gle|gmo|gmx|goo|gop|got|gov|hbo|hiv|hkt|hot|how|ibm|ice|icu|ifm|inc|ing|ink|int|ist|itv|jcb|jio|jll|jmp|jnj|jot|joy|kfh|kia|kim|kpn|krd|lat|law|lds|llc|llp|lol|lpl|ltd|man|map|mba|med|men|mil|mit|mlb|mls|mma|moe|moi|mom|mov|msd|mtn|mtr|nab|nba|nec|net|new|nfl|ngo|nhk|now|nra|nrw|ntt|nyc|obi|one|ong|onl|ooo|org|ott|ovh|pay|pet|phd|pid|pin|pnc|pro|pru|pub|pwc|red|ren|ril|rio|rip|run|rwe|sap|sas|sbi|sbs|scb|sew|sex|sfr|ski|sky|soy|spa|srl|stc|tab|tax|tci|tdk|tel|thd|tjx|top|trv|tui|tvs|ubs|uno|uol|ups|vet|vig|vin|vip|wed|win|wme|wow|wtc|wtf|xin|xxx|xyz|you|yun|zip|бел|ком|қаз|мкд|мон|орг|рус|срб|укр|հայ|קום|عرب|قطر|كوم|مصر|कॉम|नेट|คอม|ไทย|ລາວ|ストア|セール|みんな|中文网|亚马逊|天主教|我爱你|新加坡|淡马锡|飞利浦|ac|ad|ae|af|ag|ai|al|am|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cw|cx|cy|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gg|gh|gi|gl|gm|gn|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|mv|mw|mx|my|mz|na|nc|ne|nf|ng|ni|nl|no|np|nr|nu|nz|om|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|ps|pt|pw|py|qa|re|ro|rs|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sk|sl|sm|sn|so|sr|ss|st|su|sv|sx|sy|sz|tc|td|tf|tg|th|tj|tk|tl|tm|tn|to|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|za|zm|zw|ελ|ευ|бг|ею|рф|გე|닷넷|닷컴|삼성|한국|コム|世界|中信|中国|中國|企业|佛山|信息|健康|八卦|公司|公益|台湾|台灣|商城|商店|商标|嘉里|在线|大拿|娱乐|家電|广东|微博|慈善|手机|招聘|政务|政府|新闻|时尚|書籍|机构|游戏|澳門|点看|移动|网址|网店|网站|网络|联通|谷歌|购物|通販|集团|食品|餐厅|香港)", p0 = new RegExp("^" + B0 + "$"), b0 = /[\/?#]/, g0 = /[-+&@#/%=~_()|'$*\[\]{}\u2713]/, Yf = /[?!:,.;^]/, Xf = /https?:\/\//i, m0 = new RegExp("^" + Xf.source, "i"), h0 = new RegExp(Yf.source + "$"), _0 = /^(javascript|vbscript):/i, v0 = /^[A-Za-z][-.+A-Za-z0-9]*:(\/\/)?([^:/]*)/, A0 = /^(?:\/\/)?([^/#?:]+)/;
 function Vu(D) {
   return zu.test(D);
 }
-function rf(D) {
-  return zu.test(D) || Z.test(D) || D === "+" || D === "-" || D === ".";
+function of(D) {
+  return zu.test(D) || J.test(D) || D === "+" || D === "-" || D === ".";
 }
 function _u(D) {
   return Su.test(D);
 }
-function $D(D) {
+function jD(D) {
   return D === "_" || _u(D);
 }
-function of(D) {
-  return Su.test(D) || g0.test(D) || Gf.test(D);
+function sf(D) {
+  return Su.test(D) || g0.test(D) || Yf.test(D);
 }
 function PD(D) {
   return b0.test(D);
 }
-function Yf(D) {
+function Kf(D) {
   return p0.test(D.toLowerCase());
 }
 function y0(D) {
@@ -430,14 +430,14 @@ function w0(D) {
   if (e.length < 2)
     return !1;
   var F = e[e.length - 1];
-  return !!Yf(F);
+  return !!Kf(F);
 }
 var k0 = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/, x0 = /[:/?#]/;
 function S0(D) {
   var u = D.split(x0, 1)[0];
   return k0.test(u);
 }
-var T0 = /^(https?:\/\/)?(www\.)?/i, O0 = /^\/\//, j0 = (
+var T0 = /^(https?:\/\/)?(www\.)?/i, O0 = /^\/\//, $0 = (
   /** @class */
   function(D) {
     fD(u, D);
@@ -460,11 +460,11 @@ var T0 = /^(https?:\/\/)?(www\.)?/i, O0 = /^\/\//, j0 = (
       return f.replace(/&amp;/g, "&");
     }, u.prototype.getAnchorText = function() {
       var f = this.getMatchedText();
-      return this.protocolRelativeMatch && (f = I0(f)), this.stripPrefix.scheme && (f = $0(f)), this.stripPrefix.www && (f = P0(f)), this.stripTrailingSlash && (f = z0(f)), this.decodePercentEncoding && (f = N0(f)), f;
+      return this.protocolRelativeMatch && (f = I0(f)), this.stripPrefix.scheme && (f = j0(f)), this.stripPrefix.www && (f = P0(f)), this.stripTrailingSlash && (f = z0(f)), this.decodePercentEncoding && (f = N0(f)), f;
     }, u;
   }(eD)
 );
-function $0(D) {
+function j0(D) {
   return D.replace(m0, "");
 }
 function P0(D) {
@@ -484,7 +484,7 @@ function N0(D) {
     return u;
   }
 }
-var q0 = /^mailto:/i, R0 = new RegExp("[".concat(Vf, "!#$%&'*+/=?^_`{|}~-]"));
+var q0 = /^mailto:/i, R0 = new RegExp("[".concat(Wf, "!#$%&'*+/=?^_`{|}~-]"));
 function L0(D) {
   return Su.test(D);
 }
@@ -493,7 +493,7 @@ function ID(D) {
 }
 function M0(D) {
   var u = D.split(".").pop() || "";
-  return Yf(u);
+  return Kf(u);
 }
 var H0 = (
   /** @class */
@@ -514,7 +514,7 @@ var H0 = (
     }, u;
   }(eD)
 );
-function sf(D) {
+function Cf(D) {
   return D === "_" || Su.test(D);
 }
 function U0(D) {
@@ -574,21 +574,21 @@ var V0 = [
   // dashes, or latin middle dots ('·').
   // https://support.google.com/youtube/answer/11585688?hl=en&co=GENIE.Platform%3DAndroid#tns
   youtube: /^@[-.·\w]{3,30}$/
-}, X0 = /[-\w.]/;
-function Cf(D) {
-  return X0.test(D);
+}, Y0 = /[-\w.]/;
+function cf(D) {
+  return Y0.test(D);
 }
-function Y0(D, u) {
+function X0(D, u) {
   var f = G0[u];
   return f.test(D);
 }
-var Q0 = [
+var K0 = [
   "twitter",
   "instagram",
   "soundcloud",
   "tiktok",
   "youtube"
-], K0 = (
+], Z0 = (
   /** @class */
   function(D) {
     fD(u, D);
@@ -624,15 +624,15 @@ var Q0 = [
       return e && f.push(e), f;
     }, u;
   }(eD)
-), J0 = /[-. ]/, Z0 = /[-. ()]/, u3 = /[,;]/, D3 = /(?:(?:(?:(\+)?\d{1,3}[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4})|(?:(\+)(?:9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)[-. ]?(?:\d[-. ]?){6,12}\d+))([,;]+[0-9]+#?)*/, f3 = /(0([1-9]-?[1-9]\d{3}|[1-9]{2}-?\d{3}|[1-9]{2}\d{1}-?\d{2}|[1-9]{2}\d{2}-?\d{1})-?\d{4}|0[789]0-?\d{4}-?\d{4}|050-?\d{4}-?\d{4})/, e3 = new RegExp("^".concat(D3.source, "|").concat(f3.source, "$"));
-function cf(D) {
-  return J0.test(D);
+), Q0 = /[-. ]/, J0 = /[-. ()]/, u3 = /[,;]/, D3 = /(?:(?:(?:(\+)?\d{1,3}[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4})|(?:(\+)(?:9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)[-. ]?(?:\d[-. ]?){6,12}\d+))([,;]+[0-9]+#?)*/, f3 = /(0([1-9]-?[1-9]\d{3}|[1-9]{2}-?\d{3}|[1-9]{2}\d{1}-?\d{2}|[1-9]{2}\d{2}-?\d{1})-?\d{4}|0[789]0-?\d{4}-?\d{4}|050-?\d{4}-?\d{4})/, e3 = new RegExp("^".concat(D3.source, "|").concat(f3.source, "$"));
+function Ef(D) {
+  return Q0.test(D);
 }
 function zD(D) {
   return u3.test(D);
 }
 function t3(D) {
-  var u = D.charAt(0) === "+" || Z0.test(D);
+  var u = D.charAt(0) === "+" || J0.test(D);
   return u && e3.test(D);
 }
 var F3 = (
@@ -722,10 +722,10 @@ function n3(D, u) {
             W(E, o);
             break;
           case 18:
-            Y(E, o);
+            X(E, o);
             break;
           case 19:
-            J(E, o);
+            Q(E, o);
             break;
           case 20:
             lu(E, o);
@@ -734,7 +734,7 @@ function n3(D, u) {
             Bu(E, o);
             break;
           case 22:
-            Q(E, o);
+            K(E, o);
             break;
           case 23:
             l(E, o);
@@ -770,7 +770,7 @@ function n3(D, u) {
             TD(E, o);
             break;
           case 33:
-            ju(E, o);
+            $u(E, o);
             break;
           case 34:
             oD(E, o);
@@ -785,16 +785,16 @@ function n3(D, u) {
             SD(E, o);
             break;
           case 38:
-            g1(E, o);
-            break;
-          case 39:
             m1(E, o);
             break;
-          case 40:
+          case 39:
             h1(E, o);
             break;
-          case 41:
+          case 40:
             _1(E, o);
+            break;
+          case 41:
+            v1(E, o);
             break;
           default:
             Iu(E.state);
@@ -847,7 +847,7 @@ function n3(D, u) {
         /* State.PhoneNumberOpenParen */
       ));
     else {
-      if (Z.test(i) && (d.push(qD(
+      if (J.test(i) && (d.push(qD(
         c,
         38
         /* State.PhoneNumberDigit */
@@ -871,14 +871,14 @@ function n3(D, u) {
     }
   }
   function _(i, s) {
-    s === ":" ? i.state = 2 : s === "-" ? i.state = 1 : rf(s) || P(d, i);
+    s === ":" ? i.state = 2 : s === "-" ? i.state = 1 : of(s) || P(d, i);
   }
   function v(i, s) {
     s === "-" || (s === "/" ? (P(d, i), d.push(ND(
       c,
       11
       /* State.ProtocolRelativeSlash1 */
-    ))) : rf(s) ? i.state = 0 : P(d, i));
+    ))) : of(s) ? i.state = 0 : P(d, i));
   }
   function b(i, s) {
     s === "/" ? i.state = 3 : s === "." ? P(d, i) : _u(s) ? (i.state = 5, Vu(s) && d.push(cD(
@@ -888,7 +888,7 @@ function n3(D, u) {
     ))) : P(d, i);
   }
   function m(i, s) {
-    s === "/" ? i.state = 4 : of(s) ? (i.state = 10, i.acceptStateReached = !0) : L(i);
+    s === "/" ? i.state = 4 : sf(s) ? (i.state = 10, i.acceptStateReached = !0) : L(i);
   }
   function k(i, s) {
     s === "/" ? i.state = 10 : _u(s) ? (i.state = 5, i.acceptStateReached = !0) : P(d, i);
@@ -900,7 +900,7 @@ function n3(D, u) {
     _u(s) ? i.state = 5 : P(d, i);
   }
   function H(i, s) {
-    s === "." ? i.state = 7 : s === "-" ? i.state = 6 : s === ":" ? i.state = 8 : PD(s) ? i.state = 10 : $D(s) || L(i);
+    s === "." ? i.state = 7 : s === "-" ? i.state = 6 : s === ":" ? i.state = 8 : PD(s) ? i.state = 10 : jD(s) || L(i);
   }
   function z(i, s) {
     s === "-" || (s === "." ? L(i) : _u(s) ? i.state = 5 : L(i));
@@ -909,42 +909,42 @@ function n3(D, u) {
     s === "." ? L(i) : _u(s) ? (i.state = 5, i.acceptStateReached = !0) : L(i);
   }
   function uu(i, s) {
-    s === "." ? i.state = 14 : s === ":" ? i.state = 8 : Z.test(s) || (PD(s) ? i.state = 10 : Su.test(s) ? P(d, i) : L(i));
+    s === "." ? i.state = 14 : s === ":" ? i.state = 8 : J.test(s) || (PD(s) ? i.state = 10 : Su.test(s) ? P(d, i) : L(i));
   }
   function G(i, s) {
-    Z.test(s) ? (i.octetsEncountered++, i.octetsEncountered === 4 && (i.acceptStateReached = !0), i.state = 13) : L(i);
+    J.test(s) ? (i.octetsEncountered++, i.octetsEncountered === 4 && (i.acceptStateReached = !0), i.state = 13) : L(i);
   }
   function nu(i, s) {
-    Z.test(s) ? i.state = 9 : L(i);
+    J.test(s) ? i.state = 9 : L(i);
   }
   function gu(i, s) {
-    Z.test(s) || (PD(s) ? i.state = 10 : L(i));
+    J.test(s) || (PD(s) ? i.state = 10 : L(i));
   }
   function Eu(i, s) {
-    of(s) || L(i);
+    sf(s) || L(i);
   }
   function au(i, s) {
-    s.toLowerCase() === "a" ? i.state = 16 : Q(i, s);
+    s.toLowerCase() === "a" ? i.state = 16 : K(i, s);
   }
   function yu(i, s) {
-    s.toLowerCase() === "i" ? i.state = 17 : Q(i, s);
+    s.toLowerCase() === "i" ? i.state = 17 : K(i, s);
   }
   function W(i, s) {
-    s.toLowerCase() === "l" ? i.state = 18 : Q(i, s);
+    s.toLowerCase() === "l" ? i.state = 18 : K(i, s);
   }
-  function Y(i, s) {
-    s.toLowerCase() === "t" ? i.state = 19 : Q(i, s);
+  function X(i, s) {
+    s.toLowerCase() === "t" ? i.state = 19 : K(i, s);
   }
-  function J(i, s) {
-    s.toLowerCase() === "o" ? i.state = 20 : Q(i, s);
+  function Q(i, s) {
+    s.toLowerCase() === "o" ? i.state = 20 : K(i, s);
   }
   function lu(i, s) {
-    s.toLowerCase() === ":" ? i.state = 21 : Q(i, s);
+    s.toLowerCase() === ":" ? i.state = 21 : K(i, s);
   }
   function Bu(i, s) {
     ID(s) ? i.state = 22 : P(d, i);
   }
-  function Q(i, s) {
+  function K(i, s) {
     s === "." ? i.state = 23 : s === "@" ? i.state = 24 : ID(s) ? i.state = 22 : P(d, i);
   }
   function l(i, s) {
@@ -954,87 +954,87 @@ function n3(D, u) {
     _u(s) ? i.state = 25 : P(d, i);
   }
   function Mu(i, s) {
-    s === "." ? i.state = 27 : s === "-" ? i.state = 26 : $D(s) || L(i);
+    s === "." ? i.state = 27 : s === "-" ? i.state = 26 : jD(s) || L(i);
   }
   function mu(i, s) {
-    s === "-" || s === "." ? L(i) : $D(s) ? i.state = 25 : L(i);
+    s === "-" || s === "." ? L(i) : jD(s) ? i.state = 25 : L(i);
   }
   function Hu(i, s) {
     s === "." || s === "-" ? L(i) : _u(s) ? (i.state = 25, i.acceptStateReached = !0) : L(i);
   }
   function aD(i, s) {
-    sf(s) ? (i.state = 29, i.acceptStateReached = !0) : P(d, i);
+    Cf(s) ? (i.state = 29, i.acceptStateReached = !0) : P(d, i);
   }
   function dD(i, s) {
-    sf(s) || L(i);
+    Cf(s) || L(i);
   }
   function rD(i, s) {
-    Cf(s) ? (i.state = 31, i.acceptStateReached = !0) : P(d, i);
+    cf(s) ? (i.state = 31, i.acceptStateReached = !0) : P(d, i);
   }
   function iD(i, s) {
-    Cf(s) || (Su.test(s) ? P(d, i) : L(i));
+    cf(s) || (Su.test(s) ? P(d, i) : L(i));
   }
   function SD(i, s) {
-    Z.test(s) ? i.state = 38 : (P(d, i), w(s));
+    J.test(s) ? i.state = 38 : (P(d, i), w(s));
   }
   function TD(i, s) {
-    Z.test(s) ? i.state = 33 : P(d, i), w(s);
+    J.test(s) ? i.state = 33 : P(d, i), w(s);
   }
-  function ju(i, s) {
-    Z.test(s) ? i.state = 34 : P(d, i);
+  function $u(i, s) {
+    J.test(s) ? i.state = 34 : P(d, i);
   }
   function oD(i, s) {
-    Z.test(s) ? i.state = 35 : P(d, i);
+    J.test(s) ? i.state = 35 : P(d, i);
   }
   function sD(i, s) {
     s === ")" ? i.state = 36 : P(d, i);
   }
   function CD(i, s) {
-    Z.test(s) ? i.state = 38 : cf(s) ? i.state = 39 : P(d, i);
+    J.test(s) ? i.state = 38 : Ef(s) ? i.state = 39 : P(d, i);
   }
-  function g1(i, s) {
-    i.acceptStateReached = !0, zD(s) ? i.state = 40 : s === "#" ? i.state = 41 : Z.test(s) || (s === "(" ? i.state = 32 : cf(s) ? i.state = 39 : (L(i), Vu(s) && d.push(cD(
+  function m1(i, s) {
+    i.acceptStateReached = !0, zD(s) ? i.state = 40 : s === "#" ? i.state = 41 : J.test(s) || (s === "(" ? i.state = 32 : Ef(s) ? i.state = 39 : (L(i), Vu(s) && d.push(cD(
       c,
       0
       /* State.SchemeChar */
     ))));
   }
-  function m1(i, s) {
-    Z.test(s) ? i.state = 38 : s === "(" ? i.state = 32 : (L(i), w(s));
-  }
   function h1(i, s) {
-    zD(s) || (s === "#" ? i.state = 41 : Z.test(s) ? i.state = 38 : L(i));
+    J.test(s) ? i.state = 38 : s === "(" ? i.state = 32 : (L(i), w(s));
   }
   function _1(i, s) {
-    zD(s) ? i.state = 40 : Z.test(s) ? P(d, i) : L(i);
+    zD(s) || (s === "#" ? i.state = 41 : J.test(s) ? i.state = 38 : L(i));
+  }
+  function v1(i, s) {
+    zD(s) ? i.state = 40 : J.test(s) ? P(d, i) : L(i);
   }
   function L(i) {
     if (P(d, i), !!i.acceptStateReached) {
-      var s = i.startIdx, $ = D.slice(i.startIdx, c);
-      if ($ = d3($), i.type === "url") {
-        var v1 = D.charAt(i.startIdx - 1);
-        if (v1 === "@")
+      var s = i.startIdx, j = D.slice(i.startIdx, c);
+      if (j = d3(j), i.type === "url") {
+        var A1 = D.charAt(i.startIdx - 1);
+        if (A1 === "@")
           return;
         var Uu = i.matchType;
         if (Uu === "scheme") {
-          var OD = Xf.exec($);
-          if (OD && (s = s + OD.index, $ = $.slice(OD.index)), !y0($))
+          var OD = Xf.exec(j);
+          if (OD && (s = s + OD.index, j = j.slice(OD.index)), !y0(j))
             return;
         } else if (Uu === "tld") {
-          if (!w0($))
+          if (!w0(j))
             return;
         } else if (Uu === "ipV4") {
-          if (!S0($))
+          if (!S0(j))
             return;
         } else
           Iu(Uu);
-        r.push(new j0({
+        r.push(new $0({
           tagBuilder: f,
-          matchedText: $,
+          matchedText: j,
           offset: s,
           urlMatchType: Uu,
-          url: $,
-          protocolRelativeMatch: $.slice(0, 2) === "//",
+          url: j,
+          protocolRelativeMatch: j.slice(0, 2) === "//",
           // TODO: Do these settings need to be passed to the match,
           // or should we handle them here in UrlMatcher?
           stripPrefix: e,
@@ -1042,38 +1042,38 @@ function n3(D, u) {
           decodePercentEncoding: t
         }));
       } else if (i.type === "email")
-        M0($) && r.push(new H0({
+        M0(j) && r.push(new H0({
           tagBuilder: f,
-          matchedText: $,
+          matchedText: j,
           offset: s,
-          email: $.replace(q0, "")
+          email: j.replace(q0, "")
         }));
       else if (i.type === "hashtag")
-        U0($) && r.push(new W0({
+        U0(j) && r.push(new W0({
           tagBuilder: f,
-          matchedText: $,
+          matchedText: j,
           offset: s,
           serviceName: n,
-          hashtag: $.slice(1)
+          hashtag: j.slice(1)
         }));
       else if (i.type === "mention")
-        Y0($, a) && r.push(new K0({
+        X0(j, a) && r.push(new Z0({
           tagBuilder: f,
-          matchedText: $,
+          matchedText: j,
           offset: s,
           serviceName: a,
-          mention: $.slice(1)
+          mention: j.slice(1)
           // strip off the '@' character at the beginning
         }));
       else if (i.type === "phone") {
-        if ($ = $.replace(/ +$/g, ""), t3($)) {
-          var A1 = $.replace(/[^0-9,;#]/g, "");
+        if (j = j.replace(/ +$/g, ""), t3(j)) {
+          var y1 = j.replace(/[^0-9,;#]/g, "");
           r.push(new F3({
             tagBuilder: f,
-            matchedText: $,
+            matchedText: j,
             offset: s,
-            number: A1,
-            plusSign: $.charAt(0) === "+"
+            number: y1,
+            plusSign: j.charAt(0) === "+"
           }));
         }
       } else
@@ -1081,7 +1081,7 @@ function n3(D, u) {
     }
   }
 }
-var a3 = /[\(\{\[]/, Ef = /[\)\}\]]/, lf = {
+var a3 = /[\(\{\[]/, lf = /[\)\}\]]/, Bf = {
   ")": "(",
   "}": "{",
   "]": "["
@@ -1093,11 +1093,11 @@ function d3(D) {
     "[": 0
   }, f = 0; f < D.length; f++) {
     var e = D.charAt(f);
-    a3.test(e) ? u[e]++ : Ef.test(e) && u[lf[e]]--;
+    a3.test(e) ? u[e]++ : lf.test(e) && u[Bf[e]]--;
   }
   for (var F = D.length - 1, t; F >= 0; )
-    if (t = D.charAt(F), Ef.test(t)) {
-      var n = lf[t];
+    if (t = D.charAt(F), lf.test(t)) {
+      var n = Bf[t];
       if (u[n] < 0)
         u[n]++, F--;
       else
@@ -1246,28 +1246,28 @@ function c3(D, u) {
   }
   c < r && lu();
   function E(l) {
-    l === "<" && Y();
+    l === "<" && X();
   }
   function A(l) {
-    l === "!" ? d = 13 : l === "/" ? (d = 2, o = new pu(X(X({}, o), { isClosing: !0 }))) : l === "<" ? Y() : zu.test(l) ? (d = 3, o = new pu(X(X({}, o), { isOpening: !0 }))) : (d = 0, o = a);
+    l === "!" ? d = 13 : l === "/" ? (d = 2, o = new pu(Y(Y({}, o), { isClosing: !0 }))) : l === "<" ? X() : zu.test(l) ? (d = 3, o = new pu(Y(Y({}, o), { isOpening: !0 }))) : (d = 0, o = a);
   }
   function h(l) {
-    du.test(l) ? (o = new pu(X(X({}, o), { name: Bu() })), d = 4) : l === "<" ? Y() : l === "/" ? (o = new pu(X(X({}, o), { name: Bu() })), d = 12) : l === ">" ? (o = new pu(X(X({}, o), { name: Bu() })), J()) : !zu.test(l) && !Z.test(l) && l !== ":" && W();
+    du.test(l) ? (o = new pu(Y(Y({}, o), { name: Bu() })), d = 4) : l === "<" ? X() : l === "/" ? (o = new pu(Y(Y({}, o), { name: Bu() })), d = 12) : l === ">" ? (o = new pu(Y(Y({}, o), { name: Bu() })), Q()) : !zu.test(l) && !J.test(l) && l !== ":" && W();
   }
   function w(l) {
     l === ">" ? W() : zu.test(l) ? d = 3 : W();
   }
   function _(l) {
-    du.test(l) || (l === "/" ? d = 12 : l === ">" ? J() : l === "<" ? Y() : l === "=" || jD.test(l) || a0.test(l) ? W() : d = 5);
+    du.test(l) || (l === "/" ? d = 12 : l === ">" ? Q() : l === "<" ? X() : l === "=" || $D.test(l) || a0.test(l) ? W() : d = 5);
   }
   function v(l) {
-    du.test(l) ? d = 6 : l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? J() : l === "<" ? Y() : jD.test(l) && W();
+    du.test(l) ? d = 6 : l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? Q() : l === "<" ? X() : $D.test(l) && W();
   }
   function b(l) {
-    du.test(l) || (l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? J() : l === "<" ? Y() : jD.test(l) ? W() : d = 5);
+    du.test(l) || (l === "/" ? d = 12 : l === "=" ? d = 7 : l === ">" ? Q() : l === "<" ? X() : $D.test(l) ? W() : d = 5);
   }
   function m(l) {
-    du.test(l) || (l === '"' ? d = 8 : l === "'" ? d = 9 : /[>=`]/.test(l) ? W() : l === "<" ? Y() : d = 10);
+    du.test(l) || (l === '"' ? d = 8 : l === "'" ? d = 9 : /[>=`]/.test(l) ? W() : l === "<" ? X() : d = 10);
   }
   function k(l) {
     l === '"' && (d = 11);
@@ -1276,16 +1276,16 @@ function c3(D, u) {
     l === "'" && (d = 11);
   }
   function S(l) {
-    du.test(l) ? d = 4 : l === ">" ? J() : l === "<" && Y();
+    du.test(l) ? d = 4 : l === ">" ? Q() : l === "<" && X();
   }
   function H(l) {
-    du.test(l) ? d = 4 : l === "/" ? d = 12 : l === ">" ? J() : l === "<" ? Y() : (d = 4, Q());
+    du.test(l) ? d = 4 : l === "/" ? d = 12 : l === ">" ? Q() : l === "<" ? X() : (d = 4, K());
   }
   function z(l) {
-    l === ">" ? (o = new pu(X(X({}, o), { isClosing: !0 })), J()) : d = 4;
+    l === ">" ? (o = new pu(Y(Y({}, o), { isClosing: !0 })), Q()) : d = 4;
   }
   function U(l) {
-    D.substr(r, 2) === "--" ? (r += 2, o = new pu(X(X({}, o), { type: "comment" })), d = 14) : D.substr(r, 7).toUpperCase() === "DOCTYPE" ? (r += 7, o = new pu(X(X({}, o), { type: "doctype" })), d = 20) : W();
+    D.substr(r, 2) === "--" ? (r += 2, o = new pu(Y(Y({}, o), { type: "comment" })), d = 14) : D.substr(r, 7).toUpperCase() === "DOCTYPE" ? (r += 7, o = new pu(Y(Y({}, o), { type: "doctype" })), d = 20) : W();
   }
   function uu(l) {
     l === "-" ? d = 15 : l === ">" ? W() : d = 16;
@@ -1300,21 +1300,21 @@ function c3(D, u) {
     l === "-" ? d = 18 : d = 16;
   }
   function Eu(l) {
-    l === ">" ? J() : l === "!" ? d = 19 : l === "-" || (d = 16);
+    l === ">" ? Q() : l === "!" ? d = 19 : l === "-" || (d = 16);
   }
   function au(l) {
-    l === "-" ? d = 17 : l === ">" ? J() : d = 16;
+    l === "-" ? d = 17 : l === ">" ? Q() : d = 16;
   }
   function yu(l) {
-    l === ">" ? J() : l === "<" && Y();
+    l === ">" ? Q() : l === "<" && X();
   }
   function W() {
     d = 0, o = a;
   }
-  function Y() {
+  function X() {
     d = 1, o = new pu({ idx: r });
   }
-  function J() {
+  function Q() {
     var l = D.slice(c, o.idx);
     l && F(l, c), o.type === "comment" ? t(o.idx) : o.type === "doctype" ? n(o.idx) : (o.isOpening && f(o.name, o.idx), o.isClosing && e(o.name, o.idx)), W(), c = r + 1;
   }
@@ -1326,7 +1326,7 @@ function c3(D, u) {
     var l = o.idx + (o.isClosing ? 2 : 1);
     return D.slice(l, r).toLowerCase();
   }
-  function Q() {
+  function K() {
     r--;
   }
 }
@@ -1350,7 +1350,7 @@ var pu = (
         location: "end"
       }, this.className = "", this.replaceFn = null, this.context = void 0, this.sanitizeHtml = !1, this.tagBuilder = null, this.urls = l3(u.urls), this.email = fu(u.email) ? u.email : this.email, this.phone = fu(u.phone) ? u.phone : this.phone, this.hashtag = u.hashtag || this.hashtag, this.mention = u.mention || this.mention, this.newWindow = fu(u.newWindow) ? u.newWindow : this.newWindow, this.stripPrefix = B3(u.stripPrefix), this.stripTrailingSlash = fu(u.stripTrailingSlash) ? u.stripTrailingSlash : this.stripTrailingSlash, this.decodePercentEncoding = fu(u.decodePercentEncoding) ? u.decodePercentEncoding : this.decodePercentEncoding, this.sanitizeHtml = u.sanitizeHtml || !1;
       var f = this.mention;
-      if (f !== !1 && Q0.indexOf(f) === -1)
+      if (f !== !1 && K0.indexOf(f) === -1)
         throw new Error("invalid `mention` cfg '".concat(f, "' - see docs"));
       var e = this.hashtag;
       if (e !== !1 && V0.indexOf(e) === -1)
@@ -1454,7 +1454,7 @@ var pu = (
         return f;
       if (f === !1)
         return u.getMatchedText();
-      if (f instanceof Wf)
+      if (f instanceof Gf)
         return f.toAnchorString();
       var e = u.buildTag();
       return e.toAnchorString();
@@ -1488,13 +1488,13 @@ function p3(D) {
   });
 }
 var b3 = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
-function uf(D) {
+function Df(D) {
   return D && D.__esModule && Object.prototype.hasOwnProperty.call(D, "default") ? D.default : D;
 }
-var RD, Bf;
+var RD, pf;
 function g3() {
-  if (Bf) return RD;
-  Bf = 1;
+  if (pf) return RD;
+  pf = 1;
   const D = {
     bold: { delimiter: "*", tag: "strong" },
     italic: { delimiter: "/", tag: "em" },
@@ -1532,11 +1532,11 @@ function g3() {
   }, RD;
 }
 var m3 = g3();
-const h3 = /* @__PURE__ */ uf(m3), _3 = {
+const h3 = /* @__PURE__ */ Df(m3), _3 = {
   components: {
-    IconBase: Hf,
-    IconCross: Uf,
-    IconEdit: J1
+    IconBase: Uf,
+    IconCross: Vf,
+    IconEdit: Q1
   },
   props: {
     message: {
@@ -1574,7 +1574,7 @@ const h3 = /* @__PURE__ */ uf(m3), _3 = {
     isEditing() {
       return (Du.state.editMessage && Du.state.editMessage.id) === this.message.id;
     },
-    ...Lf(["showDeletion", "showEdition"])
+    ...Mf(["showDeletion", "showEdition"])
   },
   methods: {
     edit() {
@@ -1615,7 +1615,7 @@ function k3(D, u, f, e, F, t) {
           width: "10",
           "icon-name": "edit"
         }, {
-          default: j(() => [
+          default: $(() => [
             q(n)
           ]),
           _: 1
@@ -1635,7 +1635,7 @@ function k3(D, u, f, e, F, t) {
             width: "10",
             "icon-name": "remove"
           }, {
-            default: j(() => [
+            default: $(() => [
               q(r)
             ]),
             _: 1
@@ -1661,13 +1661,13 @@ function k3(D, u, f, e, F, t) {
         key: 0,
         class: "sc-message--meta",
         style: R({ color: f.messageColors.color })
-      }, K(f.message.data.meta), 5)) : I("", !0),
+      }, Z(f.message.data.meta), 5)) : I("", !0),
       f.message.isEdited ? (p(), g("p", w3, [
         q(a, {
           width: "10",
           "icon-name": "edited"
         }, {
-          default: j(() => [
+          default: $(() => [
             q(n)
           ]),
           _: 1
@@ -1688,8 +1688,8 @@ const x3 = /* @__PURE__ */ M(_3, [["render", k3], ["__scopeId", "data-v-329dc07b
       required: !0
     }
   }
-}, T3 = { class: "sc-message--file-icon" }, O3 = ["src"], j3 = ["href"];
-function $3(D, u, f, e, F, t) {
+}, T3 = { class: "sc-message--file-icon" }, O3 = ["src"], $3 = ["href"];
+function j3(D, u, f, e, F, t) {
   return p(), g("div", {
     class: "sc-message--file",
     style: R(f.messageColors)
@@ -1707,22 +1707,22 @@ function $3(D, u, f, e, F, t) {
       y("a", {
         href: f.data.file.url ? f.data.file.url : "#",
         target: "_blank"
-      }, K(f.data.file.name || ""), 9, j3)
+      }, Z(f.data.file.name || ""), 9, $3)
     ], 4),
     y("div", {
       class: "sc-message--file-text",
       style: R(f.messageColors)
     }, [
-      Nu(K(f.data.text) + " ", 1),
+      Nu(Z(f.data.text) + " ", 1),
       f.data.meta ? (p(), g("p", {
         key: 0,
         class: "sc-message--meta",
         style: R(f.messageColors)
-      }, K(f.data.meta), 5)) : I("", !0)
+      }, Z(f.data.meta), 5)) : I("", !0)
     ], 4)
   ], 4);
 }
-const P3 = /* @__PURE__ */ M(S3, [["render", $3], ["__scopeId", "data-v-a59a1bf3"]]), I3 = {
+const P3 = /* @__PURE__ */ M(S3, [["render", j3], ["__scopeId", "data-v-a59a1bf3"]]), I3 = {
   props: {
     data: {
       type: Object,
@@ -1731,7 +1731,7 @@ const P3 = /* @__PURE__ */ M(S3, [["render", $3], ["__scopeId", "data-v-a59a1bf3
   }
 }, z3 = { class: "sc-message--emoji" };
 function N3(D, u, f, e, F, t) {
-  return p(), g("div", z3, K(f.data.emoji), 1);
+  return p(), g("div", z3, Z(f.data.emoji), 1);
 }
 const q3 = /* @__PURE__ */ M(I3, [["render", N3], ["__scopeId", "data-v-ae11d5de"]]), R3 = {
   props: {
@@ -1769,16 +1769,16 @@ function U3(D, u, f, e, F, t) {
     style: R(f.messageColors)
   }, [
     O(D.$slots, "default", { message: f.data }, () => [
-      Nu(K(f.data.text) + " ", 1),
+      Nu(Z(f.data.text) + " ", 1),
       f.data.meta ? (p(), g("p", {
         key: 0,
         class: "sc-message--meta",
         style: R({ color: f.messageColors.color })
-      }, K(f.data.meta), 5)) : I("", !0)
+      }, Z(f.data.meta), 5)) : I("", !0)
     ], !0)
   ], 4);
 }
-const V3 = /* @__PURE__ */ M(H3, [["render", U3], ["__scopeId", "data-v-c0484e01"]]), Qf = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='-4749.48%20-5020%2035.036%2035.036'%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M0-399.479H17.555v17.555H0Z'%20transform='translate(0%20399.479)'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20transform='translate(-4886%20-5075)'%3e%3ccircle%20class='b'%20cx='17.518'%20cy='17.518'%20r='17.518'%20transform='translate(136.52%2055)'/%3e%3cg%20transform='translate(145.13%2064)'%3e%3cg%20class='c'%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='d'%20d='M-381.924-190.962a8.778,8.778,0,0,0-8.778-8.778,8.778,8.778,0,0,0-8.778,8.778,8.745,8.745,0,0,0,2.26,5.879v1.442c0,.8.492,1.457,1.1,1.457h5.83a.843.843,0,0,0,.183-.02,8.778,8.778,0,0,0,8.184-8.757'%20transform='translate(399.479%20199.74)'/%3e%3c/g%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='e'%20d='M-68.763-194.079a9.292,9.292,0,0,1,6.38-8.888c-.252-.022-.506-.033-.763-.033a8.774,8.774,0,0,0-8.778,8.778A9.508,9.508,0,0,0-69.7-188.3c.005,0,0,.009,0,.01-.311.352-1.924,2.849.021,2.849h2.25c-1.23-.022,1.263-2.107.269-3.494a8.225,8.225,0,0,1-1.6-5.141'%20transform='translate(71.924%20203)'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", W3 = {
+const V3 = /* @__PURE__ */ M(H3, [["render", U3], ["__scopeId", "data-v-c0484e01"]]), Zf = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='-4749.48%20-5020%2035.036%2035.036'%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M0-399.479H17.555v17.555H0Z'%20transform='translate(0%20399.479)'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20transform='translate(-4886%20-5075)'%3e%3ccircle%20class='b'%20cx='17.518'%20cy='17.518'%20r='17.518'%20transform='translate(136.52%2055)'/%3e%3cg%20transform='translate(145.13%2064)'%3e%3cg%20class='c'%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='d'%20d='M-381.924-190.962a8.778,8.778,0,0,0-8.778-8.778,8.778,8.778,0,0,0-8.778,8.778,8.745,8.745,0,0,0,2.26,5.879v1.442c0,.8.492,1.457,1.1,1.457h5.83a.843.843,0,0,0,.183-.02,8.778,8.778,0,0,0,8.184-8.757'%20transform='translate(399.479%20199.74)'/%3e%3c/g%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='e'%20d='M-68.763-194.079a9.292,9.292,0,0,1,6.38-8.888c-.252-.022-.506-.033-.763-.033a8.774,8.774,0,0,0-8.778,8.778A9.508,9.508,0,0,0-69.7-188.3c.005,0,0,.009,0,.01-.311.352-1.924,2.849.021,2.849h2.25c-1.23-.022,1.263-2.107.269-3.494a8.225,8.225,0,0,1-1.6-5.141'%20transform='translate(71.924%20203)'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", W3 = {
   components: {
     TextMessage: x3,
     FileMessage: P3,
@@ -1821,7 +1821,7 @@ const V3 = /* @__PURE__ */ M(H3, [["render", U3], ["__scopeId", "data-v-c0484e01
       return this.user && this.user.name;
     },
     chatImageUrl() {
-      return this.user && this.user.imageUrl || Qf;
+      return this.user && this.user.imageUrl || Zf;
     },
     messageColors() {
       return this.message.author === "me" ? this.sentColorsStyle : this.receivedColorsStyle;
@@ -1842,9 +1842,9 @@ const V3 = /* @__PURE__ */ M(H3, [["render", U3], ["__scopeId", "data-v-c0484e01
       return this.messageMargin ? this.message.author === "me" && this.messageMargin.sender ? this.messageMargin.sender : this.message.type === "system" && this.messageMargin.system ? this.messageMargin.system : this.messageMargin.recipient ? this.messageMargin.recipient : "auto" : "auto";
     }
   }
-}, G3 = ["id"], X3 = ["title"];
-function Y3(D, u, f, e, F, t) {
-  const n = T("TextMessage"), a = T("EmojiMessage"), r = T("FileMessage"), C = T("TypingMessage"), d = T("SystemMessage"), c = w1("tooltip");
+}, G3 = ["id"], Y3 = ["title"];
+function X3(D, u, f, e, F, t) {
+  const n = T("TextMessage"), a = T("EmojiMessage"), r = T("FileMessage"), C = T("TypingMessage"), d = T("SystemMessage"), c = k1("tooltip");
   return p(), g("div", {
     id: f.message.id,
     class: "sc-message",
@@ -1863,14 +1863,14 @@ function Y3(D, u, f, e, F, t) {
         message: f.message,
         user: f.user
       }, () => [
-        f.message.type !== "system" && t.authorName && t.authorName !== "me" ? qf((p(), g("div", {
+        f.message.type !== "system" && t.authorName && t.authorName !== "me" ? Rf((p(), g("div", {
           key: 0,
           title: t.authorName,
           class: "sc-message--avatar",
           style: R({
             backgroundImage: `url(${t.chatImageUrl})`
           })
-        }, null, 12, X3)), [
+        }, null, 12, Y3)), [
           [c, t.authorName]
         ]) : I("", !0)
       ]),
@@ -1883,7 +1883,7 @@ function Y3(D, u, f, e, F, t) {
         "confirmation-deletion-message": f.confirmationDeletionMessage,
         onRemove: u[0] || (u[0] = (o) => D.$emit("remove"))
       }, {
-        default: j((o) => [
+        default: $((o) => [
           O(D.$slots, "text-message-body", {
             message: o.message,
             messageText: o.messageText,
@@ -1891,7 +1891,7 @@ function Y3(D, u, f, e, F, t) {
             me: o.me
           })
         ]),
-        "text-message-toolbox": j((o) => [
+        "text-message-toolbox": $((o) => [
           O(D.$slots, "text-message-toolbox", {
             message: o.message,
             me: o.me
@@ -1913,7 +1913,7 @@ function Y3(D, u, f, e, F, t) {
         data: f.message.data,
         "message-colors": t.messageColors
       }, {
-        default: j(() => [
+        default: $(() => [
           O(D.$slots, "system-message-body", {
             message: f.message.data
           })
@@ -1923,11 +1923,11 @@ function Y3(D, u, f, e, F, t) {
     ], 2)
   ], 12, G3);
 }
-const Q3 = /* @__PURE__ */ M(W3, [["render", Y3]]);
+const K3 = /* @__PURE__ */ M(W3, [["render", X3]]);
 let LD;
-const K3 = {
+const Z3 = {
   components: {
-    Message: Q3
+    Message: K3
   },
   props: {
     participants: {
@@ -1974,7 +1974,7 @@ const K3 = {
   },
   computed: {
     defaultChatIcon() {
-      return Qf;
+      return Zf;
     }
   },
   mounted() {
@@ -2008,7 +2008,7 @@ const K3 = {
     }
   }
 };
-function J3(D, u, f, e, F, t) {
+function Q3(D, u, f, e, F, t) {
   const n = T("Message");
   return p(), g("div", {
     ref: "scrollList",
@@ -2016,7 +2016,7 @@ function J3(D, u, f, e, F, t) {
     style: R({ backgroundColor: f.colors.messageList.bg }),
     onScroll: u[0] || (u[0] = (...a) => t.handleScroll && t.handleScroll(...a))
   }, [
-    (p(!0), g(qu, null, Qu(f.messages, (a, r) => (p(), V(n, {
+    (p(!0), g(qu, null, Ku(f.messages, (a, r) => (p(), V(n, {
       key: a.id ? a.id : r,
       message: a,
       user: t.profile(a.author),
@@ -2027,13 +2027,13 @@ function J3(D, u, f, e, F, t) {
       messageMargin: f.messageMargin,
       onRemove: (C) => D.$emit("remove", a)
     }, {
-      "user-avatar": j((C) => [
+      "user-avatar": $((C) => [
         O(D.$slots, "user-avatar", {
           user: C.user,
           message: C.message
         }, void 0, !0)
       ]),
-      "text-message-body": j((C) => [
+      "text-message-body": $((C) => [
         O(D.$slots, "text-message-body", {
           message: C.message,
           messageText: C.messageText,
@@ -2041,12 +2041,12 @@ function J3(D, u, f, e, F, t) {
           me: C.me
         }, void 0, !0)
       ]),
-      "system-message-body": j((C) => [
+      "system-message-body": $((C) => [
         O(D.$slots, "system-message-body", {
           message: C.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": j((C) => [
+      "text-message-toolbox": $((C) => [
         O(D.$slots, "text-message-toolbox", {
           message: C.message,
           me: C.me
@@ -2054,7 +2054,7 @@ function J3(D, u, f, e, F, t) {
       ]),
       _: 2
     }, 1032, ["message", "user", "colors", "message-styling", "show-confirmation-deletion", "confirmation-deletion-message", "messageMargin", "onRemove"]))), 128)),
-    qf(q(n, {
+    Rf(q(n, {
       message: { author: f.showTypingIndicator, type: "typing" },
       user: t.profile(f.showTypingIndicator),
       colors: f.colors,
@@ -2062,14 +2062,14 @@ function J3(D, u, f, e, F, t) {
       "show-confirmation-deletion": f.showConfirmationDeletion,
       "confirmation-deletion-message": f.confirmationDeletionMessage
     }, null, 8, ["message", "user", "colors", "message-styling", "show-confirmation-deletion", "confirmation-deletion-message"]), [
-      [k1, f.showTypingIndicator !== ""]
+      [x1, f.showTypingIndicator !== ""]
     ])
   ], 36);
 }
-const Z3 = /* @__PURE__ */ M(K3, [["render", J3], ["__scopeId", "data-v-505f0c8f"]]);
-var ED = { exports: {} }, pf;
+const J3 = /* @__PURE__ */ M(Z3, [["render", Q3], ["__scopeId", "data-v-505f0c8f"]]);
+var ED = { exports: {} }, bf;
 function ue() {
-  return pf || (pf = 1, function(D, u) {
+  return bf || (bf = 1, function(D, u) {
     (function() {
       var f = this, e = f.EmojiConvertor, F = function() {
         var t = this;
@@ -4660,7 +4660,7 @@ function ue() {
   }(ED, ED.exports)), ED.exports;
 }
 var De = ue();
-const fe = /* @__PURE__ */ uf(De), ee = [
+const fe = /* @__PURE__ */ Df(De), ee = [
   {
     name: "People",
     emojis: [
@@ -5362,19 +5362,19 @@ function ae(D, u, f, e, F, t) {
     onBlur: u[0] || (u[0] = (...n) => f.onBlur && f.onBlur(...n))
   }, [
     y("div", Fe, [
-      (p(!0), g(qu, null, Qu(F.emojiData, (n) => (p(), g("div", {
+      (p(!0), g(qu, null, Ku(F.emojiData, (n) => (p(), g("div", {
         key: n.name,
         class: "sc-emoji-picker--category"
       }, [
         y("div", {
           class: "sc-emoji-picker--category-title",
           style: R({ color: f.colors.emojiPicker.text ?? "#b8c3ca" })
-        }, K(n.name), 5),
-        (p(!0), g(qu, null, Qu(n.emojis, (a) => (p(), g("span", {
+        }, Z(n.name), 5),
+        (p(!0), g(qu, null, Ku(n.emojis, (a) => (p(), g("span", {
           key: a,
           class: "sc-emoji-picker--emoji",
           onClick: (r) => t.emojiClicked(a)
-        }, K(a), 9, ne))), 128))
+        }, Z(a), 9, ne))), 128))
       ]))), 128))
     ])
   ], 36);
@@ -5527,7 +5527,7 @@ function pe(D, u, f, e, F, t) {
 }
 const be = /* @__PURE__ */ M(ce, [["render", pe], ["__scopeId", "data-v-8db5b373"]]), ge = {
   components: {
-    IconBase: Hf
+    IconBase: Uf
   },
   props: {
     color: {
@@ -5549,7 +5549,7 @@ function he(D, u, f, e, F, t) {
       height: "20",
       "icon-name": f.tooltip
     }, {
-      default: j(() => [
+      default: $(() => [
         O(D.$slots, "default", {}, void 0, !0)
       ]),
       _: 3
@@ -5576,7 +5576,7 @@ function ye(D, u, f, e, F, t) {
     class: "sc-suggestions-row",
     style: R({ background: f.colors.messageList.bg })
   }, [
-    (p(!0), g(qu, null, Qu(f.suggestions, (n, a) => (p(), g("button", {
+    (p(!0), g(qu, null, Ku(f.suggestions, (n, a) => (p(), g("button", {
       key: a,
       class: "sc-suggestions-element",
       style: R({
@@ -5584,26 +5584,26 @@ function ye(D, u, f, e, F, t) {
         color: f.colors.sentMessage.bg
       }),
       onClick: (r) => D.$emit("sendSuggestion", n)
-    }, K(n), 13, Ae))), 128))
+    }, Z(n), 13, Ae))), 128))
   ], 4);
 }
-const we = /* @__PURE__ */ M(ve, [["render", ye]]), ke = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2018.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2056%2056'%20style='enable-background:new%200%200%2056%2056;'%20xml:space='preserve'%3e%3cg%20id='svg_1'%3e%3cpath%20id='svg_2'%20fill='%23E9E9E0'%20d='m36.985,0l-29.022,0c-0.808,0%20-1.463,0.655%20-1.463,1.926l0,53.074c0,0.345%200.655,1%201.463,1l40.074,0c0.808,0%201.463,-0.655%201.463,-1l0,-42.022c0,-0.696%20-0.093,-0.92%20-0.257,-1.085l-11.636,-11.636c-0.165,-0.164%20-0.389,-0.257%20-0.622,-0.257z'/%3e%3cpolygon%20id='svg_3'%20fill='%23D9D7CA'%20points='37.5,0.151%2037.5,12%2049.349,12%20'/%3e%3cpath%20id='svg_4'%20fill='%2395A5A5'%20d='m48.037,56l-40.074,0c-0.808,0%20-1.463,-0.655%20-1.463,-1.463l0,-15.537l43,0l0,15.537c0,0.808%20-0.655,1.463%20-1.463,1.463z'/%3e%3cpath%20id='svg_9'%20fill='%23C8BDB8'%20d='m18.5,13l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_10'%20fill='%23C8BDB8'%20d='m21.5,18l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_11'%20fill='%23C8BDB8'%20d='m25.5,18c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.44%20-0.29,-0.71s0.109,-0.52%200.3,-0.71c0.36,-0.37%201.04,-0.37%201.41,0c0.18,0.19%200.29,0.45%200.29,0.71c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_12'%20fill='%23C8BDB8'%20d='m37.5,18l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_13'%20fill='%23C8BDB8'%20d='m12.5,33c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.45%20-0.29,-0.71c0,-0.26%200.109,-0.52%200.29,-0.71c0.37,-0.37%201.05,-0.37%201.42,0.01c0.18,0.18%200.29,0.44%200.29,0.7c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_14'%20fill='%23C8BDB8'%20d='m24.5,33l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_15'%20fill='%23C8BDB8'%20d='m43.5,18l-2,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l2,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_16'%20fill='%23C8BDB8'%20d='m34.5,23l-22,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l22,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_17'%20fill='%23C8BDB8'%20d='m43.5,23l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_18'%20fill='%23C8BDB8'%20d='m16.5,28l-4,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l4,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_19'%20fill='%23C8BDB8'%20d='m30.5,28l-10,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l10,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_20'%20fill='%23C8BDB8'%20d='m43.5,28l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3c/g%3e%3cg%20id='svg_21'/%3e%3cg%20id='svg_22'/%3e%3cg%20id='svg_23'/%3e%3cg%20id='svg_24'/%3e%3cg%20id='svg_25'/%3e%3cg%20id='svg_26'/%3e%3cg%20id='svg_27'/%3e%3cg%20id='svg_28'/%3e%3cg%20id='svg_29'/%3e%3cg%20id='svg_30'/%3e%3cg%20id='svg_31'/%3e%3cg%20id='svg_32'/%3e%3cg%20id='svg_33'/%3e%3cg%20id='svg_34'/%3e%3cg%20id='svg_35'/%3e%3c/svg%3e", xe = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2019.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3cpath%20d='M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88%20c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242%20C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879%20s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", Se = {}, Te = { d: "M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" };
-function Oe(D, u) {
-  return p(), g("path", Te);
+const we = /* @__PURE__ */ M(ve, [["render", ye]]), ke = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2018.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2056%2056'%20style='enable-background:new%200%200%2056%2056;'%20xml:space='preserve'%3e%3cg%20id='svg_1'%3e%3cpath%20id='svg_2'%20fill='%23E9E9E0'%20d='m36.985,0l-29.022,0c-0.808,0%20-1.463,0.655%20-1.463,1.926l0,53.074c0,0.345%200.655,1%201.463,1l40.074,0c0.808,0%201.463,-0.655%201.463,-1l0,-42.022c0,-0.696%20-0.093,-0.92%20-0.257,-1.085l-11.636,-11.636c-0.165,-0.164%20-0.389,-0.257%20-0.622,-0.257z'/%3e%3cpolygon%20id='svg_3'%20fill='%23D9D7CA'%20points='37.5,0.151%2037.5,12%2049.349,12%20'/%3e%3cpath%20id='svg_4'%20fill='%2395A5A5'%20d='m48.037,56l-40.074,0c-0.808,0%20-1.463,-0.655%20-1.463,-1.463l0,-15.537l43,0l0,15.537c0,0.808%20-0.655,1.463%20-1.463,1.463z'/%3e%3cpath%20id='svg_9'%20fill='%23C8BDB8'%20d='m18.5,13l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_10'%20fill='%23C8BDB8'%20d='m21.5,18l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_11'%20fill='%23C8BDB8'%20d='m25.5,18c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.44%20-0.29,-0.71s0.109,-0.52%200.3,-0.71c0.36,-0.37%201.04,-0.37%201.41,0c0.18,0.19%200.29,0.45%200.29,0.71c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_12'%20fill='%23C8BDB8'%20d='m37.5,18l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_13'%20fill='%23C8BDB8'%20d='m12.5,33c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.45%20-0.29,-0.71c0,-0.26%200.109,-0.52%200.29,-0.71c0.37,-0.37%201.05,-0.37%201.42,0.01c0.18,0.18%200.29,0.44%200.29,0.7c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_14'%20fill='%23C8BDB8'%20d='m24.5,33l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_15'%20fill='%23C8BDB8'%20d='m43.5,18l-2,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l2,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_16'%20fill='%23C8BDB8'%20d='m34.5,23l-22,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l22,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_17'%20fill='%23C8BDB8'%20d='m43.5,23l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_18'%20fill='%23C8BDB8'%20d='m16.5,28l-4,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l4,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_19'%20fill='%23C8BDB8'%20d='m30.5,28l-10,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l10,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_20'%20fill='%23C8BDB8'%20d='m43.5,28l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3c/g%3e%3cg%20id='svg_21'/%3e%3cg%20id='svg_22'/%3e%3cg%20id='svg_23'/%3e%3cg%20id='svg_24'/%3e%3cg%20id='svg_25'/%3e%3cg%20id='svg_26'/%3e%3cg%20id='svg_27'/%3e%3cg%20id='svg_28'/%3e%3cg%20id='svg_29'/%3e%3cg%20id='svg_30'/%3e%3cg%20id='svg_31'/%3e%3cg%20id='svg_32'/%3e%3cg%20id='svg_33'/%3e%3cg%20id='svg_34'/%3e%3cg%20id='svg_35'/%3e%3c/svg%3e", xe = {}, Se = { d: "M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" };
+function Te(D, u) {
+  return p(), g("path", Se);
 }
-const je = /* @__PURE__ */ M(Se, [["render", Oe]]), $e = {}, Pe = { d: "M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z" };
-function Ie(D, u) {
-  return p(), g("path", Pe);
+const Oe = /* @__PURE__ */ M(xe, [["render", Te]]), $e = {}, je = { d: "M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z" };
+function Pe(D, u) {
+  return p(), g("path", je);
 }
-const ze = /* @__PURE__ */ M($e, [["render", Ie]]), Ne = {
+const Ie = /* @__PURE__ */ M($e, [["render", Pe]]), ze = {
   components: {
     EmojiIcon: Ce,
     FileIcons: be,
     UserInputButton: _e,
     Suggestions: we,
-    IconCross: Uf,
-    IconOk: je,
-    IconSend: ze
+    IconCross: Vf,
+    IconOk: Oe,
+    IconSend: Ie
   },
   props: {
     icons: {
@@ -5615,7 +5615,7 @@ const ze = /* @__PURE__ */ M($e, [["render", Ie]]), Ne = {
             name: "default"
           },
           closeSvg: {
-            img: xe,
+            img: uf,
             name: "default"
           }
         };
@@ -5772,17 +5772,17 @@ const ze = /* @__PURE__ */ M($e, [["render", Ie]]), Ne = {
       Du.setState("editMessage", null);
     }
   }
-}, qe = { class: "icon-file-message" }, Re = ["src", "alt"], Le = ["src", "alt"], Me = ["placeholder"], He = { class: "sc-user-input--buttons" }, Ue = {
+}, Ne = { class: "icon-file-message" }, qe = ["src", "alt"], Re = ["src", "alt"], Le = ["placeholder"], Me = { class: "sc-user-input--buttons" }, He = {
   key: 0,
   class: "sc-user-input--button"
-}, Ve = {
+}, Ue = {
   key: 1,
   class: "sc-user-input--button"
-}, We = {
+}, Ve = {
   key: 2,
   class: "sc-user-input--button"
-}, Ge = { class: "sc-user-input--button" };
-function Xe(D, u, f, e, F, t) {
+}, We = { class: "sc-user-input--button" };
+function Ge(D, u, f, e, F, t) {
   const n = T("Suggestions"), a = T("EmojiIcon"), r = T("FileIcons"), C = T("IconCross"), d = T("UserInputButton"), c = T("IconOk"), o = T("IconSend");
   return p(), g("div", null, [
     q(n, {
@@ -5798,14 +5798,14 @@ function Xe(D, u, f, e, F, t) {
         color: f.colors.userInput.bg
       })
     }, [
-      y("span", qe, [
+      y("span", Ne, [
         y("img", {
           src: f.icons.file.img,
           alt: f.icons.file.name,
           height: "15"
-        }, null, 8, Re)
+        }, null, 8, qe)
       ]),
-      Nu(" " + K(F.file.name) + " ", 1),
+      Nu(" " + Z(F.file.name) + " ", 1),
       y("span", {
         class: "delete-file-message",
         onClick: u[0] || (u[0] = (B) => t.cancelFile())
@@ -5815,7 +5815,7 @@ function Xe(D, u, f, e, F, t) {
           alt: f.icons.closeSvg.name,
           height: "10",
           title: "Remove the file"
-        }, null, 8, Le)
+        }, null, 8, Re)
       ])
     ], 4)) : I("", !0),
     y("form", {
@@ -5835,43 +5835,43 @@ function Xe(D, u, f, e, F, t) {
         onKeydown: u[3] || (u[3] = (...B) => t.handleKey && t.handleKey(...B)),
         onInput: u[4] || (u[4] = (...B) => t.handleInput && t.handleInput(...B)),
         "on:focusUserInput": u[5] || (u[5] = (B) => t.focusUserInput())
-      }, null, 44, Me),
-      y("div", He, [
+      }, null, 44, Le),
+      y("div", Me, [
         u[6] || (u[6] = y("div", { class: "sc-user-input--button" }, null, -1)),
-        f.showEmoji && !t.isEditing ? (p(), g("div", Ue, [
+        f.showEmoji && !t.isEditing ? (p(), g("div", He, [
           q(a, {
             "on-emoji-picked": t._handleEmojiPicked,
             color: f.colors.userInput.text,
             colors: f.colors
           }, null, 8, ["on-emoji-picked", "color", "colors"])
         ])) : I("", !0),
-        f.showFile && !t.isEditing ? (p(), g("div", Ve, [
+        f.showFile && !t.isEditing ? (p(), g("div", Ue, [
           q(r, {
             "on-change": t._handleFileSubmit,
             color: f.colors.userInput.text,
             acceptedFileTypes: f.acceptedFileTypes
           }, null, 8, ["on-change", "color", "acceptedFileTypes"])
         ])) : I("", !0),
-        t.isEditing ? (p(), g("div", We, [
+        t.isEditing ? (p(), g("div", Ve, [
           q(d, {
             color: f.colors.userInput.text,
             tooltip: "cancel",
             onClick: Gu(t._editFinish, ["prevent"])
           }, {
-            default: j(() => [
+            default: $(() => [
               q(C)
             ]),
             _: 1
           }, 8, ["color", "onClick"])
         ])) : I("", !0),
-        y("div", Ge, [
+        y("div", We, [
           t.isEditing ? (p(), V(d, {
             key: 0,
             color: f.colors.userInput.text,
             tooltip: "Edit",
             onClick: Gu(t._editText, ["prevent"])
           }, {
-            default: j(() => [
+            default: $(() => [
               q(c)
             ]),
             _: 1
@@ -5881,7 +5881,7 @@ function Xe(D, u, f, e, F, t) {
             tooltip: "Send",
             onClick: Gu(t._submitText, ["prevent"])
           }, {
-            default: j(() => [
+            default: $(() => [
               q(o)
             ]),
             _: 1
@@ -5891,7 +5891,7 @@ function Xe(D, u, f, e, F, t) {
     ], 6)
   ]);
 }
-const Ye = /* @__PURE__ */ M(Ne, [["render", Xe]]), Qe = {
+const Ye = /* @__PURE__ */ M(ze, [["render", Ge]]), Xe = {
   props: {
     participants: {
       type: Array,
@@ -5912,38 +5912,38 @@ const Ye = /* @__PURE__ */ M(Ne, [["render", Xe]]), Qe = {
       }, this.colors);
     }
   }
-}, Ke = { style: { "padding-top": "5px" } }, Je = { style: { "text-align": "center" } }, Ze = ["src"];
-function u2(D, u, f, e, F, t) {
+}, Ke = { style: { "padding-top": "5px" } }, Ze = { style: { "text-align": "center" } }, Qe = ["src"];
+function Je(D, u, f, e, F, t) {
   return p(), g("div", {
     class: "user-list",
     style: R({ background: t.userListColor.userList.bg })
   }, [
     y("table", Ke, [
       y("tbody", null, [
-        (p(!0), g(qu, null, Qu(f.participants, (n) => (p(), g("tr", {
+        (p(!0), g(qu, null, Ku(f.participants, (n) => (p(), g("tr", {
           key: n.id
         }, [
-          y("td", Je, [
+          y("td", Ze, [
             y("img", {
               src: n.imageUrl,
               class: "img-msg"
-            }, null, 8, Ze)
+            }, null, 8, Qe)
           ]),
           y("td", {
             class: "user-element",
             style: R({ color: t.userListColor.userList.text })
-          }, K(n.name), 5)
+          }, Z(n.name), 5)
         ]))), 128))
       ])
     ])
   ], 4);
 }
-const D2 = /* @__PURE__ */ M(Qe, [["render", u2], ["__scopeId", "data-v-4899c8d9"]]), f2 = {
+const u2 = /* @__PURE__ */ M(Xe, [["render", Je], ["__scopeId", "data-v-4899c8d9"]]), D2 = {
   components: {
     Header: H1,
-    MessageList: Z3,
+    MessageList: J3,
     UserInput: Ye,
-    UserList: D2
+    UserList: u2
   },
   props: {
     showEmoji: {
@@ -6039,7 +6039,7 @@ const D2 = /* @__PURE__ */ M(Qe, [["render", u2], ["__scopeId", "data-v-4899c8d9
     }
   }
 };
-function e2(D, u, f, e, F, t) {
+function f2(D, u, f, e, F, t) {
   const n = T("Header"), a = T("UserList"), r = T("MessageList"), C = T("UserInput");
   return p(), g("div", {
     class: DD(["sc-chat-window", { opened: f.isOpen, closed: !f.isOpen }])
@@ -6052,7 +6052,7 @@ function e2(D, u, f, e, F, t) {
       onMinimize: u[1] || (u[1] = (d) => D.$emit("minimize")),
       onUserList: t.handleUserListToggle
     }, {
-      default: j(() => [
+      default: $(() => [
         O(D.$slots, "header", {}, void 0, !0)
       ]),
       _: 3
@@ -6076,13 +6076,13 @@ function e2(D, u, f, e, F, t) {
       onScrollToTop: u[2] || (u[2] = (d) => D.$emit("scrollToTop")),
       onRemove: u[3] || (u[3] = (d) => D.$emit("remove", d))
     }, {
-      "user-avatar": j((d) => [
+      "user-avatar": $((d) => [
         O(D.$slots, "user-avatar", {
           user: d.user,
           message: d.message
         }, void 0, !0)
       ]),
-      "text-message-body": j((d) => [
+      "text-message-body": $((d) => [
         O(D.$slots, "text-message-body", {
           message: d.message,
           messageText: d.messageText,
@@ -6090,12 +6090,12 @@ function e2(D, u, f, e, F, t) {
           me: d.me
         }, void 0, !0)
       ]),
-      "system-message-body": j((d) => [
+      "system-message-body": $((d) => [
         O(D.$slots, "system-message-body", {
           message: d.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": j((d) => [
+      "text-message-toolbox": $((d) => [
         O(D.$slots, "text-message-toolbox", {
           message: d.message,
           me: d.me
@@ -6118,9 +6118,9 @@ function e2(D, u, f, e, F, t) {
     }, null, 8, ["show-emoji", "show-emoji-in-text", "on-submit", "suggestions", "show-file", "placeholder", "colors", "acceptedFileTypes"]))
   ], 2);
 }
-const t2 = /* @__PURE__ */ M(f2, [["render", e2], ["__scopeId", "data-v-9301130a"]]), F2 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAKVQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////uP3jVQAAADd0Uk5TAE9lCAXd9XA4y/9zDQJG7HYB8Hc3yHoPQ8fuezMSoYPrEcEugj0tqb6G+Lw5ifHcKk3SIAx/MjRpS8YAAADsSURBVHic7dDJDoIwEIDhQURwQNGiIBVkUQH3BfX9H00MEvHW9qj9L3RIvkxTAJlMJvu1lI7aHtWOwm67Wk9vz3pP67Jro4+m1QyWiX2D3cJgqNmjt7ZGtjYccGAYK8R26qNjE2XMY6smU3Q9AM/F6YSTVrtnPp173pz6M969Lx1Q6rqUBgK2KvAR/UCIAoQLxEUoiCMSxyQSokmE6XKZYpQI2BVJ1wDrlKz4dXXn7PXN+G8e5lhk9TErMOd6tXCz3e2bYb/bbnj04Xg6f6bz6Xhgtxe8lu25vOKFGd/uj+8fj/uNfbVMJpP9QU/STxAzeUFqVwAAAABJRU5ErkJggg==", n2 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='18'%20height='18'%3e%3crect%20id='backgroundrect'%20width='100%25'%20height='100%25'%20x='0'%20y='0'%20fill='none'%20stroke='none'/%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M%200%200%20H%2017.555%20v%2017.555%20H%200%20Z'%20id='svg_1'%20transform=''/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20class='currentLayer'%20style=''%3e%3ctitle%3eLayer%201%3c/title%3e%3cg%20id='svg_2'%20class='selected'%20transform=''%3e%3cg%20id='svg_3'%20transform=''%3e%3cg%20class='c'%20id='svg_4'%20transform=''%3e%3cg%20id='svg_5'%20transform=''%3e%3cpath%20class='d'%20d='M%2017.556%208.77842%20a%208.778%208.778%200%200%200%20-8.778%20-8.778%20a%208.778%208.778%200%200%200%20-8.778%208.778%20a%208.745%208.745%200%200%200%202.26%205.879%20v%201.442%20c%200%200.8%200.492%201.457%201.1%201.457%20h%205.83%20a%200.843%200.843%200%200%200%200.183%20-0.02%20a%208.778%208.778%200%200%200%208.184%20-8.757'%20id='svg_6'%20transform=''/%3e%3c/g%3e%3cg%20id='svg_7'%20transform=''%3e%3cpath%20class='e'%20d='M%203.16148%208.921%20a%209.292%209.292%200%200%201%206.38%20-8.888%20c%20-0.252%20-0.022%20-0.506%20-0.033%20-0.763%20-0.033%20a%208.774%208.774%200%200%200%20-8.778%208.778%20A%209.508%209.508%200%200%200%202.22447%2014.7003%20c%200.005%200%200%200.009%200%200.01%20c%20-0.311%200.352%20-1.924%202.849%200.021%202.849%20h%202.25%20c%20-1.23%20-0.022%201.263%20-2.107%200.269%20-3.494%20a%208.225%208.225%200%200%201%20-1.6%20-5.141'%20id='svg_8'%20transform=''/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", a2 = {
+const e2 = /* @__PURE__ */ M(D2, [["render", f2], ["__scopeId", "data-v-9301130a"]]), t2 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='18'%20height='18'%3e%3crect%20id='backgroundrect'%20width='100%25'%20height='100%25'%20x='0'%20y='0'%20fill='none'%20stroke='none'/%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M%200%200%20H%2017.555%20v%2017.555%20H%200%20Z'%20id='svg_1'%20transform=''/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20class='currentLayer'%20style=''%3e%3ctitle%3eLayer%201%3c/title%3e%3cg%20id='svg_2'%20class='selected'%20transform=''%3e%3cg%20id='svg_3'%20transform=''%3e%3cg%20class='c'%20id='svg_4'%20transform=''%3e%3cg%20id='svg_5'%20transform=''%3e%3cpath%20class='d'%20d='M%2017.556%208.77842%20a%208.778%208.778%200%200%200%20-8.778%20-8.778%20a%208.778%208.778%200%200%200%20-8.778%208.778%20a%208.745%208.745%200%200%200%202.26%205.879%20v%201.442%20c%200%200.8%200.492%201.457%201.1%201.457%20h%205.83%20a%200.843%200.843%200%200%200%200.183%20-0.02%20a%208.778%208.778%200%200%200%208.184%20-8.757'%20id='svg_6'%20transform=''/%3e%3c/g%3e%3cg%20id='svg_7'%20transform=''%3e%3cpath%20class='e'%20d='M%203.16148%208.921%20a%209.292%209.292%200%200%201%206.38%20-8.888%20c%20-0.252%20-0.022%20-0.506%20-0.033%20-0.763%20-0.033%20a%208.774%208.774%200%200%200%20-8.778%208.778%20A%209.508%209.508%200%200%200%202.22447%2014.7003%20c%200.005%200%200%200.009%200%200.01%20c%20-0.311%200.352%20-1.924%202.849%200.021%202.849%20h%202.25%20c%20-1.23%20-0.022%201.263%20-2.107%200.269%20-3.494%20a%208.225%208.225%200%200%201%20-1.6%20-5.141'%20id='svg_8'%20transform=''/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", F2 = {
   components: {
-    ChatWindow: t2
+    ChatWindow: e2
   },
   props: {
     icons: {
@@ -6128,15 +6128,15 @@ const t2 = /* @__PURE__ */ M(f2, [["render", e2], ["__scopeId", "data-v-9301130a
       default: function() {
         return {
           open: {
-            img: n2,
+            img: t2,
             name: "default"
           },
           close: {
-            img: F2,
+            img: uf,
             name: "default"
           },
           minimize: {
-            img: Mf,
+            img: Hf,
             name: "default"
           }
         };
@@ -6310,11 +6310,11 @@ const t2 = /* @__PURE__ */ M(f2, [["render", e2], ["__scopeId", "data-v-9301130a
       this.open(), this.autoFocus && this.$event.$emit("focusUserInput");
     }
   }
-}, d2 = {
+}, n2 = {
   key: 0,
   class: "sc-new-messsages-count"
-}, r2 = ["src", "alt"], i2 = ["src", "alt"];
-function o2(D, u, f, e, F, t) {
+}, a2 = ["src", "alt"], d2 = ["src", "alt"];
+function r2(D, u, f, e, F, t) {
   const n = T("ChatWindow");
   return p(), g("div", null, [
     f.showLauncher ? (p(), g("div", {
@@ -6323,18 +6323,18 @@ function o2(D, u, f, e, F, t) {
       style: R({ backgroundColor: f.colors.launcher.bg }),
       onClick: u[0] || (u[0] = Gu((a) => f.isOpen ? f.close() : t.openAndFocus(), ["prevent"]))
     }, [
-      f.newMessagesCount > 0 && !f.isOpen ? (p(), g("div", d2, K(f.newMessagesCount), 1)) : I("", !0),
+      f.newMessagesCount > 0 && !f.isOpen ? (p(), g("div", n2, Z(f.newMessagesCount), 1)) : I("", !0),
       f.isOpen ? (p(), g("img", {
         key: 1,
         class: "sc-closed-icon",
         src: f.icons.close.img,
         alt: f.icons.close.name
-      }, null, 8, r2)) : (p(), g("img", {
+      }, null, 8, a2)) : (p(), g("img", {
         key: 2,
         class: "sc-open-icon",
         src: f.icons.open.img,
         alt: f.icons.open.name
-      }, null, 8, i2))
+      }, null, 8, d2))
     ], 6)) : I("", !0),
     q(n, {
       "message-list": f.messageList,
@@ -6363,16 +6363,16 @@ function o2(D, u, f, e, F, t) {
       onEdit: u[3] || (u[3] = (a) => D.$emit("edit", a)),
       onRemove: u[4] || (u[4] = (a) => D.$emit("remove", a))
     }, {
-      header: j(() => [
+      header: $(() => [
         O(D.$slots, "header", {}, void 0, !0)
       ]),
-      "user-avatar": j((a) => [
+      "user-avatar": $((a) => [
         O(D.$slots, "user-avatar", {
           user: a.user,
           message: a.message
         }, void 0, !0)
       ]),
-      "text-message-body": j((a) => [
+      "text-message-body": $((a) => [
         O(D.$slots, "text-message-body", {
           message: a.message,
           messageText: a.messageText,
@@ -6380,12 +6380,12 @@ function o2(D, u, f, e, F, t) {
           me: a.me
         }, void 0, !0)
       ]),
-      "system-message-body": j((a) => [
+      "system-message-body": $((a) => [
         O(D.$slots, "system-message-body", {
           message: a.message
         }, void 0, !0)
       ]),
-      "text-message-toolbox": j((a) => [
+      "text-message-toolbox": $((a) => [
         O(D.$slots, "text-message-toolbox", {
           message: a.message,
           me: a.me
@@ -6395,12 +6395,12 @@ function o2(D, u, f, e, F, t) {
     }, 8, ["message-list", "on-user-input-submit", "participants", "title", "is-open", "show-emoji", "show-emoji-in-text", "show-file", "show-confirmation-deletion", "confirmation-deletion-message", "show-header", "placeholder", "show-typing-indicator", "colors", "always-scroll-to-bottom", "message-styling", "messageMargin", "acceptedFileTypes", "showMinimizeButton", "onClose", "onMinimize"])
   ]);
 }
-const s2 = /* @__PURE__ */ M(a2, [["render", o2], ["__scopeId", "data-v-c81294e4"]]);
-var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], Ru = "start", Df = "end", C2 = "clippingParents", Kf = "viewport", Wu = "popper", c2 = "reference", bf = /* @__PURE__ */ tD.reduce(function(D, u) {
-  return D.concat([u + "-" + Ru, u + "-" + Df]);
+const i2 = /* @__PURE__ */ M(F2, [["render", r2], ["__scopeId", "data-v-ecb4d983"]]);
+var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], Ru = "start", ff = "end", o2 = "clippingParents", Qf = "viewport", Wu = "popper", s2 = "reference", gf = /* @__PURE__ */ tD.reduce(function(D, u) {
+  return D.concat([u + "-" + Ru, u + "-" + ff]);
 }, []), yD = /* @__PURE__ */ [].concat(tD, [AD]).reduce(function(D, u) {
-  return D.concat([u, u + "-" + Ru, u + "-" + Df]);
-}, []), E2 = "beforeRead", l2 = "read", B2 = "afterRead", p2 = "beforeMain", b2 = "main", g2 = "afterMain", m2 = "beforeWrite", h2 = "write", _2 = "afterWrite", UD = [E2, l2, B2, p2, b2, g2, m2, h2, _2];
+  return D.concat([u, u + "-" + Ru, u + "-" + ff]);
+}, []), C2 = "beforeRead", c2 = "read", E2 = "afterRead", l2 = "beforeMain", B2 = "main", p2 = "afterMain", b2 = "beforeWrite", g2 = "write", m2 = "afterWrite", UD = [C2, c2, E2, l2, B2, p2, b2, g2, m2];
 function bu(D) {
   return D ? (D.nodeName || "").toLowerCase() : null;
 }
@@ -6413,7 +6413,7 @@ function cu(D) {
   }
   return D;
 }
-function Ku(D) {
+function Zu(D) {
   var u = cu(D).Element;
   return D instanceof u || D instanceof Element;
 }
@@ -6427,7 +6427,7 @@ function Jf(D) {
   var u = cu(D).ShadowRoot;
   return D instanceof u || D instanceof ShadowRoot;
 }
-function v2(D) {
+function h2(D) {
   var u = D.state;
   Object.keys(u.elements).forEach(function(f) {
     var e = u.styles[f] || {}, F = u.attributes[f] || {}, t = u.elements[f];
@@ -6437,7 +6437,7 @@ function v2(D) {
     }));
   });
 }
-function A2(D) {
+function _2(D) {
   var u = D.state, f = {
     popper: {
       position: u.options.strategy,
@@ -6461,12 +6461,12 @@ function A2(D) {
     });
   };
 }
-const y2 = {
+const v2 = {
   name: "applyStyles",
   enabled: !0,
   phase: "write",
-  fn: v2,
-  effect: A2,
+  fn: h2,
+  effect: _2,
   requires: ["computeStyles"]
 };
 function ru(D) {
@@ -6485,7 +6485,7 @@ function Lu(D) {
     y: u.top
   };
 }
-function ff(D) {
+function ef(D) {
   var u = Lu(D), f = D.offsetWidth, e = D.offsetHeight;
   return Math.abs(u.width - f) <= 1 && (f = u.width), Math.abs(u.height - e) <= 1 && (e = u.height), {
     x: D.offsetLeft,
@@ -6494,7 +6494,7 @@ function ff(D) {
     height: e
   };
 }
-function Zf(D, u) {
+function u1(D, u) {
   var f = u.getRootNode && u.getRootNode();
   if (D.contains(u))
     return !0;
@@ -6511,11 +6511,11 @@ function Zf(D, u) {
 function Cu(D) {
   return cu(D).getComputedStyle(D);
 }
-function w2(D) {
+function A2(D) {
   return ["table", "td", "th"].indexOf(bu(D)) >= 0;
 }
 function Au(D) {
-  return ((Ku(D) ? D.ownerDocument : (
+  return ((Zu(D) ? D.ownerDocument : (
     // $FlowFixMe[prop-missing]
     D.document
   )) || window.document).documentElement;
@@ -6532,11 +6532,11 @@ function wD(D) {
     Au(D)
   );
 }
-function gf(D) {
+function mf(D) {
   return !Fu(D) || // https://github.com/popperjs/popper-core/issues/837
   Cu(D).position === "fixed" ? null : D.offsetParent;
 }
-function k2(D) {
+function y2(D) {
   var u = navigator.userAgent.toLowerCase().indexOf("firefox") !== -1, f = navigator.userAgent.indexOf("Trident") !== -1;
   if (f && Fu(D)) {
     var e = Cu(D);
@@ -6552,18 +6552,18 @@ function k2(D) {
   return null;
 }
 function FD(D) {
-  for (var u = cu(D), f = gf(D); f && w2(f) && Cu(f).position === "static"; )
-    f = gf(f);
-  return f && (bu(f) === "html" || bu(f) === "body" && Cu(f).position === "static") ? u : f || k2(D) || u;
+  for (var u = cu(D), f = mf(D); f && A2(f) && Cu(f).position === "static"; )
+    f = mf(f);
+  return f && (bu(f) === "html" || bu(f) === "body" && Cu(f).position === "static") ? u : f || y2(D) || u;
 }
-function ef(D) {
+function tf(D) {
   return ["top", "bottom"].indexOf(D) >= 0 ? "x" : "y";
 }
-var vu = Math.max, Ju = Math.min, lD = Math.round;
+var vu = Math.max, Qu = Math.min, lD = Math.round;
 function mD(D, u, f) {
-  return vu(D, Ju(u, f));
+  return vu(D, Qu(u, f));
 }
-function u1() {
+function D1() {
   return {
     top: 0,
     right: 0,
@@ -6571,74 +6571,74 @@ function u1() {
     left: 0
   };
 }
-function D1(D) {
-  return Object.assign({}, u1(), D);
+function f1(D) {
+  return Object.assign({}, D1(), D);
 }
-function f1(D, u) {
+function e1(D, u) {
   return u.reduce(function(f, e) {
     return f[e] = D, f;
   }, {});
 }
-var x2 = function(u, f) {
+var w2 = function(u, f) {
   return u = typeof u == "function" ? u(Object.assign({}, f.rects, {
     placement: f.placement
-  })) : u, D1(typeof u != "number" ? u : f1(u, tD));
+  })) : u, f1(typeof u != "number" ? u : e1(u, tD));
 };
-function S2(D) {
-  var u, f = D.state, e = D.name, F = D.options, t = f.elements.arrow, n = f.modifiersData.popperOffsets, a = ru(f.placement), r = ef(a), C = [tu, su].indexOf(a) >= 0, d = C ? "height" : "width";
+function k2(D) {
+  var u, f = D.state, e = D.name, F = D.options, t = f.elements.arrow, n = f.modifiersData.popperOffsets, a = ru(f.placement), r = tf(a), C = [tu, su].indexOf(a) >= 0, d = C ? "height" : "width";
   if (!(!t || !n)) {
-    var c = x2(F.padding, f), o = ff(t), B = r === "y" ? eu : tu, E = r === "y" ? ou : su, A = f.rects.reference[d] + f.rects.reference[r] - n[r] - f.rects.popper[d], h = n[r] - f.rects.reference[r], w = FD(t), _ = w ? r === "y" ? w.clientHeight || 0 : w.clientWidth || 0 : 0, v = A / 2 - h / 2, b = c[B], m = _ - o[d] - c[E], k = _ / 2 - o[d] / 2 + v, x = mD(b, k, m), S = r;
+    var c = w2(F.padding, f), o = ef(t), B = r === "y" ? eu : tu, E = r === "y" ? ou : su, A = f.rects.reference[d] + f.rects.reference[r] - n[r] - f.rects.popper[d], h = n[r] - f.rects.reference[r], w = FD(t), _ = w ? r === "y" ? w.clientHeight || 0 : w.clientWidth || 0 : 0, v = A / 2 - h / 2, b = c[B], m = _ - o[d] - c[E], k = _ / 2 - o[d] / 2 + v, x = mD(b, k, m), S = r;
     f.modifiersData[e] = (u = {}, u[S] = x, u.centerOffset = x - k, u);
   }
 }
-function T2(D) {
+function x2(D) {
   var u = D.state, f = D.options, e = f.element, F = e === void 0 ? "[data-popper-arrow]" : e;
   if (F != null && !(typeof F == "string" && (F = u.elements.popper.querySelector(F), !F))) {
-    if (process.env.NODE_ENV !== "production" && (Fu(F) || console.error(['Popper: "arrow" element must be an HTMLElement (not an SVGElement).', "To use an SVG arrow, wrap it in an HTMLElement that will be used as", "the arrow."].join(" "))), !Zf(u.elements.popper, F)) {
+    if (process.env.NODE_ENV !== "production" && (Fu(F) || console.error(['Popper: "arrow" element must be an HTMLElement (not an SVGElement).', "To use an SVG arrow, wrap it in an HTMLElement that will be used as", "the arrow."].join(" "))), !u1(u.elements.popper, F)) {
       process.env.NODE_ENV !== "production" && console.error(['Popper: "arrow" modifier\'s `element` must be a child of the popper', "element."].join(" "));
       return;
     }
     u.elements.arrow = F;
   }
 }
-const O2 = {
+const S2 = {
   name: "arrow",
   enabled: !0,
   phase: "main",
-  fn: S2,
-  effect: T2,
+  fn: k2,
+  effect: x2,
   requires: ["popperOffsets"],
   requiresIfExists: ["preventOverflow"]
 };
-var j2 = {
+var T2 = {
   top: "auto",
   right: "auto",
   bottom: "auto",
   left: "auto"
 };
-function $2(D) {
+function O2(D) {
   var u = D.x, f = D.y, e = window, F = e.devicePixelRatio || 1;
   return {
     x: lD(lD(u * F) / F) || 0,
     y: lD(lD(f * F) / F) || 0
   };
 }
-function mf(D) {
-  var u, f = D.popper, e = D.popperRect, F = D.placement, t = D.offsets, n = D.position, a = D.gpuAcceleration, r = D.adaptive, C = D.roundOffsets, d = C === !0 ? $2(t) : typeof C == "function" ? C(t) : t, c = d.x, o = c === void 0 ? 0 : c, B = d.y, E = B === void 0 ? 0 : B, A = t.hasOwnProperty("x"), h = t.hasOwnProperty("y"), w = tu, _ = eu, v = window;
+function hf(D) {
+  var u, f = D.popper, e = D.popperRect, F = D.placement, t = D.offsets, n = D.position, a = D.gpuAcceleration, r = D.adaptive, C = D.roundOffsets, d = C === !0 ? O2(t) : typeof C == "function" ? C(t) : t, c = d.x, o = c === void 0 ? 0 : c, B = d.y, E = B === void 0 ? 0 : B, A = t.hasOwnProperty("x"), h = t.hasOwnProperty("y"), w = tu, _ = eu, v = window;
   if (r) {
     var b = FD(f), m = "clientHeight", k = "clientWidth";
     b === cu(f) && (b = Au(f), Cu(b).position !== "static" && (m = "scrollHeight", k = "scrollWidth")), b = b, F === eu && (_ = ou, E -= b[m] - e.height, E *= a ? 1 : -1), F === tu && (w = su, o -= b[k] - e.width, o *= a ? 1 : -1);
   }
   var x = Object.assign({
     position: n
-  }, r && j2);
+  }, r && T2);
   if (a) {
     var S;
     return Object.assign({}, x, (S = {}, S[_] = h ? "0" : "", S[w] = A ? "0" : "", S.transform = (v.devicePixelRatio || 1) < 2 ? "translate(" + o + "px, " + E + "px)" : "translate3d(" + o + "px, " + E + "px, 0)", S));
   }
   return Object.assign({}, x, (u = {}, u[_] = h ? E + "px" : "", u[w] = A ? o + "px" : "", u.transform = "", u));
 }
-function P2(D) {
+function $2(D) {
   var u = D.state, f = D.options, e = f.gpuAcceleration, F = e === void 0 ? !0 : e, t = f.adaptive, n = t === void 0 ? !0 : t, a = f.roundOffsets, r = a === void 0 ? !0 : a;
   if (process.env.NODE_ENV !== "production") {
     var C = Cu(u.elements.popper).transitionProperty || "";
@@ -6656,12 +6656,12 @@ function P2(D) {
     popperRect: u.rects.popper,
     gpuAcceleration: F
   };
-  u.modifiersData.popperOffsets != null && (u.styles.popper = Object.assign({}, u.styles.popper, mf(Object.assign({}, d, {
+  u.modifiersData.popperOffsets != null && (u.styles.popper = Object.assign({}, u.styles.popper, hf(Object.assign({}, d, {
     offsets: u.modifiersData.popperOffsets,
     position: u.options.strategy,
     adaptive: n,
     roundOffsets: r
-  })))), u.modifiersData.arrow != null && (u.styles.arrow = Object.assign({}, u.styles.arrow, mf(Object.assign({}, d, {
+  })))), u.modifiersData.arrow != null && (u.styles.arrow = Object.assign({}, u.styles.arrow, hf(Object.assign({}, d, {
     offsets: u.modifiersData.arrow,
     position: "absolute",
     adaptive: !1,
@@ -6670,17 +6670,17 @@ function P2(D) {
     "data-popper-placement": u.placement
   });
 }
-const I2 = {
+const j2 = {
   name: "computeStyles",
   enabled: !0,
   phase: "beforeWrite",
-  fn: P2,
+  fn: $2,
   data: {}
 };
 var BD = {
   passive: !0
 };
-function z2(D) {
+function P2(D) {
   var u = D.state, f = D.instance, e = D.options, F = e.scroll, t = F === void 0 ? !0 : F, n = e.resize, a = n === void 0 ? !0 : n, r = cu(u.elements.popper), C = [].concat(u.scrollParents.reference, u.scrollParents.popper);
   return t && C.forEach(function(d) {
     d.addEventListener("scroll", f.update, BD);
@@ -6690,16 +6690,16 @@ function z2(D) {
     }), a && r.removeEventListener("resize", f.update, BD);
   };
 }
-const N2 = {
+const I2 = {
   name: "eventListeners",
   enabled: !0,
   phase: "write",
   fn: function() {
   },
-  effect: z2,
+  effect: P2,
   data: {}
 };
-var q2 = {
+var z2 = {
   left: "right",
   right: "left",
   bottom: "top",
@@ -6707,39 +6707,39 @@ var q2 = {
 };
 function hD(D) {
   return D.replace(/left|right|bottom|top/g, function(u) {
-    return q2[u];
+    return z2[u];
   });
 }
-var R2 = {
+var N2 = {
   start: "end",
   end: "start"
 };
-function hf(D) {
+function _f(D) {
   return D.replace(/start|end/g, function(u) {
-    return R2[u];
+    return N2[u];
   });
 }
-function tf(D) {
+function Ff(D) {
   var u = cu(D), f = u.pageXOffset, e = u.pageYOffset;
   return {
     scrollLeft: f,
     scrollTop: e
   };
 }
-function Ff(D) {
-  return Lu(Au(D)).left + tf(D).scrollLeft;
+function nf(D) {
+  return Lu(Au(D)).left + Ff(D).scrollLeft;
 }
-function L2(D) {
+function q2(D) {
   var u = cu(D), f = Au(D), e = u.visualViewport, F = f.clientWidth, t = f.clientHeight, n = 0, a = 0;
   return e && (F = e.width, t = e.height, /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || (n = e.offsetLeft, a = e.offsetTop)), {
     width: F,
     height: t,
-    x: n + Ff(D),
+    x: n + nf(D),
     y: a
   };
 }
-function M2(D) {
-  var u, f = Au(D), e = tf(D), F = (u = D.ownerDocument) == null ? void 0 : u.body, t = vu(f.scrollWidth, f.clientWidth, F ? F.scrollWidth : 0, F ? F.clientWidth : 0), n = vu(f.scrollHeight, f.clientHeight, F ? F.scrollHeight : 0, F ? F.clientHeight : 0), a = -e.scrollLeft + Ff(D), r = -e.scrollTop;
+function R2(D) {
+  var u, f = Au(D), e = Ff(D), F = (u = D.ownerDocument) == null ? void 0 : u.body, t = vu(f.scrollWidth, f.clientWidth, F ? F.scrollWidth : 0, F ? F.clientWidth : 0), n = vu(f.scrollHeight, f.clientHeight, F ? F.scrollHeight : 0, F ? F.clientHeight : 0), a = -e.scrollLeft + nf(D), r = -e.scrollTop;
   return Cu(F || f).direction === "rtl" && (a += vu(f.clientWidth, F ? F.clientWidth : 0) - t), {
     width: t,
     height: n,
@@ -6747,20 +6747,20 @@ function M2(D) {
     y: r
   };
 }
-function nf(D) {
+function af(D) {
   var u = Cu(D), f = u.overflow, e = u.overflowX, F = u.overflowY;
   return /auto|scroll|overlay|hidden/.test(f + F + e);
 }
-function e1(D) {
-  return ["html", "body", "#document"].indexOf(bu(D)) >= 0 ? D.ownerDocument.body : Fu(D) && nf(D) ? D : e1(wD(D));
+function t1(D) {
+  return ["html", "body", "#document"].indexOf(bu(D)) >= 0 ? D.ownerDocument.body : Fu(D) && af(D) ? D : t1(wD(D));
 }
-function Xu(D, u) {
+function Yu(D, u) {
   var f;
   u === void 0 && (u = []);
-  var e = e1(D), F = e === ((f = D.ownerDocument) == null ? void 0 : f.body), t = cu(e), n = F ? [t].concat(t.visualViewport || [], nf(e) ? e : []) : e, a = u.concat(n);
+  var e = t1(D), F = e === ((f = D.ownerDocument) == null ? void 0 : f.body), t = cu(e), n = F ? [t].concat(t.visualViewport || [], af(e) ? e : []) : e, a = u.concat(n);
   return F ? a : (
     // $FlowFixMe[incompatible-call]: isBody tells us target will be an HTMLElement here
-    a.concat(Xu(wD(n)))
+    a.concat(Yu(wD(n)))
   );
 }
 function VD(D) {
@@ -6771,31 +6771,31 @@ function VD(D) {
     bottom: D.y + D.height
   });
 }
-function H2(D) {
+function L2(D) {
   var u = Lu(D);
   return u.top = u.top + D.clientTop, u.left = u.left + D.clientLeft, u.bottom = u.top + D.clientHeight, u.right = u.left + D.clientWidth, u.width = D.clientWidth, u.height = D.clientHeight, u.x = u.left, u.y = u.top, u;
 }
-function _f(D, u) {
-  return u === Kf ? VD(L2(D)) : Fu(u) ? H2(u) : VD(M2(Au(D)));
+function vf(D, u) {
+  return u === Qf ? VD(q2(D)) : Fu(u) ? L2(u) : VD(R2(Au(D)));
 }
-function U2(D) {
-  var u = Xu(wD(D)), f = ["absolute", "fixed"].indexOf(Cu(D).position) >= 0, e = f && Fu(D) ? FD(D) : D;
-  return Ku(e) ? u.filter(function(F) {
-    return Ku(F) && Zf(F, e) && bu(F) !== "body";
+function M2(D) {
+  var u = Yu(wD(D)), f = ["absolute", "fixed"].indexOf(Cu(D).position) >= 0, e = f && Fu(D) ? FD(D) : D;
+  return Zu(e) ? u.filter(function(F) {
+    return Zu(F) && u1(F, e) && bu(F) !== "body";
   }) : [];
 }
-function V2(D, u, f) {
-  var e = u === "clippingParents" ? U2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], n = F.reduce(function(a, r) {
-    var C = _f(D, r);
-    return a.top = vu(C.top, a.top), a.right = Ju(C.right, a.right), a.bottom = Ju(C.bottom, a.bottom), a.left = vu(C.left, a.left), a;
-  }, _f(D, t));
+function H2(D, u, f) {
+  var e = u === "clippingParents" ? M2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], n = F.reduce(function(a, r) {
+    var C = vf(D, r);
+    return a.top = vu(C.top, a.top), a.right = Qu(C.right, a.right), a.bottom = Qu(C.bottom, a.bottom), a.left = vu(C.left, a.left), a;
+  }, vf(D, t));
   return n.width = n.right - n.left, n.height = n.bottom - n.top, n.x = n.left, n.y = n.top, n;
 }
-function Zu(D) {
+function Ju(D) {
   return D.split("-")[1];
 }
-function t1(D) {
-  var u = D.reference, f = D.element, e = D.placement, F = e ? ru(e) : null, t = e ? Zu(e) : null, n = u.x + u.width / 2 - f.width / 2, a = u.y + u.height / 2 - f.height / 2, r;
+function F1(D) {
+  var u = D.reference, f = D.element, e = D.placement, F = e ? ru(e) : null, t = e ? Ju(e) : null, n = u.x + u.width / 2 - f.width / 2, a = u.y + u.height / 2 - f.height / 2, r;
   switch (F) {
     case eu:
       r = {
@@ -6827,14 +6827,14 @@ function t1(D) {
         y: u.y
       };
   }
-  var C = F ? ef(F) : null;
+  var C = F ? tf(F) : null;
   if (C != null) {
     var d = C === "y" ? "height" : "width";
     switch (t) {
       case Ru:
         r[C] = r[C] - (u[d] / 2 - f[d] / 2);
         break;
-      case Df:
+      case ff:
         r[C] = r[C] + (u[d] / 2 - f[d] / 2);
         break;
     }
@@ -6843,7 +6843,7 @@ function t1(D) {
 }
 function uD(D, u) {
   u === void 0 && (u = {});
-  var f = u, e = f.placement, F = e === void 0 ? D.placement : e, t = f.boundary, n = t === void 0 ? C2 : t, a = f.rootBoundary, r = a === void 0 ? Kf : a, C = f.elementContext, d = C === void 0 ? Wu : C, c = f.altBoundary, o = c === void 0 ? !1 : c, B = f.padding, E = B === void 0 ? 0 : B, A = D1(typeof E != "number" ? E : f1(E, tD)), h = d === Wu ? c2 : Wu, w = D.elements.reference, _ = D.rects.popper, v = D.elements[o ? h : d], b = V2(Ku(v) ? v : v.contextElement || Au(D.elements.popper), n, r), m = Lu(w), k = t1({
+  var f = u, e = f.placement, F = e === void 0 ? D.placement : e, t = f.boundary, n = t === void 0 ? o2 : t, a = f.rootBoundary, r = a === void 0 ? Qf : a, C = f.elementContext, d = C === void 0 ? Wu : C, c = f.altBoundary, o = c === void 0 ? !1 : c, B = f.padding, E = B === void 0 ? 0 : B, A = f1(typeof E != "number" ? E : e1(E, tD)), h = d === Wu ? s2 : Wu, w = D.elements.reference, _ = D.rects.popper, v = D.elements[o ? h : d], b = H2(Zu(v) ? v : v.contextElement || Au(D.elements.popper), n, r), m = Lu(w), k = F1({
     reference: m,
     element: _,
     strategy: "absolute",
@@ -6863,10 +6863,10 @@ function uD(D, u) {
   }
   return H;
 }
-function W2(D, u) {
+function U2(D, u) {
   u === void 0 && (u = {});
-  var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, n = f.padding, a = f.flipVariations, r = f.allowedAutoPlacements, C = r === void 0 ? yD : r, d = Zu(e), c = d ? a ? bf : bf.filter(function(E) {
-    return Zu(E) === d;
+  var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, n = f.padding, a = f.flipVariations, r = f.allowedAutoPlacements, C = r === void 0 ? yD : r, d = Ju(e), c = d ? a ? gf : gf.filter(function(E) {
+    return Ju(E) === d;
   }) : tD, o = c.filter(function(E) {
     return C.indexOf(E) >= 0;
   });
@@ -6883,17 +6883,17 @@ function W2(D, u) {
     return B[E] - B[A];
   });
 }
-function G2(D) {
+function V2(D) {
   if (ru(D) === AD)
     return [];
   var u = hD(D);
-  return [hf(D), u, hf(u)];
+  return [_f(D), u, _f(u)];
 }
-function X2(D) {
+function W2(D) {
   var u = D.state, f = D.options, e = D.name;
   if (!u.modifiersData[e]._skip) {
-    for (var F = f.mainAxis, t = F === void 0 ? !0 : F, n = f.altAxis, a = n === void 0 ? !0 : n, r = f.fallbackPlacements, C = f.padding, d = f.boundary, c = f.rootBoundary, o = f.altBoundary, B = f.flipVariations, E = B === void 0 ? !0 : B, A = f.allowedAutoPlacements, h = u.options.placement, w = ru(h), _ = w === h, v = r || (_ || !E ? [hD(h)] : G2(h)), b = [h].concat(v).reduce(function(Q, l) {
-      return Q.concat(ru(l) === AD ? W2(u, {
+    for (var F = f.mainAxis, t = F === void 0 ? !0 : F, n = f.altAxis, a = n === void 0 ? !0 : n, r = f.fallbackPlacements, C = f.padding, d = f.boundary, c = f.rootBoundary, o = f.altBoundary, B = f.flipVariations, E = B === void 0 ? !0 : B, A = f.allowedAutoPlacements, h = u.options.placement, w = ru(h), _ = w === h, v = r || (_ || !E ? [hD(h)] : V2(h)), b = [h].concat(v).reduce(function(K, l) {
+      return K.concat(ru(l) === AD ? U2(u, {
         placement: l,
         boundary: d,
         rootBoundary: c,
@@ -6902,7 +6902,7 @@ function X2(D) {
         allowedAutoPlacements: A
       }) : l);
     }, []), m = u.rects.reference, k = u.rects.popper, x = /* @__PURE__ */ new Map(), S = !0, H = b[0], z = 0; z < b.length; z++) {
-      var U = b[z], uu = ru(U), G = Zu(U) === Ru, nu = [eu, ou].indexOf(uu) >= 0, gu = nu ? "width" : "height", Eu = uD(u, {
+      var U = b[z], uu = ru(U), G = Ju(U) === Ru, nu = [eu, ou].indexOf(uu) >= 0, gu = nu ? "width" : "height", Eu = uD(u, {
         placement: U,
         boundary: d,
         rootBoundary: c,
@@ -6911,8 +6911,8 @@ function X2(D) {
       }), au = nu ? G ? su : tu : G ? ou : eu;
       m[gu] > k[gu] && (au = hD(au));
       var yu = hD(au), W = [];
-      if (t && W.push(Eu[uu] <= 0), a && W.push(Eu[au] <= 0, Eu[yu] <= 0), W.every(function(Q) {
-        return Q;
+      if (t && W.push(Eu[uu] <= 0), a && W.push(Eu[au] <= 0, Eu[yu] <= 0), W.every(function(K) {
+        return K;
       })) {
         H = U, S = !1;
         break;
@@ -6920,7 +6920,7 @@ function X2(D) {
       x.set(U, W);
     }
     if (S)
-      for (var Y = E ? 3 : 1, J = function(l) {
+      for (var X = E ? 3 : 1, Q = function(l) {
         var Ou = b.find(function(Mu) {
           var mu = x.get(Mu);
           if (mu)
@@ -6930,24 +6930,24 @@ function X2(D) {
         });
         if (Ou)
           return H = Ou, "break";
-      }, lu = Y; lu > 0; lu--) {
-        var Bu = J(lu);
+      }, lu = X; lu > 0; lu--) {
+        var Bu = Q(lu);
         if (Bu === "break") break;
       }
     u.placement !== H && (u.modifiersData[e]._skip = !0, u.placement = H, u.reset = !0);
   }
 }
-const Y2 = {
+const G2 = {
   name: "flip",
   enabled: !0,
   phase: "main",
-  fn: X2,
+  fn: W2,
   requiresIfExists: ["offset"],
   data: {
     _skip: !1
   }
 };
-function vf(D, u, f) {
+function Af(D, u, f) {
   return f === void 0 && (f = {
     x: 0,
     y: 0
@@ -6958,17 +6958,17 @@ function vf(D, u, f) {
     left: D.left - u.width - f.x
   };
 }
-function Af(D) {
+function yf(D) {
   return [eu, su, ou, tu].some(function(u) {
     return D[u] >= 0;
   });
 }
-function Q2(D) {
+function Y2(D) {
   var u = D.state, f = D.name, e = u.rects.reference, F = u.rects.popper, t = u.modifiersData.preventOverflow, n = uD(u, {
     elementContext: "reference"
   }), a = uD(u, {
     altBoundary: !0
-  }), r = vf(n, e), C = vf(a, F, t), d = Af(r), c = Af(C);
+  }), r = Af(n, e), C = Af(a, F, t), d = yf(r), c = yf(C);
   u.modifiersData[f] = {
     referenceClippingOffsets: r,
     popperEscapeOffsets: C,
@@ -6979,14 +6979,14 @@ function Q2(D) {
     "data-popper-escaped": c
   });
 }
-const K2 = {
+const X2 = {
   name: "hide",
   enabled: !0,
   phase: "main",
   requiresIfExists: ["preventOverflow"],
-  fn: Q2
+  fn: Y2
 };
-function J2(D, u, f) {
+function K2(D, u, f) {
   var e = ru(D), F = [tu, eu].indexOf(e) >= 0 ? -1 : 1, t = typeof f == "function" ? f(Object.assign({}, u, {
     placement: D
   })) : f, n = t[0], a = t[1];
@@ -7000,43 +7000,43 @@ function J2(D, u, f) {
 }
 function Z2(D) {
   var u = D.state, f = D.options, e = D.name, F = f.offset, t = F === void 0 ? [0, 0] : F, n = yD.reduce(function(d, c) {
-    return d[c] = J2(c, u.rects, t), d;
+    return d[c] = K2(c, u.rects, t), d;
   }, {}), a = n[u.placement], r = a.x, C = a.y;
   u.modifiersData.popperOffsets != null && (u.modifiersData.popperOffsets.x += r, u.modifiersData.popperOffsets.y += C), u.modifiersData[e] = n;
 }
-const u8 = {
+const Q2 = {
   name: "offset",
   enabled: !0,
   phase: "main",
   requires: ["popperOffsets"],
   fn: Z2
 };
-function D8(D) {
+function J2(D) {
   var u = D.state, f = D.name;
-  u.modifiersData[f] = t1({
+  u.modifiersData[f] = F1({
     reference: u.rects.reference,
     element: u.rects.popper,
     strategy: "absolute",
     placement: u.placement
   });
 }
-const f8 = {
+const u8 = {
   name: "popperOffsets",
   enabled: !0,
   phase: "read",
-  fn: D8,
+  fn: J2,
   data: {}
 };
-function e8(D) {
+function D8(D) {
   return D === "x" ? "y" : "x";
 }
-function t8(D) {
+function f8(D) {
   var u = D.state, f = D.options, e = D.name, F = f.mainAxis, t = F === void 0 ? !0 : F, n = f.altAxis, a = n === void 0 ? !1 : n, r = f.boundary, C = f.rootBoundary, d = f.altBoundary, c = f.padding, o = f.tether, B = o === void 0 ? !0 : o, E = f.tetherOffset, A = E === void 0 ? 0 : E, h = uD(u, {
     boundary: r,
     rootBoundary: C,
     padding: c,
     altBoundary: d
-  }), w = ru(u.placement), _ = Zu(u.placement), v = !_, b = ef(w), m = e8(b), k = u.modifiersData.popperOffsets, x = u.rects.reference, S = u.rects.popper, H = typeof A == "function" ? A(Object.assign({}, u.rects, {
+  }), w = ru(u.placement), _ = Ju(u.placement), v = !_, b = tf(w), m = D8(b), k = u.modifiersData.popperOffsets, x = u.rects.reference, S = u.rects.popper, H = typeof A == "function" ? A(Object.assign({}, u.rects, {
     placement: u.placement
   })) : A, z = {
     x: 0,
@@ -7044,39 +7044,39 @@ function t8(D) {
   };
   if (k) {
     if (t || a) {
-      var U = b === "y" ? eu : tu, uu = b === "y" ? ou : su, G = b === "y" ? "height" : "width", nu = k[b], gu = k[b] + h[U], Eu = k[b] - h[uu], au = B ? -S[G] / 2 : 0, yu = _ === Ru ? x[G] : S[G], W = _ === Ru ? -S[G] : -x[G], Y = u.elements.arrow, J = B && Y ? ff(Y) : {
+      var U = b === "y" ? eu : tu, uu = b === "y" ? ou : su, G = b === "y" ? "height" : "width", nu = k[b], gu = k[b] + h[U], Eu = k[b] - h[uu], au = B ? -S[G] / 2 : 0, yu = _ === Ru ? x[G] : S[G], W = _ === Ru ? -S[G] : -x[G], X = u.elements.arrow, Q = B && X ? ef(X) : {
         width: 0,
         height: 0
-      }, lu = u.modifiersData["arrow#persistent"] ? u.modifiersData["arrow#persistent"].padding : u1(), Bu = lu[U], Q = lu[uu], l = mD(0, x[G], J[G]), Ou = v ? x[G] / 2 - au - l - Bu - H : yu - l - Bu - H, Mu = v ? -x[G] / 2 + au + l + Q + H : W + l + Q + H, mu = u.elements.arrow && FD(u.elements.arrow), Hu = mu ? b === "y" ? mu.clientTop || 0 : mu.clientLeft || 0 : 0, aD = u.modifiersData.offset ? u.modifiersData.offset[u.placement][b] : 0, dD = k[b] + Ou - aD - Hu, rD = k[b] + Mu - aD;
+      }, lu = u.modifiersData["arrow#persistent"] ? u.modifiersData["arrow#persistent"].padding : D1(), Bu = lu[U], K = lu[uu], l = mD(0, x[G], Q[G]), Ou = v ? x[G] / 2 - au - l - Bu - H : yu - l - Bu - H, Mu = v ? -x[G] / 2 + au + l + K + H : W + l + K + H, mu = u.elements.arrow && FD(u.elements.arrow), Hu = mu ? b === "y" ? mu.clientTop || 0 : mu.clientLeft || 0 : 0, aD = u.modifiersData.offset ? u.modifiersData.offset[u.placement][b] : 0, dD = k[b] + Ou - aD - Hu, rD = k[b] + Mu - aD;
       if (t) {
-        var iD = mD(B ? Ju(gu, dD) : gu, nu, B ? vu(Eu, rD) : Eu);
+        var iD = mD(B ? Qu(gu, dD) : gu, nu, B ? vu(Eu, rD) : Eu);
         k[b] = iD, z[b] = iD - nu;
       }
       if (a) {
-        var SD = b === "x" ? eu : tu, TD = b === "x" ? ou : su, ju = k[m], oD = ju + h[SD], sD = ju - h[TD], CD = mD(B ? Ju(oD, dD) : oD, ju, B ? vu(sD, rD) : sD);
-        k[m] = CD, z[m] = CD - ju;
+        var SD = b === "x" ? eu : tu, TD = b === "x" ? ou : su, $u = k[m], oD = $u + h[SD], sD = $u - h[TD], CD = mD(B ? Qu(oD, dD) : oD, $u, B ? vu(sD, rD) : sD);
+        k[m] = CD, z[m] = CD - $u;
       }
     }
     u.modifiersData[e] = z;
   }
 }
-const F8 = {
+const e8 = {
   name: "preventOverflow",
   enabled: !0,
   phase: "main",
-  fn: t8,
+  fn: f8,
   requiresIfExists: ["offset"]
 };
-function n8(D) {
+function t8(D) {
   return {
     scrollLeft: D.scrollLeft,
     scrollTop: D.scrollTop
   };
 }
-function a8(D) {
-  return D === cu(D) || !Fu(D) ? tf(D) : n8(D);
+function F8(D) {
+  return D === cu(D) || !Fu(D) ? Ff(D) : t8(D);
 }
-function d8(D, u, f) {
+function n8(D, u, f) {
   f === void 0 && (f = !1);
   var e = Au(u), F = Lu(D), t = Fu(u), n = {
     scrollLeft: 0,
@@ -7086,14 +7086,14 @@ function d8(D, u, f) {
     y: 0
   };
   return (t || !t && !f) && ((bu(u) !== "body" || // https://github.com/popperjs/popper-core/issues/1078
-  nf(e)) && (n = a8(u)), Fu(u) ? (a = Lu(u), a.x += u.clientLeft, a.y += u.clientTop) : e && (a.x = Ff(e))), {
+  af(e)) && (n = F8(u)), Fu(u) ? (a = Lu(u), a.x += u.clientLeft, a.y += u.clientTop) : e && (a.x = nf(e))), {
     x: F.left + n.scrollLeft - a.x,
     y: F.top + n.scrollTop - a.y,
     width: F.width,
     height: F.height
   };
 }
-function r8(D) {
+function a8(D) {
   var u = /* @__PURE__ */ new Map(), f = /* @__PURE__ */ new Set(), e = [];
   D.forEach(function(t) {
     u.set(t.name, t);
@@ -7112,15 +7112,15 @@ function r8(D) {
     f.has(t.name) || F(t);
   }), e;
 }
-function i8(D) {
-  var u = r8(D);
+function d8(D) {
+  var u = a8(D);
   return UD.reduce(function(f, e) {
     return f.concat(u.filter(function(F) {
       return F.phase === e;
     }));
   }, []);
 }
-function o8(D) {
+function r8(D) {
   var u;
   return function() {
     return u || (u = new Promise(function(f) {
@@ -7137,8 +7137,8 @@ function hu(D) {
     return F.replace(/%s/, t);
   }, D);
 }
-var ku = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s', s8 = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available', C8 = ["name", "enabled", "phase", "fn", "effect", "requires", "options"];
-function c8(D) {
+var ku = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s', i8 = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available', o8 = ["name", "enabled", "phase", "fn", "effect", "requires", "options"];
+function s8(D) {
   D.forEach(function(u) {
     Object.keys(u).forEach(function(f) {
       switch (f) {
@@ -7166,19 +7166,19 @@ function c8(D) {
         case "data":
           break;
         default:
-          console.error('PopperJS: an invalid property has been provided to the "' + u.name + '" modifier, valid properties are ' + C8.map(function(e) {
+          console.error('PopperJS: an invalid property has been provided to the "' + u.name + '" modifier, valid properties are ' + o8.map(function(e) {
             return '"' + e + '"';
           }).join(", ") + '; but "' + f + '" was provided.');
       }
       u.requires && u.requires.forEach(function(e) {
         D.find(function(F) {
           return F.name === e;
-        }) == null && console.error(hu(s8, String(u.name), e, e));
+        }) == null && console.error(hu(i8, String(u.name), e, e));
       });
     });
   });
 }
-function E8(D, u) {
+function C8(D, u) {
   var f = /* @__PURE__ */ new Set();
   return D.filter(function(e) {
     var F = u(e);
@@ -7186,7 +7186,7 @@ function E8(D, u) {
       return f.add(F), !0;
   });
 }
-function l8(D) {
+function c8(D) {
   var u = D.reduce(function(f, e) {
     var F = f[e.name];
     return f[e.name] = F ? Object.assign({}, F, e, {
@@ -7198,27 +7198,27 @@ function l8(D) {
     return u[f];
   });
 }
-var yf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", B8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", wf = {
+var wf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", E8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", kf = {
   placement: "bottom",
   modifiers: [],
   strategy: "absolute"
 };
-function kf() {
+function xf() {
   for (var D = arguments.length, u = new Array(D), f = 0; f < D; f++)
     u[f] = arguments[f];
   return !u.some(function(e) {
     return !(e && typeof e.getBoundingClientRect == "function");
   });
 }
-function p8(D) {
+function l8(D) {
   D === void 0 && (D = {});
-  var u = D, f = u.defaultModifiers, e = f === void 0 ? [] : f, F = u.defaultOptions, t = F === void 0 ? wf : F;
+  var u = D, f = u.defaultModifiers, e = f === void 0 ? [] : f, F = u.defaultOptions, t = F === void 0 ? kf : F;
   return function(a, r, C) {
     C === void 0 && (C = t);
     var d = {
       placement: "bottom",
       orderedModifiers: [],
-      options: Object.assign({}, wf, t),
+      options: Object.assign({}, kf, t),
       modifiersData: {},
       elements: {
         reference: a,
@@ -7230,18 +7230,18 @@ function p8(D) {
       state: d,
       setOptions: function(w) {
         A(), d.options = Object.assign({}, t, d.options, w), d.scrollParents = {
-          reference: Ku(a) ? Xu(a) : a.contextElement ? Xu(a.contextElement) : [],
-          popper: Xu(r)
+          reference: Zu(a) ? Yu(a) : a.contextElement ? Yu(a.contextElement) : [],
+          popper: Yu(r)
         };
-        var _ = i8(l8([].concat(e, d.options.modifiers)));
+        var _ = d8(c8([].concat(e, d.options.modifiers)));
         if (d.orderedModifiers = _.filter(function(z) {
           return z.enabled;
         }), process.env.NODE_ENV !== "production") {
-          var v = E8([].concat(_, d.options.modifiers), function(z) {
+          var v = C8([].concat(_, d.options.modifiers), function(z) {
             var U = z.name;
             return U;
           });
-          if (c8(v), ru(d.options.placement) === AD) {
+          if (s8(v), ru(d.options.placement) === AD) {
             var b = d.orderedModifiers.find(function(z) {
               var U = z.name;
               return U === "flip";
@@ -7263,19 +7263,19 @@ function p8(D) {
       forceUpdate: function() {
         if (!o) {
           var w = d.elements, _ = w.reference, v = w.popper;
-          if (!kf(_, v)) {
-            process.env.NODE_ENV !== "production" && console.error(yf);
+          if (!xf(_, v)) {
+            process.env.NODE_ENV !== "production" && console.error(wf);
             return;
           }
           d.rects = {
-            reference: d8(_, FD(v), d.options.strategy === "fixed"),
-            popper: ff(v)
+            reference: n8(_, FD(v), d.options.strategy === "fixed"),
+            popper: ef(v)
           }, d.reset = !1, d.placement = d.options.placement, d.orderedModifiers.forEach(function(U) {
             return d.modifiersData[U.name] = Object.assign({}, U.data);
           });
           for (var b = 0, m = 0; m < d.orderedModifiers.length; m++) {
             if (process.env.NODE_ENV !== "production" && (b += 1, b > 100)) {
-              console.error(B8);
+              console.error(E8);
               break;
             }
             if (d.reset === !0) {
@@ -7294,7 +7294,7 @@ function p8(D) {
       },
       // Async and optimistically optimized update – it will not be executed if
       // not necessary (debounced to run at most once-per-tick)
-      update: o8(function() {
+      update: r8(function() {
         return new Promise(function(h) {
           B.forceUpdate(), h(d);
         });
@@ -7303,8 +7303,8 @@ function p8(D) {
         A(), o = !0;
       }
     };
-    if (!kf(a, r))
-      return process.env.NODE_ENV !== "production" && console.error(yf), B;
+    if (!xf(a, r))
+      return process.env.NODE_ENV !== "production" && console.error(wf), B;
     B.setOptions(C).then(function(h) {
       !o && C.onFirstUpdate && C.onFirstUpdate(h);
     });
@@ -7331,10 +7331,10 @@ function p8(D) {
     return B;
   };
 }
-var b8 = [N2, f8, I2, y2, u8, Y2, F8, O2, K2], g8 = /* @__PURE__ */ p8({
-  defaultModifiers: b8
+var B8 = [I2, u8, j2, v2, Q2, G2, e8, S2, X2], p8 = /* @__PURE__ */ l8({
+  defaultModifiers: B8
 });
-function m8() {
+function b8() {
   var D = window.navigator.userAgent, u = D.indexOf("MSIE ");
   if (u > 0)
     return parseInt(D.substring(u + 5, D.indexOf(".", u)), 10);
@@ -7348,7 +7348,7 @@ function m8() {
 }
 let _D;
 function WD() {
-  WD.init || (WD.init = !0, _D = m8() !== -1);
+  WD.init || (WD.init = !0, _D = b8() !== -1);
 }
 var kD = {
   name: "ResizeObserver",
@@ -7370,7 +7370,7 @@ var kD = {
     "notify"
   ],
   mounted() {
-    WD(), T1(() => {
+    WD(), O1(() => {
       this._w = this.$el.offsetWidth, this._h = this.$el.offsetHeight, this.emitOnMount && this.emitSize();
     });
     const D = document.createElement("object");
@@ -7397,26 +7397,26 @@ var kD = {
     }
   }
 };
-const h8 = /* @__PURE__ */ O1("data-v-b329ee4c");
-x1("data-v-b329ee4c");
-const _8 = {
+const g8 = /* @__PURE__ */ $1("data-v-b329ee4c");
+S1("data-v-b329ee4c");
+const m8 = {
   class: "resize-observer",
   tabindex: "-1"
 };
-S1();
-const v8 = /* @__PURE__ */ h8((D, u, f, e, F, t) => (p(), V("div", _8)));
-kD.render = v8;
+T1();
+const h8 = /* @__PURE__ */ g8((D, u, f, e, F, t) => (p(), V("div", m8)));
+kD.render = h8;
 kD.__scopeId = "data-v-b329ee4c";
 kD.__file = "src/components/ResizeObserver.vue";
-function Yu(D) {
+function Xu(D) {
   "@babel/helpers - typeof";
-  return typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? Yu = function(u) {
+  return typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? Xu = function(u) {
     return typeof u;
-  } : Yu = function(u) {
+  } : Xu = function(u) {
     return u && typeof Symbol == "function" && u.constructor === Symbol && u !== Symbol.prototype ? "symbol" : typeof u;
-  }, Yu(D);
+  }, Xu(D);
 }
-function xf(D, u, f, e, F, t, n) {
+function Sf(D, u, f, e, F, t, n) {
   try {
     var a = D[t](n), r = a.value;
   } catch (C) {
@@ -7431,16 +7431,16 @@ function xu(D) {
     return new Promise(function(e, F) {
       var t = D.apply(u, f);
       function n(r) {
-        xf(t, e, F, n, a, "next", r);
+        Sf(t, e, F, n, a, "next", r);
       }
       function a(r) {
-        xf(t, e, F, n, a, "throw", r);
+        Sf(t, e, F, n, a, "throw", r);
       }
       n(void 0);
     });
   };
 }
-function A8(D, u, f) {
+function _8(D, u, f) {
   return u in D ? Object.defineProperty(D, u, {
     value: f,
     enumerable: !0,
@@ -7448,7 +7448,7 @@ function A8(D, u, f) {
     writable: !0
   }) : D[u] = f, D;
 }
-function Sf(D, u) {
+function Tf(D, u) {
   var f = Object.keys(D);
   if (Object.getOwnPropertySymbols) {
     var e = Object.getOwnPropertySymbols(D);
@@ -7461,24 +7461,24 @@ function Sf(D, u) {
 function iu(D) {
   for (var u = 1; u < arguments.length; u++) {
     var f = arguments[u] != null ? arguments[u] : {};
-    u % 2 ? Sf(Object(f), !0).forEach(function(e) {
-      A8(D, e, f[e]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(D, Object.getOwnPropertyDescriptors(f)) : Sf(Object(f)).forEach(function(e) {
+    u % 2 ? Tf(Object(f), !0).forEach(function(e) {
+      _8(D, e, f[e]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(D, Object.getOwnPropertyDescriptors(f)) : Tf(Object(f)).forEach(function(e) {
       Object.defineProperty(D, e, Object.getOwnPropertyDescriptor(f, e));
     });
   }
   return D;
 }
-function F1(D) {
-  return y8(D) || w8(D) || n1(D) || k8();
+function n1(D) {
+  return v8(D) || A8(D) || a1(D) || y8();
 }
-function y8(D) {
+function v8(D) {
   if (Array.isArray(D)) return GD(D);
 }
-function w8(D) {
+function A8(D) {
   if (typeof Symbol < "u" && Symbol.iterator in Object(D)) return Array.from(D);
 }
-function n1(D, u) {
+function a1(D, u) {
   if (D) {
     if (typeof D == "string") return GD(D, u);
     var f = Object.prototype.toString.call(D).slice(8, -1);
@@ -7491,14 +7491,14 @@ function GD(D, u) {
   for (var f = 0, e = new Array(u); f < u; f++) e[f] = D[f];
   return e;
 }
-function k8() {
+function y8() {
   throw new TypeError(`Invalid attempt to spread non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`);
 }
-function XD(D, u) {
+function YD(D, u) {
   var f;
   if (typeof Symbol > "u" || D[Symbol.iterator] == null) {
-    if (Array.isArray(D) || (f = n1(D)) || u) {
+    if (Array.isArray(D) || (f = a1(D)) || u) {
       f && (D = f);
       var e = 0, F = function() {
       };
@@ -7542,9 +7542,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
   };
 }
-function a1(D, u) {
+function d1(D, u) {
   for (var f in u)
-    Object.prototype.hasOwnProperty.call(u, f) && (Yu(u[f]) === "object" && D[f] ? a1(D[f], u[f]) : D[f] = u[f]);
+    Object.prototype.hasOwnProperty.call(u, f) && (Xu(u[f]) === "object" && D[f] ? d1(D[f], u[f]) : D[f] = u[f]);
 }
 var Tu = {
   // Disable popper components
@@ -7576,7 +7576,7 @@ var Tu = {
       triggers: ["hover", "focus", "touch"],
       // Close tooltip on click on tooltip target
       hideTriggers: function(u) {
-        return [].concat(F1(u), ["click"]);
+        return [].concat(n1(u), ["click"]);
       },
       // Delay (ms)
       delay: {
@@ -7620,7 +7620,7 @@ function N(D, u) {
   while (f);
   return e;
 }
-function x8(D) {
+function w8(D) {
   var u = [D], f = Tu.themes[D] || {};
   do
     f.$extend && !f.$resetCss ? (u.push(f.$extend), f = Tu.themes[f.$extend] || {}) : f = null;
@@ -7633,17 +7633,17 @@ var vD = !1;
 if (typeof window < "u") {
   vD = !1;
   try {
-    var S8 = Object.defineProperty({}, "passive", {
+    var k8 = Object.defineProperty({}, "passive", {
       get: function() {
         vD = !0;
       }
     });
-    window.addEventListener("test", null, S8);
+    window.addEventListener("test", null, k8);
   } catch {
   }
 }
-var d1 = !1;
-typeof window < "u" && typeof navigator < "u" && (d1 = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream);
+var r1 = !1;
+typeof window < "u" && typeof navigator < "u" && (r1 = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream);
 function pD(D, u, f) {
   var e = D.find(function(F) {
     return F.name === u;
@@ -7653,25 +7653,25 @@ function pD(D, u, f) {
     options: {}
   }, D.push(e)), Object.assign(e.options, f);
 }
-var Tf = {
+var Of = {
   hover: "mouseenter",
   focus: "focus",
   click: "click",
   touch: "touchstart"
-}, Of = {
+}, $f = {
   hover: "mouseleave",
   focus: "blur",
   click: "click",
   touch: "touchend"
 };
-function T8(D, u) {
+function x8(D, u) {
   var f = D.indexOf(u);
   f !== -1 && D.splice(f, 1);
 }
-var Pu = [], $u = null, YD = function() {
+var Pu = [], ju = null, XD = function() {
 };
-typeof window < "u" && (YD = window.Element);
-var r1 = function() {
+typeof window < "u" && (XD = window.Element);
+var i1 = function() {
   return {
     name: "VPopper",
     props: {
@@ -7771,13 +7771,13 @@ var r1 = function() {
         }
       },
       container: {
-        type: [String, Object, YD, Boolean],
+        type: [String, Object, XD, Boolean],
         default: function(u) {
           return N(u.theme, "container");
         }
       },
       boundary: {
-        type: [String, YD],
+        type: [String, XD],
         default: function(u) {
           return N(u.theme, "boundary");
         }
@@ -7964,15 +7964,15 @@ var r1 = function() {
       },
       $_scheduleShow: function() {
         var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1;
-        if (this.$_hideInProgress = !1, clearTimeout(this.$_scheduleTimer), $u && this.instantMove && $u.instantMove) {
-          $u.$_applyHide(!0), this.$_applyShow(!0);
+        if (this.$_hideInProgress = !1, clearTimeout(this.$_scheduleTimer), ju && this.instantMove && ju.instantMove) {
+          ju.$_applyHide(!0), this.$_applyShow(!0);
           return;
         }
         u ? this.$_applyShow() : this.$_scheduleTimer = setTimeout(this.$_applyShow.bind(this), this.$_computeDelay("show"));
       },
       $_scheduleHide: function() {
         var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1;
-        this.$_hideInProgress = !0, clearTimeout(this.$_scheduleTimer), this.isShown && ($u = this), u ? this.$_applyHide() : this.$_scheduleTimer = setTimeout(this.$_applyHide.bind(this), this.$_computeDelay("hide"));
+        this.$_hideInProgress = !0, clearTimeout(this.$_scheduleTimer), this.isShown && (ju = this), u ? this.$_applyHide() : this.$_scheduleTimer = setTimeout(this.$_applyHide.bind(this), this.$_computeDelay("hide"));
       },
       $_computeDelay: function(u) {
         var f = this.delay;
@@ -7982,7 +7982,7 @@ var r1 = function() {
         var u = arguments, f = this;
         return xu(function* () {
           var e = u.length > 0 && u[0] !== void 0 ? u[0] : !1;
-          clearTimeout(f.$_disposeTimer), clearTimeout(f.$_scheduleTimer), f.skipTransition = e, !f.isShown && (f.isMounted || (f.$_ensureContainer(), f.isMounted = !0), f.popperInstance ? (yield f.popperInstance.update(), yield f.$_refreshPopperOptions(), yield f.$_applyShowEffect()) : f.popperInstance = g8(f.referenceNode(), f.$_popperNode, f.$_getPopperOptions()));
+          clearTimeout(f.$_disposeTimer), clearTimeout(f.$_scheduleTimer), f.skipTransition = e, !f.isShown && (f.isMounted || (f.$_ensureContainer(), f.isMounted = !0), f.popperInstance ? (yield f.popperInstance.update(), yield f.$_refreshPopperOptions(), yield f.$_applyShowEffect()) : f.popperInstance = p8(f.referenceNode(), f.$_popperNode, f.$_getPopperOptions()));
         })();
       },
       $_applyShowEffect: function() {
@@ -8006,7 +8006,7 @@ var r1 = function() {
         return xu(function* () {
           var e = u.length > 0 && u[0] !== void 0 ? u[0] : !1;
           if (clearTimeout(f.$_scheduleTimer), !!f.isShown) {
-            f.skipTransition = e, T8(Pu, f), $u === f && ($u = null), f.isShown = !1, f.popperInstance && (yield f.$_refreshPopperOptions()), f.$_applyAttrsToTarget({
+            f.skipTransition = e, x8(Pu, f), ju === f && (ju = null), f.isShown = !1, f.popperInstance && (yield f.$_refreshPopperOptions()), f.$_applyAttrsToTarget({
               "aria-describedby": void 0,
               "data-popper-shown": void 0
             }), clearTimeout(f.$_disposeTimer);
@@ -8044,13 +8044,13 @@ var r1 = function() {
             event: n
           }));
         };
-        f(this.$_targetNodes, Tf, this.triggers, this.showTriggers, e), f([this.$_popperNode], Tf, this.popperTriggers, this.popperShowTriggers, e);
+        f(this.$_targetNodes, Of, this.triggers, this.showTriggers, e), f([this.$_popperNode], Of, this.popperTriggers, this.popperShowTriggers, e);
         var F = function(n) {
           n.usedByTooltip || u.hide({
             event: n
           });
         };
-        f(this.$_targetNodes, Of, this.triggers, this.hideTriggers, F), f([this.$_popperNode], Of, this.popperTriggers, this.popperHideTriggers, F);
+        f(this.$_targetNodes, $f, this.triggers, this.hideTriggers, F), f([this.$_popperNode], $f, this.popperTriggers, this.popperHideTriggers, F);
       },
       $_removeEventListeners: function() {
         this.$_events.forEach(function(u) {
@@ -8072,7 +8072,7 @@ var r1 = function() {
         this.$_popperNode.parentNode && this.$_popperNode.parentNode.removeChild(this.$_popperNode);
       },
       $_swapTargetAttrs: function(u, f) {
-        var e = XD(this.$_targetNodes), F;
+        var e = YD(this.$_targetNodes), F;
         try {
           for (e.s(); !(F = e.n()).done; ) {
             var t = F.value, n = t.getAttribute(u);
@@ -8085,7 +8085,7 @@ var r1 = function() {
         }
       },
       $_applyAttrsToTarget: function(u) {
-        var f = XD(this.$_targetNodes), e;
+        var f = YD(this.$_targetNodes), e;
         try {
           for (f.s(); !(e = f.n()).done; ) {
             var F = e.value;
@@ -8106,17 +8106,17 @@ var r1 = function() {
     }
   };
 };
-typeof document < "u" && typeof window < "u" && (d1 ? document.addEventListener("touchend", j8, vD ? {
+typeof document < "u" && typeof window < "u" && (r1 ? document.addEventListener("touchend", T8, vD ? {
   passive: !0,
   capture: !0
-} : !0) : window.addEventListener("click", O8, !0));
-function O8(D) {
-  i1(D);
+} : !0) : window.addEventListener("click", S8, !0));
+function S8(D) {
+  o1(D);
 }
-function j8(D) {
-  i1(D, !0);
+function T8(D) {
+  o1(D, !0);
 }
-function i1(D) {
+function o1(D) {
   for (var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1, f = function(t) {
     var n = Pu[t], a = n.popperNode(), r = a.contains(D.target);
     requestAnimationFrame(function() {
@@ -8130,10 +8130,10 @@ function jf() {
     return requestAnimationFrame(D);
   });
 }
-var o1 = {
+var s1 = {
   computed: {
     themeClass: function() {
-      return x8(this.theme);
+      return w8(this.theme);
     }
   }
 }, xD = {
@@ -8141,7 +8141,7 @@ var o1 = {
   components: {
     ResizeObserver: kD
   },
-  mixins: [o1],
+  mixins: [s1],
   props: {
     popperId: String,
     theme: String,
@@ -8153,15 +8153,15 @@ var o1 = {
     classes: Object
   },
   emits: ["hide", "resize"]
-}, $8 = {
+}, O8 = {
   class: "v-popper__wrapper"
-}, P8 = {
+}, $8 = {
   ref: "inner",
   class: "v-popper__inner"
-}, I8 = {
+}, j8 = {
   ref: "arrow",
   class: "v-popper__arrow-container"
-}, z8 = /* @__PURE__ */ q(
+}, P8 = /* @__PURE__ */ q(
   "div",
   {
     class: "v-popper__arrow"
@@ -8170,7 +8170,7 @@ var o1 = {
   -1
   /* HOISTED */
 );
-function N8(D, u, f, e, F, t) {
+function I8(D, u, f, e, F, t) {
   var n = T("ResizeObserver");
   return p(), V(
     "div",
@@ -8192,9 +8192,9 @@ function N8(D, u, f, e, F, t) {
         return f.autoHide && D.$emit("hide");
       }, ["esc"]))
     },
-    [q("div", $8, [q(
+    [q("div", O8, [q(
       "div",
-      P8,
+      $8,
       [f.mounted ? (p(), V(
         qu,
         {
@@ -8213,8 +8213,8 @@ function N8(D, u, f, e, F, t) {
       /* NEED_PATCH */
     ), q(
       "div",
-      I8,
-      [z8],
+      j8,
+      [P8],
       512
       /* NEED_PATCH */
     )])],
@@ -8222,9 +8222,9 @@ function N8(D, u, f, e, F, t) {
     ["id", "aria-hidden", "tabindex"]
   );
 }
-xD.render = N8;
+xD.render = I8;
 xD.__file = "src/components/PopperContent.vue";
-var s1 = {
+var C1 = {
   methods: {
     show: function() {
       var u;
@@ -8246,10 +8246,10 @@ var s1 = {
 }, nD = {
   name: "VPopperWrapper",
   components: {
-    Popper: r1(),
+    Popper: i1(),
     PopperContent: xD
   },
-  mixins: [s1, o1],
+  mixins: [C1, s1],
   inheritAttrs: !1,
   props: {
     theme: {
@@ -8265,16 +8265,16 @@ var s1 = {
   },
   methods: {
     getTargetNodes: function() {
-      var u = F1(this.$refs.reference.children);
+      var u = n1(this.$refs.reference.children);
       return u.slice(0, u.length - 1).filter(Boolean);
     }
   }
 };
-function q8(D, u, f, e, F, t) {
+function z8(D, u, f, e, F, t) {
   var n = T("PopperContent"), a = T("Popper");
   return p(), V(
     a,
-    Rf({
+    Lf({
       ref: "popper"
     }, D.$attrs, {
       theme: t.finalTheme,
@@ -8290,7 +8290,7 @@ function q8(D, u, f, e, F, t) {
       }
     }),
     {
-      default: j(function(r) {
+      default: $(function(r) {
         var C = r.popperId, d = r.isShown, c = r.shouldMountContent, o = r.skipTransition, B = r.autoHide, E = r.hide, A = r.handleResize, h = r.onResize, w = r.classes;
         return [q(
           "div",
@@ -8316,7 +8316,7 @@ function q8(D, u, f, e, F, t) {
               onResize: h
             },
             {
-              default: j(function() {
+              default: $(function() {
                 return [O(D.$slots, "popper", {
                   shown: d
                 })];
@@ -8338,30 +8338,30 @@ function q8(D, u, f, e, F, t) {
     ["theme", "target-nodes", "reference-node", "popper-node", "arrow-node"]
   );
 }
-nD.render = q8;
+nD.render = z8;
 nD.__file = "src/components/PopperWrapper.vue";
-var QD = iu(iu({}, nD), {}, {
+var KD = iu(iu({}, nD), {}, {
   name: "VDropdown",
   vPopperTheme: "dropdown"
 });
-QD.__file = "src/components/Dropdown.vue";
-var KD = iu(iu({}, nD), {}, {
+KD.__file = "src/components/Dropdown.vue";
+var ZD = iu(iu({}, nD), {}, {
   name: "VMenu",
   vPopperTheme: "menu"
 });
-KD.__file = "src/components/Menu.vue";
-var JD = iu(iu({}, nD), {}, {
+ZD.__file = "src/components/Menu.vue";
+var QD = iu(iu({}, nD), {}, {
   name: "VTooltip",
   vPopperTheme: "tooltip"
 });
-JD.__file = "src/components/Tooltip.vue";
-var af = {
+QD.__file = "src/components/Tooltip.vue";
+var df = {
   name: "VTooltipDirective",
   components: {
-    Popper: r1(),
+    Popper: i1(),
     PopperContent: xD
   },
-  mixins: [s1],
+  mixins: [C1],
   inheritAttrs: !1,
   props: {
     theme: {
@@ -8440,11 +8440,11 @@ var af = {
     }
   }
 };
-function R8(D, u, f, e, F, t) {
+function N8(D, u, f, e, F, t) {
   var n = T("PopperContent"), a = T("Popper");
   return p(), V(
     a,
-    Rf({
+    Lf({
       ref: "popper"
     }, D.$attrs, {
       theme: f.theme,
@@ -8458,7 +8458,7 @@ function R8(D, u, f, e, F, t) {
       onApplyHide: t.onHide
     }),
     {
-      default: j(function(r) {
+      default: $(function(r) {
         var C = r.popperId, d = r.isShown, c = r.shouldMountContent, o = r.skipTransition, B = r.autoHide, E = r.hide, A = r.handleResize, h = r.onResize, w = r.classes;
         return [q(
           n,
@@ -8479,7 +8479,7 @@ function R8(D, u, f, e, F, t) {
             onResize: h
           },
           {
-            default: j(function() {
+            default: $(function() {
               return [f.html ? (p(), V(
                 "div",
                 {
@@ -8493,7 +8493,7 @@ function R8(D, u, f, e, F, t) {
                 "div",
                 {
                   key: 1,
-                  textContent: K(t.finalContent)
+                  textContent: Z(t.finalContent)
                 },
                 null,
                 8,
@@ -8514,13 +8514,13 @@ function R8(D, u, f, e, F, t) {
     ["theme", "popper-node", "arrow-node", "onApplyShow", "onApplyHide"]
   );
 }
-af.render = R8;
-af.__file = "src/components/TooltipDirective.vue";
-var C1 = "v-popper--has-tooltip";
-function L8(D, u) {
+df.render = N8;
+df.__file = "src/components/TooltipDirective.vue";
+var c1 = "v-popper--has-tooltip";
+function q8(D, u) {
   var f = D.placement;
   if (!f && u) {
-    var e = XD(yD), F;
+    var e = YD(yD), F;
     try {
       for (e.s(); !(F = e.n()).done; ) {
         var t = F.value;
@@ -8534,20 +8534,20 @@ function L8(D, u) {
   }
   return f || (f = N(D.theme || "tooltip", "placement")), f;
 }
-function c1(D, u, f) {
-  var e, F = Yu(u);
+function E1(D, u, f) {
+  var e, F = Xu(u);
   return F === "string" ? e = {
     content: u
   } : u && F === "object" ? e = u : e = {
     content: !1
-  }, e.placement = L8(e, f), e.targetNodes = function() {
+  }, e.placement = q8(e, f), e.targetNodes = function() {
     return [D];
   }, e.referenceNode = function() {
     return D;
   }, e;
 }
-function M8(D, u, f) {
-  var e = c1(D, u, f), F = D.$_popper = $1({
+function R8(D, u, f) {
+  var e = E1(D, u, f), F = D.$_popper = P1({
     name: "VTooltipDirective",
     data: function() {
       return {
@@ -8555,89 +8555,89 @@ function M8(D, u, f) {
       };
     },
     render: function() {
-      return P1(af, iu(iu({}, this.options), {}, {
+      return I1(df, iu(iu({}, this.options), {}, {
         ref: "tooltip"
       }));
     }
   }), t = document.createElement("div");
-  return document.body.appendChild(t), F.mount(t), D.classList && D.classList.add(C1), F;
+  return document.body.appendChild(t), F.mount(t), D.classList && D.classList.add(c1), F;
 }
-function E1(D) {
-  D.$_popper && (D.$_popper.unmount(), delete D.$_popper, delete D.$_popperOldShown), D.classList && D.classList.remove(C1);
+function l1(D) {
+  D.$_popper && (D.$_popper.unmount(), delete D.$_popper, delete D.$_popperOldShown), D.classList && D.classList.remove(c1);
 }
-function $f(D, u) {
-  var f = u.value, e = u.modifiers, F = c1(D, f, e);
+function Pf(D, u) {
+  var f = u.value, e = u.modifiers, F = E1(D, f, e);
   if (!F.content || N(F.theme || "tooltip", "disabled"))
-    E1(D);
+    l1(D);
   else {
     var t;
-    D.$_popper ? (t = D.$_popper, t.options = F) : t = M8(D, f, e), typeof f.shown < "u" && f.shown !== D.$_popperOldShown && (D.$_popperOldShown = f.shown, f.shown ? t.$refs.tooltip.show() : t.$refs.tooltip.hide());
+    D.$_popper ? (t = D.$_popper, t.options = F) : t = R8(D, f, e), typeof f.shown < "u" && f.shown !== D.$_popperOldShown && (D.$_popperOldShown = f.shown, f.shown ? t.$refs.tooltip.show() : t.$refs.tooltip.hide());
   }
 }
-var H8 = {
-  beforeMount: $f,
-  updated: $f,
+var L8 = {
+  beforeMount: Pf,
+  updated: Pf,
   beforeUnmount: function(u) {
-    E1(u);
+    l1(u);
   }
 };
-function Pf(D) {
-  D.addEventListener("click", l1), D.addEventListener("touchstart", B1, vD ? {
+function If(D) {
+  D.addEventListener("click", B1), D.addEventListener("touchstart", p1, vD ? {
     passive: !0
   } : !1);
 }
-function If(D) {
-  D.removeEventListener("click", l1), D.removeEventListener("touchstart", B1), D.removeEventListener("touchend", p1), D.removeEventListener("touchcancel", b1);
+function zf(D) {
+  D.removeEventListener("click", B1), D.removeEventListener("touchstart", p1), D.removeEventListener("touchend", b1), D.removeEventListener("touchcancel", g1);
 }
-function l1(D) {
+function B1(D) {
   var u = D.currentTarget;
   D.closePopover = !u.$_vclosepopover_touch, D.closeAllPopover = u.$_closePopoverModifiers && !!u.$_closePopoverModifiers.all;
 }
-function B1(D) {
+function p1(D) {
   if (D.changedTouches.length === 1) {
     var u = D.currentTarget;
     u.$_vclosepopover_touch = !0;
     var f = D.changedTouches[0];
-    u.$_vclosepopover_touchPoint = f, u.addEventListener("touchend", p1), u.addEventListener("touchcancel", b1);
+    u.$_vclosepopover_touchPoint = f, u.addEventListener("touchend", b1), u.addEventListener("touchcancel", g1);
   }
 }
-function p1(D) {
+function b1(D) {
   var u = D.currentTarget;
   if (u.$_vclosepopover_touch = !1, D.changedTouches.length === 1) {
     var f = D.changedTouches[0], e = u.$_vclosepopover_touchPoint;
     D.closePopover = Math.abs(f.screenY - e.screenY) < 20 && Math.abs(f.screenX - e.screenX) < 20, D.closeAllPopover = u.$_closePopoverModifiers && !!u.$_closePopoverModifiers.all;
   }
 }
-function b1(D) {
+function g1(D) {
   var u = D.currentTarget;
   u.$_vclosepopover_touch = !1;
 }
-var U8 = {
+var M8 = {
   beforeMount: function(u, f) {
     var e = f.value, F = f.modifiers;
-    u.$_closePopoverModifiers = F, (typeof e > "u" || e) && Pf(u);
+    u.$_closePopoverModifiers = F, (typeof e > "u" || e) && If(u);
   },
   updated: function(u, f) {
     var e = f.value, F = f.oldValue, t = f.modifiers;
-    u.$_closePopoverModifiers = t, e !== F && (typeof e > "u" || e ? Pf(u) : If(u));
+    u.$_closePopoverModifiers = t, e !== F && (typeof e > "u" || e ? If(u) : zf(u));
   },
   beforeUnmount: function(u) {
-    If(u);
+    zf(u);
   }
 };
-function ZD(D) {
+function JD(D) {
   var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
-  ZD.installed || (ZD.installed = !0, a1(Tu, u), D.directive("tooltip", H8), D.directive("close-popper", U8), D.component("v-tooltip", JD), D.component("VTooltip", JD), D.component("v-dropdown", QD), D.component("VDropdown", QD), D.component("v-menu", KD), D.component("VMenu", KD));
+  JD.installed || (JD.installed = !0, d1(Tu, u), D.directive("tooltip", L8), D.directive("close-popper", M8), D.component("v-tooltip", QD), D.component("VTooltip", QD), D.component("v-dropdown", KD), D.component("VDropdown", KD), D.component("v-menu", ZD), D.component("VMenu", ZD));
 }
-var V8 = {
+var H8 = {
   // eslint-disable-next-line no-undef
   version: "4.0.0-alpha.1",
-  install: ZD,
+  install: JD,
   options: Tu
-}, bD = { exports: {} }, zf;
-function W8() {
-  if (zf) return bD.exports;
-  zf = 1;
+}, bD = { exports: {} }, Nf;
+function U8() {
+  if (Nf) return bD.exports;
+  Nf = 1;
   function D() {
   }
   return D.prototype = {
@@ -8670,24 +8670,24 @@ function W8() {
     }
   }, bD.exports = D, bD.exports.TinyEmitter = D, bD.exports;
 }
-var MD, Nf;
-function G8() {
-  if (Nf) return MD;
-  Nf = 1;
-  var D = W8();
+var MD, qf;
+function V8() {
+  if (qf) return MD;
+  qf = 1;
+  var D = U8();
   return MD = new D(), MD;
 }
-var X8 = G8();
-const gD = /* @__PURE__ */ uf(X8), Y8 = {
+var W8 = V8();
+const gD = /* @__PURE__ */ Df(W8), G8 = {
   $on: (...D) => gD.on(...D),
   $once: (...D) => gD.once(...D),
   $off: (...D) => gD.off(...D),
   $emit: (...D) => gD.emit(...D)
-}, Q8 = "BeautifulChat", J8 = {
+}, Y8 = "BeautifulChat", K8 = {
   install(D, u = {}) {
-    this.installed || D.prototype && D.prototype.$isServer || (this.installed = !0, D.config.globalProperties.$event = Y8, this.componentName = u.componentName || Q8, D.component(this.componentName, s2), D.use(V8));
+    this.installed || D.prototype && D.prototype.$isServer || (this.installed = !0, D.config.globalProperties.$event = G8, this.componentName = u.componentName || Y8, D.component(this.componentName, i2), D.use(H8));
   }
 };
 export {
-  J8 as default
+  K8 as default
 };
