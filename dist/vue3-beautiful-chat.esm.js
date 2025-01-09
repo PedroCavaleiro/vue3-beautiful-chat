@@ -93,7 +93,7 @@ function H1(D, u, f, e, F, t) {
       class: "sc-header--minimize-button",
       onClick: u[1] || (u[1] = (n) => D.$emit("minimize"))
     }, [
-      f.icons.minimize ? (p(), g("img", {
+      f.icons.minimize.img ? (p(), g("img", {
         key: 0,
         src: f.icons.minimize.img,
         alt: f.icons.minimize.name
@@ -114,7 +114,7 @@ function H1(D, u, f, e, F, t) {
     ])) : I("", !0)
   ], 4);
 }
-const U1 = /* @__PURE__ */ M(z1, [["render", H1], ["__scopeId", "data-v-03ba8339"]]), V1 = {
+const U1 = /* @__PURE__ */ M(z1, [["render", H1], ["__scopeId", "data-v-e3543d79"]]), V1 = {
   props: {
     iconName: {
       type: String,

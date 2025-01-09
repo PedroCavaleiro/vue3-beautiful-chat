@@ -13,7 +13,7 @@
     </div>
 
     <div v-if="showMinimizeButton" class="sc-header--minimize-button" @click="$emit('minimize')">
-      <img v-if="icons.minimize" :src="icons.minimize.img" :alt="icons.minimize.name" />
+      <img v-if="icons.minimize.img" :src="icons.minimize.img" :alt="icons.minimize.name" />
       <div v-else v-html="minimizeIcon"></div>
     </div>
     <div v-if="showCloseButton" class="sc-header--close-button" @click="$emit('close')">
