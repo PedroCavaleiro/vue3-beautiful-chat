@@ -33,6 +33,7 @@
       :messageMargin="messageMargin"
       :acceptedFileTypes="acceptedFileTypes"
       :showMinimizeButton="showMinimizeButton"
+      :acceptedFileTypes="acceptedFileTypes"
       @close="close"
       @minimize="minimize"
       @scrollToTop="$emit('scrollToTop')"
