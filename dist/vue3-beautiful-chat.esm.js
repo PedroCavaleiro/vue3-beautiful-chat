@@ -93,6 +93,7 @@ function M1(D, u, f, e, F, t) {
       onClick: u[1] || (u[1] = (n) => D.$emit("minimize"))
     }, [
       y("img", {
+        class: "sc-header--minimize-button-img",
         src: f.icons.minimize.img,
         alt: f.icons.minimize.name
       }, null, 8, R1)
@@ -109,7 +110,7 @@ function M1(D, u, f, e, F, t) {
     ])) : I("", !0)
   ], 4);
 }
-const H1 = /* @__PURE__ */ M(z1, [["render", M1], ["__scopeId", "data-v-b8e6ab9b"]]), U1 = {
+const H1 = /* @__PURE__ */ M(z1, [["render", M1], ["__scopeId", "data-v-f4891b86"]]), U1 = {
   props: {
     iconName: {
       type: String,
