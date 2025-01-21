@@ -1,9 +1,10 @@
 <template>
   <div
-      :id="message.id" class="sc-message"
-      :style="{
-        margin: marginStyle
-      }"
+    :id="message.id"
+    class="sc-message"
+    :style="{
+      margin: marginStyle
+    }"
   >
     <div
       class="sc-message--content"
@@ -34,17 +35,17 @@
         :confirmation-deletion-message="confirmationDeletionMessage"
         @remove="$emit('remove')"
       >
-        <template v-slot:default="scopedProps">
+        <template #default="scopedProps">
           <slot
             name="text-message-body"
             :message="scopedProps.message"
-            :messageText="scopedProps.messageText"
-            :messageColors="scopedProps.messageColors"
+            :message-text="scopedProps.messageText"
+            :message-colors="scopedProps.messageColors"
             :me="scopedProps.me"
           >
           </slot>
         </template>
-        <template v-slot:text-message-toolbox="scopedProps">
+        <template #text-message-toolbox="scopedProps">
           <slot name="text-message-toolbox" :message="scopedProps.message" :me="scopedProps.me">
           </slot>
         </template>
@@ -52,9 +53,18 @@
       <EmojiMessage v-else-if="message.type === 'emoji'" :data="message.data" />
       <FileMessage
         v-else-if="message.type === 'file'"
-        :data="message.data"
+        :message="message.data"
         :message-colors="messageColors"
-      />
+      >
+        <template #default="scopedProps">
+          <slot
+            name="file-message-body"
+            :message="scopedProps.message"
+            :message-colors="scopedProps.messageColors"
+          >
+          </slot>
+        </template>
+      </FileMessage>
       <TypingMessage v-else-if="message.type === 'typing'" :message-colors="messageColors" />
       <SystemMessage
         v-else-if="message.type === 'system'"
@@ -136,15 +146,13 @@ export default {
       }
     },
     marginStyle() {
-      if (!this.messageMargin)
-        return 'auto';
+      if (!this.messageMargin) return 'auto'
       if (this.message.author === 'me' && this.messageMargin.sender)
-        return this.messageMargin.sender;
+        return this.messageMargin.sender
       if (this.message.type === 'system' && this.messageMargin.system)
-        return this.messageMargin.system;
-      if (this.messageMargin.recipient)
-        return this.messageMargin.recipient;
-      return 'auto';
+        return this.messageMargin.system
+      if (this.messageMargin.recipient) return this.messageMargin.recipient
+      return 'auto'
     }
   }
 }
@@ -341,7 +349,9 @@ export default {
   &[aria-hidden='true'] {
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.15s, visibility 0.15s;
+    transition:
+      opacity 0.15s,
+      visibility 0.15s;
   }
   &[aria-hidden='false'] {
     visibility: visible;

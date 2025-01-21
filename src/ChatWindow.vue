@@ -8,7 +8,7 @@
       @minimize="$emit('minimize')"
       @userList="handleUserListToggle"
     >
-      <slot name="header"> </slot>
+      <slot name="header"></slot>
     </Header>
     <UserList v-if="showUserList" :colors="colors" :participants="participants" />
     <MessageList
@@ -21,29 +21,36 @@
       :show-confirmation-deletion="showConfirmationDeletion"
       :confirmation-deletion-message="confirmationDeletionMessage"
       :message-styling="messageStyling"
-      :messageMargin="messageMargin"
+      :message-margin="messageMargin"
       @scrollToTop="$emit('scrollToTop')"
       @remove="$emit('remove', $event)"
     >
-      <template v-slot:user-avatar="scopedProps">
-        <slot name="user-avatar" :user="scopedProps.user" :message="scopedProps.message"> </slot>
+      <template #user-avatar="scopedProps">
+        <slot name="user-avatar" :user="scopedProps.user" :message="scopedProps.message"></slot>
       </template>
-      <template v-slot:text-message-body="scopedProps">
+      <template #text-message-body="scopedProps">
         <slot
           name="text-message-body"
           :message="scopedProps.message"
-          :messageText="scopedProps.messageText"
-          :messageColors="scopedProps.messageColors"
+          :message-text="scopedProps.messageText"
+          :message-colors="scopedProps.messageColors"
           :me="scopedProps.me"
         >
         </slot>
       </template>
-      <template v-slot:system-message-body="scopedProps">
-        <slot name="system-message-body" :message="scopedProps.message"> </slot>
+      <template #system-message-body="scopedProps">
+        <slot name="system-message-body" :message="scopedProps.message"></slot>
       </template>
-      <template v-slot:text-message-toolbox="scopedProps">
+      <template #text-message-toolbox="scopedProps">
         <slot name="text-message-toolbox" :message="scopedProps.message" :me="scopedProps.me">
         </slot>
+      </template>
+      <template #file-message-body="scopedProps">
+        <slot
+          name="file-message-body"
+          :message="scopedProps.message"
+          :messageColors="scopedProps.messageColors"
+        ></slot>
       </template>
     </MessageList>
     <UserInput
@@ -55,7 +62,7 @@
       :show-file="showFile"
       :placeholder="placeholder"
       :colors="colors"
-      :acceptedFileTypes="acceptedFileTypes"
+      :accepted-file-types="acceptedFileTypes"
       @onType="$emit('onType', $event)"
       @edit="$emit('edit', $event)"
     />
@@ -70,6 +77,7 @@ import UserList from './UserList.vue'
 
 export default {
   components: {
+    // eslint-disable-next-line vue/no-reserved-component-names
     Header,
     MessageList,
     UserInput,
@@ -215,6 +223,7 @@ export default {
 .sc-message--me {
   text-align: right;
 }
+
 .sc-message--them {
   text-align: left;
 }
@@ -228,9 +237,11 @@ export default {
     bottom: 0px;
     border-radius: 0px;
   }
+
   .sc-chat-window {
     transition: 0.1s ease-in-out;
   }
+
   .sc-chat-window.closed {
     bottom: 0px;
   }
