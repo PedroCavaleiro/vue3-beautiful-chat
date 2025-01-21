@@ -45,6 +45,9 @@
         >
         </slot>
       </template>
+      <template #emoji-message-body="scopedProps">
+        <slot name="emoji-message-body" :message="scopedProps.message"> </slot>
+      </template>
     </Message>
     <Message
       v-show="showTypingIndicator !== ''"

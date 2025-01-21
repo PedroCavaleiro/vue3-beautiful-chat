@@ -49,8 +49,11 @@
         <slot
           name="file-message-body"
           :message="scopedProps.message"
-          :messageColors="scopedProps.messageColors"
+          :message-colors="scopedProps.messageColors"
         ></slot>
+      </template>
+      <template #emoji-message-body="scopedProps">
+        <slot name="emoji-message-body" :message="scopedProps.message"></slot>
       </template>
     </MessageList>
     <UserInput
