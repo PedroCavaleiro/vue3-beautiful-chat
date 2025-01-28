@@ -1,13 +1,13 @@
-import { reactive as w1, openBlock as b, createElementBlock as m, normalizeStyle as j, createCommentVNode as z, renderSlot as k, createTextVNode as Nu, toDisplayString as Z, createElementVNode as p, resolveComponent as O, createVNode as L, withCtx as x, resolveDirective as Lf, normalizeClass as DD, withDirectives as uf, createBlock as V, Fragment as qu, renderList as Ku, vShow as k1, withModifiers as Gu, pushScopeId as x1, popScopeId as S1, nextTick as T1, withScopeId as $1, withKeys as O1, mergeProps as Rf, createApp as j1, h as P1 } from "vue";
+import { reactive as y1, openBlock as b, createElementBlock as m, normalizeStyle as j, createCommentVNode as z, renderSlot as k, createTextVNode as Nu, toDisplayString as Z, createElementVNode as p, resolveComponent as O, createVNode as L, withCtx as x, resolveDirective as w1, normalizeClass as DD, withDirectives as qf, createBlock as V, Fragment as qu, renderList as Ku, vShow as k1, withModifiers as Gu, pushScopeId as x1, popScopeId as S1, nextTick as T1, withScopeId as $1, withKeys as O1, mergeProps as Lf, createApp as j1, h as P1 } from "vue";
 const Du = {
-  state: w1({
+  state: y1({
     editMessage: null
   }),
   setState(D, u) {
     this.state[D] = u;
   }
 };
-function Mf(D) {
+function Rf(D) {
   const u = {};
   return D.forEach((f) => {
     u[f] = function() {
@@ -52,7 +52,7 @@ const M = (D, u) => {
     };
   },
   computed: {
-    ...Mf(["disableUserListToggle", "titleImageUrl", "showCloseButton", "showMinimizeButton"])
+    ...Rf(["disableUserListToggle", "titleImageUrl", "showCloseButton", "showMinimizeButton"])
   },
   methods: {
     toggleUserList() {
@@ -199,7 +199,7 @@ function V1(D, u, f, e, F, t) {
     ], 8, U1)
   ], 8, M1);
 }
-const Hf = /* @__PURE__ */ M(R1, [["render", V1], ["__scopeId", "data-v-1fd45a6c"]]), W1 = {}, G1 = { d: "M19.404,6.65l-5.998-5.996c-0.292-0.292-0.765-0.292-1.056,0l-2.22,2.22l-8.311,8.313l-0.003,0.001v0.003l-0.161,0.161c-0.114,0.112-0.187,0.258-0.21,0.417l-1.059,7.051c-0.035,0.233,0.044,0.47,0.21,0.639c0.143,0.14,0.333,0.219,0.528,0.219c0.038,0,0.073-0.003,0.111-0.009l7.054-1.055c0.158-0.025,0.306-0.098,0.417-0.211l8.478-8.476l2.22-2.22C19.695,7.414,19.695,6.941,19.404,6.65z M8.341,16.656l-0.989-0.99l7.258-7.258l0.989,0.99L8.341,16.656z M2.332,15.919l0.411-2.748l4.143,4.143l-2.748,0.41L2.332,15.919z M13.554,7.351L6.296,14.61l-0.849-0.848l7.259-7.258l0.423,0.424L13.554,7.351zM10.658,4.457l0.992,0.99l-7.259,7.258L3.4,11.715L10.658,4.457z M16.656,8.342l-1.517-1.517V6.823h-0.003l-0.951-0.951l-2.471-2.471l1.164-1.164l4.942,4.94L16.656,8.342z" };
+const Mf = /* @__PURE__ */ M(R1, [["render", V1], ["__scopeId", "data-v-1fd45a6c"]]), W1 = {}, G1 = { d: "M19.404,6.65l-5.998-5.996c-0.292-0.292-0.765-0.292-1.056,0l-2.22,2.22l-8.311,8.313l-0.003,0.001v0.003l-0.161,0.161c-0.114,0.112-0.187,0.258-0.21,0.417l-1.059,7.051c-0.035,0.233,0.044,0.47,0.21,0.639c0.143,0.14,0.333,0.219,0.528,0.219c0.038,0,0.073-0.003,0.111-0.009l7.054-1.055c0.158-0.025,0.306-0.098,0.417-0.211l8.478-8.476l2.22-2.22C19.695,7.414,19.695,6.941,19.404,6.65z M8.341,16.656l-0.989-0.99l7.258-7.258l0.989,0.99L8.341,16.656z M2.332,15.919l0.411-2.748l4.143,4.143l-2.748,0.41L2.332,15.919z M13.554,7.351L6.296,14.61l-0.849-0.848l7.259-7.258l0.423,0.424L13.554,7.351zM10.658,4.457l0.992,0.99l-7.259,7.258L3.4,11.715L10.658,4.457z M16.656,8.342l-1.517-1.517V6.823h-0.003l-0.951-0.951l-2.471-2.471l1.164-1.164l4.942,4.94L16.656,8.342z" };
 function Y1(D, u) {
   return b(), m("path", G1);
 }
@@ -207,13 +207,13 @@ const X1 = /* @__PURE__ */ M(W1, [["render", Y1]]), K1 = {}, Z1 = { d: "M15.898,
 function Q1(D, u) {
   return b(), m("path", Z1);
 }
-const Uf = /* @__PURE__ */ M(K1, [["render", Q1]]), rf = (D) => D.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const Hf = /* @__PURE__ */ M(K1, [["render", Q1]]), df = (D) => D.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 function J1(D, ...u) {
   if (typeof D == "string")
-    return rf(D);
+    return df(D);
   let f = D[0];
   for (const [e, F] of u.entries())
-    f = f + rf(String(F)) + D[e + 1];
+    f = f + df(String(F)) + D[e + 1];
   return f;
 }
 var u0 = "4.1.0";
@@ -243,7 +243,7 @@ function wu(D, u) {
 function Iu(D) {
   throw new Error("Unhandled case for value: '".concat(D, "'"));
 }
-var zu = /[A-Za-z]/, J = /[\d]/, du = /\s/, OD = /['"]/, t0 = /[\x00-\x1F\x7F]/, F0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, n0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, a0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, d0 = F0 + n0 + a0, r0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Vf = d0 + r0, Su = new RegExp("[".concat(Vf, "]")), Wf = (
+var zu = /[A-Za-z]/, J = /[\d]/, du = /\s/, OD = /['"]/, t0 = /[\x00-\x1F\x7F]/, F0 = /A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC/.source, n0 = /\u2700-\u27bf\udde6-\uddff\ud800-\udbff\udc00-\udfff\ufe0e\ufe0f\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0\ud83c\udffb-\udfff\u200d\u3299\u3297\u303d\u3030\u24c2\ud83c\udd70-\udd71\udd7e-\udd7f\udd8e\udd91-\udd9a\udde6-\uddff\ude01-\ude02\ude1a\ude2f\ude32-\ude3a\ude50-\ude51\u203c\u2049\u25aa-\u25ab\u25b6\u25c0\u25fb-\u25fe\u00a9\u00ae\u2122\u2139\udc04\u2600-\u26FF\u2b05\u2b06\u2b07\u2b1b\u2b1c\u2b50\u2b55\u231a\u231b\u2328\u23cf\u23e9-\u23f3\u23f8-\u23fa\udccf\u2935\u2934\u2190-\u21ff/.source, a0 = /\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D4-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C03\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D01-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF5\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F/.source, d0 = F0 + n0 + a0, r0 = /0-9\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\uA620-\uA629\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19/.source, Uf = d0 + r0, Su = new RegExp("[".concat(Uf, "]")), Vf = (
   /** @class */
   function() {
     function D(u) {
@@ -371,7 +371,7 @@ var C0 = (
       u === void 0 && (u = {}), this.newWindow = !1, this.truncate = {}, this.className = "", this.newWindow = u.newWindow || !1, this.truncate = u.truncate || {}, this.className = u.className || "";
     }
     return D.prototype.build = function(u) {
-      return new Wf({
+      return new Vf({
         tagName: "a",
         attrs: this.createAttrs(u),
         innerHtml: this.processAnchorText(u.getAnchorText())
@@ -443,11 +443,11 @@ var eD = (
       return this.tagBuilder.build(this);
     }, D;
   }()
-), c0 = "(?:xn--vermgensberatung-pwb|xn--vermgensberater-ctb|xn--clchc0ea0b2g2a9gcd|xn--w4r85el8fhu5dnra|travelersinsurance|vermögensberatung|xn--5su34j936bgsg|xn--bck1b9a5dre4c|xn--mgbah1a3hjkrd|xn--mgbai9azgqp6j|xn--mgberp4a5d4ar|xn--xkc2dl3a5ee0h|vermögensberater|xn--fzys8d69uvgm|xn--mgba7c0bbn0a|xn--mgbcpq6gpa1a|xn--xkc2al3hye2a|americanexpress|kerryproperties|sandvikcoromant|xn--i1b6b1a6a2e|xn--kcrx77d1x4a|xn--lgbbat1ad8j|xn--mgba3a4f16a|xn--mgbc0a9azcg|xn--nqv7fs00ema|americanfamily|kerrylogistics|weatherchannel|xn--54b7fta0cc|xn--6qq986b3xl|xn--80aqecdr1a|xn--b4w605ferd|xn--fiq228c5hs|xn--h2breg3eve|xn--jlq480n2rg|xn--mgba3a3ejt|xn--mgbaam7a8h|xn--mgbayh7gpa|xn--mgbbh1a71e|xn--mgbca7dzdo|xn--mgbi4ecexp|xn--mgbx4cd0ab|xn--rvc1e0am3e|international|lifeinsurance|wolterskluwer|xn--cckwcxetd|xn--eckvdtc9d|xn--fpcrj9c3d|xn--fzc2c9e2c|xn--h2brj9c8c|xn--tiq49xqyj|xn--yfro4i67o|xn--ygbi2ammx|construction|lplfinancial|scholarships|versicherung|xn--3e0b707e|xn--45br5cyl|xn--4dbrk0ce|xn--80adxhks|xn--80asehdb|xn--8y0a063a|xn--gckr3f0f|xn--mgb9awbf|xn--mgbab2bd|xn--mgbgu82a|xn--mgbpl2fh|xn--mgbt3dhd|xn--mk1bu44c|xn--ngbc5azd|xn--ngbe9e0a|xn--ogbpf8fl|xn--qcka1pmc|accountants|barclaycard|blackfriday|blockbuster|bridgestone|calvinklein|contractors|creditunion|engineering|enterprises|investments|kerryhotels|lamborghini|motorcycles|olayangroup|photography|playstation|productions|progressive|redumbrella|williamhill|xn--11b4c3d|xn--1ck2e1b|xn--1qqw23a|xn--2scrj9c|xn--3bst00m|xn--3ds443g|xn--3hcrj9c|xn--42c2d9a|xn--45brj9c|xn--55qw42g|xn--6frz82g|xn--80ao21a|xn--9krt00a|xn--cck2b3b|xn--czr694b|xn--d1acj3b|xn--efvy88h|xn--fct429k|xn--fjq720a|xn--flw351e|xn--g2xx48c|xn--gecrj9c|xn--gk3at1e|xn--h2brj9c|xn--hxt814e|xn--imr513n|xn--j6w193g|xn--jvr189m|xn--kprw13d|xn--kpry57d|xn--mgbbh1a|xn--mgbtx2b|xn--mix891f|xn--nyqy26a|xn--otu796d|xn--pgbs0dh|xn--q9jyb4c|xn--rhqv96g|xn--rovu88b|xn--s9brj9c|xn--ses554g|xn--t60b56a|xn--vuq861b|xn--w4rs40l|xn--xhq521b|xn--zfr164b|சிங்கப்பூர்|accountant|apartments|associates|basketball|bnpparibas|boehringer|capitalone|consulting|creditcard|cuisinella|eurovision|extraspace|foundation|healthcare|immobilien|industries|management|mitsubishi|nextdirect|properties|protection|prudential|realestate|republican|restaurant|schaeffler|tatamotors|technology|university|vlaanderen|xn--30rr7y|xn--3pxu8k|xn--45q11c|xn--4gbrim|xn--55qx5d|xn--5tzm5g|xn--80aswg|xn--90a3ac|xn--9dbq2a|xn--9et52u|xn--c2br7g|xn--cg4bki|xn--czrs0t|xn--czru2d|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--io0a7i|xn--kput3i|xn--mxtq1m|xn--o3cw4h|xn--pssy2u|xn--q7ce6a|xn--unup4y|xn--wgbh1c|xn--wgbl6a|xn--y9a3aq|accenture|allfinanz|amsterdam|analytics|aquarelle|barcelona|bloomberg|christmas|community|directory|education|equipment|fairwinds|financial|firestone|fresenius|furniture|goldpoint|hisamitsu|homedepot|homegoods|homesense|institute|insurance|kuokgroup|lancaster|landrover|lifestyle|marketing|marshalls|melbourne|microsoft|panasonic|pramerica|richardli|shangrila|solutions|statebank|statefarm|stockholm|travelers|vacations|xn--90ais|xn--c1avg|xn--d1alf|xn--e1a4c|xn--fhbei|xn--j1aef|xn--j1amh|xn--l1acc|xn--ngbrx|xn--nqv7f|xn--p1acf|xn--qxa6a|xn--tckwe|xn--vhquv|yodobashi|موريتانيا|abudhabi|airforce|allstate|attorney|barclays|barefoot|bargains|baseball|boutique|bradesco|broadway|brussels|builders|business|capetown|catering|catholic|cipriani|cleaning|clinique|clothing|commbank|computer|delivery|deloitte|democrat|diamonds|discount|discover|download|engineer|ericsson|exchange|feedback|fidelity|firmdale|football|frontier|goodyear|grainger|graphics|hdfcbank|helsinki|holdings|hospital|infiniti|ipiranga|istanbul|jpmorgan|lighting|lundbeck|marriott|mckinsey|memorial|merckmsd|mortgage|observer|partners|pharmacy|pictures|plumbing|property|redstone|reliance|saarland|samsclub|security|services|shopping|softbank|software|stcgroup|supplies|training|vanguard|ventures|verisign|woodside|xn--90ae|xn--node|xn--p1ai|xn--qxam|yokohama|السعودية|abogado|academy|agakhan|alibaba|android|athleta|auction|audible|auspost|banamex|bauhaus|bentley|bestbuy|booking|brother|capital|caravan|careers|channel|charity|chintai|citadel|clubmed|college|cologne|company|compare|contact|cooking|corsica|country|coupons|courses|cricket|cruises|dentist|digital|domains|exposed|express|farmers|fashion|ferrari|ferrero|finance|fishing|fitness|flights|florist|flowers|forsale|frogans|fujitsu|gallery|genting|godaddy|grocery|guitars|hamburg|hangout|hitachi|holiday|hosting|hotmail|hyundai|ismaili|jewelry|juniper|kitchen|komatsu|lacaixa|lanxess|lasalle|latrobe|leclerc|limited|lincoln|markets|monster|netbank|netflix|network|neustar|okinawa|organic|origins|philips|pioneer|politie|realtor|recipes|rentals|reviews|rexroth|samsung|sandvik|schmidt|schwarz|science|shiksha|singles|staples|storage|support|surgery|systems|temasek|theater|theatre|tickets|toshiba|trading|walmart|wanggou|watches|weather|website|wedding|whoswho|windows|winners|yamaxun|youtube|zuerich|католик|البحرين|الجزائر|العليان|پاکستان|كاثوليك|இந்தியா|abbott|abbvie|africa|agency|airbus|airtel|alipay|alsace|alstom|amazon|anquan|aramco|author|bayern|beauty|berlin|bharti|bostik|boston|broker|camera|career|casino|center|chanel|chrome|church|circle|claims|clinic|coffee|comsec|condos|coupon|credit|cruise|dating|datsun|dealer|degree|dental|design|direct|doctor|dunlop|dupont|durban|emerck|energy|estate|events|expert|family|flickr|futbol|gallup|garden|george|giving|global|google|gratis|health|hermes|hiphop|hockey|hotels|hughes|imamat|insure|intuit|jaguar|joburg|juegos|kaufen|kindle|kosher|latino|lawyer|lefrak|living|locker|london|luxury|madrid|maison|makeup|market|mattel|mobile|monash|mormon|moscow|museum|nagoya|nissan|nissay|norton|nowruz|office|olayan|online|oracle|orange|otsuka|pfizer|photos|physio|pictet|quebec|racing|realty|reisen|repair|report|review|rogers|ryukyu|safety|sakura|sanofi|school|schule|search|secure|select|shouji|soccer|social|stream|studio|supply|suzuki|swatch|sydney|taipei|taobao|target|tattoo|tennis|tienda|tjmaxx|tkmaxx|toyota|travel|unicom|viajes|viking|villas|virgin|vision|voting|voyage|walter|webcam|xihuan|yachts|yandex|zappos|москва|онлайн|ابوظبي|ارامكو|الاردن|المغرب|امارات|فلسطين|مليسيا|भारतम्|இலங்கை|ファッション|actor|adult|aetna|amfam|amica|apple|archi|audio|autos|azure|baidu|beats|bible|bingo|black|boats|bosch|build|canon|cards|chase|cheap|cisco|citic|click|cloud|coach|codes|crown|cymru|dance|deals|delta|drive|dubai|earth|edeka|email|epson|faith|fedex|final|forex|forum|gallo|games|gifts|gives|glass|globo|gmail|green|gripe|group|gucci|guide|homes|honda|horse|house|hyatt|ikano|irish|jetzt|koeln|kyoto|lamer|lease|legal|lexus|lilly|lipsy|loans|locus|lotte|lotto|mango|media|miami|money|movie|music|nexus|nikon|ninja|nokia|nowtv|omega|osaka|paris|parts|party|phone|photo|pizza|place|poker|praxi|press|prime|promo|quest|radio|rehab|reise|ricoh|rocks|rodeo|rugby|salon|sener|seven|sharp|shell|shoes|skype|sling|smart|smile|solar|space|sport|stada|store|study|style|sucks|swiss|tatar|tires|tirol|tmall|today|tokyo|tools|toray|total|tours|trade|trust|tunes|tushu|ubank|vegas|video|vodka|volvo|wales|watch|weber|weibo|works|world|xerox|yahoo|ישראל|ایران|بازار|بھارت|سودان|سورية|همراه|भारोत|संगठन|বাংলা|భారత్|ഭാരതം|嘉里大酒店|aarp|able|aero|akdn|ally|amex|arab|army|arpa|arte|asda|asia|audi|auto|baby|band|bank|bbva|beer|best|bike|bing|blog|blue|bofa|bond|book|buzz|cafe|call|camp|care|cars|casa|case|cash|cbre|cern|chat|citi|city|club|cool|coop|cyou|data|date|dclk|deal|dell|desi|diet|dish|docs|dvag|erni|fage|fail|fans|farm|fast|fido|film|fire|fish|flir|food|ford|free|fund|game|gbiz|gent|ggee|gift|gmbh|gold|golf|goog|guge|guru|hair|haus|hdfc|help|here|host|hsbc|icbc|ieee|imdb|immo|info|itau|java|jeep|jobs|jprs|kddi|kids|kiwi|kpmg|kred|land|lego|lgbt|lidl|life|like|limo|link|live|loan|love|ltda|luxe|maif|meet|meme|menu|mini|mint|mobi|moda|moto|name|navy|news|next|nico|nike|ollo|open|page|pars|pccw|pics|ping|pink|play|plus|pohl|porn|post|prod|prof|qpon|read|reit|rent|rest|rich|room|rsvp|ruhr|safe|sale|sarl|save|saxo|scot|seat|seek|sexy|shia|shop|show|silk|sina|site|skin|sncf|sohu|song|sony|spot|star|surf|talk|taxi|team|tech|teva|tiaa|tips|town|toys|tube|vana|visa|viva|vivo|vote|voto|wang|weir|wien|wiki|wine|work|xbox|yoga|zara|zero|zone|дети|сайт|بارت|بيتك|ڀارت|تونس|شبكة|عراق|عمان|موقع|भारत|ভারত|ভাৰত|ਭਾਰਤ|ભારત|ଭାରତ|ಭಾರತ|ලංකා|アマゾン|グーグル|クラウド|ポイント|组织机构|電訊盈科|香格里拉|aaa|abb|abc|aco|ads|aeg|afl|aig|anz|aol|app|art|aws|axa|bar|bbc|bbt|bcg|bcn|bet|bid|bio|biz|bms|bmw|bom|boo|bot|box|buy|bzh|cab|cal|cam|car|cat|cba|cbn|ceo|cfa|cfd|com|cpa|crs|dad|day|dds|dev|dhl|diy|dnp|dog|dot|dtv|dvr|eat|eco|edu|esq|eus|fan|fit|fly|foo|fox|frl|ftr|fun|fyi|gal|gap|gay|gdn|gea|gle|gmo|gmx|goo|gop|got|gov|hbo|hiv|hkt|hot|how|ibm|ice|icu|ifm|inc|ing|ink|int|ist|itv|jcb|jio|jll|jmp|jnj|jot|joy|kfh|kia|kim|kpn|krd|lat|law|lds|llc|llp|lol|lpl|ltd|man|map|mba|med|men|mil|mit|mlb|mls|mma|moe|moi|mom|mov|msd|mtn|mtr|nab|nba|nec|net|new|nfl|ngo|nhk|now|nra|nrw|ntt|nyc|obi|one|ong|onl|ooo|org|ott|ovh|pay|pet|phd|pid|pin|pnc|pro|pru|pub|pwc|red|ren|ril|rio|rip|run|rwe|sap|sas|sbi|sbs|scb|sew|sex|sfr|ski|sky|soy|spa|srl|stc|tab|tax|tci|tdk|tel|thd|tjx|top|trv|tui|tvs|ubs|uno|uol|ups|vet|vig|vin|vip|wed|win|wme|wow|wtc|wtf|xin|xxx|xyz|you|yun|zip|бел|ком|қаз|мкд|мон|орг|рус|срб|укр|հայ|קום|عرب|قطر|كوم|مصر|कॉम|नेट|คอม|ไทย|ລາວ|ストア|セール|みんな|中文网|亚马逊|天主教|我爱你|新加坡|淡马锡|飞利浦|ac|ad|ae|af|ag|ai|al|am|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cw|cx|cy|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gg|gh|gi|gl|gm|gn|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|mv|mw|mx|my|mz|na|nc|ne|nf|ng|ni|nl|no|np|nr|nu|nz|om|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|ps|pt|pw|py|qa|re|ro|rs|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sk|sl|sm|sn|so|sr|ss|st|su|sv|sx|sy|sz|tc|td|tf|tg|th|tj|tk|tl|tm|tn|to|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|za|zm|zw|ελ|ευ|бг|ею|рф|გე|닷넷|닷컴|삼성|한국|コム|世界|中信|中国|中國|企业|佛山|信息|健康|八卦|公司|公益|台湾|台灣|商城|商店|商标|嘉里|在线|大拿|娱乐|家電|广东|微博|慈善|手机|招聘|政务|政府|新闻|时尚|書籍|机构|游戏|澳門|点看|移动|网址|网店|网站|网络|联通|谷歌|购物|通販|集团|食品|餐厅|香港)", E0 = new RegExp("^" + c0 + "$"), l0 = /[\/?#]/, B0 = /[-+&@#/%=~_()|'$*\[\]{}\u2713]/, Gf = /[?!:,.;^]/, Yf = /https?:\/\//i, b0 = new RegExp("^" + Yf.source, "i"), p0 = new RegExp(Gf.source + "$"), g0 = /^(javascript|vbscript):/i, m0 = /^[A-Za-z][-.+A-Za-z0-9]*:(\/\/)?([^:/]*)/, h0 = /^(?:\/\/)?([^/#?:]+)/;
+), c0 = "(?:xn--vermgensberatung-pwb|xn--vermgensberater-ctb|xn--clchc0ea0b2g2a9gcd|xn--w4r85el8fhu5dnra|travelersinsurance|vermögensberatung|xn--5su34j936bgsg|xn--bck1b9a5dre4c|xn--mgbah1a3hjkrd|xn--mgbai9azgqp6j|xn--mgberp4a5d4ar|xn--xkc2dl3a5ee0h|vermögensberater|xn--fzys8d69uvgm|xn--mgba7c0bbn0a|xn--mgbcpq6gpa1a|xn--xkc2al3hye2a|americanexpress|kerryproperties|sandvikcoromant|xn--i1b6b1a6a2e|xn--kcrx77d1x4a|xn--lgbbat1ad8j|xn--mgba3a4f16a|xn--mgbc0a9azcg|xn--nqv7fs00ema|americanfamily|kerrylogistics|weatherchannel|xn--54b7fta0cc|xn--6qq986b3xl|xn--80aqecdr1a|xn--b4w605ferd|xn--fiq228c5hs|xn--h2breg3eve|xn--jlq480n2rg|xn--mgba3a3ejt|xn--mgbaam7a8h|xn--mgbayh7gpa|xn--mgbbh1a71e|xn--mgbca7dzdo|xn--mgbi4ecexp|xn--mgbx4cd0ab|xn--rvc1e0am3e|international|lifeinsurance|wolterskluwer|xn--cckwcxetd|xn--eckvdtc9d|xn--fpcrj9c3d|xn--fzc2c9e2c|xn--h2brj9c8c|xn--tiq49xqyj|xn--yfro4i67o|xn--ygbi2ammx|construction|lplfinancial|scholarships|versicherung|xn--3e0b707e|xn--45br5cyl|xn--4dbrk0ce|xn--80adxhks|xn--80asehdb|xn--8y0a063a|xn--gckr3f0f|xn--mgb9awbf|xn--mgbab2bd|xn--mgbgu82a|xn--mgbpl2fh|xn--mgbt3dhd|xn--mk1bu44c|xn--ngbc5azd|xn--ngbe9e0a|xn--ogbpf8fl|xn--qcka1pmc|accountants|barclaycard|blackfriday|blockbuster|bridgestone|calvinklein|contractors|creditunion|engineering|enterprises|investments|kerryhotels|lamborghini|motorcycles|olayangroup|photography|playstation|productions|progressive|redumbrella|williamhill|xn--11b4c3d|xn--1ck2e1b|xn--1qqw23a|xn--2scrj9c|xn--3bst00m|xn--3ds443g|xn--3hcrj9c|xn--42c2d9a|xn--45brj9c|xn--55qw42g|xn--6frz82g|xn--80ao21a|xn--9krt00a|xn--cck2b3b|xn--czr694b|xn--d1acj3b|xn--efvy88h|xn--fct429k|xn--fjq720a|xn--flw351e|xn--g2xx48c|xn--gecrj9c|xn--gk3at1e|xn--h2brj9c|xn--hxt814e|xn--imr513n|xn--j6w193g|xn--jvr189m|xn--kprw13d|xn--kpry57d|xn--mgbbh1a|xn--mgbtx2b|xn--mix891f|xn--nyqy26a|xn--otu796d|xn--pgbs0dh|xn--q9jyb4c|xn--rhqv96g|xn--rovu88b|xn--s9brj9c|xn--ses554g|xn--t60b56a|xn--vuq861b|xn--w4rs40l|xn--xhq521b|xn--zfr164b|சிங்கப்பூர்|accountant|apartments|associates|basketball|bnpparibas|boehringer|capitalone|consulting|creditcard|cuisinella|eurovision|extraspace|foundation|healthcare|immobilien|industries|management|mitsubishi|nextdirect|properties|protection|prudential|realestate|republican|restaurant|schaeffler|tatamotors|technology|university|vlaanderen|xn--30rr7y|xn--3pxu8k|xn--45q11c|xn--4gbrim|xn--55qx5d|xn--5tzm5g|xn--80aswg|xn--90a3ac|xn--9dbq2a|xn--9et52u|xn--c2br7g|xn--cg4bki|xn--czrs0t|xn--czru2d|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--io0a7i|xn--kput3i|xn--mxtq1m|xn--o3cw4h|xn--pssy2u|xn--q7ce6a|xn--unup4y|xn--wgbh1c|xn--wgbl6a|xn--y9a3aq|accenture|allfinanz|amsterdam|analytics|aquarelle|barcelona|bloomberg|christmas|community|directory|education|equipment|fairwinds|financial|firestone|fresenius|furniture|goldpoint|hisamitsu|homedepot|homegoods|homesense|institute|insurance|kuokgroup|lancaster|landrover|lifestyle|marketing|marshalls|melbourne|microsoft|panasonic|pramerica|richardli|shangrila|solutions|statebank|statefarm|stockholm|travelers|vacations|xn--90ais|xn--c1avg|xn--d1alf|xn--e1a4c|xn--fhbei|xn--j1aef|xn--j1amh|xn--l1acc|xn--ngbrx|xn--nqv7f|xn--p1acf|xn--qxa6a|xn--tckwe|xn--vhquv|yodobashi|موريتانيا|abudhabi|airforce|allstate|attorney|barclays|barefoot|bargains|baseball|boutique|bradesco|broadway|brussels|builders|business|capetown|catering|catholic|cipriani|cleaning|clinique|clothing|commbank|computer|delivery|deloitte|democrat|diamonds|discount|discover|download|engineer|ericsson|exchange|feedback|fidelity|firmdale|football|frontier|goodyear|grainger|graphics|hdfcbank|helsinki|holdings|hospital|infiniti|ipiranga|istanbul|jpmorgan|lighting|lundbeck|marriott|mckinsey|memorial|merckmsd|mortgage|observer|partners|pharmacy|pictures|plumbing|property|redstone|reliance|saarland|samsclub|security|services|shopping|softbank|software|stcgroup|supplies|training|vanguard|ventures|verisign|woodside|xn--90ae|xn--node|xn--p1ai|xn--qxam|yokohama|السعودية|abogado|academy|agakhan|alibaba|android|athleta|auction|audible|auspost|banamex|bauhaus|bentley|bestbuy|booking|brother|capital|caravan|careers|channel|charity|chintai|citadel|clubmed|college|cologne|company|compare|contact|cooking|corsica|country|coupons|courses|cricket|cruises|dentist|digital|domains|exposed|express|farmers|fashion|ferrari|ferrero|finance|fishing|fitness|flights|florist|flowers|forsale|frogans|fujitsu|gallery|genting|godaddy|grocery|guitars|hamburg|hangout|hitachi|holiday|hosting|hotmail|hyundai|ismaili|jewelry|juniper|kitchen|komatsu|lacaixa|lanxess|lasalle|latrobe|leclerc|limited|lincoln|markets|monster|netbank|netflix|network|neustar|okinawa|organic|origins|philips|pioneer|politie|realtor|recipes|rentals|reviews|rexroth|samsung|sandvik|schmidt|schwarz|science|shiksha|singles|staples|storage|support|surgery|systems|temasek|theater|theatre|tickets|toshiba|trading|walmart|wanggou|watches|weather|website|wedding|whoswho|windows|winners|yamaxun|youtube|zuerich|католик|البحرين|الجزائر|العليان|پاکستان|كاثوليك|இந்தியா|abbott|abbvie|africa|agency|airbus|airtel|alipay|alsace|alstom|amazon|anquan|aramco|author|bayern|beauty|berlin|bharti|bostik|boston|broker|camera|career|casino|center|chanel|chrome|church|circle|claims|clinic|coffee|comsec|condos|coupon|credit|cruise|dating|datsun|dealer|degree|dental|design|direct|doctor|dunlop|dupont|durban|emerck|energy|estate|events|expert|family|flickr|futbol|gallup|garden|george|giving|global|google|gratis|health|hermes|hiphop|hockey|hotels|hughes|imamat|insure|intuit|jaguar|joburg|juegos|kaufen|kindle|kosher|latino|lawyer|lefrak|living|locker|london|luxury|madrid|maison|makeup|market|mattel|mobile|monash|mormon|moscow|museum|nagoya|nissan|nissay|norton|nowruz|office|olayan|online|oracle|orange|otsuka|pfizer|photos|physio|pictet|quebec|racing|realty|reisen|repair|report|review|rogers|ryukyu|safety|sakura|sanofi|school|schule|search|secure|select|shouji|soccer|social|stream|studio|supply|suzuki|swatch|sydney|taipei|taobao|target|tattoo|tennis|tienda|tjmaxx|tkmaxx|toyota|travel|unicom|viajes|viking|villas|virgin|vision|voting|voyage|walter|webcam|xihuan|yachts|yandex|zappos|москва|онлайн|ابوظبي|ارامكو|الاردن|المغرب|امارات|فلسطين|مليسيا|भारतम्|இலங்கை|ファッション|actor|adult|aetna|amfam|amica|apple|archi|audio|autos|azure|baidu|beats|bible|bingo|black|boats|bosch|build|canon|cards|chase|cheap|cisco|citic|click|cloud|coach|codes|crown|cymru|dance|deals|delta|drive|dubai|earth|edeka|email|epson|faith|fedex|final|forex|forum|gallo|games|gifts|gives|glass|globo|gmail|green|gripe|group|gucci|guide|homes|honda|horse|house|hyatt|ikano|irish|jetzt|koeln|kyoto|lamer|lease|legal|lexus|lilly|lipsy|loans|locus|lotte|lotto|mango|media|miami|money|movie|music|nexus|nikon|ninja|nokia|nowtv|omega|osaka|paris|parts|party|phone|photo|pizza|place|poker|praxi|press|prime|promo|quest|radio|rehab|reise|ricoh|rocks|rodeo|rugby|salon|sener|seven|sharp|shell|shoes|skype|sling|smart|smile|solar|space|sport|stada|store|study|style|sucks|swiss|tatar|tires|tirol|tmall|today|tokyo|tools|toray|total|tours|trade|trust|tunes|tushu|ubank|vegas|video|vodka|volvo|wales|watch|weber|weibo|works|world|xerox|yahoo|ישראל|ایران|بازار|بھارت|سودان|سورية|همراه|भारोत|संगठन|বাংলা|భారత్|ഭാരതം|嘉里大酒店|aarp|able|aero|akdn|ally|amex|arab|army|arpa|arte|asda|asia|audi|auto|baby|band|bank|bbva|beer|best|bike|bing|blog|blue|bofa|bond|book|buzz|cafe|call|camp|care|cars|casa|case|cash|cbre|cern|chat|citi|city|club|cool|coop|cyou|data|date|dclk|deal|dell|desi|diet|dish|docs|dvag|erni|fage|fail|fans|farm|fast|fido|film|fire|fish|flir|food|ford|free|fund|game|gbiz|gent|ggee|gift|gmbh|gold|golf|goog|guge|guru|hair|haus|hdfc|help|here|host|hsbc|icbc|ieee|imdb|immo|info|itau|java|jeep|jobs|jprs|kddi|kids|kiwi|kpmg|kred|land|lego|lgbt|lidl|life|like|limo|link|live|loan|love|ltda|luxe|maif|meet|meme|menu|mini|mint|mobi|moda|moto|name|navy|news|next|nico|nike|ollo|open|page|pars|pccw|pics|ping|pink|play|plus|pohl|porn|post|prod|prof|qpon|read|reit|rent|rest|rich|room|rsvp|ruhr|safe|sale|sarl|save|saxo|scot|seat|seek|sexy|shia|shop|show|silk|sina|site|skin|sncf|sohu|song|sony|spot|star|surf|talk|taxi|team|tech|teva|tiaa|tips|town|toys|tube|vana|visa|viva|vivo|vote|voto|wang|weir|wien|wiki|wine|work|xbox|yoga|zara|zero|zone|дети|сайт|بارت|بيتك|ڀارت|تونس|شبكة|عراق|عمان|موقع|भारत|ভারত|ভাৰত|ਭਾਰਤ|ભારત|ଭାରତ|ಭಾರತ|ලංකා|アマゾン|グーグル|クラウド|ポイント|组织机构|電訊盈科|香格里拉|aaa|abb|abc|aco|ads|aeg|afl|aig|anz|aol|app|art|aws|axa|bar|bbc|bbt|bcg|bcn|bet|bid|bio|biz|bms|bmw|bom|boo|bot|box|buy|bzh|cab|cal|cam|car|cat|cba|cbn|ceo|cfa|cfd|com|cpa|crs|dad|day|dds|dev|dhl|diy|dnp|dog|dot|dtv|dvr|eat|eco|edu|esq|eus|fan|fit|fly|foo|fox|frl|ftr|fun|fyi|gal|gap|gay|gdn|gea|gle|gmo|gmx|goo|gop|got|gov|hbo|hiv|hkt|hot|how|ibm|ice|icu|ifm|inc|ing|ink|int|ist|itv|jcb|jio|jll|jmp|jnj|jot|joy|kfh|kia|kim|kpn|krd|lat|law|lds|llc|llp|lol|lpl|ltd|man|map|mba|med|men|mil|mit|mlb|mls|mma|moe|moi|mom|mov|msd|mtn|mtr|nab|nba|nec|net|new|nfl|ngo|nhk|now|nra|nrw|ntt|nyc|obi|one|ong|onl|ooo|org|ott|ovh|pay|pet|phd|pid|pin|pnc|pro|pru|pub|pwc|red|ren|ril|rio|rip|run|rwe|sap|sas|sbi|sbs|scb|sew|sex|sfr|ski|sky|soy|spa|srl|stc|tab|tax|tci|tdk|tel|thd|tjx|top|trv|tui|tvs|ubs|uno|uol|ups|vet|vig|vin|vip|wed|win|wme|wow|wtc|wtf|xin|xxx|xyz|you|yun|zip|бел|ком|қаз|мкд|мон|орг|рус|срб|укр|հայ|קום|عرب|قطر|كوم|مصر|कॉम|नेट|คอม|ไทย|ລາວ|ストア|セール|みんな|中文网|亚马逊|天主教|我爱你|新加坡|淡马锡|飞利浦|ac|ad|ae|af|ag|ai|al|am|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cw|cx|cy|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gg|gh|gi|gl|gm|gn|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|mv|mw|mx|my|mz|na|nc|ne|nf|ng|ni|nl|no|np|nr|nu|nz|om|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|ps|pt|pw|py|qa|re|ro|rs|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sk|sl|sm|sn|so|sr|ss|st|su|sv|sx|sy|sz|tc|td|tf|tg|th|tj|tk|tl|tm|tn|to|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|za|zm|zw|ελ|ευ|бг|ею|рф|გე|닷넷|닷컴|삼성|한국|コム|世界|中信|中国|中國|企业|佛山|信息|健康|八卦|公司|公益|台湾|台灣|商城|商店|商标|嘉里|在线|大拿|娱乐|家電|广东|微博|慈善|手机|招聘|政务|政府|新闻|时尚|書籍|机构|游戏|澳門|点看|移动|网址|网店|网站|网络|联通|谷歌|购物|通販|集团|食品|餐厅|香港)", E0 = new RegExp("^" + c0 + "$"), l0 = /[\/?#]/, B0 = /[-+&@#/%=~_()|'$*\[\]{}\u2713]/, Wf = /[?!:,.;^]/, Gf = /https?:\/\//i, b0 = new RegExp("^" + Gf.source, "i"), p0 = new RegExp(Wf.source + "$"), g0 = /^(javascript|vbscript):/i, m0 = /^[A-Za-z][-.+A-Za-z0-9]*:(\/\/)?([^:/]*)/, h0 = /^(?:\/\/)?([^/#?:]+)/;
 function Vu(D) {
   return zu.test(D);
 }
-function sf(D) {
+function rf(D) {
   return zu.test(D) || J.test(D) || D === "+" || D === "-" || D === ".";
 }
 function _u(D) {
@@ -456,13 +456,13 @@ function _u(D) {
 function jD(D) {
   return D === "_" || _u(D);
 }
-function of(D) {
-  return Su.test(D) || B0.test(D) || Gf.test(D);
+function sf(D) {
+  return Su.test(D) || B0.test(D) || Wf.test(D);
 }
 function PD(D) {
   return l0.test(D);
 }
-function Xf(D) {
+function Yf(D) {
   return E0.test(D.toLowerCase());
 }
 function _0(D) {
@@ -482,7 +482,7 @@ function v0(D) {
   if (e.length < 2)
     return !1;
   var F = e[e.length - 1];
-  return !!Xf(F);
+  return !!Yf(F);
 }
 var A0 = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/, y0 = /[:/?#]/;
 function w0(D) {
@@ -536,7 +536,7 @@ function P0(D) {
     return u;
   }
 }
-var I0 = /^mailto:/i, z0 = new RegExp("[".concat(Vf, "!#$%&'*+/=?^_`{|}~-]"));
+var I0 = /^mailto:/i, z0 = new RegExp("[".concat(Uf, "!#$%&'*+/=?^_`{|}~-]"));
 function N0(D) {
   return Su.test(D);
 }
@@ -545,7 +545,7 @@ function ID(D) {
 }
 function q0(D) {
   var u = D.split(".").pop() || "";
-  return Xf(u);
+  return Yf(u);
 }
 var L0 = (
   /** @class */
@@ -566,7 +566,7 @@ var L0 = (
     }, u;
   }(eD)
 );
-function Cf(D) {
+function of(D) {
   return D === "_" || Su.test(D);
 }
 function R0(D) {
@@ -627,7 +627,7 @@ var M0 = [
   // https://support.google.com/youtube/answer/11585688?hl=en&co=GENIE.Platform%3DAndroid#tns
   youtube: /^@[-.·\w]{3,30}$/
 }, V0 = /[-\w.]/;
-function cf(D) {
+function Cf(D) {
   return V0.test(D);
 }
 function W0(D, u) {
@@ -677,7 +677,7 @@ var G0 = [
     }, u;
   }(eD)
 ), X0 = /[-. ]/, K0 = /[-. ()]/, Z0 = /[,;]/, Q0 = /(?:(?:(?:(\+)?\d{1,3}[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4})|(?:(\+)(?:9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)[-. ]?(?:\d[-. ]?){6,12}\d+))([,;]+[0-9]+#?)*/, J0 = /(0([1-9]-?[1-9]\d{3}|[1-9]{2}-?\d{3}|[1-9]{2}\d{1}-?\d{2}|[1-9]{2}\d{2}-?\d{1})-?\d{4}|0[789]0-?\d{4}-?\d{4}|050-?\d{4}-?\d{4})/, u3 = new RegExp("^".concat(Q0.source, "|").concat(J0.source, "$"));
-function Ef(D) {
+function cf(D) {
   return X0.test(D);
 }
 function zD(D) {
@@ -837,16 +837,16 @@ function e3(D, u) {
             SD(E, s);
             break;
           case 38:
-            m1(E, s);
+            g1(E, s);
             break;
           case 39:
-            h1(E, s);
+            m1(E, s);
             break;
           case 40:
-            _1(E, s);
+            h1(E, s);
             break;
           case 41:
-            v1(E, s);
+            _1(E, s);
             break;
           default:
             Iu(E.state);
@@ -923,14 +923,14 @@ function e3(D, u) {
     }
   }
   function v(i, C) {
-    C === ":" ? i.state = 2 : C === "-" ? i.state = 1 : sf(C) || I(d, i);
+    C === ":" ? i.state = 2 : C === "-" ? i.state = 1 : rf(C) || I(d, i);
   }
   function A(i, C) {
     C === "-" || (C === "/" ? (I(d, i), d.push(ND(
       c,
       11
       /* State.ProtocolRelativeSlash1 */
-    ))) : sf(C) ? i.state = 0 : I(d, i));
+    ))) : rf(C) ? i.state = 0 : I(d, i));
   }
   function g(i, C) {
     C === "/" ? i.state = 3 : C === "." ? I(d, i) : _u(C) ? (i.state = 5, Vu(C) && d.push(cD(
@@ -940,7 +940,7 @@ function e3(D, u) {
     ))) : I(d, i);
   }
   function h(i, C) {
-    C === "/" ? i.state = 4 : of(C) ? (i.state = 10, i.acceptStateReached = !0) : R(i);
+    C === "/" ? i.state = 4 : sf(C) ? (i.state = 10, i.acceptStateReached = !0) : R(i);
   }
   function S(i, C) {
     C === "/" ? i.state = 10 : _u(C) ? (i.state = 5, i.acceptStateReached = !0) : I(d, i);
@@ -973,7 +973,7 @@ function e3(D, u) {
     J.test(C) || (PD(C) ? i.state = 10 : R(i));
   }
   function Eu(i, C) {
-    of(C) || R(i);
+    sf(C) || R(i);
   }
   function au(i, C) {
     C.toLowerCase() === "a" ? i.state = 16 : K(i, C);
@@ -1015,16 +1015,16 @@ function e3(D, u) {
     C === "." || C === "-" ? R(i) : _u(C) ? (i.state = 25, i.acceptStateReached = !0) : R(i);
   }
   function aD(i, C) {
-    Cf(C) ? (i.state = 29, i.acceptStateReached = !0) : I(d, i);
+    of(C) ? (i.state = 29, i.acceptStateReached = !0) : I(d, i);
   }
   function dD(i, C) {
-    Cf(C) || R(i);
+    of(C) || R(i);
   }
   function rD(i, C) {
-    cf(C) ? (i.state = 31, i.acceptStateReached = !0) : I(d, i);
+    Cf(C) ? (i.state = 31, i.acceptStateReached = !0) : I(d, i);
   }
   function iD(i, C) {
-    cf(C) || (Su.test(C) ? I(d, i) : R(i));
+    Cf(C) || (Su.test(C) ? I(d, i) : R(i));
   }
   function SD(i, C) {
     J.test(C) ? i.state = 38 : (I(d, i), w(C));
@@ -1042,34 +1042,34 @@ function e3(D, u) {
     C === ")" ? i.state = 36 : I(d, i);
   }
   function CD(i, C) {
-    J.test(C) ? i.state = 38 : Ef(C) ? i.state = 39 : I(d, i);
+    J.test(C) ? i.state = 38 : cf(C) ? i.state = 39 : I(d, i);
   }
-  function m1(i, C) {
-    i.acceptStateReached = !0, zD(C) ? i.state = 40 : C === "#" ? i.state = 41 : J.test(C) || (C === "(" ? i.state = 32 : Ef(C) ? i.state = 39 : (R(i), Vu(C) && d.push(cD(
+  function g1(i, C) {
+    i.acceptStateReached = !0, zD(C) ? i.state = 40 : C === "#" ? i.state = 41 : J.test(C) || (C === "(" ? i.state = 32 : cf(C) ? i.state = 39 : (R(i), Vu(C) && d.push(cD(
       c,
       0
       /* State.SchemeChar */
     ))));
   }
-  function h1(i, C) {
+  function m1(i, C) {
     J.test(C) ? i.state = 38 : C === "(" ? i.state = 32 : (R(i), w(C));
   }
-  function _1(i, C) {
+  function h1(i, C) {
     zD(C) || (C === "#" ? i.state = 41 : J.test(C) ? i.state = 38 : R(i));
   }
-  function v1(i, C) {
+  function _1(i, C) {
     zD(C) ? i.state = 40 : J.test(C) ? I(d, i) : R(i);
   }
   function R(i) {
     if (I(d, i), !!i.acceptStateReached) {
       var C = i.startIdx, P = D.slice(i.startIdx, c);
       if (P = F3(P), i.type === "url") {
-        var A1 = D.charAt(i.startIdx - 1);
-        if (A1 === "@")
+        var v1 = D.charAt(i.startIdx - 1);
+        if (v1 === "@")
           return;
         var Uu = i.matchType;
         if (Uu === "scheme") {
-          var $D = Yf.exec(P);
+          var $D = Gf.exec(P);
           if ($D && (C = C + $D.index, P = P.slice($D.index)), !_0(P))
             return;
         } else if (Uu === "tld") {
@@ -1119,12 +1119,12 @@ function e3(D, u) {
         }));
       else if (i.type === "phone") {
         if (P = P.replace(/ +$/g, ""), D3(P)) {
-          var y1 = P.replace(/[^0-9,;#]/g, "");
+          var A1 = P.replace(/[^0-9,;#]/g, "");
           r.push(new f3({
             tagBuilder: f,
             matchedText: P,
             offset: C,
-            number: y1,
+            number: A1,
             plusSign: P.charAt(0) === "+"
           }));
         }
@@ -1133,7 +1133,7 @@ function e3(D, u) {
     }
   }
 }
-var t3 = /[\(\{\[]/, lf = /[\)\}\]]/, Bf = {
+var t3 = /[\(\{\[]/, Ef = /[\)\}\]]/, lf = {
   ")": "(",
   "}": "{",
   "]": "["
@@ -1145,11 +1145,11 @@ function F3(D) {
     "[": 0
   }, f = 0; f < D.length; f++) {
     var e = D.charAt(f);
-    t3.test(e) ? u[e]++ : lf.test(e) && u[Bf[e]]--;
+    t3.test(e) ? u[e]++ : Ef.test(e) && u[lf[e]]--;
   }
   for (var F = D.length - 1, t; F >= 0; )
-    if (t = D.charAt(F), lf.test(t)) {
-      var a = Bf[t];
+    if (t = D.charAt(F), Ef.test(t)) {
+      var a = lf[t];
       if (u[a] < 0)
         u[a]++, F--;
       else
@@ -1506,7 +1506,7 @@ var bu = (
         return f;
       if (f === !1)
         return u.getMatchedText();
-      if (f instanceof Wf)
+      if (f instanceof Vf)
         return f.toAnchorString();
       var e = u.buildTag();
       return e.toAnchorString();
@@ -1540,13 +1540,13 @@ function E3(D) {
   });
 }
 var l3 = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
-function Df(D) {
+function uf(D) {
   return D && D.__esModule && Object.prototype.hasOwnProperty.call(D, "default") ? D.default : D;
 }
-var LD, bf;
+var LD, Bf;
 function B3() {
-  if (bf) return LD;
-  bf = 1;
+  if (Bf) return LD;
+  Bf = 1;
   const D = {
     bold: { delimiter: "*", tag: "strong" },
     italic: { delimiter: "/", tag: "em" },
@@ -1584,10 +1584,10 @@ function B3() {
   }, LD;
 }
 var b3 = B3();
-const p3 = /* @__PURE__ */ Df(b3), g3 = {
+const p3 = /* @__PURE__ */ uf(b3), g3 = {
   components: {
-    IconBase: Hf,
-    IconCross: Uf,
+    IconBase: Mf,
+    IconCross: Hf,
     IconEdit: X1
   },
   props: {
@@ -1626,7 +1626,7 @@ const p3 = /* @__PURE__ */ Df(b3), g3 = {
     isEditing() {
       return (Du.state.editMessage && Du.state.editMessage.id) === this.message.id;
     },
-    ...Mf(["showDeletion", "showEdition"])
+    ...Rf(["showDeletion", "showEdition"])
   },
   methods: {
     edit() {
@@ -1842,7 +1842,7 @@ function R3(D, u, f, e, F, t) {
     ], !0)
   ], 4);
 }
-const M3 = /* @__PURE__ */ M(L3, [["render", R3], ["__scopeId", "data-v-c0484e01"]]), Kf = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='-4749.48%20-5020%2035.036%2035.036'%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M0-399.479H17.555v17.555H0Z'%20transform='translate(0%20399.479)'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20transform='translate(-4886%20-5075)'%3e%3ccircle%20class='b'%20cx='17.518'%20cy='17.518'%20r='17.518'%20transform='translate(136.52%2055)'/%3e%3cg%20transform='translate(145.13%2064)'%3e%3cg%20class='c'%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='d'%20d='M-381.924-190.962a8.778,8.778,0,0,0-8.778-8.778,8.778,8.778,0,0,0-8.778,8.778,8.745,8.745,0,0,0,2.26,5.879v1.442c0,.8.492,1.457,1.1,1.457h5.83a.843.843,0,0,0,.183-.02,8.778,8.778,0,0,0,8.184-8.757'%20transform='translate(399.479%20199.74)'/%3e%3c/g%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='e'%20d='M-68.763-194.079a9.292,9.292,0,0,1,6.38-8.888c-.252-.022-.506-.033-.763-.033a8.774,8.774,0,0,0-8.778,8.778A9.508,9.508,0,0,0-69.7-188.3c.005,0,0,.009,0,.01-.311.352-1.924,2.849.021,2.849h2.25c-1.23-.022,1.263-2.107.269-3.494a8.225,8.225,0,0,1-1.6-5.141'%20transform='translate(71.924%20203)'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", H3 = {
+const M3 = /* @__PURE__ */ M(L3, [["render", R3], ["__scopeId", "data-v-c0484e01"]]), Xf = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='-4749.48%20-5020%2035.036%2035.036'%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M0-399.479H17.555v17.555H0Z'%20transform='translate(0%20399.479)'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20transform='translate(-4886%20-5075)'%3e%3ccircle%20class='b'%20cx='17.518'%20cy='17.518'%20r='17.518'%20transform='translate(136.52%2055)'/%3e%3cg%20transform='translate(145.13%2064)'%3e%3cg%20class='c'%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='d'%20d='M-381.924-190.962a8.778,8.778,0,0,0-8.778-8.778,8.778,8.778,0,0,0-8.778,8.778,8.745,8.745,0,0,0,2.26,5.879v1.442c0,.8.492,1.457,1.1,1.457h5.83a.843.843,0,0,0,.183-.02,8.778,8.778,0,0,0,8.184-8.757'%20transform='translate(399.479%20199.74)'/%3e%3c/g%3e%3cg%20transform='translate(0%200)'%3e%3cpath%20class='e'%20d='M-68.763-194.079a9.292,9.292,0,0,1,6.38-8.888c-.252-.022-.506-.033-.763-.033a8.774,8.774,0,0,0-8.778,8.778A9.508,9.508,0,0,0-69.7-188.3c.005,0,0,.009,0,.01-.311.352-1.924,2.849.021,2.849h2.25c-1.23-.022,1.263-2.107.269-3.494a8.225,8.225,0,0,1-1.6-5.141'%20transform='translate(71.924%20203)'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", H3 = {
   components: {
     TextMessage: y3,
     FileMessage: $3,
@@ -1885,7 +1885,7 @@ const M3 = /* @__PURE__ */ M(L3, [["render", R3], ["__scopeId", "data-v-c0484e01
       return this.user && this.user.name;
     },
     chatImageUrl() {
-      return this.user && this.user.imageUrl || Kf;
+      return this.user && this.user.imageUrl || Xf;
     },
     messageColors() {
       return this.message.author === "me" ? this.sentColorsStyle : this.receivedColorsStyle;
@@ -1908,7 +1908,7 @@ const M3 = /* @__PURE__ */ M(L3, [["render", R3], ["__scopeId", "data-v-c0484e01
   }
 }, U3 = ["id"], V3 = ["title"];
 function W3(D, u, f, e, F, t) {
-  const a = O("TextMessage"), n = O("EmojiMessage"), r = O("FileMessage"), o = O("TypingMessage"), d = O("SystemMessage"), c = Lf("tooltip");
+  const a = O("TextMessage"), n = O("EmojiMessage"), r = O("FileMessage"), o = O("TypingMessage"), d = O("SystemMessage"), c = w1("tooltip");
   return b(), m("div", {
     id: f.message.id,
     class: "sc-message",
@@ -1927,7 +1927,7 @@ function W3(D, u, f, e, F, t) {
         message: f.message,
         user: f.user
       }, () => [
-        f.message.type !== "system" && t.authorName && t.authorName !== "me" ? uf((b(), m("div", {
+        f.message.type !== "system" && t.authorName && t.authorName !== "me" ? qf((b(), m("div", {
           key: 0,
           title: t.authorName,
           class: "sc-message--avatar",
@@ -2053,7 +2053,7 @@ const Y3 = {
   },
   computed: {
     defaultChatIcon() {
-      return Kf;
+      return Xf;
     }
   },
   mounted() {
@@ -2144,7 +2144,7 @@ function X3(D, u, f, e, F, t) {
       ]),
       _: 2
     }, 1032, ["message", "user", "colors", "message-styling", "show-confirmation-deletion", "confirmation-deletion-message", "message-margin", "onRemove"]))), 128)),
-    uf(L(a, {
+    qf(L(a, {
       message: { author: f.showTypingIndicator, type: "typing" },
       user: t.profile(f.showTypingIndicator),
       colors: f.colors,
@@ -2157,9 +2157,9 @@ function X3(D, u, f, e, F, t) {
   ], 36);
 }
 const K3 = /* @__PURE__ */ M(Y3, [["render", X3], ["__scopeId", "data-v-91976411"]]);
-var ED = { exports: {} }, pf;
+var ED = { exports: {} }, bf;
 function Z3() {
-  return pf || (pf = 1, function(D, u) {
+  return bf || (bf = 1, function(D, u) {
     (function() {
       var f = this, e = f.EmojiConvertor, F = function() {
         var t = this;
@@ -4750,7 +4750,7 @@ function Z3() {
   }(ED, ED.exports)), ED.exports;
 }
 var Q3 = Z3();
-const J3 = /* @__PURE__ */ Df(Q3), ue = [
+const J3 = /* @__PURE__ */ uf(Q3), ue = [
   {
     name: "People",
     emojis: [
@@ -5617,7 +5617,7 @@ function Ee(D, u, f, e, F, t) {
 }
 const le = /* @__PURE__ */ M(se, [["render", Ee], ["__scopeId", "data-v-4ceda3fa"]]), Be = {
   components: {
-    IconBase: Hf
+    IconBase: Mf
   },
   props: {
     color: {
@@ -5677,7 +5677,7 @@ function _e(D, u, f, e, F, t) {
     }, Z(a), 13, he))), 128))
   ], 4);
 }
-const ve = /* @__PURE__ */ M(me, [["render", _e]]), Ae = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2018.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2056%2056'%20style='enable-background:new%200%200%2056%2056;'%20xml:space='preserve'%3e%3cg%20id='svg_1'%3e%3cpath%20id='svg_2'%20fill='%23E9E9E0'%20d='m36.985,0l-29.022,0c-0.808,0%20-1.463,0.655%20-1.463,1.926l0,53.074c0,0.345%200.655,1%201.463,1l40.074,0c0.808,0%201.463,-0.655%201.463,-1l0,-42.022c0,-0.696%20-0.093,-0.92%20-0.257,-1.085l-11.636,-11.636c-0.165,-0.164%20-0.389,-0.257%20-0.622,-0.257z'/%3e%3cpolygon%20id='svg_3'%20fill='%23D9D7CA'%20points='37.5,0.151%2037.5,12%2049.349,12%20'/%3e%3cpath%20id='svg_4'%20fill='%2395A5A5'%20d='m48.037,56l-40.074,0c-0.808,0%20-1.463,-0.655%20-1.463,-1.463l0,-15.537l43,0l0,15.537c0,0.808%20-0.655,1.463%20-1.463,1.463z'/%3e%3cpath%20id='svg_9'%20fill='%23C8BDB8'%20d='m18.5,13l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_10'%20fill='%23C8BDB8'%20d='m21.5,18l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_11'%20fill='%23C8BDB8'%20d='m25.5,18c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.44%20-0.29,-0.71s0.109,-0.52%200.3,-0.71c0.36,-0.37%201.04,-0.37%201.41,0c0.18,0.19%200.29,0.45%200.29,0.71c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_12'%20fill='%23C8BDB8'%20d='m37.5,18l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_13'%20fill='%23C8BDB8'%20d='m12.5,33c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.45%20-0.29,-0.71c0,-0.26%200.109,-0.52%200.29,-0.71c0.37,-0.37%201.05,-0.37%201.42,0.01c0.18,0.18%200.29,0.44%200.29,0.7c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_14'%20fill='%23C8BDB8'%20d='m24.5,33l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_15'%20fill='%23C8BDB8'%20d='m43.5,18l-2,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l2,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_16'%20fill='%23C8BDB8'%20d='m34.5,23l-22,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l22,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_17'%20fill='%23C8BDB8'%20d='m43.5,23l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_18'%20fill='%23C8BDB8'%20d='m16.5,28l-4,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l4,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_19'%20fill='%23C8BDB8'%20d='m30.5,28l-10,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l10,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_20'%20fill='%23C8BDB8'%20d='m43.5,28l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3c/g%3e%3cg%20id='svg_21'/%3e%3cg%20id='svg_22'/%3e%3cg%20id='svg_23'/%3e%3cg%20id='svg_24'/%3e%3cg%20id='svg_25'/%3e%3cg%20id='svg_26'/%3e%3cg%20id='svg_27'/%3e%3cg%20id='svg_28'/%3e%3cg%20id='svg_29'/%3e%3cg%20id='svg_30'/%3e%3cg%20id='svg_31'/%3e%3cg%20id='svg_32'/%3e%3cg%20id='svg_33'/%3e%3cg%20id='svg_34'/%3e%3cg%20id='svg_35'/%3e%3c/svg%3e", Zf = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3cpath%20d='M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88%20c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242%20C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879%20s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", ye = {}, we = { d: "M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" };
+const ve = /* @__PURE__ */ M(me, [["render", _e]]), Ae = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2018.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2056%2056'%20style='enable-background:new%200%200%2056%2056;'%20xml:space='preserve'%3e%3cg%20id='svg_1'%3e%3cpath%20id='svg_2'%20fill='%23E9E9E0'%20d='m36.985,0l-29.022,0c-0.808,0%20-1.463,0.655%20-1.463,1.926l0,53.074c0,0.345%200.655,1%201.463,1l40.074,0c0.808,0%201.463,-0.655%201.463,-1l0,-42.022c0,-0.696%20-0.093,-0.92%20-0.257,-1.085l-11.636,-11.636c-0.165,-0.164%20-0.389,-0.257%20-0.622,-0.257z'/%3e%3cpolygon%20id='svg_3'%20fill='%23D9D7CA'%20points='37.5,0.151%2037.5,12%2049.349,12%20'/%3e%3cpath%20id='svg_4'%20fill='%2395A5A5'%20d='m48.037,56l-40.074,0c-0.808,0%20-1.463,-0.655%20-1.463,-1.463l0,-15.537l43,0l0,15.537c0,0.808%20-0.655,1.463%20-1.463,1.463z'/%3e%3cpath%20id='svg_9'%20fill='%23C8BDB8'%20d='m18.5,13l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_10'%20fill='%23C8BDB8'%20d='m21.5,18l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_11'%20fill='%23C8BDB8'%20d='m25.5,18c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.44%20-0.29,-0.71s0.109,-0.52%200.3,-0.71c0.36,-0.37%201.04,-0.37%201.41,0c0.18,0.19%200.29,0.45%200.29,0.71c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_12'%20fill='%23C8BDB8'%20d='m37.5,18l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_13'%20fill='%23C8BDB8'%20d='m12.5,33c-0.26,0%20-0.521,-0.11%20-0.71,-0.29c-0.181,-0.19%20-0.29,-0.45%20-0.29,-0.71c0,-0.26%200.109,-0.52%200.29,-0.71c0.37,-0.37%201.05,-0.37%201.42,0.01c0.18,0.18%200.29,0.44%200.29,0.7c0,0.26%20-0.11,0.52%20-0.29,0.71c-0.19,0.18%20-0.45,0.29%20-0.71,0.29z'/%3e%3cpath%20id='svg_14'%20fill='%23C8BDB8'%20d='m24.5,33l-8,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l8,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_15'%20fill='%23C8BDB8'%20d='m43.5,18l-2,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l2,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_16'%20fill='%23C8BDB8'%20d='m34.5,23l-22,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l22,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_17'%20fill='%23C8BDB8'%20d='m43.5,23l-6,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l6,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_18'%20fill='%23C8BDB8'%20d='m16.5,28l-4,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l4,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_19'%20fill='%23C8BDB8'%20d='m30.5,28l-10,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l10,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3cpath%20id='svg_20'%20fill='%23C8BDB8'%20d='m43.5,28l-9,0c-0.553,0%20-1,-0.448%20-1,-1s0.447,-1%201,-1l9,0c0.553,0%201,0.448%201,1s-0.447,1%20-1,1z'/%3e%3c/g%3e%3cg%20id='svg_21'/%3e%3cg%20id='svg_22'/%3e%3cg%20id='svg_23'/%3e%3cg%20id='svg_24'/%3e%3cg%20id='svg_25'/%3e%3cg%20id='svg_26'/%3e%3cg%20id='svg_27'/%3e%3cg%20id='svg_28'/%3e%3cg%20id='svg_29'/%3e%3cg%20id='svg_30'/%3e%3cg%20id='svg_31'/%3e%3cg%20id='svg_32'/%3e%3cg%20id='svg_33'/%3e%3cg%20id='svg_34'/%3e%3cg%20id='svg_35'/%3e%3c/svg%3e", Kf = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3csvg%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2047.971%2047.971'%20style='enable-background:new%200%200%2047.971%2047.971;'%20xml:space='preserve'%3e%3cg%3e%3cpath%20d='M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88%20c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242%20C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879%20s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z'/%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e", ye = {}, we = { d: "M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" };
 function ke(D, u) {
   return b(), m("path", we);
 }
@@ -5691,7 +5691,7 @@ const Oe = /* @__PURE__ */ M(Se, [["render", $e]]), je = {
     FileIcons: le,
     UserInputButton: ge,
     Suggestions: ve,
-    IconCross: Uf,
+    IconCross: Hf,
     IconOk: xe,
     IconSend: Oe
   },
@@ -5705,7 +5705,7 @@ const Oe = /* @__PURE__ */ M(Se, [["render", $e]]), je = {
             name: "default"
           },
           closeSvg: {
-            img: Zf,
+            img: Kf,
             name: "default"
           }
         };
@@ -5881,7 +5881,7 @@ const Oe = /* @__PURE__ */ M(Se, [["render", $e]]), je = {
   class: "sc-user-input--button"
 }, Ue = { class: "sc-user-input--button" };
 function Ve(D, u, f, e, F, t) {
-  const a = O("Suggestions"), n = O("EmojiIcon"), r = O("FileIcons"), o = O("IconCross"), d = O("UserInputButton"), c = O("IconOk"), s = O("IconSend"), B = Lf("tooltip");
+  const a = O("Suggestions"), n = O("EmojiIcon"), r = O("FileIcons"), o = O("IconCross"), d = O("UserInputButton"), c = O("IconOk"), s = O("IconSend");
   return b(), m("div", null, [
     L(a, {
       suggestions: f.suggestions,
@@ -5915,9 +5915,9 @@ function Ve(D, u, f, e, F, t) {
           F.file.name
         ), 1)
       ]),
-      uf((b(), m("span", {
+      p("span", {
         class: "delete-file-message",
-        onClick: u[0] || (u[0] = (E) => t.cancelFile())
+        onClick: u[0] || (u[0] = (B) => t.cancelFile())
       }, [
         (b(), m("svg", {
           viewBox: "0 0 47.971 47.971",
@@ -5926,13 +5926,6 @@ function Ve(D, u, f, e, F, t) {
         }, u[6] || (u[6] = [
           p("path", { d: "M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88   c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242   C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879   s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z" }, null, -1)
         ]), 4))
-      ])), [
-        [
-          B,
-          D.t("chat.deleteFile"),
-          void 0,
-          { bottom: !0 }
-        ]
       ])
     ], 4)) : z("", !0),
     p("form", {
@@ -5947,11 +5940,11 @@ function Ve(D, u, f, e, F, t) {
         placeholder: f.placeholder,
         class: "sc-user-input--text",
         style: j({ color: f.colors.userInput.text }),
-        onFocus: u[1] || (u[1] = (E) => t.setInputActive(!0)),
-        onBlur: u[2] || (u[2] = (E) => t.setInputActive(!1)),
-        onKeydown: u[3] || (u[3] = (...E) => t.handleKey && t.handleKey(...E)),
-        onInput: u[4] || (u[4] = (...E) => t.handleInput && t.handleInput(...E)),
-        "on:focusUserInput": u[5] || (u[5] = (E) => t.focusUserInput())
+        onFocus: u[1] || (u[1] = (B) => t.setInputActive(!0)),
+        onBlur: u[2] || (u[2] = (B) => t.setInputActive(!1)),
+        onKeydown: u[3] || (u[3] = (...B) => t.handleKey && t.handleKey(...B)),
+        onInput: u[4] || (u[4] = (...B) => t.handleInput && t.handleInput(...B)),
+        "on:focusUserInput": u[5] || (u[5] = (B) => t.focusUserInput())
       }, null, 44, qe),
       p("div", Le, [
         u[7] || (u[7] = p("div", { class: "sc-user-input--button" }, null, -1)),
@@ -6261,7 +6254,7 @@ const D2 = /* @__PURE__ */ M(Je, [["render", u2], ["__scopeId", "data-v-0a3a5922
             name: "default"
           },
           close: {
-            img: Zf,
+            img: Kf,
             name: "default"
           },
           minimize: {
@@ -6536,10 +6529,10 @@ function a2(D, u, f, e, F, t) {
   ]);
 }
 const d2 = /* @__PURE__ */ M(e2, [["render", a2], ["__scopeId", "data-v-a7db8f74"]]);
-var eu = "top", su = "bottom", ou = "right", tu = "left", AD = "auto", tD = [eu, su, ou, tu], Lu = "start", ff = "end", r2 = "clippingParents", Qf = "viewport", Wu = "popper", i2 = "reference", gf = /* @__PURE__ */ tD.reduce(function(D, u) {
-  return D.concat([u + "-" + Lu, u + "-" + ff]);
+var eu = "top", su = "bottom", ou = "right", tu = "left", AD = "auto", tD = [eu, su, ou, tu], Lu = "start", Df = "end", r2 = "clippingParents", Zf = "viewport", Wu = "popper", i2 = "reference", pf = /* @__PURE__ */ tD.reduce(function(D, u) {
+  return D.concat([u + "-" + Lu, u + "-" + Df]);
 }, []), yD = /* @__PURE__ */ [].concat(tD, [AD]).reduce(function(D, u) {
-  return D.concat([u, u + "-" + Lu, u + "-" + ff]);
+  return D.concat([u, u + "-" + Lu, u + "-" + Df]);
 }, []), s2 = "beforeRead", o2 = "read", C2 = "afterRead", c2 = "beforeMain", E2 = "main", l2 = "afterMain", B2 = "beforeWrite", b2 = "write", p2 = "afterWrite", UD = [s2, o2, C2, c2, E2, l2, B2, b2, p2];
 function pu(D) {
   return D ? (D.nodeName || "").toLowerCase() : null;
@@ -6561,7 +6554,7 @@ function Fu(D) {
   var u = cu(D).HTMLElement;
   return D instanceof u || D instanceof HTMLElement;
 }
-function Jf(D) {
+function Qf(D) {
   if (typeof ShadowRoot > "u")
     return !1;
   var u = cu(D).ShadowRoot;
@@ -6625,7 +6618,7 @@ function Ru(D) {
     y: u.top
   };
 }
-function ef(D) {
+function ff(D) {
   var u = Ru(D), f = D.offsetWidth, e = D.offsetHeight;
   return Math.abs(u.width - f) <= 1 && (f = u.width), Math.abs(u.height - e) <= 1 && (e = u.height), {
     x: D.offsetLeft,
@@ -6634,11 +6627,11 @@ function ef(D) {
     height: e
   };
 }
-function u1(D, u) {
+function Jf(D, u) {
   var f = u.getRootNode && u.getRootNode();
   if (D.contains(u))
     return !0;
-  if (f && Jf(f)) {
+  if (f && Qf(f)) {
     var e = u;
     do {
       if (e && D.isSameNode(e))
@@ -6667,12 +6660,12 @@ function wD(D) {
     // $FlowFixMe[prop-missing]
     D.assignedSlot || // step into the shadow DOM of the parent of a slotted node
     D.parentNode || // DOM Element detected
-    (Jf(D) ? D.host : null) || // ShadowRoot detected
+    (Qf(D) ? D.host : null) || // ShadowRoot detected
     // $FlowFixMe[incompatible-call]: HTMLElement is a Node
     Au(D)
   );
 }
-function mf(D) {
+function gf(D) {
   return !Fu(D) || // https://github.com/popperjs/popper-core/issues/837
   Cu(D).position === "fixed" ? null : D.offsetParent;
 }
@@ -6692,18 +6685,18 @@ function v2(D) {
   return null;
 }
 function FD(D) {
-  for (var u = cu(D), f = mf(D); f && _2(f) && Cu(f).position === "static"; )
-    f = mf(f);
+  for (var u = cu(D), f = gf(D); f && _2(f) && Cu(f).position === "static"; )
+    f = gf(f);
   return f && (pu(f) === "html" || pu(f) === "body" && Cu(f).position === "static") ? u : f || v2(D) || u;
 }
-function tf(D) {
+function ef(D) {
   return ["top", "bottom"].indexOf(D) >= 0 ? "x" : "y";
 }
 var vu = Math.max, Qu = Math.min, lD = Math.round;
 function mD(D, u, f) {
   return vu(D, Qu(u, f));
 }
-function D1() {
+function u1() {
   return {
     top: 0,
     right: 0,
@@ -6711,10 +6704,10 @@ function D1() {
     left: 0
   };
 }
-function f1(D) {
-  return Object.assign({}, D1(), D);
+function D1(D) {
+  return Object.assign({}, u1(), D);
 }
-function e1(D, u) {
+function f1(D, u) {
   return u.reduce(function(f, e) {
     return f[e] = D, f;
   }, {});
@@ -6722,19 +6715,19 @@ function e1(D, u) {
 var A2 = function(u, f) {
   return u = typeof u == "function" ? u(Object.assign({}, f.rects, {
     placement: f.placement
-  })) : u, f1(typeof u != "number" ? u : e1(u, tD));
+  })) : u, D1(typeof u != "number" ? u : f1(u, tD));
 };
 function y2(D) {
-  var u, f = D.state, e = D.name, F = D.options, t = f.elements.arrow, a = f.modifiersData.popperOffsets, n = ru(f.placement), r = tf(n), o = [tu, ou].indexOf(n) >= 0, d = o ? "height" : "width";
+  var u, f = D.state, e = D.name, F = D.options, t = f.elements.arrow, a = f.modifiersData.popperOffsets, n = ru(f.placement), r = ef(n), o = [tu, ou].indexOf(n) >= 0, d = o ? "height" : "width";
   if (!(!t || !a)) {
-    var c = A2(F.padding, f), s = ef(t), B = r === "y" ? eu : tu, E = r === "y" ? su : ou, y = f.rects.reference[d] + f.rects.reference[r] - a[r] - f.rects.popper[d], _ = a[r] - f.rects.reference[r], w = FD(t), v = w ? r === "y" ? w.clientHeight || 0 : w.clientWidth || 0 : 0, A = y / 2 - _ / 2, g = c[B], h = v - s[d] - c[E], S = v / 2 - s[d] / 2 + A, T = mD(g, S, h), $ = r;
+    var c = A2(F.padding, f), s = ff(t), B = r === "y" ? eu : tu, E = r === "y" ? su : ou, y = f.rects.reference[d] + f.rects.reference[r] - a[r] - f.rects.popper[d], _ = a[r] - f.rects.reference[r], w = FD(t), v = w ? r === "y" ? w.clientHeight || 0 : w.clientWidth || 0 : 0, A = y / 2 - _ / 2, g = c[B], h = v - s[d] - c[E], S = v / 2 - s[d] / 2 + A, T = mD(g, S, h), $ = r;
     f.modifiersData[e] = (u = {}, u[$] = T, u.centerOffset = T - S, u);
   }
 }
 function w2(D) {
   var u = D.state, f = D.options, e = f.element, F = e === void 0 ? "[data-popper-arrow]" : e;
   if (F != null && !(typeof F == "string" && (F = u.elements.popper.querySelector(F), !F))) {
-    if (process.env.NODE_ENV !== "production" && (Fu(F) || console.error(['Popper: "arrow" element must be an HTMLElement (not an SVGElement).', "To use an SVG arrow, wrap it in an HTMLElement that will be used as", "the arrow."].join(" "))), !u1(u.elements.popper, F)) {
+    if (process.env.NODE_ENV !== "production" && (Fu(F) || console.error(['Popper: "arrow" element must be an HTMLElement (not an SVGElement).', "To use an SVG arrow, wrap it in an HTMLElement that will be used as", "the arrow."].join(" "))), !Jf(u.elements.popper, F)) {
       process.env.NODE_ENV !== "production" && console.error(['Popper: "arrow" modifier\'s `element` must be a child of the popper', "element."].join(" "));
       return;
     }
@@ -6763,7 +6756,7 @@ function S2(D) {
     y: lD(lD(f * F) / F) || 0
   };
 }
-function hf(D) {
+function mf(D) {
   var u, f = D.popper, e = D.popperRect, F = D.placement, t = D.offsets, a = D.position, n = D.gpuAcceleration, r = D.adaptive, o = D.roundOffsets, d = o === !0 ? S2(t) : typeof o == "function" ? o(t) : t, c = d.x, s = c === void 0 ? 0 : c, B = d.y, E = B === void 0 ? 0 : B, y = t.hasOwnProperty("x"), _ = t.hasOwnProperty("y"), w = tu, v = eu, A = window;
   if (r) {
     var g = FD(f), h = "clientHeight", S = "clientWidth";
@@ -6796,12 +6789,12 @@ function T2(D) {
     popperRect: u.rects.popper,
     gpuAcceleration: F
   };
-  u.modifiersData.popperOffsets != null && (u.styles.popper = Object.assign({}, u.styles.popper, hf(Object.assign({}, d, {
+  u.modifiersData.popperOffsets != null && (u.styles.popper = Object.assign({}, u.styles.popper, mf(Object.assign({}, d, {
     offsets: u.modifiersData.popperOffsets,
     position: u.options.strategy,
     adaptive: a,
     roundOffsets: r
-  })))), u.modifiersData.arrow != null && (u.styles.arrow = Object.assign({}, u.styles.arrow, hf(Object.assign({}, d, {
+  })))), u.modifiersData.arrow != null && (u.styles.arrow = Object.assign({}, u.styles.arrow, mf(Object.assign({}, d, {
     offsets: u.modifiersData.arrow,
     position: "absolute",
     adaptive: !1,
@@ -6854,32 +6847,32 @@ var I2 = {
   start: "end",
   end: "start"
 };
-function _f(D) {
+function hf(D) {
   return D.replace(/start|end/g, function(u) {
     return I2[u];
   });
 }
-function Ff(D) {
+function tf(D) {
   var u = cu(D), f = u.pageXOffset, e = u.pageYOffset;
   return {
     scrollLeft: f,
     scrollTop: e
   };
 }
-function nf(D) {
-  return Ru(Au(D)).left + Ff(D).scrollLeft;
+function Ff(D) {
+  return Ru(Au(D)).left + tf(D).scrollLeft;
 }
 function z2(D) {
   var u = cu(D), f = Au(D), e = u.visualViewport, F = f.clientWidth, t = f.clientHeight, a = 0, n = 0;
   return e && (F = e.width, t = e.height, /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || (a = e.offsetLeft, n = e.offsetTop)), {
     width: F,
     height: t,
-    x: a + nf(D),
+    x: a + Ff(D),
     y: n
   };
 }
 function N2(D) {
-  var u, f = Au(D), e = Ff(D), F = (u = D.ownerDocument) == null ? void 0 : u.body, t = vu(f.scrollWidth, f.clientWidth, F ? F.scrollWidth : 0, F ? F.clientWidth : 0), a = vu(f.scrollHeight, f.clientHeight, F ? F.scrollHeight : 0, F ? F.clientHeight : 0), n = -e.scrollLeft + nf(D), r = -e.scrollTop;
+  var u, f = Au(D), e = tf(D), F = (u = D.ownerDocument) == null ? void 0 : u.body, t = vu(f.scrollWidth, f.clientWidth, F ? F.scrollWidth : 0, F ? F.clientWidth : 0), a = vu(f.scrollHeight, f.clientHeight, F ? F.scrollHeight : 0, F ? F.clientHeight : 0), n = -e.scrollLeft + Ff(D), r = -e.scrollTop;
   return Cu(F || f).direction === "rtl" && (n += vu(f.clientWidth, F ? F.clientWidth : 0) - t), {
     width: t,
     height: a,
@@ -6887,17 +6880,17 @@ function N2(D) {
     y: r
   };
 }
-function af(D) {
+function nf(D) {
   var u = Cu(D), f = u.overflow, e = u.overflowX, F = u.overflowY;
   return /auto|scroll|overlay|hidden/.test(f + F + e);
 }
-function t1(D) {
-  return ["html", "body", "#document"].indexOf(pu(D)) >= 0 ? D.ownerDocument.body : Fu(D) && af(D) ? D : t1(wD(D));
+function e1(D) {
+  return ["html", "body", "#document"].indexOf(pu(D)) >= 0 ? D.ownerDocument.body : Fu(D) && nf(D) ? D : e1(wD(D));
 }
 function Yu(D, u) {
   var f;
   u === void 0 && (u = []);
-  var e = t1(D), F = e === ((f = D.ownerDocument) == null ? void 0 : f.body), t = cu(e), a = F ? [t].concat(t.visualViewport || [], af(e) ? e : []) : e, n = u.concat(a);
+  var e = e1(D), F = e === ((f = D.ownerDocument) == null ? void 0 : f.body), t = cu(e), a = F ? [t].concat(t.visualViewport || [], nf(e) ? e : []) : e, n = u.concat(a);
   return F ? n : (
     // $FlowFixMe[incompatible-call]: isBody tells us target will be an HTMLElement here
     n.concat(Yu(wD(a)))
@@ -6915,26 +6908,26 @@ function q2(D) {
   var u = Ru(D);
   return u.top = u.top + D.clientTop, u.left = u.left + D.clientLeft, u.bottom = u.top + D.clientHeight, u.right = u.left + D.clientWidth, u.width = D.clientWidth, u.height = D.clientHeight, u.x = u.left, u.y = u.top, u;
 }
-function vf(D, u) {
-  return u === Qf ? VD(z2(D)) : Fu(u) ? q2(u) : VD(N2(Au(D)));
+function _f(D, u) {
+  return u === Zf ? VD(z2(D)) : Fu(u) ? q2(u) : VD(N2(Au(D)));
 }
 function L2(D) {
   var u = Yu(wD(D)), f = ["absolute", "fixed"].indexOf(Cu(D).position) >= 0, e = f && Fu(D) ? FD(D) : D;
   return Zu(e) ? u.filter(function(F) {
-    return Zu(F) && u1(F, e) && pu(F) !== "body";
+    return Zu(F) && Jf(F, e) && pu(F) !== "body";
   }) : [];
 }
 function R2(D, u, f) {
   var e = u === "clippingParents" ? L2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], a = F.reduce(function(n, r) {
-    var o = vf(D, r);
+    var o = _f(D, r);
     return n.top = vu(o.top, n.top), n.right = Qu(o.right, n.right), n.bottom = Qu(o.bottom, n.bottom), n.left = vu(o.left, n.left), n;
-  }, vf(D, t));
+  }, _f(D, t));
   return a.width = a.right - a.left, a.height = a.bottom - a.top, a.x = a.left, a.y = a.top, a;
 }
 function Ju(D) {
   return D.split("-")[1];
 }
-function F1(D) {
+function t1(D) {
   var u = D.reference, f = D.element, e = D.placement, F = e ? ru(e) : null, t = e ? Ju(e) : null, a = u.x + u.width / 2 - f.width / 2, n = u.y + u.height / 2 - f.height / 2, r;
   switch (F) {
     case eu:
@@ -6967,14 +6960,14 @@ function F1(D) {
         y: u.y
       };
   }
-  var o = F ? tf(F) : null;
+  var o = F ? ef(F) : null;
   if (o != null) {
     var d = o === "y" ? "height" : "width";
     switch (t) {
       case Lu:
         r[o] = r[o] - (u[d] / 2 - f[d] / 2);
         break;
-      case ff:
+      case Df:
         r[o] = r[o] + (u[d] / 2 - f[d] / 2);
         break;
     }
@@ -6983,7 +6976,7 @@ function F1(D) {
 }
 function uD(D, u) {
   u === void 0 && (u = {});
-  var f = u, e = f.placement, F = e === void 0 ? D.placement : e, t = f.boundary, a = t === void 0 ? r2 : t, n = f.rootBoundary, r = n === void 0 ? Qf : n, o = f.elementContext, d = o === void 0 ? Wu : o, c = f.altBoundary, s = c === void 0 ? !1 : c, B = f.padding, E = B === void 0 ? 0 : B, y = f1(typeof E != "number" ? E : e1(E, tD)), _ = d === Wu ? i2 : Wu, w = D.elements.reference, v = D.rects.popper, A = D.elements[s ? _ : d], g = R2(Zu(A) ? A : A.contextElement || Au(D.elements.popper), a, r), h = Ru(w), S = F1({
+  var f = u, e = f.placement, F = e === void 0 ? D.placement : e, t = f.boundary, a = t === void 0 ? r2 : t, n = f.rootBoundary, r = n === void 0 ? Zf : n, o = f.elementContext, d = o === void 0 ? Wu : o, c = f.altBoundary, s = c === void 0 ? !1 : c, B = f.padding, E = B === void 0 ? 0 : B, y = D1(typeof E != "number" ? E : f1(E, tD)), _ = d === Wu ? i2 : Wu, w = D.elements.reference, v = D.rects.popper, A = D.elements[s ? _ : d], g = R2(Zu(A) ? A : A.contextElement || Au(D.elements.popper), a, r), h = Ru(w), S = t1({
     reference: h,
     element: v,
     strategy: "absolute",
@@ -7005,7 +6998,7 @@ function uD(D, u) {
 }
 function M2(D, u) {
   u === void 0 && (u = {});
-  var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, a = f.padding, n = f.flipVariations, r = f.allowedAutoPlacements, o = r === void 0 ? yD : r, d = Ju(e), c = d ? n ? gf : gf.filter(function(E) {
+  var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, a = f.padding, n = f.flipVariations, r = f.allowedAutoPlacements, o = r === void 0 ? yD : r, d = Ju(e), c = d ? n ? pf : pf.filter(function(E) {
     return Ju(E) === d;
   }) : tD, s = c.filter(function(E) {
     return o.indexOf(E) >= 0;
@@ -7027,7 +7020,7 @@ function H2(D) {
   if (ru(D) === AD)
     return [];
   var u = hD(D);
-  return [_f(D), u, _f(u)];
+  return [hf(D), u, hf(u)];
 }
 function U2(D) {
   var u = D.state, f = D.options, e = D.name;
@@ -7087,7 +7080,7 @@ const V2 = {
     _skip: !1
   }
 };
-function Af(D, u, f) {
+function vf(D, u, f) {
   return f === void 0 && (f = {
     x: 0,
     y: 0
@@ -7098,7 +7091,7 @@ function Af(D, u, f) {
     left: D.left - u.width - f.x
   };
 }
-function yf(D) {
+function Af(D) {
   return [eu, ou, su, tu].some(function(u) {
     return D[u] >= 0;
   });
@@ -7108,7 +7101,7 @@ function W2(D) {
     elementContext: "reference"
   }), n = uD(u, {
     altBoundary: !0
-  }), r = Af(a, e), o = Af(n, F, t), d = yf(r), c = yf(o);
+  }), r = vf(a, e), o = vf(n, F, t), d = Af(r), c = Af(o);
   u.modifiersData[f] = {
     referenceClippingOffsets: r,
     popperEscapeOffsets: o,
@@ -7153,7 +7146,7 @@ const K2 = {
 };
 function Z2(D) {
   var u = D.state, f = D.name;
-  u.modifiersData[f] = F1({
+  u.modifiersData[f] = t1({
     reference: u.rects.reference,
     element: u.rects.popper,
     strategy: "absolute",
@@ -7176,7 +7169,7 @@ function u8(D) {
     rootBoundary: o,
     padding: c,
     altBoundary: d
-  }), w = ru(u.placement), v = Ju(u.placement), A = !v, g = tf(w), h = J2(g), S = u.modifiersData.popperOffsets, T = u.rects.reference, $ = u.rects.popper, H = typeof y == "function" ? y(Object.assign({}, u.rects, {
+  }), w = ru(u.placement), v = Ju(u.placement), A = !v, g = ef(w), h = J2(g), S = u.modifiersData.popperOffsets, T = u.rects.reference, $ = u.rects.popper, H = typeof y == "function" ? y(Object.assign({}, u.rects, {
     placement: u.placement
   })) : y, N = {
     x: 0,
@@ -7184,10 +7177,10 @@ function u8(D) {
   };
   if (S) {
     if (t || n) {
-      var U = g === "y" ? eu : tu, uu = g === "y" ? su : ou, G = g === "y" ? "height" : "width", nu = S[g], gu = S[g] + _[U], Eu = S[g] - _[uu], au = B ? -$[G] / 2 : 0, yu = v === Lu ? T[G] : $[G], W = v === Lu ? -$[G] : -T[G], X = u.elements.arrow, Q = B && X ? ef(X) : {
+      var U = g === "y" ? eu : tu, uu = g === "y" ? su : ou, G = g === "y" ? "height" : "width", nu = S[g], gu = S[g] + _[U], Eu = S[g] - _[uu], au = B ? -$[G] / 2 : 0, yu = v === Lu ? T[G] : $[G], W = v === Lu ? -$[G] : -T[G], X = u.elements.arrow, Q = B && X ? ff(X) : {
         width: 0,
         height: 0
-      }, lu = u.modifiersData["arrow#persistent"] ? u.modifiersData["arrow#persistent"].padding : D1(), Bu = lu[U], K = lu[uu], l = mD(0, T[G], Q[G]), $u = A ? T[G] / 2 - au - l - Bu - H : yu - l - Bu - H, Mu = A ? -T[G] / 2 + au + l + K + H : W + l + K + H, mu = u.elements.arrow && FD(u.elements.arrow), Hu = mu ? g === "y" ? mu.clientTop || 0 : mu.clientLeft || 0 : 0, aD = u.modifiersData.offset ? u.modifiersData.offset[u.placement][g] : 0, dD = S[g] + $u - aD - Hu, rD = S[g] + Mu - aD;
+      }, lu = u.modifiersData["arrow#persistent"] ? u.modifiersData["arrow#persistent"].padding : u1(), Bu = lu[U], K = lu[uu], l = mD(0, T[G], Q[G]), $u = A ? T[G] / 2 - au - l - Bu - H : yu - l - Bu - H, Mu = A ? -T[G] / 2 + au + l + K + H : W + l + K + H, mu = u.elements.arrow && FD(u.elements.arrow), Hu = mu ? g === "y" ? mu.clientTop || 0 : mu.clientLeft || 0 : 0, aD = u.modifiersData.offset ? u.modifiersData.offset[u.placement][g] : 0, dD = S[g] + $u - aD - Hu, rD = S[g] + Mu - aD;
       if (t) {
         var iD = mD(B ? Qu(gu, dD) : gu, nu, B ? vu(Eu, rD) : Eu);
         S[g] = iD, N[g] = iD - nu;
@@ -7214,7 +7207,7 @@ function f8(D) {
   };
 }
 function e8(D) {
-  return D === cu(D) || !Fu(D) ? Ff(D) : f8(D);
+  return D === cu(D) || !Fu(D) ? tf(D) : f8(D);
 }
 function t8(D, u, f) {
   f === void 0 && (f = !1);
@@ -7226,7 +7219,7 @@ function t8(D, u, f) {
     y: 0
   };
   return (t || !t && !f) && ((pu(u) !== "body" || // https://github.com/popperjs/popper-core/issues/1078
-  af(e)) && (a = e8(u)), Fu(u) ? (n = Ru(u), n.x += u.clientLeft, n.y += u.clientTop) : e && (n.x = nf(e))), {
+  nf(e)) && (a = e8(u)), Fu(u) ? (n = Ru(u), n.x += u.clientLeft, n.y += u.clientTop) : e && (n.x = Ff(e))), {
     x: F.left + a.scrollLeft - n.x,
     y: F.top + a.scrollTop - n.y,
     width: F.width,
@@ -7338,12 +7331,12 @@ function o8(D) {
     return u[f];
   });
 }
-var wf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", C8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", kf = {
+var yf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", C8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", wf = {
   placement: "bottom",
   modifiers: [],
   strategy: "absolute"
 };
-function xf() {
+function kf() {
   for (var D = arguments.length, u = new Array(D), f = 0; f < D; f++)
     u[f] = arguments[f];
   return !u.some(function(e) {
@@ -7352,13 +7345,13 @@ function xf() {
 }
 function c8(D) {
   D === void 0 && (D = {});
-  var u = D, f = u.defaultModifiers, e = f === void 0 ? [] : f, F = u.defaultOptions, t = F === void 0 ? kf : F;
+  var u = D, f = u.defaultModifiers, e = f === void 0 ? [] : f, F = u.defaultOptions, t = F === void 0 ? wf : F;
   return function(n, r, o) {
     o === void 0 && (o = t);
     var d = {
       placement: "bottom",
       orderedModifiers: [],
-      options: Object.assign({}, kf, t),
+      options: Object.assign({}, wf, t),
       modifiersData: {},
       elements: {
         reference: n,
@@ -7403,13 +7396,13 @@ function c8(D) {
       forceUpdate: function() {
         if (!s) {
           var w = d.elements, v = w.reference, A = w.popper;
-          if (!xf(v, A)) {
-            process.env.NODE_ENV !== "production" && console.error(wf);
+          if (!kf(v, A)) {
+            process.env.NODE_ENV !== "production" && console.error(yf);
             return;
           }
           d.rects = {
             reference: t8(v, FD(A), d.options.strategy === "fixed"),
-            popper: ef(A)
+            popper: ff(A)
           }, d.reset = !1, d.placement = d.options.placement, d.orderedModifiers.forEach(function(U) {
             return d.modifiersData[U.name] = Object.assign({}, U.data);
           });
@@ -7443,8 +7436,8 @@ function c8(D) {
         y(), s = !0;
       }
     };
-    if (!xf(n, r))
-      return process.env.NODE_ENV !== "production" && console.error(wf), B;
+    if (!kf(n, r))
+      return process.env.NODE_ENV !== "production" && console.error(yf), B;
     B.setOptions(o).then(function(_) {
       !s && o.onFirstUpdate && o.onFirstUpdate(_);
     });
@@ -7556,7 +7549,7 @@ function Xu(D) {
     return u && typeof Symbol == "function" && u.constructor === Symbol && u !== Symbol.prototype ? "symbol" : typeof u;
   }, Xu(D);
 }
-function Sf(D, u, f, e, F, t, a) {
+function xf(D, u, f, e, F, t, a) {
   try {
     var n = D[t](a), r = n.value;
   } catch (o) {
@@ -7571,10 +7564,10 @@ function xu(D) {
     return new Promise(function(e, F) {
       var t = D.apply(u, f);
       function a(r) {
-        Sf(t, e, F, a, n, "next", r);
+        xf(t, e, F, a, n, "next", r);
       }
       function n(r) {
-        Sf(t, e, F, a, n, "throw", r);
+        xf(t, e, F, a, n, "throw", r);
       }
       a(void 0);
     });
@@ -7588,7 +7581,7 @@ function m8(D, u, f) {
     writable: !0
   }) : D[u] = f, D;
 }
-function Tf(D, u) {
+function Sf(D, u) {
   var f = Object.keys(D);
   if (Object.getOwnPropertySymbols) {
     var e = Object.getOwnPropertySymbols(D);
@@ -7601,16 +7594,16 @@ function Tf(D, u) {
 function iu(D) {
   for (var u = 1; u < arguments.length; u++) {
     var f = arguments[u] != null ? arguments[u] : {};
-    u % 2 ? Tf(Object(f), !0).forEach(function(e) {
+    u % 2 ? Sf(Object(f), !0).forEach(function(e) {
       m8(D, e, f[e]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(D, Object.getOwnPropertyDescriptors(f)) : Tf(Object(f)).forEach(function(e) {
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(D, Object.getOwnPropertyDescriptors(f)) : Sf(Object(f)).forEach(function(e) {
       Object.defineProperty(D, e, Object.getOwnPropertyDescriptor(f, e));
     });
   }
   return D;
 }
-function n1(D) {
-  return h8(D) || _8(D) || a1(D) || v8();
+function F1(D) {
+  return h8(D) || _8(D) || n1(D) || v8();
 }
 function h8(D) {
   if (Array.isArray(D)) return GD(D);
@@ -7618,7 +7611,7 @@ function h8(D) {
 function _8(D) {
   if (typeof Symbol < "u" && Symbol.iterator in Object(D)) return Array.from(D);
 }
-function a1(D, u) {
+function n1(D, u) {
   if (D) {
     if (typeof D == "string") return GD(D, u);
     var f = Object.prototype.toString.call(D).slice(8, -1);
@@ -7638,7 +7631,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 function YD(D, u) {
   var f;
   if (typeof Symbol > "u" || D[Symbol.iterator] == null) {
-    if (Array.isArray(D) || (f = a1(D)) || u) {
+    if (Array.isArray(D) || (f = n1(D)) || u) {
       f && (D = f);
       var e = 0, F = function() {
       };
@@ -7682,9 +7675,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
   };
 }
-function d1(D, u) {
+function a1(D, u) {
   for (var f in u)
-    Object.prototype.hasOwnProperty.call(u, f) && (Xu(u[f]) === "object" && D[f] ? d1(D[f], u[f]) : D[f] = u[f]);
+    Object.prototype.hasOwnProperty.call(u, f) && (Xu(u[f]) === "object" && D[f] ? a1(D[f], u[f]) : D[f] = u[f]);
 }
 var Tu = {
   // Disable popper components
@@ -7716,7 +7709,7 @@ var Tu = {
       triggers: ["hover", "focus", "touch"],
       // Close tooltip on click on tooltip target
       hideTriggers: function(u) {
-        return [].concat(n1(u), ["click"]);
+        return [].concat(F1(u), ["click"]);
       },
       // Delay (ms)
       delay: {
@@ -7782,8 +7775,8 @@ if (typeof window < "u") {
   } catch {
   }
 }
-var r1 = !1;
-typeof window < "u" && typeof navigator < "u" && (r1 = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream);
+var d1 = !1;
+typeof window < "u" && typeof navigator < "u" && (d1 = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream);
 function bD(D, u, f) {
   var e = D.find(function(F) {
     return F.name === u;
@@ -7793,12 +7786,12 @@ function bD(D, u, f) {
     options: {}
   }, D.push(e)), Object.assign(e.options, f);
 }
-var $f = {
+var Tf = {
   hover: "mouseenter",
   focus: "focus",
   click: "click",
   touch: "touchstart"
-}, Of = {
+}, $f = {
   hover: "mouseleave",
   focus: "blur",
   click: "click",
@@ -7811,7 +7804,7 @@ function w8(D, u) {
 var Pu = [], ju = null, XD = function() {
 };
 typeof window < "u" && (XD = window.Element);
-var i1 = function() {
+var r1 = function() {
   return {
     name: "VPopper",
     props: {
@@ -8137,7 +8130,7 @@ var i1 = function() {
             if (f)
               for (var e, F = 0; F < Pu.length; F++)
                 e = Pu[F], e.showGroup !== f && (e.hide(), e.$emit("close-group"));
-            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield jf(), u.classes.showFrom = !1, u.classes.showTo = !0;
+            Pu.push(u), u.$emit("apply-show"), u.$_popperNode.setAttribute("data-popper-placement", u.popperInstance.state.placement), u.classes.showFrom = !0, u.classes.showTo = !1, u.classes.hideFrom = !1, u.classes.hideTo = !1, yield Of(), u.classes.showFrom = !1, u.classes.showTo = !0;
           }
         })();
       },
@@ -8153,7 +8146,7 @@ var i1 = function() {
             var F = q(f.theme, "disposeTimeout");
             F !== null && (f.$_disposeTimer = setTimeout(function() {
               f.$_popperNode && (f.$_detachPopperNode(), f.isMounted = !1);
-            }, F)), f.$emit("apply-hide"), f.classes.showFrom = !1, f.classes.showTo = !1, f.classes.hideFrom = !0, f.classes.hideTo = !1, yield jf(), f.classes.hideFrom = !1, f.classes.hideTo = !0;
+            }, F)), f.$emit("apply-hide"), f.classes.showFrom = !1, f.classes.showTo = !1, f.classes.hideFrom = !0, f.classes.hideTo = !1, yield Of(), f.classes.hideFrom = !1, f.classes.hideTo = !0;
           }
         })();
       },
@@ -8184,13 +8177,13 @@ var i1 = function() {
             event: a
           }));
         };
-        f(this.$_targetNodes, $f, this.triggers, this.showTriggers, e), f([this.$_popperNode], $f, this.popperTriggers, this.popperShowTriggers, e);
+        f(this.$_targetNodes, Tf, this.triggers, this.showTriggers, e), f([this.$_popperNode], Tf, this.popperTriggers, this.popperShowTriggers, e);
         var F = function(a) {
           a.usedByTooltip || u.hide({
             event: a
           });
         };
-        f(this.$_targetNodes, Of, this.triggers, this.hideTriggers, F), f([this.$_popperNode], Of, this.popperTriggers, this.popperHideTriggers, F);
+        f(this.$_targetNodes, $f, this.triggers, this.hideTriggers, F), f([this.$_popperNode], $f, this.popperTriggers, this.popperHideTriggers, F);
       },
       $_removeEventListeners: function() {
         this.$_events.forEach(function(u) {
@@ -8246,17 +8239,17 @@ var i1 = function() {
     }
   };
 };
-typeof document < "u" && typeof window < "u" && (r1 ? document.addEventListener("touchend", x8, vD ? {
+typeof document < "u" && typeof window < "u" && (d1 ? document.addEventListener("touchend", x8, vD ? {
   passive: !0,
   capture: !0
 } : !0) : window.addEventListener("click", k8, !0));
 function k8(D) {
-  s1(D);
+  i1(D);
 }
 function x8(D) {
-  s1(D, !0);
+  i1(D, !0);
 }
-function s1(D) {
+function i1(D) {
   for (var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : !1, f = function(t) {
     var a = Pu[t], n = a.popperNode(), r = n.contains(D.target);
     requestAnimationFrame(function() {
@@ -8265,12 +8258,12 @@ function s1(D) {
   }, e = 0; e < Pu.length; e++)
     f(e);
 }
-function jf() {
+function Of() {
   return new Promise(function(D) {
     return requestAnimationFrame(D);
   });
 }
-var o1 = {
+var s1 = {
   computed: {
     themeClass: function() {
       return A8(this.theme);
@@ -8281,7 +8274,7 @@ var o1 = {
   components: {
     ResizeObserver: kD
   },
-  mixins: [o1],
+  mixins: [s1],
   props: {
     popperId: String,
     theme: String,
@@ -8364,7 +8357,7 @@ function j8(D, u, f, e, F, t) {
 }
 xD.render = j8;
 xD.__file = "src/components/PopperContent.vue";
-var C1 = {
+var o1 = {
   methods: {
     show: function() {
       var u;
@@ -8386,10 +8379,10 @@ var C1 = {
 }, nD = {
   name: "VPopperWrapper",
   components: {
-    Popper: i1(),
+    Popper: r1(),
     PopperContent: xD
   },
-  mixins: [C1, o1],
+  mixins: [o1, s1],
   inheritAttrs: !1,
   props: {
     theme: {
@@ -8405,7 +8398,7 @@ var C1 = {
   },
   methods: {
     getTargetNodes: function() {
-      var u = n1(this.$refs.reference.children);
+      var u = F1(this.$refs.reference.children);
       return u.slice(0, u.length - 1).filter(Boolean);
     }
   }
@@ -8414,7 +8407,7 @@ function P8(D, u, f, e, F, t) {
   var a = O("PopperContent"), n = O("Popper");
   return b(), V(
     n,
-    Rf({
+    Lf({
       ref: "popper"
     }, D.$attrs, {
       theme: t.finalTheme,
@@ -8495,13 +8488,13 @@ var QD = iu(iu({}, nD), {}, {
   vPopperTheme: "tooltip"
 });
 QD.__file = "src/components/Tooltip.vue";
-var df = {
+var af = {
   name: "VTooltipDirective",
   components: {
-    Popper: i1(),
+    Popper: r1(),
     PopperContent: xD
   },
-  mixins: [C1],
+  mixins: [o1],
   inheritAttrs: !1,
   props: {
     theme: {
@@ -8584,7 +8577,7 @@ function I8(D, u, f, e, F, t) {
   var a = O("PopperContent"), n = O("Popper");
   return b(), V(
     n,
-    Rf({
+    Lf({
       ref: "popper"
     }, D.$attrs, {
       theme: f.theme,
@@ -8654,9 +8647,9 @@ function I8(D, u, f, e, F, t) {
     ["theme", "popper-node", "arrow-node", "onApplyShow", "onApplyHide"]
   );
 }
-df.render = I8;
-df.__file = "src/components/TooltipDirective.vue";
-var c1 = "v-popper--has-tooltip";
+af.render = I8;
+af.__file = "src/components/TooltipDirective.vue";
+var C1 = "v-popper--has-tooltip";
 function z8(D, u) {
   var f = D.placement;
   if (!f && u) {
@@ -8674,7 +8667,7 @@ function z8(D, u) {
   }
   return f || (f = q(D.theme || "tooltip", "placement")), f;
 }
-function E1(D, u, f) {
+function c1(D, u, f) {
   var e, F = Xu(u);
   return F === "string" ? e = {
     content: u
@@ -8687,7 +8680,7 @@ function E1(D, u, f) {
   }, e;
 }
 function N8(D, u, f) {
-  var e = E1(D, u, f), F = D.$_popper = j1({
+  var e = c1(D, u, f), F = D.$_popper = j1({
     name: "VTooltipDirective",
     data: function() {
       return {
@@ -8695,89 +8688,89 @@ function N8(D, u, f) {
       };
     },
     render: function() {
-      return P1(df, iu(iu({}, this.options), {}, {
+      return P1(af, iu(iu({}, this.options), {}, {
         ref: "tooltip"
       }));
     }
   }), t = document.createElement("div");
-  return document.body.appendChild(t), F.mount(t), D.classList && D.classList.add(c1), F;
+  return document.body.appendChild(t), F.mount(t), D.classList && D.classList.add(C1), F;
 }
-function l1(D) {
-  D.$_popper && (D.$_popper.unmount(), delete D.$_popper, delete D.$_popperOldShown), D.classList && D.classList.remove(c1);
+function E1(D) {
+  D.$_popper && (D.$_popper.unmount(), delete D.$_popper, delete D.$_popperOldShown), D.classList && D.classList.remove(C1);
 }
-function Pf(D, u) {
-  var f = u.value, e = u.modifiers, F = E1(D, f, e);
+function jf(D, u) {
+  var f = u.value, e = u.modifiers, F = c1(D, f, e);
   if (!F.content || q(F.theme || "tooltip", "disabled"))
-    l1(D);
+    E1(D);
   else {
     var t;
     D.$_popper ? (t = D.$_popper, t.options = F) : t = N8(D, f, e), typeof f.shown < "u" && f.shown !== D.$_popperOldShown && (D.$_popperOldShown = f.shown, f.shown ? t.$refs.tooltip.show() : t.$refs.tooltip.hide());
   }
 }
 var q8 = {
-  beforeMount: Pf,
-  updated: Pf,
+  beforeMount: jf,
+  updated: jf,
   beforeUnmount: function(u) {
-    l1(u);
+    E1(u);
   }
 };
-function If(D) {
-  D.addEventListener("click", B1), D.addEventListener("touchstart", b1, vD ? {
+function Pf(D) {
+  D.addEventListener("click", l1), D.addEventListener("touchstart", B1, vD ? {
     passive: !0
   } : !1);
 }
-function zf(D) {
-  D.removeEventListener("click", B1), D.removeEventListener("touchstart", b1), D.removeEventListener("touchend", p1), D.removeEventListener("touchcancel", g1);
+function If(D) {
+  D.removeEventListener("click", l1), D.removeEventListener("touchstart", B1), D.removeEventListener("touchend", b1), D.removeEventListener("touchcancel", p1);
 }
-function B1(D) {
+function l1(D) {
   var u = D.currentTarget;
   D.closePopover = !u.$_vclosepopover_touch, D.closeAllPopover = u.$_closePopoverModifiers && !!u.$_closePopoverModifiers.all;
 }
-function b1(D) {
+function B1(D) {
   if (D.changedTouches.length === 1) {
     var u = D.currentTarget;
     u.$_vclosepopover_touch = !0;
     var f = D.changedTouches[0];
-    u.$_vclosepopover_touchPoint = f, u.addEventListener("touchend", p1), u.addEventListener("touchcancel", g1);
+    u.$_vclosepopover_touchPoint = f, u.addEventListener("touchend", b1), u.addEventListener("touchcancel", p1);
   }
 }
-function p1(D) {
+function b1(D) {
   var u = D.currentTarget;
   if (u.$_vclosepopover_touch = !1, D.changedTouches.length === 1) {
     var f = D.changedTouches[0], e = u.$_vclosepopover_touchPoint;
     D.closePopover = Math.abs(f.screenY - e.screenY) < 20 && Math.abs(f.screenX - e.screenX) < 20, D.closeAllPopover = u.$_closePopoverModifiers && !!u.$_closePopoverModifiers.all;
   }
 }
-function g1(D) {
+function p1(D) {
   var u = D.currentTarget;
   u.$_vclosepopover_touch = !1;
 }
 var L8 = {
   beforeMount: function(u, f) {
     var e = f.value, F = f.modifiers;
-    u.$_closePopoverModifiers = F, (typeof e > "u" || e) && If(u);
+    u.$_closePopoverModifiers = F, (typeof e > "u" || e) && Pf(u);
   },
   updated: function(u, f) {
     var e = f.value, F = f.oldValue, t = f.modifiers;
-    u.$_closePopoverModifiers = t, e !== F && (typeof e > "u" || e ? If(u) : zf(u));
+    u.$_closePopoverModifiers = t, e !== F && (typeof e > "u" || e ? Pf(u) : If(u));
   },
   beforeUnmount: function(u) {
-    zf(u);
+    If(u);
   }
 };
 function JD(D) {
   var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
-  JD.installed || (JD.installed = !0, d1(Tu, u), D.directive("tooltip", q8), D.directive("close-popper", L8), D.component("v-tooltip", QD), D.component("VTooltip", QD), D.component("v-dropdown", KD), D.component("VDropdown", KD), D.component("v-menu", ZD), D.component("VMenu", ZD));
+  JD.installed || (JD.installed = !0, a1(Tu, u), D.directive("tooltip", q8), D.directive("close-popper", L8), D.component("v-tooltip", QD), D.component("VTooltip", QD), D.component("v-dropdown", KD), D.component("VDropdown", KD), D.component("v-menu", ZD), D.component("VMenu", ZD));
 }
 var R8 = {
   // eslint-disable-next-line no-undef
   version: "4.0.0-alpha.1",
   install: JD,
   options: Tu
-}, pD = { exports: {} }, Nf;
+}, pD = { exports: {} }, zf;
 function M8() {
-  if (Nf) return pD.exports;
-  Nf = 1;
+  if (zf) return pD.exports;
+  zf = 1;
   function D() {
   }
   return D.prototype = {
@@ -8810,15 +8803,15 @@ function M8() {
     }
   }, pD.exports = D, pD.exports.TinyEmitter = D, pD.exports;
 }
-var MD, qf;
+var MD, Nf;
 function H8() {
-  if (qf) return MD;
-  qf = 1;
+  if (Nf) return MD;
+  Nf = 1;
   var D = M8();
   return MD = new D(), MD;
 }
 var U8 = H8();
-const gD = /* @__PURE__ */ Df(U8), V8 = {
+const gD = /* @__PURE__ */ uf(U8), V8 = {
   $on: (...D) => gD.on(...D),
   $once: (...D) => gD.once(...D),
   $off: (...D) => gD.off(...D),

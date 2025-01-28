@@ -32,7 +32,6 @@
         </span>
       </div>
       <span
-        v-tooltip.bottom="t('chat.deleteFile')"
         class="delete-file-message"
         @click="cancelFile()"
       >
