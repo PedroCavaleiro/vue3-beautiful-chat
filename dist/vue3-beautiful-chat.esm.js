@@ -5749,7 +5749,8 @@ const Oe = /* @__PURE__ */ M(Se, [["render", $e]]), je = {
     return {
       file: null,
       inputActive: !1,
-      prevSelectionRange: null
+      prevSelectionRange: null,
+      imageData: null
     };
   },
   computed: {
@@ -5856,7 +5857,14 @@ const Oe = /* @__PURE__ */ M(Se, [["render", $e]]), je = {
       u.deleteContents(), u.insertNode(e), u.collapse(!1), this.$refs.userInput.focus();
     },
     _handleFileSubmit(D) {
-      this.file = D;
+      if (this.file = D, D.type.startsWith("image/")) {
+        const u = new FileReader();
+        u.onload = (f) => {
+          var e;
+          this.imageData = (e = f.target) == null ? void 0 : e.result;
+        }, u.readAsDataURL(D);
+      }
+      D.value = D;
     },
     _editFinish() {
       Du.setState("editMessage", null);
@@ -5890,9 +5898,9 @@ function Ve(D, u, f, e, F, t) {
     }, [
       p("div", Pe, [
         p("span", Ie, [
-          D.imageData ? (b(), m("img", {
+          F.imageData ? (b(), m("img", {
             key: 1,
-            src: D.imageData,
+            src: F.imageData,
             alt: "Uploaded Image",
             style: { height: "65px", "object-fit": "cover" }
           }, null, 8, Ne)) : (b(), m("img", {

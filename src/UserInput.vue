@@ -190,7 +190,8 @@ export default {
     return {
       file: null,
       inputActive: false,
-      prevSelectionRange: null
+      prevSelectionRange: null,
+      imageData: null
     }
   },
   computed: {
@@ -369,6 +370,15 @@ export default {
     },
     _handleFileSubmit(file) {
       this.file = file
+      if (file.type.startsWith('image/')) {
+        const reader = new FileReader()
+        reader.onload = (e) => {
+          // @ts-ignore
+          this.imageData = e.target?.result
+        }
+        reader.readAsDataURL(file)
+      }
+      file.value = file
     },
     _editFinish() {
       store.setState('editMessage', null)
