@@ -5,20 +5,32 @@
       v-if="file"
       class="file-container"
       :style="{
-        backgroundColor: colors.userInput.text,
-        color: colors.userInput.bg
+        backgroundColor: colors.userInput.bg,
+        color: colors.userInput.text
       }"
     >
-      <span class="icon-file-message">
-        <img v-if="!imageData" :src="icons.file.img" :alt="icons.file.name" style="height: 65px" />
-        <img v-else :src="imageData" alt="Uploaded Image" style="height: 65px; object-fit: cover" />
-      </span>
-      <span>
-        {{
-          // @ts-ignore
-          file.name
-        }}
-      </span>
+      <div class="flex flex-row items-center gap-3">
+        <span class="icon-file-message">
+          <img
+            v-if="!imageData"
+            :src="icons.file.img"
+            :alt="icons.file.name"
+            style="height: 65px"
+          />
+          <img
+            v-else
+            :src="imageData"
+            alt="Uploaded Image"
+            style="height: 65px; object-fit: cover"
+          />
+        </span>
+        <span>
+          {{
+            // @ts-ignore
+            file.name
+          }}
+        </span>
+      </div>
     </div>
     <form
       class="sc-user-input"

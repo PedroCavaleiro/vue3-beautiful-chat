@@ -5862,17 +5862,17 @@ const Oe = /* @__PURE__ */ M(Se, [["render", $e]]), je = {
       Du.setState("editMessage", null);
     }
   }
-}, Pe = { class: "icon-file-message" }, Ie = ["src", "alt"], ze = ["src"], Ne = ["placeholder"], qe = { class: "sc-user-input--buttons" }, Le = {
+}, Pe = { class: "flex flex-row items-center gap-3" }, Ie = { class: "icon-file-message" }, ze = ["src", "alt"], Ne = ["src"], qe = ["placeholder"], Le = { class: "sc-user-input--buttons" }, Re = {
   key: 0,
   class: "sc-user-input--button"
-}, Re = {
+}, Me = {
   key: 1,
   class: "sc-user-input--button"
-}, Me = {
+}, He = {
   key: 2,
   class: "sc-user-input--button"
-}, He = { class: "sc-user-input--button" };
-function Ue(D, u, f, e, F, t) {
+}, Ue = { class: "sc-user-input--button" };
+function Ve(D, u, f, e, F, t) {
   const a = O("Suggestions"), n = O("EmojiIcon"), r = O("FileIcons"), s = O("IconCross"), d = O("UserInputButton"), c = O("IconOk"), o = O("IconSend");
   return b(), m("div", null, [
     L(a, {
@@ -5884,27 +5884,29 @@ function Ue(D, u, f, e, F, t) {
       key: 0,
       class: "file-container",
       style: I({
-        backgroundColor: f.colors.userInput.text,
-        color: f.colors.userInput.bg
+        backgroundColor: f.colors.userInput.bg,
+        color: f.colors.userInput.text
       })
     }, [
-      p("span", Pe, [
-        D.imageData ? (b(), m("img", {
-          key: 1,
-          src: D.imageData,
-          alt: "Uploaded Image",
-          style: { height: "65px", "object-fit": "cover" }
-        }, null, 8, ze)) : (b(), m("img", {
-          key: 0,
-          src: f.icons.file.img,
-          alt: f.icons.file.name,
-          style: { height: "65px" }
-        }, null, 8, Ie))
-      ]),
-      p("span", null, Z(
-        // @ts-ignore
-        F.file.name
-      ), 1)
+      p("div", Pe, [
+        p("span", Ie, [
+          D.imageData ? (b(), m("img", {
+            key: 1,
+            src: D.imageData,
+            alt: "Uploaded Image",
+            style: { height: "65px", "object-fit": "cover" }
+          }, null, 8, Ne)) : (b(), m("img", {
+            key: 0,
+            src: f.icons.file.img,
+            alt: f.icons.file.name,
+            style: { height: "65px" }
+          }, null, 8, ze))
+        ]),
+        p("span", null, Z(
+          // @ts-ignore
+          F.file.name
+        ), 1)
+      ])
     ], 4)) : z("", !0),
     p("form", {
       class: DD(["sc-user-input", { active: F.inputActive }]),
@@ -5923,24 +5925,24 @@ function Ue(D, u, f, e, F, t) {
         onKeydown: u[2] || (u[2] = (...B) => t.handleKey && t.handleKey(...B)),
         onInput: u[3] || (u[3] = (...B) => t.handleInput && t.handleInput(...B)),
         "on:focusUserInput": u[4] || (u[4] = (B) => t.focusUserInput())
-      }, null, 44, Ne),
-      p("div", qe, [
+      }, null, 44, qe),
+      p("div", Le, [
         u[5] || (u[5] = p("div", { class: "sc-user-input--button" }, null, -1)),
-        f.showEmoji && !t.isEditing ? (b(), m("div", Le, [
+        f.showEmoji && !t.isEditing ? (b(), m("div", Re, [
           L(n, {
             "on-emoji-picked": t._handleEmojiPicked,
             color: f.colors.userInput.text,
             colors: f.colors
           }, null, 8, ["on-emoji-picked", "color", "colors"])
         ])) : z("", !0),
-        f.showFile && !t.isEditing ? (b(), m("div", Re, [
+        f.showFile && !t.isEditing ? (b(), m("div", Me, [
           L(r, {
             "on-change": t._handleFileSubmit,
             color: f.colors.userInput.text,
             acceptedFileTypes: f.acceptedFileTypes
           }, null, 8, ["on-change", "color", "acceptedFileTypes"])
         ])) : z("", !0),
-        t.isEditing ? (b(), m("div", Me, [
+        t.isEditing ? (b(), m("div", He, [
           L(d, {
             color: f.colors.userInput.text,
             tooltip: "cancel",
@@ -5952,7 +5954,7 @@ function Ue(D, u, f, e, F, t) {
             _: 1
           }, 8, ["color", "onClick"])
         ])) : z("", !0),
-        p("div", He, [
+        p("div", Ue, [
           t.isEditing ? (b(), V(d, {
             key: 0,
             color: f.colors.userInput.text,
@@ -5979,7 +5981,7 @@ function Ue(D, u, f, e, F, t) {
     ], 6)
   ]);
 }
-const Ve = /* @__PURE__ */ M(je, [["render", Ue]]), We = {
+const We = /* @__PURE__ */ M(je, [["render", Ve]]), Ge = {
   props: {
     participants: {
       type: Array,
@@ -6000,22 +6002,22 @@ const Ve = /* @__PURE__ */ M(je, [["render", Ue]]), We = {
       }, this.colors);
     }
   }
-}, Ge = { style: { "padding-top": "5px" } }, Ye = { style: { "text-align": "center" } }, Xe = ["src"];
-function Ke(D, u, f, e, F, t) {
+}, Ye = { style: { "padding-top": "5px" } }, Xe = { style: { "text-align": "center" } }, Ke = ["src"];
+function Ze(D, u, f, e, F, t) {
   return b(), m("div", {
     class: "user-list",
     style: I({ background: t.userListColor.userList.bg })
   }, [
-    p("table", Ge, [
+    p("table", Ye, [
       p("tbody", null, [
         (b(!0), m(qu, null, Ku(f.participants, (a) => (b(), m("tr", {
           key: a.id
         }, [
-          p("td", Ye, [
+          p("td", Xe, [
             p("img", {
               src: a.imageUrl,
               class: "img-msg"
-            }, null, 8, Xe)
+            }, null, 8, Ke)
           ]),
           p("td", {
             class: "user-element",
@@ -6026,13 +6028,13 @@ function Ke(D, u, f, e, F, t) {
     ])
   ], 4);
 }
-const Ze = /* @__PURE__ */ M(We, [["render", Ke], ["__scopeId", "data-v-4899c8d9"]]), Qe = {
+const Qe = /* @__PURE__ */ M(Ge, [["render", Ze], ["__scopeId", "data-v-4899c8d9"]]), Je = {
   components: {
     // eslint-disable-next-line vue/no-reserved-component-names
     Header: L1,
     MessageList: K3,
-    UserInput: Ve,
-    UserList: Ze
+    UserInput: We,
+    UserList: Qe
   },
   props: {
     showEmoji: {
@@ -6128,7 +6130,7 @@ const Ze = /* @__PURE__ */ M(We, [["render", Ke], ["__scopeId", "data-v-4899c8d9
     }
   }
 };
-function Je(D, u, f, e, F, t) {
+function u2(D, u, f, e, F, t) {
   const a = O("Header"), n = O("UserList"), r = O("MessageList"), s = O("UserInput");
   return b(), m("div", {
     class: DD(["sc-chat-window", { opened: f.isOpen, closed: !f.isOpen }])
@@ -6218,9 +6220,9 @@ function Je(D, u, f, e, F, t) {
     }, null, 8, ["show-emoji", "show-emoji-in-text", "on-submit", "suggestions", "show-file", "placeholder", "colors", "accepted-file-types"]))
   ], 2);
 }
-const u2 = /* @__PURE__ */ M(Qe, [["render", Je], ["__scopeId", "data-v-0a3a5922"]]), D2 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='18'%20height='18'%3e%3crect%20id='backgroundrect'%20width='100%25'%20height='100%25'%20x='0'%20y='0'%20fill='none'%20stroke='none'/%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M%200%200%20H%2017.555%20v%2017.555%20H%200%20Z'%20id='svg_1'%20transform=''/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20class='currentLayer'%20style=''%3e%3ctitle%3eLayer%201%3c/title%3e%3cg%20id='svg_2'%20class='selected'%20transform=''%3e%3cg%20id='svg_3'%20transform=''%3e%3cg%20class='c'%20id='svg_4'%20transform=''%3e%3cg%20id='svg_5'%20transform=''%3e%3cpath%20class='d'%20d='M%2017.556%208.77842%20a%208.778%208.778%200%200%200%20-8.778%20-8.778%20a%208.778%208.778%200%200%200%20-8.778%208.778%20a%208.745%208.745%200%200%200%202.26%205.879%20v%201.442%20c%200%200.8%200.492%201.457%201.1%201.457%20h%205.83%20a%200.843%200.843%200%200%200%200.183%20-0.02%20a%208.778%208.778%200%200%200%208.184%20-8.757'%20id='svg_6'%20transform=''/%3e%3c/g%3e%3cg%20id='svg_7'%20transform=''%3e%3cpath%20class='e'%20d='M%203.16148%208.921%20a%209.292%209.292%200%200%201%206.38%20-8.888%20c%20-0.252%20-0.022%20-0.506%20-0.033%20-0.763%20-0.033%20a%208.774%208.774%200%200%200%20-8.778%208.778%20A%209.508%209.508%200%200%200%202.22447%2014.7003%20c%200.005%200%200%200.009%200%200.01%20c%20-0.311%200.352%20-1.924%202.849%200.021%202.849%20h%202.25%20c%20-1.23%20-0.022%201.263%20-2.107%200.269%20-3.494%20a%208.225%208.225%200%200%201%20-1.6%20-5.141'%20id='svg_8'%20transform=''/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", f2 = {
+const D2 = /* @__PURE__ */ M(Je, [["render", u2], ["__scopeId", "data-v-0a3a5922"]]), f2 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='18'%20height='18'%3e%3crect%20id='backgroundrect'%20width='100%25'%20height='100%25'%20x='0'%20y='0'%20fill='none'%20stroke='none'/%3e%3cdefs%3e%3cstyle%3e.a{fill:none;}.b{fill:%234e8cff;}.c{clip-path:url(%23a);}.d{fill:%23fff;}.e{fill:%23eff4f9;}%3c/style%3e%3cclipPath%20id='a'%3e%3cpath%20class='a'%20d='M%200%200%20H%2017.555%20v%2017.555%20H%200%20Z'%20id='svg_1'%20transform=''/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20class='currentLayer'%20style=''%3e%3ctitle%3eLayer%201%3c/title%3e%3cg%20id='svg_2'%20class='selected'%20transform=''%3e%3cg%20id='svg_3'%20transform=''%3e%3cg%20class='c'%20id='svg_4'%20transform=''%3e%3cg%20id='svg_5'%20transform=''%3e%3cpath%20class='d'%20d='M%2017.556%208.77842%20a%208.778%208.778%200%200%200%20-8.778%20-8.778%20a%208.778%208.778%200%200%200%20-8.778%208.778%20a%208.745%208.745%200%200%200%202.26%205.879%20v%201.442%20c%200%200.8%200.492%201.457%201.1%201.457%20h%205.83%20a%200.843%200.843%200%200%200%200.183%20-0.02%20a%208.778%208.778%200%200%200%208.184%20-8.757'%20id='svg_6'%20transform=''/%3e%3c/g%3e%3cg%20id='svg_7'%20transform=''%3e%3cpath%20class='e'%20d='M%203.16148%208.921%20a%209.292%209.292%200%200%201%206.38%20-8.888%20c%20-0.252%20-0.022%20-0.506%20-0.033%20-0.763%20-0.033%20a%208.774%208.774%200%200%200%20-8.778%208.778%20A%209.508%209.508%200%200%200%202.22447%2014.7003%20c%200.005%200%200%200.009%200%200.01%20c%20-0.311%200.352%20-1.924%202.849%200.021%202.849%20h%202.25%20c%20-1.23%20-0.022%201.263%20-2.107%200.269%20-3.494%20a%208.225%208.225%200%200%201%20-1.6%20-5.141'%20id='svg_8'%20transform=''/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e", e2 = {
   components: {
-    ChatWindow: u2
+    ChatWindow: D2
   },
   props: {
     icons: {
@@ -6228,7 +6230,7 @@ const u2 = /* @__PURE__ */ M(Qe, [["render", Je], ["__scopeId", "data-v-0a3a5922
       default: function() {
         return {
           open: {
-            img: D2,
+            img: f2,
             name: "default"
           },
           close: {
@@ -6410,11 +6412,11 @@ const u2 = /* @__PURE__ */ M(Qe, [["render", Je], ["__scopeId", "data-v-0a3a5922
       this.open(), this.autoFocus && this.$event.$emit("focusUserInput");
     }
   }
-}, e2 = {
+}, t2 = {
   key: 0,
   class: "sc-new-messsages-count"
-}, t2 = ["src", "alt"], F2 = ["src", "alt"];
-function n2(D, u, f, e, F, t) {
+}, F2 = ["src", "alt"], n2 = ["src", "alt"];
+function a2(D, u, f, e, F, t) {
   const a = O("ChatWindow");
   return b(), m("div", null, [
     f.showLauncher ? (b(), m("div", {
@@ -6423,18 +6425,18 @@ function n2(D, u, f, e, F, t) {
       style: I({ backgroundColor: f.colors.launcher.bg }),
       onClick: u[0] || (u[0] = Gu((n) => f.isOpen ? f.close() : t.openAndFocus(), ["prevent"]))
     }, [
-      f.newMessagesCount > 0 && !f.isOpen ? (b(), m("div", e2, Z(f.newMessagesCount), 1)) : z("", !0),
+      f.newMessagesCount > 0 && !f.isOpen ? (b(), m("div", t2, Z(f.newMessagesCount), 1)) : z("", !0),
       f.isOpen ? (b(), m("img", {
         key: 1,
         class: "sc-closed-icon",
         src: f.icons.close.img,
         alt: f.icons.close.name
-      }, null, 8, t2)) : (b(), m("img", {
+      }, null, 8, F2)) : (b(), m("img", {
         key: 2,
         class: "sc-open-icon",
         src: f.icons.open.img,
         alt: f.icons.open.name
-      }, null, 8, F2))
+      }, null, 8, n2))
     ], 6)) : z("", !0),
     L(a, {
       "message-list": f.messageList,
@@ -6506,12 +6508,12 @@ function n2(D, u, f, e, F, t) {
     }, 8, ["message-list", "on-user-input-submit", "participants", "title", "is-open", "show-emoji", "show-emoji-in-text", "show-file", "show-confirmation-deletion", "confirmation-deletion-message", "show-header", "placeholder", "show-typing-indicator", "colors", "always-scroll-to-bottom", "message-styling", "message-margin", "accepted-file-types", "show-minimize-button", "onClose", "onMinimize"])
   ]);
 }
-const a2 = /* @__PURE__ */ M(f2, [["render", n2], ["__scopeId", "data-v-a7db8f74"]]);
-var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], Lu = "start", Df = "end", d2 = "clippingParents", Zf = "viewport", Wu = "popper", r2 = "reference", pf = /* @__PURE__ */ tD.reduce(function(D, u) {
+const d2 = /* @__PURE__ */ M(e2, [["render", a2], ["__scopeId", "data-v-a7db8f74"]]);
+var eu = "top", ou = "bottom", su = "right", tu = "left", AD = "auto", tD = [eu, ou, su, tu], Lu = "start", Df = "end", r2 = "clippingParents", Zf = "viewport", Wu = "popper", i2 = "reference", pf = /* @__PURE__ */ tD.reduce(function(D, u) {
   return D.concat([u + "-" + Lu, u + "-" + Df]);
 }, []), yD = /* @__PURE__ */ [].concat(tD, [AD]).reduce(function(D, u) {
   return D.concat([u, u + "-" + Lu, u + "-" + Df]);
-}, []), i2 = "beforeRead", o2 = "read", s2 = "afterRead", C2 = "beforeMain", c2 = "main", E2 = "afterMain", l2 = "beforeWrite", B2 = "write", b2 = "afterWrite", UD = [i2, o2, s2, C2, c2, E2, l2, B2, b2];
+}, []), o2 = "beforeRead", s2 = "read", C2 = "afterRead", c2 = "beforeMain", E2 = "main", l2 = "afterMain", B2 = "beforeWrite", b2 = "write", p2 = "afterWrite", UD = [o2, s2, C2, c2, E2, l2, B2, b2, p2];
 function pu(D) {
   return D ? (D.nodeName || "").toLowerCase() : null;
 }
@@ -6538,7 +6540,7 @@ function Qf(D) {
   var u = cu(D).ShadowRoot;
   return D instanceof u || D instanceof ShadowRoot;
 }
-function p2(D) {
+function g2(D) {
   var u = D.state;
   Object.keys(u.elements).forEach(function(f) {
     var e = u.styles[f] || {}, F = u.attributes[f] || {}, t = u.elements[f];
@@ -6548,7 +6550,7 @@ function p2(D) {
     }));
   });
 }
-function g2(D) {
+function m2(D) {
   var u = D.state, f = {
     popper: {
       position: u.options.strategy,
@@ -6572,12 +6574,12 @@ function g2(D) {
     });
   };
 }
-const m2 = {
+const h2 = {
   name: "applyStyles",
   enabled: !0,
   phase: "write",
-  fn: p2,
-  effect: g2,
+  fn: g2,
+  effect: m2,
   requires: ["computeStyles"]
 };
 function ru(D) {
@@ -6622,7 +6624,7 @@ function Jf(D, u) {
 function Cu(D) {
   return cu(D).getComputedStyle(D);
 }
-function h2(D) {
+function _2(D) {
   return ["table", "td", "th"].indexOf(pu(D)) >= 0;
 }
 function Au(D) {
@@ -6647,7 +6649,7 @@ function gf(D) {
   return !Fu(D) || // https://github.com/popperjs/popper-core/issues/837
   Cu(D).position === "fixed" ? null : D.offsetParent;
 }
-function _2(D) {
+function v2(D) {
   var u = navigator.userAgent.toLowerCase().indexOf("firefox") !== -1, f = navigator.userAgent.indexOf("Trident") !== -1;
   if (f && Fu(D)) {
     var e = Cu(D);
@@ -6663,9 +6665,9 @@ function _2(D) {
   return null;
 }
 function FD(D) {
-  for (var u = cu(D), f = gf(D); f && h2(f) && Cu(f).position === "static"; )
+  for (var u = cu(D), f = gf(D); f && _2(f) && Cu(f).position === "static"; )
     f = gf(f);
-  return f && (pu(f) === "html" || pu(f) === "body" && Cu(f).position === "static") ? u : f || _2(D) || u;
+  return f && (pu(f) === "html" || pu(f) === "body" && Cu(f).position === "static") ? u : f || v2(D) || u;
 }
 function ef(D) {
   return ["top", "bottom"].indexOf(D) >= 0 ? "x" : "y";
@@ -6690,19 +6692,19 @@ function f1(D, u) {
     return f[e] = D, f;
   }, {});
 }
-var v2 = function(u, f) {
+var A2 = function(u, f) {
   return u = typeof u == "function" ? u(Object.assign({}, f.rects, {
     placement: f.placement
   })) : u, D1(typeof u != "number" ? u : f1(u, tD));
 };
-function A2(D) {
+function y2(D) {
   var u, f = D.state, e = D.name, F = D.options, t = f.elements.arrow, a = f.modifiersData.popperOffsets, n = ru(f.placement), r = ef(n), s = [tu, su].indexOf(n) >= 0, d = s ? "height" : "width";
   if (!(!t || !a)) {
-    var c = v2(F.padding, f), o = ff(t), B = r === "y" ? eu : tu, E = r === "y" ? ou : su, y = f.rects.reference[d] + f.rects.reference[r] - a[r] - f.rects.popper[d], _ = a[r] - f.rects.reference[r], w = FD(t), v = w ? r === "y" ? w.clientHeight || 0 : w.clientWidth || 0 : 0, A = y / 2 - _ / 2, g = c[B], h = v - o[d] - c[E], S = v / 2 - o[d] / 2 + A, T = mD(g, S, h), $ = r;
+    var c = A2(F.padding, f), o = ff(t), B = r === "y" ? eu : tu, E = r === "y" ? ou : su, y = f.rects.reference[d] + f.rects.reference[r] - a[r] - f.rects.popper[d], _ = a[r] - f.rects.reference[r], w = FD(t), v = w ? r === "y" ? w.clientHeight || 0 : w.clientWidth || 0 : 0, A = y / 2 - _ / 2, g = c[B], h = v - o[d] - c[E], S = v / 2 - o[d] / 2 + A, T = mD(g, S, h), $ = r;
     f.modifiersData[e] = (u = {}, u[$] = T, u.centerOffset = T - S, u);
   }
 }
-function y2(D) {
+function w2(D) {
   var u = D.state, f = D.options, e = f.element, F = e === void 0 ? "[data-popper-arrow]" : e;
   if (F != null && !(typeof F == "string" && (F = u.elements.popper.querySelector(F), !F))) {
     if (process.env.NODE_ENV !== "production" && (Fu(F) || console.error(['Popper: "arrow" element must be an HTMLElement (not an SVGElement).', "To use an SVG arrow, wrap it in an HTMLElement that will be used as", "the arrow."].join(" "))), !Jf(u.elements.popper, F)) {
@@ -6712,22 +6714,22 @@ function y2(D) {
     u.elements.arrow = F;
   }
 }
-const w2 = {
+const k2 = {
   name: "arrow",
   enabled: !0,
   phase: "main",
-  fn: A2,
-  effect: y2,
+  fn: y2,
+  effect: w2,
   requires: ["popperOffsets"],
   requiresIfExists: ["preventOverflow"]
 };
-var k2 = {
+var x2 = {
   top: "auto",
   right: "auto",
   bottom: "auto",
   left: "auto"
 };
-function x2(D) {
+function S2(D) {
   var u = D.x, f = D.y, e = window, F = e.devicePixelRatio || 1;
   return {
     x: lD(lD(u * F) / F) || 0,
@@ -6735,21 +6737,21 @@ function x2(D) {
   };
 }
 function mf(D) {
-  var u, f = D.popper, e = D.popperRect, F = D.placement, t = D.offsets, a = D.position, n = D.gpuAcceleration, r = D.adaptive, s = D.roundOffsets, d = s === !0 ? x2(t) : typeof s == "function" ? s(t) : t, c = d.x, o = c === void 0 ? 0 : c, B = d.y, E = B === void 0 ? 0 : B, y = t.hasOwnProperty("x"), _ = t.hasOwnProperty("y"), w = tu, v = eu, A = window;
+  var u, f = D.popper, e = D.popperRect, F = D.placement, t = D.offsets, a = D.position, n = D.gpuAcceleration, r = D.adaptive, s = D.roundOffsets, d = s === !0 ? S2(t) : typeof s == "function" ? s(t) : t, c = d.x, o = c === void 0 ? 0 : c, B = d.y, E = B === void 0 ? 0 : B, y = t.hasOwnProperty("x"), _ = t.hasOwnProperty("y"), w = tu, v = eu, A = window;
   if (r) {
     var g = FD(f), h = "clientHeight", S = "clientWidth";
     g === cu(f) && (g = Au(f), Cu(g).position !== "static" && (h = "scrollHeight", S = "scrollWidth")), g = g, F === eu && (v = ou, E -= g[h] - e.height, E *= n ? 1 : -1), F === tu && (w = su, o -= g[S] - e.width, o *= n ? 1 : -1);
   }
   var T = Object.assign({
     position: a
-  }, r && k2);
+  }, r && x2);
   if (n) {
     var $;
     return Object.assign({}, T, ($ = {}, $[v] = _ ? "0" : "", $[w] = y ? "0" : "", $.transform = (A.devicePixelRatio || 1) < 2 ? "translate(" + o + "px, " + E + "px)" : "translate3d(" + o + "px, " + E + "px, 0)", $));
   }
   return Object.assign({}, T, (u = {}, u[v] = _ ? E + "px" : "", u[w] = y ? o + "px" : "", u.transform = "", u));
 }
-function S2(D) {
+function T2(D) {
   var u = D.state, f = D.options, e = f.gpuAcceleration, F = e === void 0 ? !0 : e, t = f.adaptive, a = t === void 0 ? !0 : t, n = f.roundOffsets, r = n === void 0 ? !0 : n;
   if (process.env.NODE_ENV !== "production") {
     var s = Cu(u.elements.popper).transitionProperty || "";
@@ -6781,17 +6783,17 @@ function S2(D) {
     "data-popper-placement": u.placement
   });
 }
-const T2 = {
+const $2 = {
   name: "computeStyles",
   enabled: !0,
   phase: "beforeWrite",
-  fn: S2,
+  fn: T2,
   data: {}
 };
 var BD = {
   passive: !0
 };
-function $2(D) {
+function O2(D) {
   var u = D.state, f = D.instance, e = D.options, F = e.scroll, t = F === void 0 ? !0 : F, a = e.resize, n = a === void 0 ? !0 : a, r = cu(u.elements.popper), s = [].concat(u.scrollParents.reference, u.scrollParents.popper);
   return t && s.forEach(function(d) {
     d.addEventListener("scroll", f.update, BD);
@@ -6801,16 +6803,16 @@ function $2(D) {
     }), n && r.removeEventListener("resize", f.update, BD);
   };
 }
-const O2 = {
+const j2 = {
   name: "eventListeners",
   enabled: !0,
   phase: "write",
   fn: function() {
   },
-  effect: $2,
+  effect: O2,
   data: {}
 };
-var j2 = {
+var P2 = {
   left: "right",
   right: "left",
   bottom: "top",
@@ -6818,16 +6820,16 @@ var j2 = {
 };
 function hD(D) {
   return D.replace(/left|right|bottom|top/g, function(u) {
-    return j2[u];
+    return P2[u];
   });
 }
-var P2 = {
+var I2 = {
   start: "end",
   end: "start"
 };
 function hf(D) {
   return D.replace(/start|end/g, function(u) {
-    return P2[u];
+    return I2[u];
   });
 }
 function tf(D) {
@@ -6840,7 +6842,7 @@ function tf(D) {
 function Ff(D) {
   return Ru(Au(D)).left + tf(D).scrollLeft;
 }
-function I2(D) {
+function z2(D) {
   var u = cu(D), f = Au(D), e = u.visualViewport, F = f.clientWidth, t = f.clientHeight, a = 0, n = 0;
   return e && (F = e.width, t = e.height, /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || (a = e.offsetLeft, n = e.offsetTop)), {
     width: F,
@@ -6849,7 +6851,7 @@ function I2(D) {
     y: n
   };
 }
-function z2(D) {
+function N2(D) {
   var u, f = Au(D), e = tf(D), F = (u = D.ownerDocument) == null ? void 0 : u.body, t = vu(f.scrollWidth, f.clientWidth, F ? F.scrollWidth : 0, F ? F.clientWidth : 0), a = vu(f.scrollHeight, f.clientHeight, F ? F.scrollHeight : 0, F ? F.clientHeight : 0), n = -e.scrollLeft + Ff(D), r = -e.scrollTop;
   return Cu(F || f).direction === "rtl" && (n += vu(f.clientWidth, F ? F.clientWidth : 0) - t), {
     width: t,
@@ -6882,21 +6884,21 @@ function VD(D) {
     bottom: D.y + D.height
   });
 }
-function N2(D) {
+function q2(D) {
   var u = Ru(D);
   return u.top = u.top + D.clientTop, u.left = u.left + D.clientLeft, u.bottom = u.top + D.clientHeight, u.right = u.left + D.clientWidth, u.width = D.clientWidth, u.height = D.clientHeight, u.x = u.left, u.y = u.top, u;
 }
 function _f(D, u) {
-  return u === Zf ? VD(I2(D)) : Fu(u) ? N2(u) : VD(z2(Au(D)));
+  return u === Zf ? VD(z2(D)) : Fu(u) ? q2(u) : VD(N2(Au(D)));
 }
-function q2(D) {
+function L2(D) {
   var u = Yu(wD(D)), f = ["absolute", "fixed"].indexOf(Cu(D).position) >= 0, e = f && Fu(D) ? FD(D) : D;
   return Zu(e) ? u.filter(function(F) {
     return Zu(F) && Jf(F, e) && pu(F) !== "body";
   }) : [];
 }
-function L2(D, u, f) {
-  var e = u === "clippingParents" ? q2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], a = F.reduce(function(n, r) {
+function R2(D, u, f) {
+  var e = u === "clippingParents" ? L2(D) : [].concat(u), F = [].concat(e, [f]), t = F[0], a = F.reduce(function(n, r) {
     var s = _f(D, r);
     return n.top = vu(s.top, n.top), n.right = Qu(s.right, n.right), n.bottom = Qu(s.bottom, n.bottom), n.left = vu(s.left, n.left), n;
   }, _f(D, t));
@@ -6954,7 +6956,7 @@ function t1(D) {
 }
 function uD(D, u) {
   u === void 0 && (u = {});
-  var f = u, e = f.placement, F = e === void 0 ? D.placement : e, t = f.boundary, a = t === void 0 ? d2 : t, n = f.rootBoundary, r = n === void 0 ? Zf : n, s = f.elementContext, d = s === void 0 ? Wu : s, c = f.altBoundary, o = c === void 0 ? !1 : c, B = f.padding, E = B === void 0 ? 0 : B, y = D1(typeof E != "number" ? E : f1(E, tD)), _ = d === Wu ? r2 : Wu, w = D.elements.reference, v = D.rects.popper, A = D.elements[o ? _ : d], g = L2(Zu(A) ? A : A.contextElement || Au(D.elements.popper), a, r), h = Ru(w), S = t1({
+  var f = u, e = f.placement, F = e === void 0 ? D.placement : e, t = f.boundary, a = t === void 0 ? r2 : t, n = f.rootBoundary, r = n === void 0 ? Zf : n, s = f.elementContext, d = s === void 0 ? Wu : s, c = f.altBoundary, o = c === void 0 ? !1 : c, B = f.padding, E = B === void 0 ? 0 : B, y = D1(typeof E != "number" ? E : f1(E, tD)), _ = d === Wu ? i2 : Wu, w = D.elements.reference, v = D.rects.popper, A = D.elements[o ? _ : d], g = R2(Zu(A) ? A : A.contextElement || Au(D.elements.popper), a, r), h = Ru(w), S = t1({
     reference: h,
     element: v,
     strategy: "absolute",
@@ -6974,7 +6976,7 @@ function uD(D, u) {
   }
   return H;
 }
-function R2(D, u) {
+function M2(D, u) {
   u === void 0 && (u = {});
   var f = u, e = f.placement, F = f.boundary, t = f.rootBoundary, a = f.padding, n = f.flipVariations, r = f.allowedAutoPlacements, s = r === void 0 ? yD : r, d = Ju(e), c = d ? n ? pf : pf.filter(function(E) {
     return Ju(E) === d;
@@ -6994,17 +6996,17 @@ function R2(D, u) {
     return B[E] - B[y];
   });
 }
-function M2(D) {
+function H2(D) {
   if (ru(D) === AD)
     return [];
   var u = hD(D);
   return [hf(D), u, hf(u)];
 }
-function H2(D) {
+function U2(D) {
   var u = D.state, f = D.options, e = D.name;
   if (!u.modifiersData[e]._skip) {
-    for (var F = f.mainAxis, t = F === void 0 ? !0 : F, a = f.altAxis, n = a === void 0 ? !0 : a, r = f.fallbackPlacements, s = f.padding, d = f.boundary, c = f.rootBoundary, o = f.altBoundary, B = f.flipVariations, E = B === void 0 ? !0 : B, y = f.allowedAutoPlacements, _ = u.options.placement, w = ru(_), v = w === _, A = r || (v || !E ? [hD(_)] : M2(_)), g = [_].concat(A).reduce(function(K, l) {
-      return K.concat(ru(l) === AD ? R2(u, {
+    for (var F = f.mainAxis, t = F === void 0 ? !0 : F, a = f.altAxis, n = a === void 0 ? !0 : a, r = f.fallbackPlacements, s = f.padding, d = f.boundary, c = f.rootBoundary, o = f.altBoundary, B = f.flipVariations, E = B === void 0 ? !0 : B, y = f.allowedAutoPlacements, _ = u.options.placement, w = ru(_), v = w === _, A = r || (v || !E ? [hD(_)] : H2(_)), g = [_].concat(A).reduce(function(K, l) {
+      return K.concat(ru(l) === AD ? M2(u, {
         placement: l,
         boundary: d,
         rootBoundary: c,
@@ -7048,11 +7050,11 @@ function H2(D) {
     u.placement !== H && (u.modifiersData[e]._skip = !0, u.placement = H, u.reset = !0);
   }
 }
-const U2 = {
+const V2 = {
   name: "flip",
   enabled: !0,
   phase: "main",
-  fn: H2,
+  fn: U2,
   requiresIfExists: ["offset"],
   data: {
     _skip: !1
@@ -7074,7 +7076,7 @@ function Af(D) {
     return D[u] >= 0;
   });
 }
-function V2(D) {
+function W2(D) {
   var u = D.state, f = D.name, e = u.rects.reference, F = u.rects.popper, t = u.modifiersData.preventOverflow, a = uD(u, {
     elementContext: "reference"
   }), n = uD(u, {
@@ -7090,14 +7092,14 @@ function V2(D) {
     "data-popper-escaped": c
   });
 }
-const W2 = {
+const G2 = {
   name: "hide",
   enabled: !0,
   phase: "main",
   requiresIfExists: ["preventOverflow"],
-  fn: V2
+  fn: W2
 };
-function G2(D, u, f) {
+function Y2(D, u, f) {
   var e = ru(D), F = [tu, eu].indexOf(e) >= 0 ? -1 : 1, t = typeof f == "function" ? f(Object.assign({}, u, {
     placement: D
   })) : f, a = t[0], n = t[1];
@@ -7109,20 +7111,20 @@ function G2(D, u, f) {
     y: n
   };
 }
-function Y2(D) {
+function X2(D) {
   var u = D.state, f = D.options, e = D.name, F = f.offset, t = F === void 0 ? [0, 0] : F, a = yD.reduce(function(d, c) {
-    return d[c] = G2(c, u.rects, t), d;
+    return d[c] = Y2(c, u.rects, t), d;
   }, {}), n = a[u.placement], r = n.x, s = n.y;
   u.modifiersData.popperOffsets != null && (u.modifiersData.popperOffsets.x += r, u.modifiersData.popperOffsets.y += s), u.modifiersData[e] = a;
 }
-const X2 = {
+const K2 = {
   name: "offset",
   enabled: !0,
   phase: "main",
   requires: ["popperOffsets"],
-  fn: Y2
+  fn: X2
 };
-function K2(D) {
+function Z2(D) {
   var u = D.state, f = D.name;
   u.modifiersData[f] = t1({
     reference: u.rects.reference,
@@ -7131,23 +7133,23 @@ function K2(D) {
     placement: u.placement
   });
 }
-const Z2 = {
+const Q2 = {
   name: "popperOffsets",
   enabled: !0,
   phase: "read",
-  fn: K2,
+  fn: Z2,
   data: {}
 };
-function Q2(D) {
+function J2(D) {
   return D === "x" ? "y" : "x";
 }
-function J2(D) {
+function u8(D) {
   var u = D.state, f = D.options, e = D.name, F = f.mainAxis, t = F === void 0 ? !0 : F, a = f.altAxis, n = a === void 0 ? !1 : a, r = f.boundary, s = f.rootBoundary, d = f.altBoundary, c = f.padding, o = f.tether, B = o === void 0 ? !0 : o, E = f.tetherOffset, y = E === void 0 ? 0 : E, _ = uD(u, {
     boundary: r,
     rootBoundary: s,
     padding: c,
     altBoundary: d
-  }), w = ru(u.placement), v = Ju(u.placement), A = !v, g = ef(w), h = Q2(g), S = u.modifiersData.popperOffsets, T = u.rects.reference, $ = u.rects.popper, H = typeof y == "function" ? y(Object.assign({}, u.rects, {
+  }), w = ru(u.placement), v = Ju(u.placement), A = !v, g = ef(w), h = J2(g), S = u.modifiersData.popperOffsets, T = u.rects.reference, $ = u.rects.popper, H = typeof y == "function" ? y(Object.assign({}, u.rects, {
     placement: u.placement
   })) : y, N = {
     x: 0,
@@ -7171,23 +7173,23 @@ function J2(D) {
     u.modifiersData[e] = N;
   }
 }
-const u8 = {
+const D8 = {
   name: "preventOverflow",
   enabled: !0,
   phase: "main",
-  fn: J2,
+  fn: u8,
   requiresIfExists: ["offset"]
 };
-function D8(D) {
+function f8(D) {
   return {
     scrollLeft: D.scrollLeft,
     scrollTop: D.scrollTop
   };
 }
-function f8(D) {
-  return D === cu(D) || !Fu(D) ? tf(D) : D8(D);
+function e8(D) {
+  return D === cu(D) || !Fu(D) ? tf(D) : f8(D);
 }
-function e8(D, u, f) {
+function t8(D, u, f) {
   f === void 0 && (f = !1);
   var e = Au(u), F = Ru(D), t = Fu(u), a = {
     scrollLeft: 0,
@@ -7197,14 +7199,14 @@ function e8(D, u, f) {
     y: 0
   };
   return (t || !t && !f) && ((pu(u) !== "body" || // https://github.com/popperjs/popper-core/issues/1078
-  nf(e)) && (a = f8(u)), Fu(u) ? (n = Ru(u), n.x += u.clientLeft, n.y += u.clientTop) : e && (n.x = Ff(e))), {
+  nf(e)) && (a = e8(u)), Fu(u) ? (n = Ru(u), n.x += u.clientLeft, n.y += u.clientTop) : e && (n.x = Ff(e))), {
     x: F.left + a.scrollLeft - n.x,
     y: F.top + a.scrollTop - n.y,
     width: F.width,
     height: F.height
   };
 }
-function t8(D) {
+function F8(D) {
   var u = /* @__PURE__ */ new Map(), f = /* @__PURE__ */ new Set(), e = [];
   D.forEach(function(t) {
     u.set(t.name, t);
@@ -7223,15 +7225,15 @@ function t8(D) {
     f.has(t.name) || F(t);
   }), e;
 }
-function F8(D) {
-  var u = t8(D);
+function n8(D) {
+  var u = F8(D);
   return UD.reduce(function(f, e) {
     return f.concat(u.filter(function(F) {
       return F.phase === e;
     }));
   }, []);
 }
-function n8(D) {
+function a8(D) {
   var u;
   return function() {
     return u || (u = new Promise(function(f) {
@@ -7248,8 +7250,8 @@ function hu(D) {
     return F.replace(/%s/, t);
   }, D);
 }
-var ku = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s', a8 = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available', d8 = ["name", "enabled", "phase", "fn", "effect", "requires", "options"];
-function r8(D) {
+var ku = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s', d8 = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available', r8 = ["name", "enabled", "phase", "fn", "effect", "requires", "options"];
+function i8(D) {
   D.forEach(function(u) {
     Object.keys(u).forEach(function(f) {
       switch (f) {
@@ -7277,19 +7279,19 @@ function r8(D) {
         case "data":
           break;
         default:
-          console.error('PopperJS: an invalid property has been provided to the "' + u.name + '" modifier, valid properties are ' + d8.map(function(e) {
+          console.error('PopperJS: an invalid property has been provided to the "' + u.name + '" modifier, valid properties are ' + r8.map(function(e) {
             return '"' + e + '"';
           }).join(", ") + '; but "' + f + '" was provided.');
       }
       u.requires && u.requires.forEach(function(e) {
         D.find(function(F) {
           return F.name === e;
-        }) == null && console.error(hu(a8, String(u.name), e, e));
+        }) == null && console.error(hu(d8, String(u.name), e, e));
       });
     });
   });
 }
-function i8(D, u) {
+function o8(D, u) {
   var f = /* @__PURE__ */ new Set();
   return D.filter(function(e) {
     var F = u(e);
@@ -7297,7 +7299,7 @@ function i8(D, u) {
       return f.add(F), !0;
   });
 }
-function o8(D) {
+function s8(D) {
   var u = D.reduce(function(f, e) {
     var F = f[e.name];
     return f[e.name] = F ? Object.assign({}, F, e, {
@@ -7309,7 +7311,7 @@ function o8(D) {
     return u[f];
   });
 }
-var yf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", s8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", wf = {
+var yf = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.", C8 = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.", wf = {
   placement: "bottom",
   modifiers: [],
   strategy: "absolute"
@@ -7321,7 +7323,7 @@ function kf() {
     return !(e && typeof e.getBoundingClientRect == "function");
   });
 }
-function C8(D) {
+function c8(D) {
   D === void 0 && (D = {});
   var u = D, f = u.defaultModifiers, e = f === void 0 ? [] : f, F = u.defaultOptions, t = F === void 0 ? wf : F;
   return function(n, r, s) {
@@ -7344,15 +7346,15 @@ function C8(D) {
           reference: Zu(n) ? Yu(n) : n.contextElement ? Yu(n.contextElement) : [],
           popper: Yu(r)
         };
-        var v = F8(o8([].concat(e, d.options.modifiers)));
+        var v = n8(s8([].concat(e, d.options.modifiers)));
         if (d.orderedModifiers = v.filter(function(N) {
           return N.enabled;
         }), process.env.NODE_ENV !== "production") {
-          var A = i8([].concat(v, d.options.modifiers), function(N) {
+          var A = o8([].concat(v, d.options.modifiers), function(N) {
             var U = N.name;
             return U;
           });
-          if (r8(A), ru(d.options.placement) === AD) {
+          if (i8(A), ru(d.options.placement) === AD) {
             var g = d.orderedModifiers.find(function(N) {
               var U = N.name;
               return U === "flip";
@@ -7379,14 +7381,14 @@ function C8(D) {
             return;
           }
           d.rects = {
-            reference: e8(v, FD(A), d.options.strategy === "fixed"),
+            reference: t8(v, FD(A), d.options.strategy === "fixed"),
             popper: ff(A)
           }, d.reset = !1, d.placement = d.options.placement, d.orderedModifiers.forEach(function(U) {
             return d.modifiersData[U.name] = Object.assign({}, U.data);
           });
           for (var g = 0, h = 0; h < d.orderedModifiers.length; h++) {
             if (process.env.NODE_ENV !== "production" && (g += 1, g > 100)) {
-              console.error(s8);
+              console.error(C8);
               break;
             }
             if (d.reset === !0) {
@@ -7405,7 +7407,7 @@ function C8(D) {
       },
       // Async and optimistically optimized update – it will not be executed if
       // not necessary (debounced to run at most once-per-tick)
-      update: n8(function() {
+      update: a8(function() {
         return new Promise(function(_) {
           B.forceUpdate(), _(d);
         });
@@ -7442,10 +7444,10 @@ function C8(D) {
     return B;
   };
 }
-var c8 = [O2, Z2, T2, m2, X2, U2, u8, w2, W2], E8 = /* @__PURE__ */ C8({
-  defaultModifiers: c8
+var E8 = [j2, Q2, $2, h2, K2, V2, D8, k2, G2], l8 = /* @__PURE__ */ c8({
+  defaultModifiers: E8
 });
-function l8() {
+function B8() {
   var D = window.navigator.userAgent, u = D.indexOf("MSIE ");
   if (u > 0)
     return parseInt(D.substring(u + 5, D.indexOf(".", u)), 10);
@@ -7459,7 +7461,7 @@ function l8() {
 }
 let _D;
 function WD() {
-  WD.init || (WD.init = !0, _D = l8() !== -1);
+  WD.init || (WD.init = !0, _D = B8() !== -1);
 }
 var kD = {
   name: "ResizeObserver",
@@ -7508,15 +7510,15 @@ var kD = {
     }
   }
 };
-const B8 = /* @__PURE__ */ $1("data-v-b329ee4c");
+const b8 = /* @__PURE__ */ $1("data-v-b329ee4c");
 x1("data-v-b329ee4c");
-const b8 = {
+const p8 = {
   class: "resize-observer",
   tabindex: "-1"
 };
 S1();
-const p8 = /* @__PURE__ */ B8((D, u, f, e, F, t) => (b(), V("div", b8)));
-kD.render = p8;
+const g8 = /* @__PURE__ */ b8((D, u, f, e, F, t) => (b(), V("div", p8)));
+kD.render = g8;
 kD.__scopeId = "data-v-b329ee4c";
 kD.__file = "src/components/ResizeObserver.vue";
 function Xu(D) {
@@ -7551,7 +7553,7 @@ function xu(D) {
     });
   };
 }
-function g8(D, u, f) {
+function m8(D, u, f) {
   return u in D ? Object.defineProperty(D, u, {
     value: f,
     enumerable: !0,
@@ -7573,7 +7575,7 @@ function iu(D) {
   for (var u = 1; u < arguments.length; u++) {
     var f = arguments[u] != null ? arguments[u] : {};
     u % 2 ? Sf(Object(f), !0).forEach(function(e) {
-      g8(D, e, f[e]);
+      m8(D, e, f[e]);
     }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(D, Object.getOwnPropertyDescriptors(f)) : Sf(Object(f)).forEach(function(e) {
       Object.defineProperty(D, e, Object.getOwnPropertyDescriptor(f, e));
     });
@@ -7581,12 +7583,12 @@ function iu(D) {
   return D;
 }
 function F1(D) {
-  return m8(D) || h8(D) || n1(D) || _8();
-}
-function m8(D) {
-  if (Array.isArray(D)) return GD(D);
+  return h8(D) || _8(D) || n1(D) || v8();
 }
 function h8(D) {
+  if (Array.isArray(D)) return GD(D);
+}
+function _8(D) {
   if (typeof Symbol < "u" && Symbol.iterator in Object(D)) return Array.from(D);
 }
 function n1(D, u) {
@@ -7602,7 +7604,7 @@ function GD(D, u) {
   for (var f = 0, e = new Array(u); f < u; f++) e[f] = D[f];
   return e;
 }
-function _8() {
+function v8() {
   throw new TypeError(`Invalid attempt to spread non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`);
 }
@@ -7731,7 +7733,7 @@ function q(D, u) {
   while (f);
   return e;
 }
-function v8(D) {
+function A8(D) {
   var u = [D], f = Tu.themes[D] || {};
   do
     f.$extend && !f.$resetCss ? (u.push(f.$extend), f = Tu.themes[f.$extend] || {}) : f = null;
@@ -7744,12 +7746,12 @@ var vD = !1;
 if (typeof window < "u") {
   vD = !1;
   try {
-    var A8 = Object.defineProperty({}, "passive", {
+    var y8 = Object.defineProperty({}, "passive", {
       get: function() {
         vD = !0;
       }
     });
-    window.addEventListener("test", null, A8);
+    window.addEventListener("test", null, y8);
   } catch {
   }
 }
@@ -7775,7 +7777,7 @@ var Tf = {
   click: "click",
   touch: "touchend"
 };
-function y8(D, u) {
+function w8(D, u) {
   var f = D.indexOf(u);
   f !== -1 && D.splice(f, 1);
 }
@@ -8093,7 +8095,7 @@ var r1 = function() {
         var u = arguments, f = this;
         return xu(function* () {
           var e = u.length > 0 && u[0] !== void 0 ? u[0] : !1;
-          clearTimeout(f.$_disposeTimer), clearTimeout(f.$_scheduleTimer), f.skipTransition = e, !f.isShown && (f.isMounted || (f.$_ensureContainer(), f.isMounted = !0), f.popperInstance ? (yield f.popperInstance.update(), yield f.$_refreshPopperOptions(), yield f.$_applyShowEffect()) : f.popperInstance = E8(f.referenceNode(), f.$_popperNode, f.$_getPopperOptions()));
+          clearTimeout(f.$_disposeTimer), clearTimeout(f.$_scheduleTimer), f.skipTransition = e, !f.isShown && (f.isMounted || (f.$_ensureContainer(), f.isMounted = !0), f.popperInstance ? (yield f.popperInstance.update(), yield f.$_refreshPopperOptions(), yield f.$_applyShowEffect()) : f.popperInstance = l8(f.referenceNode(), f.$_popperNode, f.$_getPopperOptions()));
         })();
       },
       $_applyShowEffect: function() {
@@ -8117,7 +8119,7 @@ var r1 = function() {
         return xu(function* () {
           var e = u.length > 0 && u[0] !== void 0 ? u[0] : !1;
           if (clearTimeout(f.$_scheduleTimer), !!f.isShown) {
-            f.skipTransition = e, y8(Pu, f), ju === f && (ju = null), f.isShown = !1, f.popperInstance && (yield f.$_refreshPopperOptions()), f.$_applyAttrsToTarget({
+            f.skipTransition = e, w8(Pu, f), ju === f && (ju = null), f.isShown = !1, f.popperInstance && (yield f.$_refreshPopperOptions()), f.$_applyAttrsToTarget({
               "aria-describedby": void 0,
               "data-popper-shown": void 0
             }), clearTimeout(f.$_disposeTimer);
@@ -8217,14 +8219,14 @@ var r1 = function() {
     }
   };
 };
-typeof document < "u" && typeof window < "u" && (d1 ? document.addEventListener("touchend", k8, vD ? {
+typeof document < "u" && typeof window < "u" && (d1 ? document.addEventListener("touchend", x8, vD ? {
   passive: !0,
   capture: !0
-} : !0) : window.addEventListener("click", w8, !0));
-function w8(D) {
+} : !0) : window.addEventListener("click", k8, !0));
+function k8(D) {
   i1(D);
 }
-function k8(D) {
+function x8(D) {
   i1(D, !0);
 }
 function i1(D) {
@@ -8244,7 +8246,7 @@ function Of() {
 var o1 = {
   computed: {
     themeClass: function() {
-      return v8(this.theme);
+      return A8(this.theme);
     }
   }
 }, xD = {
@@ -8264,15 +8266,15 @@ var o1 = {
     classes: Object
   },
   emits: ["hide", "resize"]
-}, x8 = {
-  class: "v-popper__wrapper"
 }, S8 = {
+  class: "v-popper__wrapper"
+}, T8 = {
   ref: "inner",
   class: "v-popper__inner"
-}, T8 = {
+}, $8 = {
   ref: "arrow",
   class: "v-popper__arrow-container"
-}, $8 = /* @__PURE__ */ L(
+}, O8 = /* @__PURE__ */ L(
   "div",
   {
     class: "v-popper__arrow"
@@ -8281,7 +8283,7 @@ var o1 = {
   -1
   /* HOISTED */
 );
-function O8(D, u, f, e, F, t) {
+function j8(D, u, f, e, F, t) {
   var a = O("ResizeObserver");
   return b(), V(
     "div",
@@ -8303,9 +8305,9 @@ function O8(D, u, f, e, F, t) {
         return f.autoHide && D.$emit("hide");
       }, ["esc"]))
     },
-    [L("div", x8, [L(
+    [L("div", S8, [L(
       "div",
-      S8,
+      T8,
       [f.mounted ? (b(), V(
         qu,
         {
@@ -8324,8 +8326,8 @@ function O8(D, u, f, e, F, t) {
       /* NEED_PATCH */
     ), L(
       "div",
-      T8,
-      [$8],
+      $8,
+      [O8],
       512
       /* NEED_PATCH */
     )])],
@@ -8333,7 +8335,7 @@ function O8(D, u, f, e, F, t) {
     ["id", "aria-hidden", "tabindex"]
   );
 }
-xD.render = O8;
+xD.render = j8;
 xD.__file = "src/components/PopperContent.vue";
 var s1 = {
   methods: {
@@ -8381,7 +8383,7 @@ var s1 = {
     }
   }
 };
-function j8(D, u, f, e, F, t) {
+function P8(D, u, f, e, F, t) {
   var a = O("PopperContent"), n = O("Popper");
   return b(), V(
     n,
@@ -8449,7 +8451,7 @@ function j8(D, u, f, e, F, t) {
     ["theme", "target-nodes", "reference-node", "popper-node", "arrow-node"]
   );
 }
-nD.render = j8;
+nD.render = P8;
 nD.__file = "src/components/PopperWrapper.vue";
 var KD = iu(iu({}, nD), {}, {
   name: "VDropdown",
@@ -8551,7 +8553,7 @@ var af = {
     }
   }
 };
-function P8(D, u, f, e, F, t) {
+function I8(D, u, f, e, F, t) {
   var a = O("PopperContent"), n = O("Popper");
   return b(), V(
     n,
@@ -8625,10 +8627,10 @@ function P8(D, u, f, e, F, t) {
     ["theme", "popper-node", "arrow-node", "onApplyShow", "onApplyHide"]
   );
 }
-af.render = P8;
+af.render = I8;
 af.__file = "src/components/TooltipDirective.vue";
 var C1 = "v-popper--has-tooltip";
-function I8(D, u) {
+function z8(D, u) {
   var f = D.placement;
   if (!f && u) {
     var e = YD(yD), F;
@@ -8651,13 +8653,13 @@ function c1(D, u, f) {
     content: u
   } : u && F === "object" ? e = u : e = {
     content: !1
-  }, e.placement = I8(e, f), e.targetNodes = function() {
+  }, e.placement = z8(e, f), e.targetNodes = function() {
     return [D];
   }, e.referenceNode = function() {
     return D;
   }, e;
 }
-function z8(D, u, f) {
+function N8(D, u, f) {
   var e = c1(D, u, f), F = D.$_popper = j1({
     name: "VTooltipDirective",
     data: function() {
@@ -8682,10 +8684,10 @@ function jf(D, u) {
     E1(D);
   else {
     var t;
-    D.$_popper ? (t = D.$_popper, t.options = F) : t = z8(D, f, e), typeof f.shown < "u" && f.shown !== D.$_popperOldShown && (D.$_popperOldShown = f.shown, f.shown ? t.$refs.tooltip.show() : t.$refs.tooltip.hide());
+    D.$_popper ? (t = D.$_popper, t.options = F) : t = N8(D, f, e), typeof f.shown < "u" && f.shown !== D.$_popperOldShown && (D.$_popperOldShown = f.shown, f.shown ? t.$refs.tooltip.show() : t.$refs.tooltip.hide());
   }
 }
-var N8 = {
+var q8 = {
   beforeMount: jf,
   updated: jf,
   beforeUnmount: function(u) {
@@ -8723,7 +8725,7 @@ function p1(D) {
   var u = D.currentTarget;
   u.$_vclosepopover_touch = !1;
 }
-var q8 = {
+var L8 = {
   beforeMount: function(u, f) {
     var e = f.value, F = f.modifiers;
     u.$_closePopoverModifiers = F, (typeof e > "u" || e) && Pf(u);
@@ -8738,15 +8740,15 @@ var q8 = {
 };
 function JD(D) {
   var u = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
-  JD.installed || (JD.installed = !0, a1(Tu, u), D.directive("tooltip", N8), D.directive("close-popper", q8), D.component("v-tooltip", QD), D.component("VTooltip", QD), D.component("v-dropdown", KD), D.component("VDropdown", KD), D.component("v-menu", ZD), D.component("VMenu", ZD));
+  JD.installed || (JD.installed = !0, a1(Tu, u), D.directive("tooltip", q8), D.directive("close-popper", L8), D.component("v-tooltip", QD), D.component("VTooltip", QD), D.component("v-dropdown", KD), D.component("VDropdown", KD), D.component("v-menu", ZD), D.component("VMenu", ZD));
 }
-var L8 = {
+var R8 = {
   // eslint-disable-next-line no-undef
   version: "4.0.0-alpha.1",
   install: JD,
   options: Tu
 }, pD = { exports: {} }, zf;
-function R8() {
+function M8() {
   if (zf) return pD.exports;
   zf = 1;
   function D() {
@@ -8782,23 +8784,23 @@ function R8() {
   }, pD.exports = D, pD.exports.TinyEmitter = D, pD.exports;
 }
 var MD, Nf;
-function M8() {
+function H8() {
   if (Nf) return MD;
   Nf = 1;
-  var D = R8();
+  var D = M8();
   return MD = new D(), MD;
 }
-var H8 = M8();
-const gD = /* @__PURE__ */ uf(H8), U8 = {
+var U8 = H8();
+const gD = /* @__PURE__ */ uf(U8), V8 = {
   $on: (...D) => gD.on(...D),
   $once: (...D) => gD.once(...D),
   $off: (...D) => gD.off(...D),
   $emit: (...D) => gD.emit(...D)
-}, V8 = "BeautifulChat", G8 = {
+}, W8 = "BeautifulChat", Y8 = {
   install(D, u = {}) {
-    this.installed || D.prototype && D.prototype.$isServer || (this.installed = !0, D.config.globalProperties.$event = U8, this.componentName = u.componentName || V8, D.component(this.componentName, a2), D.use(L8));
+    this.installed || D.prototype && D.prototype.$isServer || (this.installed = !0, D.config.globalProperties.$event = V8, this.componentName = u.componentName || W8, D.component(this.componentName, d2), D.use(R8));
   }
 };
 export {
-  G8 as default
+  Y8 as default
 };
