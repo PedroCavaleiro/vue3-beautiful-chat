@@ -9,17 +9,16 @@
         color: colors.userInput.bg
       }"
     >
-      <span class="icon-file-message"
-        ><img :src="icons.file.img" :alt="icons.file.name" height="15"
-      /></span>
-      {{ file.name }}
-      <span class="delete-file-message" @click="cancelFile()"
-        ><img
-          :src="icons.closeSvg.img"
-          :alt="icons.closeSvg.name"
-          height="10"
-          title="Remove the file"
-      /></span>
+      <span class="icon-file-message">
+        <img v-if="!imageData" :src="icons.file.img" :alt="icons.file.name" style="height: 65px" />
+        <img v-else :src="imageData" alt="Uploaded Image" style="height: 65px; object-fit: cover" />
+      </span>
+      <span>
+        {{
+          // @ts-ignore
+          file.name
+        }}
+      </span>
     </div>
     <form
       class="sc-user-input"
